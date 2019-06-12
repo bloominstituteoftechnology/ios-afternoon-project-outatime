@@ -8,20 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		A26EC9EC22B196E300463DC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26EC9EB22B196E300463DC1 /* AppDelegate.swift */; };
-		A26EC9EE22B196E300463DC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26EC9ED22B196E300463DC1 /* ViewController.swift */; };
 		A26EC9F122B196E300463DC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26EC9EF22B196E300463DC1 /* Main.storyboard */; };
 		A26EC9F322B196E400463DC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A26EC9F222B196E400463DC1 /* Assets.xcassets */; };
 		A26EC9F622B196E400463DC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26EC9F422B196E400463DC1 /* LaunchScreen.storyboard */; };
+		A26EC9FE22B1977A00463DC1 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26EC9FD22B1977A00463DC1 /* TimeCircuitsViewController.swift */; };
+		A26ECA0022B197AD00463DC1 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26EC9FF22B197AD00463DC1 /* DatePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A26EC9E822B196E300463DC1 /* outatime-ios-afternoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "outatime-ios-afternoon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26EC9EB22B196E300463DC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A26EC9ED22B196E300463DC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A26EC9F022B196E300463DC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A26EC9F222B196E400463DC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A26EC9F522B196E400463DC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A26EC9F722B196E400463DC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A26EC9FD22B1977A00463DC1 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
+		A26EC9FF22B197AD00463DC1 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		A26ECA0122B198A000463DC1 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../../digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +58,11 @@
 			isa = PBXGroup;
 			children = (
 				A26EC9EB22B196E300463DC1 /* AppDelegate.swift */,
-				A26EC9ED22B196E300463DC1 /* ViewController.swift */,
+				A26EC9FD22B1977A00463DC1 /* TimeCircuitsViewController.swift */,
+				A26EC9FF22B197AD00463DC1 /* DatePickerViewController.swift */,
 				A26EC9EF22B196E300463DC1 /* Main.storyboard */,
 				A26EC9F222B196E400463DC1 /* Assets.xcassets */,
+				A26ECA0122B198A000463DC1 /* digital-7.ttf */,
 				A26EC9F422B196E400463DC1 /* LaunchScreen.storyboard */,
 				A26EC9F722B196E400463DC1 /* Info.plist */,
 			);
@@ -135,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A26EC9EE22B196E300463DC1 /* ViewController.swift in Sources */,
+				A26ECA0022B197AD00463DC1 /* DatePickerViewController.swift in Sources */,
+				A26EC9FE22B1977A00463DC1 /* TimeCircuitsViewController.swift in Sources */,
 				A26EC9EC22B196E300463DC1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
