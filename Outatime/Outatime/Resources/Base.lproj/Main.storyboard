@@ -48,16 +48,16 @@
                                 <rect key="frame" x="15" y="84" width="384" height="562"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Hqs-Y9-8QT">
-                                        <rect key="frame" x="104" y="0.0" width="176" height="77.5"/>
+                                        <rect key="frame" x="83.5" y="0.0" width="217.5" height="77.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESTINATION TIME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mgp-eo-dUL">
-                                                <rect key="frame" x="0.0" y="0.0" width="176" height="24"/>
+                                                <rect key="frame" x="20.5" y="0.0" width="176" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnF-NQ-R5s">
-                                                <rect key="frame" x="30" y="32" width="116.5" height="45.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOV 15, 2001" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnF-NQ-R5s">
+                                                <rect key="frame" x="0.0" y="32" width="217.5" height="45.5"/>
                                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="50"/>
                                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -150,15 +150,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="TPI-zs-GFP">
-                                <rect key="frame" x="8" y="74" width="398" height="373"/>
+                                <rect key="frame" x="8" y="74" width="398" height="438"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER DESTINATION DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enI-qt-1R2">
                                         <rect key="frame" x="65.5" y="0.0" width="267.5" height="25.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <datePicker contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="TVo-qF-kG7">
+                                    <datePicker opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="TVo-qF-kG7">
                                         <rect key="frame" x="39" y="55.5" width="320" height="216"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -173,7 +173,7 @@
                                         </date>
                                     </datePicker>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQT-up-jrX">
-                                        <rect key="frame" x="153" y="301.5" width="92" height="36"/>
+                                        <rect key="frame" x="153" y="301.5" width="92" height="66.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="SET DATE"/>
                                         <connections>
@@ -181,7 +181,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="748" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sZ-Vc-gu0">
-                                        <rect key="frame" x="169.5" y="367.5" width="59" height="5.5"/>
+                                        <rect key="frame" x="169.5" y="398" width="59" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="2Gc-p0-Hzb"/>
+                                        </constraints>
                                         <state key="normal" title="CANCEL"/>
                                         <connections>
                                             <action selector="cancelButtonTapped:" destination="TlS-2h-aPJ" eventType="touchUpInside" id="tck-CV-SQt"/>
@@ -190,12 +193,12 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="TPI-zs-GFP" firstAttribute="top" secondItem="9vz-RM-lGt" secondAttribute="top" constant="30" id="cHq-Xw-pek"/>
-                            <constraint firstItem="9vz-RM-lGt" firstAttribute="bottom" secondItem="TPI-zs-GFP" secondAttribute="bottom" constant="415" id="cVa-Ep-bli"/>
-                            <constraint firstItem="9vz-RM-lGt" firstAttribute="trailing" secondItem="TPI-zs-GFP" secondAttribute="trailing" constant="8" id="sHb-GQ-4oG"/>
-                            <constraint firstItem="TPI-zs-GFP" firstAttribute="leading" secondItem="9vz-RM-lGt" secondAttribute="leading" constant="8" id="xVj-jU-Mqf"/>
+                            <constraint firstItem="TPI-zs-GFP" firstAttribute="top" secondItem="9vz-RM-lGt" secondAttribute="top" constant="30" id="E6g-Gw-iL0"/>
+                            <constraint firstItem="9vz-RM-lGt" firstAttribute="trailing" secondItem="TPI-zs-GFP" secondAttribute="trailing" constant="8" id="jiq-F8-SRI"/>
+                            <constraint firstItem="9vz-RM-lGt" firstAttribute="bottom" secondItem="TPI-zs-GFP" secondAttribute="bottom" constant="350" id="m67-U7-NpD"/>
+                            <constraint firstItem="TPI-zs-GFP" firstAttribute="leading" secondItem="9vz-RM-lGt" secondAttribute="leading" constant="8" id="xeI-6x-Qe9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9vz-RM-lGt"/>
                     </view>

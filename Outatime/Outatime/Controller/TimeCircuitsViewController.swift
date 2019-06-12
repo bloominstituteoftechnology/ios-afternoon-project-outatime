@@ -26,7 +26,10 @@ class TimeCircuitsViewController: UIViewController {
     }()
     
     var speed = 0
+    
     var defaultLastDeparted = "--- -- ----"
+    
+    var travelToDate: Date?
     
     //
     // MARK: - View LifeCycle and IBActions
@@ -34,11 +37,17 @@ class TimeCircuitsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         updateViews()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        updateViews()
+        
+    }
+    
     @IBAction func travelBackButtonTapped(_ sender: UIButton) {
+        updateViews()
     }
     
     //
@@ -46,9 +55,12 @@ class TimeCircuitsViewController: UIViewController {
     //
     
     func updateViews() {
-        let formattedDate = dateFormatter.string(from: Date())
-        presentTimeLabel.text = formattedDate
+        let currentFormattedDate = dateFormatter.string(from: Date())
+        guard let unwrappedTravelToDate = travelToDate else { return }
+        let travelToFormattedDate = dateFormatter.string(from: unwrappedTravelToDate)
+        presentTimeLabel.text = currentFormattedDate
         speedLabel.text = "\(speed) MPH"
+        destinationTimeLabel.text = travelToFormattedDate
 
     }
     
@@ -60,26 +72,32 @@ class TimeCircuitsViewController: UIViewController {
     
     
     
-    /*
+    //
     // MARK: - Navigation
-
+    //
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
+        let datePickerVC = segue.destination as! DatePickerViewController
         // Pass the selected object to the new view controller.
+        datePickerVC.delegate = self
+        guard let unwrappedUserChosenDate = datePickerVC.userChosenDate else { return }
+        travelToDate = unwrappedUserChosenDate
+        print("this is passed over travel to date: \(unwrappedUserChosenDate)")
+        
+        
     }
-    */
+    
 
 }
 
-//
-// MARK: - Extensions
-//
+    //
+    // MARK: - Extensions
+    //
 
 extension TimeCircuitsViewController: DatePickerDelegate {
     func destinationWasChosen(for date: Date) {
-        <#code#>
+        updateViews()
     }
-    
-    
 }
+
