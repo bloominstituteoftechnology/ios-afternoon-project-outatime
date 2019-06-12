@@ -81,6 +81,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="244" height="39"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                         <state key="normal" title="SET DESTINATION TIME"/>
+                                        <connections>
+                                            <segue destination="Npp-dV-brO" kind="presentation" id="n2n-a7-mlJ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awq-ns-3cq">
                                         <rect key="frame" x="49.5" y="47" width="145" height="39"/>

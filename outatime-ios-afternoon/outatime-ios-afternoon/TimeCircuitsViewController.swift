@@ -15,6 +15,8 @@ class TimeCircuitsViewController: UIViewController {
     @IBOutlet weak var lastTimeDepartedLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
     
+    var datePickerVC = DatePickerViewController()
+    
     var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "MMM dd yyyy"
@@ -31,10 +33,16 @@ class TimeCircuitsViewController: UIViewController {
     @IBAction func travelBackButtonPressed(_ sender: Any) {
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        datePickerVC.delegate = self
+    }
 }
 
 extension TimeCircuitsViewController: DatePickerDelegate {
-    func destinationWasChosen(_ destinationDate: Date) {
-        
+    func destinationDateWasChosen(_ destinationDate: Date) {
+        destinationTimeLabel.text = dateFormatter.string(from: destinationDate)
     }
+    
+    
 }

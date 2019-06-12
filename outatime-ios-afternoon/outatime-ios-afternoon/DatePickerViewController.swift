@@ -9,7 +9,7 @@
 import UIKit
 
 protocol DatePickerDelegate: AnyObject {
-    func destinationWasChosen(_ destinationDate: Date)
+    func destinationDateWasChosen(_ destinationDate: Date)
 }
 
 class DatePickerViewController: UIViewController {
@@ -29,7 +29,7 @@ class DatePickerViewController: UIViewController {
     }
     
     @IBAction func doneButtonPressed(_ sender: UIButton) {
-        delegate?.destinationWasChosen(datePickerOutlet.date)
+        delegate?.destinationDateWasChosen(datePickerOutlet.date)
         dismiss(animated: true, completion: nil)
     }
     
