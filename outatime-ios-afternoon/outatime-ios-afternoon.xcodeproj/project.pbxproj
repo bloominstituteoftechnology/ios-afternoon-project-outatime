@@ -13,6 +13,7 @@
 		A26EC9F622B196E400463DC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26EC9F422B196E400463DC1 /* LaunchScreen.storyboard */; };
 		A26EC9FE22B1977A00463DC1 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26EC9FD22B1977A00463DC1 /* TimeCircuitsViewController.swift */; };
 		A26ECA0022B197AD00463DC1 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26EC9FF22B197AD00463DC1 /* DatePickerViewController.swift */; };
+		A26ECA0322B1AAC600463DC1 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26ECA0222B1A97900463DC1 /* digital-7.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +25,7 @@
 		A26EC9F722B196E400463DC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A26EC9FD22B1977A00463DC1 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
 		A26EC9FF22B197AD00463DC1 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
-		A26ECA0122B198A000463DC1 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../../digital-7.ttf"; sourceTree = "<group>"; };
+		A26ECA0222B1A97900463DC1 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +62,8 @@
 				A26EC9FD22B1977A00463DC1 /* TimeCircuitsViewController.swift */,
 				A26EC9FF22B197AD00463DC1 /* DatePickerViewController.swift */,
 				A26EC9EF22B196E300463DC1 /* Main.storyboard */,
+				A26ECA0222B1A97900463DC1 /* digital-7.ttf */,
 				A26EC9F222B196E400463DC1 /* Assets.xcassets */,
-				A26ECA0122B198A000463DC1 /* digital-7.ttf */,
 				A26EC9F422B196E400463DC1 /* LaunchScreen.storyboard */,
 				A26EC9F722B196E400463DC1 /* Info.plist */,
 			);
@@ -130,6 +131,7 @@
 				A26EC9F622B196E400463DC1 /* LaunchScreen.storyboard in Resources */,
 				A26EC9F322B196E400463DC1 /* Assets.xcassets in Resources */,
 				A26EC9F122B196E300463DC1 /* Main.storyboard in Resources */,
+				A26ECA0322B1AAC600463DC1 /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
