@@ -10,21 +10,27 @@ import UIKit
 
 protocol DatePickerDelegate {
     func dateDidSelect(duration: TimeInterval)
+    func destinationDateWasChosen(date: Date)
 }
 
-class DatePickerViewController: UIDatePicker {
+
+class DatePickerViewController: UIViewController {
+    
+    @IBOutlet var datePicker: UIDatePicker!
+    
 
 //    var duration: TimeInterval {
 //        let monthString = selectedRow(inComponent: 0)
 //        let dateString = selectedRow(inComponent: 1)
 //        let yearString = selectedRow(inComponent: 2)
-//        let month = Int(minuteString)
+//        let month = Int(monthString[index] + 1)
 //        let date = Int(dateString)
 //        let year = Int(yearString)
+//        let timeToAccelerate = TimeInterval((date * 12) + (year * 365) )
 ////        let timeUntilArrival = TimeInterval(minutes * 60 + seconds)
-//        return totalSeconds
+//        return timeToAccelerate
 //    }
-//    
+//
 //    lazy var datePickerData: [[String]] = {
 //        let month: [String] = Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December").map { String($0) }
 //        let date: [String]
@@ -46,7 +52,16 @@ class DatePickerViewController: UIDatePicker {
 //    }()
 //    
 //    
-////    weak var delegate: DatePickerDelegate?
-//    
+    var delegate: DatePickerDelegate?
 
+    
+    @IBAction func cancelButtonPressed(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func doneButtonPressed(_ sender: UIButton) {
+        
+    }
 }
+
+

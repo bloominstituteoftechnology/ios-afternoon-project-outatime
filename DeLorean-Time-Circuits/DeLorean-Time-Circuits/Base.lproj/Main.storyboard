@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Time Circuits View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DeLorean_Time_Circuits" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TimeCircuitsViewController" customModule="DeLorean_Time_Circuits" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,6 +90,7 @@
                                                 <state key="normal" title="SET DESTINATION TIME"/>
                                                 <connections>
                                                     <action selector="setDestinationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uT0-hP-Zi5"/>
+                                                    <segue destination="nv8-Z4-5Kn" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="74X-Ob-5rr"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gr-pz-e9t">
@@ -119,13 +120,72 @@
                     <connections>
                         <outlet property="destinationTimeLabel" destination="O6N-XF-r3e" id="8gt-PH-b6R"/>
                         <outlet property="lastTimeDepartedLabel" destination="gh4-7Z-eBu" id="9Is-W0-qJv"/>
-                        <outlet property="presentTimeLabel" destination="wTo-ID-hG9" id="JqT-EE-5Wc"/>
+                        <outlet property="presentTimeLabel" destination="wTo-ID-hG9" id="XJ5-qy-fXf"/>
                         <outlet property="speedLabel" destination="Yl1-8o-KOn" id="y1g-6H-hHq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
+            <point key="canvasLocation" x="-113" y="106"/>
+        </scene>
+        <!--Date Picker View Controller-->
+        <scene sceneID="IAy-RM-zib">
+            <objects>
+                <viewController id="nv8-Z4-5Kn" customClass="DatePickerViewController" customModule="DeLorean_Time_Circuits" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q89-dy-Td5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="442" translatesAutoresizingMaskIntoConstraints="NO" id="sPy-iT-nLj">
+                                <rect key="frame" x="25" y="244" width="364" height="632"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikH-y7-aCu">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="160"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="-31538263.647320032">
+                                            <!--2000-01-01 23:22:16 +0000-->
+                                        </date>
+                                    </datePicker>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="177" translatesAutoresizingMaskIntoConstraints="NO" id="868-lw-UKR">
+                                        <rect key="frame" x="0.0" y="602" width="364" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0A-ko-BYP">
+                                                <rect key="frame" x="0.0" y="0.0" width="48" height="30"/>
+                                                <state key="normal" title="Cancel"/>
+                                                <connections>
+                                                    <action selector="cancelButtonPressed:" destination="nv8-Z4-5Kn" eventType="touchUpInside" id="Udh-s0-c1Z"/>
+                                                    <action selector="cancelButtonTapped:" destination="M70-nx-adD" eventType="touchUpInside" id="nSZ-uP-M7G"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJs-Nc-Ywm">
+                                                <rect key="frame" x="327" y="0.0" width="37" height="30"/>
+                                                <state key="normal" title="Done"/>
+                                                <connections>
+                                                    <action selector="doneButtonPressed:" destination="nv8-Z4-5Kn" eventType="touchUpInside" id="kVJ-yB-TMP"/>
+                                                    <action selector="doneButtonTapped:" destination="M70-nx-adD" eventType="touchUpInside" id="fyv-QT-b3t"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="sPy-iT-nLj" secondAttribute="bottom" constant="20" id="Bez-dS-nJ6"/>
+                            <constraint firstItem="TNq-RU-7gE" firstAttribute="trailing" secondItem="sPy-iT-nLj" secondAttribute="trailing" constant="25" id="Erf-N9-oA6"/>
+                            <constraint firstItem="sPy-iT-nLj" firstAttribute="leading" secondItem="TNq-RU-7gE" secondAttribute="leading" constant="25" id="MJi-v3-XRH"/>
+                            <constraint firstItem="sPy-iT-nLj" firstAttribute="top" secondItem="TNq-RU-7gE" secondAttribute="top" constant="200" id="k7z-bq-pSc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TNq-RU-7gE"/>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="ikH-y7-aCu" id="GT2-JL-6VO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uwO-FM-US1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="M70-nx-adD" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="779.71014492753625" y="98.4375"/>
         </scene>
     </scenes>
 </document>

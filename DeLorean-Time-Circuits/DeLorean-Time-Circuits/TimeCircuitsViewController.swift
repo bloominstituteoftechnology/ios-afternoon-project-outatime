@@ -35,6 +35,9 @@ class TimeCircuitsViewController: UIViewController {
         super.viewDidLoad()
         
         presentTimeLabel.text = dateFormatter.string(from: date)
+        speedLabel.text = "\(currentSpeed) MPH"
+        lastTimeDepartedLabel.text = "--- -- ----"
+        
         
     }
     
@@ -50,6 +53,10 @@ class TimeCircuitsViewController: UIViewController {
 }
 
 extension TimeCircuitsViewController: DatePickerDelegate {
+    func destinationDateWasChosen(date: Date) {
+        destinationTimeLabel.text = dateFormatter.string(from: date)
+    }
+    
     func dateDidSelect(duration: TimeInterval) {
         timeCircuit.duration = duration
     }
