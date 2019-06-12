@@ -25,19 +25,31 @@ class TimeCircuitsViewController: UIViewController {
         return formatter
     }()
     
+    var speed = 0
+    var defaultLastDeparted = "--- -- ----"
     
+    //
+    // MARK: - View LifeCycle and IBActions
+    //
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         updateViews()
     }
+    
     @IBAction func travelBackButtonTapped(_ sender: UIButton) {
     }
+    
+    //
+    // MARK: - Methods
+    //
     
     func updateViews() {
         let formattedDate = dateFormatter.string(from: Date())
         presentTimeLabel.text = formattedDate
+        speedLabel.text = "\(speed) MPH"
+
     }
     
     func string(from time: Date) -> String {
@@ -45,6 +57,9 @@ class TimeCircuitsViewController: UIViewController {
         
         return dateFormatter.string(from: date)
     }
+    
+    
+    
     /*
     // MARK: - Navigation
 
@@ -55,4 +70,16 @@ class TimeCircuitsViewController: UIViewController {
     }
     */
 
+}
+
+//
+// MARK: - Extensions
+//
+
+extension TimeCircuitsViewController: DatePickerDelegate {
+    func destinationWasChosen(for date: Date) {
+        <#code#>
+    }
+    
+    
 }
