@@ -144,6 +144,9 @@
                                         <date key="date" timeIntervalSinceReferenceDate="-31538263.647320032">
                                             <!--2000-01-01 23:22:16 +0000-->
                                         </date>
+                                        <connections>
+                                            <action selector="gatherTimeWithSender:" destination="nv8-Z4-5Kn" eventType="touchUpOutside" id="OTG-3u-jur"/>
+                                        </connections>
                                     </datePicker>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="177" translatesAutoresizingMaskIntoConstraints="NO" id="868-lw-UKR">
                                         <rect key="frame" x="0.0" y="602" width="364" height="30"/>

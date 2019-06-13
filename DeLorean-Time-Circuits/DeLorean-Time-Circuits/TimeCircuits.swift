@@ -23,10 +23,10 @@ class TimeCircuit {
     
     weak var delegate: TimeCircuitsDelegate?
     var duration: TimeInterval
-    var timeRemaining: TimeInterval {
+    var speed: TimeInterval {
         if let stopDate = stopDate {
-            let timeRemaining = stopDate.timeIntervalSinceNow
-            return timeRemaining
+            let speed = stopDate.timeIntervalSinceNow
+            return speed
         } else {
             return 0
         }
@@ -43,15 +43,15 @@ class TimeCircuit {
             state = .reset
         }
         
-        func start() {
+        func startTimer() {
             // Cancel timer before starting new timer
             cancelTimer()
-            timer = Timer.scheduledTimer(withTimeInterval: 0.03, repeats: true, block: updateTimer(timer:))
+            timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateTimer(timer:))
             stopDate = Date(timeIntervalSinceNow: duration)
             state = .started
         }
         
-        func reset() {
+        func resetTimer() {
             stopDate = nil
             cancelTimer()
             state = .reset
@@ -70,7 +70,7 @@ class TimeCircuit {
                 let currentTime = Date()
                 if currentTime <= stopDate {
                     // Timer is active, keep counting down
-                    delegate?.dateDidUpdate(timeRemaining: timeRemaining)
+//                    delegate?.dateDidUpdate(timeRemaining: )
                     
                 } else {
                     // Timer is finished, reset and stop counting down
