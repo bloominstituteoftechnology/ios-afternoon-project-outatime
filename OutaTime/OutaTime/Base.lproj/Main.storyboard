@@ -120,10 +120,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOM-rB-BG0">
                                         <rect key="frame" x="0.0" y="0.0" width="148" height="30"/>
                                         <state key="normal" title="Set Destination Time"/>
+                                        <connections>
+                                            <action selector="setDestinationTimeButtonPressed:" destination="5Vo-Yv-qZR" eventType="touchUpInside" id="6cy-bF-fWb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aoh-hK-GlE">
                                         <rect key="frame" x="0.0" y="45" width="148" height="30"/>
                                         <state key="normal" title="Travel Back"/>
+                                        <connections>
+                                            <action selector="travelBackButtonPressed:" destination="5Vo-Yv-qZR" eventType="touchUpInside" id="VMZ-ef-lf0"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -142,6 +148,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bU0-IP-cY6"/>
                     </view>
+                    <connections>
+                        <outlet property="destinationTimeLabel" destination="BB6-ZB-URL" id="ku9-rJ-cuV"/>
+                        <outlet property="lastTimeDepartedLabel" destination="l2E-kk-Ry2" id="jPk-NY-0Xc"/>
+                        <outlet property="presentTimeLabel" destination="i8V-wb-Nvu" id="TzJ-Ke-76Z"/>
+                        <outlet property="speedLabel" destination="9rd-QU-vwv" id="lJm-lL-FNZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EyC-sY-zRx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
