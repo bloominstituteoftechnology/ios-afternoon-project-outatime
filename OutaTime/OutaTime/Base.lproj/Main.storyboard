@@ -23,59 +23,81 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="mu3-M9-FOa">
-                                <rect key="frame" x="117" y="104" width="180" height="70"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="86" translatesAutoresizingMaskIntoConstraints="NO" id="qaG-tv-Loi">
+                                <rect key="frame" x="0.0" y="74" width="414" height="531.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="DESTINATION TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zt-IA-LuW">
-                                        <rect key="frame" x="0.0" y="0.0" width="180" height="31.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="JAN 01 2000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prn-P9-no1">
-                                        <rect key="frame" x="0.0" y="33.5" width="180" height="36.5"/>
-                                        <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="40"/>
-                                        <color key="textColor" red="0.74191421270370483" green="0.0089516472071409225" blue="0.001533990609459579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mu3-M9-FOa">
+                                        <rect key="frame" x="117" y="0.0" width="180" height="65"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESTINATION TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zt-IA-LuW">
+                                                <rect key="frame" x="14.5" y="0.0" width="151.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAN 01 2000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prn-P9-no1">
+                                                <rect key="frame" x="0.0" y="28.5" width="180" height="36.5"/>
+                                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="40"/>
+                                                <color key="textColor" red="0.74191421270370483" green="0.0089516472071409225" blue="0.001533990609459579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Oif-by-ptM">
+                                        <rect key="frame" x="120" y="151" width="174" height="65"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRESENT TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14G-fN-Abo">
+                                                <rect key="frame" x="28.5" y="0.0" width="117" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JUN 12, 2019" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tcg-pX-qNz">
+                                                <rect key="frame" x="0.0" y="28.5" width="174" height="36.5"/>
+                                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="40"/>
+                                                <color key="textColor" red="0.064872215537604153" green="0.72396165441354943" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AV5-g3-dyc">
+                                        <rect key="frame" x="120" y="302" width="174" height="65"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAST TIME DEPARTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMI-Y9-eT7">
+                                                <rect key="frame" x="0.0" y="0.0" width="174" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--- -- ----" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWU-Em-PBB">
+                                                <rect key="frame" x="4" y="28.5" width="166" height="36.5"/>
+                                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="40"/>
+                                                <color key="textColor" red="0.78678548861044051" green="0.71745986568538889" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ohJ-hb-nIw">
+                                        <rect key="frame" x="181" y="453" width="52.5" height="78.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPEED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUH-NC-b5v">
+                                                <rect key="frame" x="0.0" y="0.0" width="52.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1Q-56-W4Y">
+                                                <rect key="frame" x="1" y="28.5" width="50" height="50"/>
+                                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="40"/>
+                                                <color key="textColor" red="0.74191421270000002" green="0.0089516472070000006" blue="0.001533990609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Oif-by-ptM">
-                                <rect key="frame" x="120" y="247" width="174" height="70"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="PRESENT TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14G-fN-Abo">
-                                        <rect key="frame" x="0.0" y="0.0" width="174" height="33.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="JUN 12, 2019" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tcg-pX-qNz">
-                                        <rect key="frame" x="0.0" y="33.5" width="174" height="36.5"/>
-                                        <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="40"/>
-                                        <color key="textColor" red="0.064872215537604153" green="0.72396165441354943" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AV5-g3-dyc">
-                                <rect key="frame" x="120" y="413" width="174" height="70"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="LAST TIME DEPARTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMI-Y9-eT7">
-                                        <rect key="frame" x="0.0" y="0.0" width="174" height="33.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="--- -- ----" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWU-Em-PBB">
-                                        <rect key="frame" x="0.0" y="33.5" width="174" height="36.5"/>
-                                        <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="40"/>
-                                        <color key="textColor" red="0.78678548861044051" green="0.71745986568538889" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="lJn-ji-e6T">
-                                <rect key="frame" x="108.5" y="787" width="197" height="70"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lJn-ji-e6T">
+                                <rect key="frame" x="108.5" y="786" width="197" height="76"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adp-cw-grt">
                                         <rect key="frame" x="0.0" y="0.0" width="197" height="34"/>
@@ -86,7 +108,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4D-74-Glm">
-                                        <rect key="frame" x="0.0" y="36" width="197" height="34"/>
+                                        <rect key="frame" x="40.5" y="42" width="116" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="TRAVEL BACK"/>
                                         <connections>
@@ -95,54 +117,22 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ohJ-hb-nIw">
-                                <rect key="frame" x="163.5" y="559" width="87" height="70"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="SPEED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUH-NC-b5v">
-                                        <rect key="frame" x="0.0" y="0.0" width="87" height="33.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0 MPH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1Q-56-W4Y">
-                                        <rect key="frame" x="0.0" y="33.5" width="87" height="36.5"/>
-                                        <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="40"/>
-                                        <color key="textColor" red="0.74191421270000002" green="0.0089516472070000006" blue="0.001533990609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.16423117357832162" green="0.16423117357832162" blue="0.16423117357832162" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Oif-by-ptM" firstAttribute="leading" secondItem="AV5-g3-dyc" secondAttribute="trailing" constant="-174" id="0VG-Qo-9B0"/>
-                            <constraint firstItem="AV5-g3-dyc" firstAttribute="bottom" secondItem="mu3-M9-FOa" secondAttribute="bottom" id="3MS-Y1-PGq"/>
-                            <constraint firstItem="ohJ-hb-nIw" firstAttribute="centerX" secondItem="QQE-Qo-rWU" secondAttribute="centerX" id="4vL-6t-vtH"/>
-                            <constraint firstItem="AV5-g3-dyc" firstAttribute="centerX" secondItem="QQE-Qo-rWU" secondAttribute="centerX" id="9JQ-Xj-7S0"/>
-                            <constraint firstItem="ohJ-hb-nIw" firstAttribute="top" secondItem="mu3-M9-FOa" secondAttribute="top" id="ALL-QS-UDN"/>
-                            <constraint firstItem="lJn-ji-e6T" firstAttribute="centerX" secondItem="QQE-Qo-rWU" secondAttribute="centerX" id="Ara-2h-mHb"/>
-                            <constraint firstItem="ohJ-hb-nIw" firstAttribute="centerX" secondItem="QQE-Qo-rWU" secondAttribute="centerX" id="Bps-M7-KeZ"/>
-                            <constraint firstItem="ohJ-hb-nIw" firstAttribute="bottom" secondItem="mu3-M9-FOa" secondAttribute="bottom" id="EZN-f4-iG7"/>
-                            <constraint firstItem="Oif-by-ptM" firstAttribute="top" secondItem="mu3-M9-FOa" secondAttribute="top" id="Et1-DJ-nSD"/>
-                            <constraint firstItem="lJn-ji-e6T" firstAttribute="centerX" secondItem="QQE-Qo-rWU" secondAttribute="centerX" id="FC2-2b-I0H"/>
-                            <constraint firstItem="lJn-ji-e6T" firstAttribute="bottom" secondItem="mu3-M9-FOa" secondAttribute="bottom" id="Id7-vf-ZRC"/>
-                            <constraint firstItem="AV5-g3-dyc" firstAttribute="leading" secondItem="lJn-ji-e6T" secondAttribute="trailing" constant="-185.5" id="LHk-KJ-IGA"/>
-                            <constraint firstItem="AV5-g3-dyc" firstAttribute="top" secondItem="mu3-M9-FOa" secondAttribute="top" id="V2p-Qn-9B1"/>
-                            <constraint firstItem="mu3-M9-FOa" firstAttribute="centerX" secondItem="QQE-Qo-rWU" secondAttribute="centerX" id="Wcd-H8-nIh"/>
-                            <constraint firstItem="mu3-M9-FOa" firstAttribute="leading" secondItem="Oif-by-ptM" secondAttribute="trailing" constant="-177" id="aEt-GP-Nxf"/>
-                            <constraint firstItem="lJn-ji-e6T" firstAttribute="leading" secondItem="ohJ-hb-nIw" secondAttribute="trailing" constant="-142" id="aTF-Jn-zkH"/>
-                            <constraint firstItem="lJn-ji-e6T" firstAttribute="top" secondItem="mu3-M9-FOa" secondAttribute="top" id="fa8-nU-Ir0"/>
-                            <constraint firstItem="Oif-by-ptM" firstAttribute="centerX" secondItem="QQE-Qo-rWU" secondAttribute="centerX" id="fbF-Ce-0UD"/>
-                            <constraint firstItem="AV5-g3-dyc" firstAttribute="centerX" secondItem="QQE-Qo-rWU" secondAttribute="centerX" id="fu9-Al-Smn"/>
-                            <constraint firstItem="Oif-by-ptM" firstAttribute="bottom" secondItem="mu3-M9-FOa" secondAttribute="bottom" id="kcY-gq-8WC"/>
-                            <constraint firstItem="Oif-by-ptM" firstAttribute="centerX" secondItem="QQE-Qo-rWU" secondAttribute="centerX" id="tov-Wh-O8D"/>
+                            <constraint firstItem="lJn-ji-e6T" firstAttribute="leading" secondItem="8Ge-Z4-MoR" secondAttribute="leading" constant="108.5" id="9Uy-aX-H7w"/>
+                            <constraint firstItem="8Ge-Z4-MoR" firstAttribute="trailing" secondItem="lJn-ji-e6T" secondAttribute="trailing" constant="108.5" id="BcL-3c-ufJ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="lJn-ji-e6T" secondAttribute="bottom" id="G8B-AK-lh0"/>
+                            <constraint firstItem="qaG-tv-Loi" firstAttribute="leading" secondItem="8Ge-Z4-MoR" secondAttribute="leading" id="HhQ-T0-I8J"/>
+                            <constraint firstItem="qaG-tv-Loi" firstAttribute="top" secondItem="8Ge-Z4-MoR" secondAttribute="top" constant="30" id="dcp-WW-nZh"/>
+                            <constraint firstItem="8Ge-Z4-MoR" firstAttribute="trailing" secondItem="qaG-tv-Loi" secondAttribute="trailing" id="hd0-WW-oij"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8Ge-Z4-MoR"/>
                     </view>
                     <connections>
                         <outlet property="destinationTimeLabel" destination="prn-P9-no1" id="yOZ-gA-hUa"/>
                         <outlet property="lastTimeDepartedLabel" destination="tWU-Em-PBB" id="Qp4-6e-qK9"/>
-                        <outlet property="presentTime" destination="Tcg-pX-qNz" id="Mrr-xK-Juo"/>
+                        <outlet property="presentTimeLabel" destination="Tcg-pX-qNz" id="Mrr-xK-Juo"/>
                         <outlet property="speedMPHLabel" destination="c1Q-56-W4Y" id="0YQ-mP-CXm"/>
                     </connections>
                 </viewController>
