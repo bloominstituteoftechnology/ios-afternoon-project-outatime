@@ -117,7 +117,7 @@
                         <outlet property="destinationLabel" destination="xUx-dQ-lSd" id="EBx-qM-8ro"/>
                         <outlet property="lastLabel" destination="1v2-aX-PoF" id="4wr-BZ-IDV"/>
                         <outlet property="presentLabel" destination="EID-ol-5tK" id="Lt3-lN-BDQ"/>
-                        <outlet property="sppedLabel" destination="zye-Eq-y7a" id="biZ-ef-OjV"/>
+                        <outlet property="speedLabel" destination="zye-Eq-y7a" id="biZ-ef-OjV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -132,7 +132,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="gsv-g4-nk1">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="gsv-g4-nk1">
                                 <rect key="frame" x="0.0" y="340" width="414" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="585691264.12976396">
                                     <!--2019-07-24 20:01:04 +0000-->
@@ -149,7 +149,7 @@
                                     <barButtonItem systemItem="flexibleSpace" id="y7R-Gd-DKA"/>
                                     <barButtonItem systemItem="done" id="c6B-dI-fHZ">
                                         <connections>
-                                            <action selector="doneButtonTapped:" destination="RUh-Rn-CCP" id="S2P-qQ-uUI"/>
+                                            <action selector="doneButtonTapped:" destination="RUh-Rn-CCP" id="DC0-7N-qCc"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -168,7 +168,6 @@
                     </view>
                     <connections>
                         <outlet property="datePicker" destination="gsv-g4-nk1" id="dsQ-lg-ob3"/>
-                        <outlet property="doneButtonTapped" destination="Dzs-un-Rwj" id="elD-DW-hvo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uyq-x0-82j" userLabel="First Responder" sceneMemberID="firstResponder"/>
