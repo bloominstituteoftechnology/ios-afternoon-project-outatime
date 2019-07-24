@@ -31,7 +31,32 @@
                     <view key="view" contentMode="scaleToFill" id="JiC-8N-HLV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Yhw-hg-AfM">
+                                <rect key="frame" x="0.0" y="330" width="414" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="585694293.72258103">
+                                    <!--2019-07-24 20:51:33 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTo-1J-2To">
+                                <rect key="frame" x="20" y="832" width="48" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFh-rj-4lR">
+                                <rect key="frame" x="357" y="832" width="37" height="30"/>
+                                <state key="normal" title="Done"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QFh-rj-4lR" firstAttribute="bottom" secondItem="Wvj-An-aGd" secondAttribute="bottom" id="77g-uq-6qA"/>
+                            <constraint firstItem="Yhw-hg-AfM" firstAttribute="top" secondItem="Wvj-An-aGd" secondAttribute="top" constant="286" id="R8B-gn-equ"/>
+                            <constraint firstItem="Wvj-An-aGd" firstAttribute="trailing" secondItem="QFh-rj-4lR" secondAttribute="trailing" constant="20" id="chO-gc-Imt"/>
+                            <constraint firstItem="TTo-1J-2To" firstAttribute="bottom" secondItem="Wvj-An-aGd" secondAttribute="bottom" id="chY-w1-O3Z"/>
+                            <constraint firstItem="TTo-1J-2To" firstAttribute="leading" secondItem="Wvj-An-aGd" secondAttribute="leading" constant="20" id="dAq-8O-CtE"/>
+                            <constraint firstItem="Yhw-hg-AfM" firstAttribute="leading" secondItem="Wvj-An-aGd" secondAttribute="leading" id="kRi-Xv-LvP"/>
+                            <constraint firstItem="Yhw-hg-AfM" firstAttribute="trailing" secondItem="Wvj-An-aGd" secondAttribute="trailing" id="soS-hG-sUd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Wvj-An-aGd"/>
                     </view>
                 </viewController>
@@ -120,15 +145,12 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOM-rB-BG0">
                                         <rect key="frame" x="0.0" y="0.0" width="148" height="30"/>
                                         <state key="normal" title="Set Destination Time"/>
-                                        <connections>
-                                            <action selector="setDestinationTimeButtonPressed:" destination="5Vo-Yv-qZR" eventType="touchUpInside" id="6cy-bF-fWb"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aoh-hK-GlE">
                                         <rect key="frame" x="0.0" y="45" width="148" height="30"/>
                                         <state key="normal" title="Travel Back"/>
                                         <connections>
-                                            <action selector="travelBackButtonPressed:" destination="5Vo-Yv-qZR" eventType="touchUpInside" id="VMZ-ef-lf0"/>
+                                            <action selector="travelBackButtonPressed:" destination="5Vo-Yv-qZR" eventType="touchUpInside" id="UkI-TZ-RrZ"/>
                                         </connections>
                                     </button>
                                 </subviews>
