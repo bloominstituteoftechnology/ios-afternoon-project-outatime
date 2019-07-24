@@ -26,11 +26,17 @@ class TimeCircuitsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        speedLabel.text = "\(currentSpeed) MPH"
+        lastTimeDepartedLabel.text = "--- -- ----"
 
-        // Do any additional setup after loading the view.
     }
     
+    
+    
+    
     @IBAction func travelBackButtonPressed(_ sender: UIButton) {
+
     }
     
     
