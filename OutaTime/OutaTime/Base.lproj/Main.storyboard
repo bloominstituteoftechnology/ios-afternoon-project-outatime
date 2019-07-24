@@ -57,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e3L-Sv-U6G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="340" y="-124"/>
+            <point key="canvasLocation" x="422" y="-125"/>
         </scene>
         <!--Time Circuits View Controller-->
         <scene sceneID="DGW-AD-HaY">
@@ -149,6 +149,7 @@
                                         <state key="normal" title="SET DESTINATION TIME "/>
                                         <connections>
                                             <action selector="setDestinationTime:" destination="Vue-I6-ktZ" eventType="touchUpInside" id="UCf-f0-aAq"/>
+                                            <segue destination="R8f-oy-4oK" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="sUZ-xZ-g6q"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKz-Un-5RK">
