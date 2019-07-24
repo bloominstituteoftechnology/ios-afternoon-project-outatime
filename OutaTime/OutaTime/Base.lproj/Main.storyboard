@@ -76,16 +76,17 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="DESTINATION TIME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLV-rk-xsB">
                                                 <rect key="frame" x="0.0" y="0.0" width="159.5" height="59"/>
                                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="25"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.96862745100000003" green="0.98823529409999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="JAN 01, 2000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZF-2x-8Lm">
                                                 <rect key="frame" x="21.5" y="67" width="116.5" height="23"/>
                                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="25"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
+                                        <color key="tintColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Og8-e2-uql">
                                         <rect key="frame" x="33" y="155" width="126.5" height="54"/>
@@ -93,16 +94,17 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="PRESENT TIME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8t3-nh-C5f">
                                                 <rect key="frame" x="0.0" y="0.0" width="126.5" height="23"/>
                                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="25"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.96862745100000003" green="0.98823529409999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="JUN 12, 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vZ-Tx-Spz">
                                                 <rect key="frame" x="8.5" y="31" width="109" height="23"/>
                                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="25"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.2467074367" green="1" blue="0.16398293329999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
+                                        <color key="tintColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="9SY-yd-QUr">
                                         <rect key="frame" x="0.0" y="274" width="192.5" height="52"/>
@@ -110,18 +112,20 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="LAST TIME DEPARTED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qkp-7b-OsI">
                                                 <rect key="frame" x="0.0" y="0.0" width="192.5" height="23"/>
                                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="25"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.96862745100000003" green="0.98823529409999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="--- -- ----" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6NW-1x-J6s">
                                                 <rect key="frame" x="44" y="29" width="104" height="23"/>
                                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="25"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
+                                        <color key="tintColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </stackView>
                                 </subviews>
+                                <color key="tintColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OVv-ok-aJ0">
                                 <rect key="frame" x="178.5" y="559" width="57.5" height="60"/>
@@ -129,16 +133,17 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="SPEED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2o-bt-H4Y">
                                         <rect key="frame" x="0.0" y="0.0" width="57.5" height="37"/>
                                         <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="25"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.96862745100000003" green="0.98823529409999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0 MPH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIV-tf-hmQ">
                                         <rect key="frame" x="1.5" y="37" width="54.5" height="23"/>
                                         <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="25"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <color key="tintColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tvn-Qr-SJH">
                                 <rect key="frame" x="70" y="755" width="274" height="84"/>
@@ -161,9 +166,10 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <color key="tintColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vjf-Wz-1nq" firstAttribute="bottom" secondItem="OVv-ok-aJ0" secondAttribute="bottom" constant="243" id="40K-qc-xCU"/>
                             <constraint firstItem="vjf-Wz-1nq" firstAttribute="bottom" secondItem="tvn-Qr-SJH" secondAttribute="bottom" constant="23" id="4N6-zd-w6r"/>
