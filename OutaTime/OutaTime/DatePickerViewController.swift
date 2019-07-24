@@ -9,6 +9,9 @@
 import UIKit
 
 class DatePickerViewController: UIViewController {
+    
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +19,12 @@ class DatePickerViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func cancelButtonTapped(_ sender: UIButton) {
+    }
+    
+    @IBAction func doneButtonPressed(_ sender: UIButton) {
+    }
+    
     /*
     // MARK: - Navigation
 
