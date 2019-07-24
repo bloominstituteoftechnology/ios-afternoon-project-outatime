@@ -18,6 +18,7 @@
 /* Begin PBXFileReference section */
 		F5C969C122E9005200308120 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		F5C969C322E9006A00308120 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
+		F5C969C522E901C800308120 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../../digital-7.ttf"; sourceTree = "<group>"; };
 		F5E4BDAC22E8FCBE00AD7880 /* OutaTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutaTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5E4BDAF22E8FCBE00AD7880 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5E4BDB422E8FCBE00AD7880 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,6 +62,7 @@
 				F5C969C122E9005200308120 /* DatePickerViewController.swift */,
 				F5C969C322E9006A00308120 /* TimeCircuitsViewController.swift */,
 				F5E4BDB622E8FCC000AD7880 /* Assets.xcassets */,
+				F5C969C522E901C800308120 /* digital-7.ttf */,
 				F5E4BDB822E8FCC000AD7880 /* LaunchScreen.storyboard */,
 				F5E4BDBB22E8FCC000AD7880 /* Info.plist */,
 			);
