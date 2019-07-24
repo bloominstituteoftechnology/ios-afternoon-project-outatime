@@ -102,6 +102,7 @@
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                 <state key="normal" title="SET DESTINATION TIME"/>
                                                 <connections>
+                                                    <action selector="setDestinationBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zXZ-vU-v3z"/>
                                                     <segue destination="Esg-eF-ubR" kind="presentation" modalPresentationStyle="overCurrentContext" id="jPd-Hb-Pqv"/>
                                                 </connections>
                                             </button>
