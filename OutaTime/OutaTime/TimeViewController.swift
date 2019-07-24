@@ -15,13 +15,28 @@ class TimeViewController: UIViewController {
     @IBOutlet weak var lastTimeDepartedLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
     
+    let currentDate = Date()
+    
+    var currentSpeed = 0
+    
+    var dateFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM dd yyyy"
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        return formatter
+    }
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    presentTimeLabel.text = dateFormatter.string(from: currentDate)
+    speedLabel.text = "\(currentSpeed) MPH"
+    lastTimeDepartedLabel.text = "__ _ ___"
+        
     }
+    
     
     @IBAction func setDestinationTimeButton(_ sender: UIButton) {
     }
