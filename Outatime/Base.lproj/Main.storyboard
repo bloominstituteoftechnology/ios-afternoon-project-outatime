@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="10A-W9-Esf">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -93,6 +93,7 @@
                                         <state key="normal" title="SET DESTINATION TIME"/>
                                         <connections>
                                             <action selector="setDestinationButtonTapped:" destination="10A-W9-Esf" eventType="touchUpInside" id="ZeT-IA-DL2"/>
+                                            <segue destination="eHH-ye-Y3L" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="nnm-0j-WvN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xW1-30-eoe">
@@ -122,7 +123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KpG-eU-VSR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1328" y="-414"/>
+            <point key="canvasLocation" x="1529" y="21"/>
         </scene>
         <!--Date Picker View Controller-->
         <scene sceneID="noc-bu-r9u">
@@ -137,7 +138,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EYg-1Z-LR1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1328" y="416"/>
+            <point key="canvasLocation" x="2390" y="21"/>
         </scene>
     </scenes>
 </document>
