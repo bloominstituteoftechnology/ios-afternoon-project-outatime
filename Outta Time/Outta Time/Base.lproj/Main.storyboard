@@ -35,8 +35,8 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAN 01 2000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Urb-bV-cZD">
-                                                <rect key="frame" x="94.666666666666671" y="34" width="224.66666666666663" height="45.666666666666657"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--- -- ----" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Urb-bV-cZD">
+                                                <rect key="frame" x="103.33333333333333" y="34" width="207.33333333333337" height="45.666666666666657"/>
                                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="50"/>
                                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -102,7 +102,6 @@
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                 <state key="normal" title="SET DESTINATION TIME"/>
                                                 <connections>
-                                                    <action selector="setDestinationBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="itk-6J-g07"/>
                                                     <segue destination="Esg-eF-ubR" kind="presentation" modalPresentationStyle="overCurrentContext" id="jPd-Hb-Pqv"/>
                                                 </connections>
                                             </button>
@@ -137,6 +136,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="197" y="139"/>
         </scene>
         <!--Date PickerVC-->
         <scene sceneID="Vch-Qo-Tcd">
