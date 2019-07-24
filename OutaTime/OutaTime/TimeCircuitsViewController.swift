@@ -26,6 +26,8 @@ class TimeCircuitsViewController: UIViewController {
     
     var timer : Timer?
     
+    var reversing = false
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,23 +61,43 @@ class TimeCircuitsViewController: UIViewController {
     }
     
     func updateSpeed(){
-        if currentSpeed != 88{
+        if currentSpeed != 88 && !reversing{
             currentSpeed += 1
             speedLabel.text = "\(currentSpeed) MPH"
+        }else if currentSpeed != 0 && reversing{
+            currentSpeed -= 1
+            speedLabel.text = "\(currentSpeed) MPH"
+        }else if currentSpeed == 0 && reversing{
+            self.resetTimer()
+            presentLabel.text = lastLabel.text
+            lastLabel.text = "--- -- ----"
+
+            showAlert(newDate: presentLabel.text ?? "")
         }else{
+            self.resetTimer()
             lastLabel.text = presentLabel.text
             presentLabel.text = destinationLabel.text
-            destinationLabel.text = "--- -- ----"
-            currentSpeed = 0
-            resetTimer()
+            
             showAlert(newDate:presentLabel.text ?? "")
         }
     }
     
     func showAlert(newDate: String){
         let alertController = UIAlertController(title: "Time Travel Sucessful", message: "Your new date is \(newDate)", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        let okAction = UIAlertAction(title: "Stay", style: .default) {(action) in
+            self.destinationLabel.text = "--- -- ----"
+            self.reversing = false
+            self.currentSpeed = 0
+        }
+        let reverseAction = UIAlertAction(title: "Reverse", style: .default) { (action) in
+            self.reversing = true
+            self.startTimer()
+        }
         alertController.addAction(okAction)
+        if !reversing{
+           alertController.addAction(reverseAction)
+        }
+        
         present(alertController, animated:  true)
     }
 
