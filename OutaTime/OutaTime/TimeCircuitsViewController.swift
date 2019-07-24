@@ -8,8 +8,6 @@
 
 import UIKit
 
-// TODO: - Set the label that shows the present time on screen to the current date using the date formatter.
-
 class TimeCircuitsViewController: UIViewController {
 	
 	@IBOutlet weak var destinationTime: UILabel!
@@ -50,6 +48,10 @@ class TimeCircuitsViewController: UIViewController {
 	
 	@IBAction func travelBack(_ sender: UIButton) {
 	}
-	
-	
+}
+
+extension TimeCircuitsViewController: DatePickerDelegate {
+	func destinationDateWasChosen(date: Date) {
+		
+	}
 }

@@ -13,6 +13,8 @@ protocol DatePickerDelegate {
 }
 
 class DatePickerViewController: UIViewController {
+	
+	var delegate: DatePickerDelegate?
 
 	@IBOutlet weak var datePicker: UIDatePicker!
 	
@@ -23,8 +25,11 @@ class DatePickerViewController: UIViewController {
 	
 	
 	@IBAction func cancelButtonPressed(_ sender: UIBarButtonItem) {
+		dismiss(animated: true, completion: nil)
 	}
 	@IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
+		delegate?.destinationDateWasChosen(date: datePicker.date)
+		dismiss(animated: true, completion: nil)
 	}
 	
 
