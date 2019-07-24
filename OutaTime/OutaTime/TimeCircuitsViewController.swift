@@ -9,6 +9,13 @@
 import UIKit
 
 class TimeCircuitsViewController: UIViewController {
+	
+	var dateFormatter: DateFormatter {
+		let formatter = DateFormatter()
+		formatter.dateFormat = "MMM d, yy"
+		formatter.timeZone = TimeZone(secondsFromGMT: 0)
+		return formatter
+	}
 
 	@IBOutlet weak var destinationTime: UILabel!
 	@IBOutlet weak var presentTime: UILabel!
