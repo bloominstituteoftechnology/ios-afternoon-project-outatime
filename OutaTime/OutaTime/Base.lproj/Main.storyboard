@@ -22,9 +22,38 @@
                     <view key="view" contentMode="scaleToFill" id="4sR-8q-Yl5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="pmK-zz-srP">
+                                <rect key="frame" x="47" y="340" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="585696833.04690897">
+                                    <!--2019-07-24 21:33:53 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pmK-zz-srP" firstAttribute="centerX" secondItem="4sR-8q-Yl5" secondAttribute="centerX" id="VGg-ek-9E2"/>
+                            <constraint firstItem="pmK-zz-srP" firstAttribute="centerY" secondItem="4sR-8q-Yl5" secondAttribute="centerY" id="jZM-CH-6EO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Dwp-iw-w2S"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Cancel" id="QpR-0A-AUh">
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="R8f-oy-4oK" id="Zs9-Ew-4uK"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="S1P-Jl-aa6"/>
+                        <barButtonItem title="Done" id="nlz-Wy-XGK">
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="R8f-oy-4oK" id="ry1-Fg-xMP"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="datePicker" destination="pmK-zz-srP" id="yrB-Zj-ivH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e3L-Sv-U6G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
