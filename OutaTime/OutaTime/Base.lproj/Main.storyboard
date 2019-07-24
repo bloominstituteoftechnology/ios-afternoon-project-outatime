@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="digital-7.ttf">
+            <string>Digital-7</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Date Picker View Controller-->
         <scene sceneID="p88-sb-eQa">
@@ -34,54 +39,54 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="65" translatesAutoresizingMaskIntoConstraints="NO" id="Bpn-Q2-th2">
-                                <rect key="frame" x="82" y="105" width="250" height="326"/>
+                                <rect key="frame" x="111" y="105" width="192.5" height="326"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="arD-3O-aOY">
-                                        <rect key="frame" x="16" y="0.0" width="218" height="68"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="arD-3O-aOY">
+                                        <rect key="frame" x="16.5" y="0.0" width="159.5" height="90"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESTINATION TIME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLV-rk-xsB">
-                                                <rect key="frame" x="0.0" y="0.0" width="218" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="DESTINATION TIME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLV-rk-xsB">
+                                                <rect key="frame" x="0.0" y="0.0" width="159.5" height="59"/>
+                                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAN 01, 2000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZF-2x-8Lm">
-                                                <rect key="frame" x="34" y="38" width="150.5" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="JAN 01, 2000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZF-2x-8Lm">
+                                                <rect key="frame" x="21.5" y="67" width="116.5" height="23"/>
+                                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Og8-e2-uql">
-                                        <rect key="frame" x="41" y="133" width="168" height="68"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Og8-e2-uql">
+                                        <rect key="frame" x="33" y="155" width="126.5" height="54"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRESENT TIME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8t3-nh-C5f">
-                                                <rect key="frame" x="0.0" y="0.0" width="168" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="PRESENT TIME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8t3-nh-C5f">
+                                                <rect key="frame" x="0.0" y="0.0" width="126.5" height="23"/>
+                                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JUN 12, 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vZ-Tx-Spz">
-                                                <rect key="frame" x="10.5" y="38" width="147.5" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="JUN 12, 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vZ-Tx-Spz">
+                                                <rect key="frame" x="8.5" y="31" width="109" height="23"/>
+                                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9SY-yd-QUr">
-                                        <rect key="frame" x="0.0" y="266" width="250" height="60"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="9SY-yd-QUr">
+                                        <rect key="frame" x="0.0" y="274" width="192.5" height="52"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAST TIME DEPARTED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qkp-7b-OsI">
-                                                <rect key="frame" x="0.0" y="0.0" width="250" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="LAST TIME DEPARTED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qkp-7b-OsI">
+                                                <rect key="frame" x="0.0" y="0.0" width="192.5" height="23"/>
+                                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--- -- ----" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6NW-1x-J6s">
-                                                <rect key="frame" x="69.5" y="30" width="111" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="--- -- ----" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6NW-1x-J6s">
+                                                <rect key="frame" x="44" y="29" width="104" height="23"/>
+                                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -90,17 +95,17 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OVv-ok-aJ0">
-                                <rect key="frame" x="169" y="559" width="76" height="60"/>
+                                <rect key="frame" x="178.5" y="559" width="57.5" height="60"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPEED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2o-bt-H4Y">
-                                        <rect key="frame" x="0.0" y="0.0" width="76" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="SPEED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2o-bt-H4Y">
+                                        <rect key="frame" x="0.0" y="0.0" width="57.5" height="37"/>
+                                        <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 MPH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIV-tf-hmQ">
-                                        <rect key="frame" x="0.5" y="30" width="75" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0 MPH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIV-tf-hmQ">
+                                        <rect key="frame" x="1.5" y="37" width="54.5" height="23"/>
+                                        <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -113,11 +118,17 @@
                                         <rect key="frame" x="0.0" y="0.0" width="274" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="SET DESTINATION TIME "/>
+                                        <connections>
+                                            <action selector="setDestinationTime:" destination="Vue-I6-ktZ" eventType="touchUpInside" id="UCf-f0-aAq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKz-Un-5RK">
                                         <rect key="frame" x="57.5" y="42" width="159" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="TRAVEL BACK"/>
+                                        <connections>
+                                            <action selector="travelBack:" destination="Vue-I6-ktZ" eventType="touchUpInside" id="fmv-P6-x3z"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -136,6 +147,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vjf-Wz-1nq"/>
                     </view>
+                    <connections>
+                        <outlet property="destinationTime" destination="mZF-2x-8Lm" id="iAH-hq-i54"/>
+                        <outlet property="lastTimeDeparted" destination="6NW-1x-J6s" id="xB7-6z-w9c"/>
+                        <outlet property="presentTime" destination="3vZ-Tx-Spz" id="dLc-hH-cz4"/>
+                        <outlet property="speed" destination="mIV-tf-hmQ" id="sBG-XC-AnZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hg3-7V-dkc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
