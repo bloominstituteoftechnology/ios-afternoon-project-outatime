@@ -83,85 +83,91 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sOL-uL-u8N">
-                                <rect key="frame" x="0.0" y="64" width="394" height="472"/>
+                                <rect key="frame" x="0.0" y="64" width="394" height="482.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOz-9b-MTU">
-                                        <rect key="frame" x="124" y="0.0" width="146.5" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="123" y="0.0" width="148" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="20"/>
+                                        <color key="textColor" red="0.2822850335" green="0.7085536818" blue="0.97456933229999998" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MON  00  0000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BB6-ZB-URL">
-                                        <rect key="frame" x="27" y="32" width="340.5" height="120"/>
+                                        <rect key="frame" x="40.5" y="35.5" width="313.5" height="120"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="120" id="Icf-Sq-HHR"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="40"/>
+                                        <color key="textColor" red="1" green="0.53831825740000006" blue="0.04602216009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Present Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0W-MN-Tp0">
-                                        <rect key="frame" x="140" y="160" width="114" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="138.5" y="163.5" width="117" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="20"/>
+                                        <color key="textColor" red="0.2822850335" green="0.7085536818" blue="0.97456933229999998" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MON  00  0000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i8V-wb-Nvu">
-                                        <rect key="frame" x="27" y="192" width="340.5" height="120"/>
+                                        <rect key="frame" x="40.5" y="199" width="313.5" height="120"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="120" id="Rdq-kZ-2qR"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="40"/>
+                                        <color key="textColor" red="1" green="0.53831825740000006" blue="0.04602216009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Time Departed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2G-dX-fS6">
-                                        <rect key="frame" x="112" y="320" width="170.5" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="111" y="327" width="172.5" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="20"/>
+                                        <color key="textColor" red="0.2822850335" green="0.7085536818" blue="0.97456933229999998" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_ _ _  _ _  _ _ _ _" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2E-kk-Ry2">
-                                        <rect key="frame" x="51.5" y="352" width="291" height="120"/>
+                                        <rect key="frame" x="25.5" y="362.5" width="343.5" height="120"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="120" id="tLb-QU-sYA"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
+                                        <color key="textColor" red="1" green="0.53831825740000006" blue="0.04602216009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="mTM-ma-OMr">
-                                <rect key="frame" x="133" y="586" width="148" height="101.5"/>
+                                <rect key="frame" x="133" y="596.5" width="148" height="97"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88m-pj-ZO7">
-                                        <rect key="frame" x="49.5" y="0.0" width="49.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="30.5" y="0.0" width="87" height="41"/>
+                                        <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="30"/>
+                                        <color key="textColor" red="0.2822850335" green="0.7085536818" blue="0.97456933229999998" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 MPH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rd-QU-vwv">
-                                        <rect key="frame" x="0.0" y="41.5" width="148" height="60"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="29" y="62" width="90.5" height="35"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
+                                        <color key="textColor" red="1" green="0.53831825740000006" blue="0.04602216009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ORf-DG-SC8">
-                                <rect key="frame" x="133" y="767" width="148" height="75"/>
+                                <rect key="frame" x="133" y="752" width="148" height="90"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOM-rB-BG0">
                                         <rect key="frame" x="0.0" y="0.0" width="148" height="30"/>
-                                        <state key="normal" title="Set Destination Time"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="Set Destination Time">
+                                            <color key="titleColor" red="0.01056021656" green="1" blue="0.067456928040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <segue destination="IVb-8v-bfJ" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="xKU-tv-qOL"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aoh-hK-GlE">
-                                        <rect key="frame" x="0.0" y="45" width="148" height="30"/>
-                                        <state key="normal" title="Travel Back"/>
+                                        <rect key="frame" x="0.0" y="45" width="148" height="45"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                        <state key="normal" title="Travel Back">
+                                            <color key="titleColor" red="1" green="0.2089615926" blue="0.001844354242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="travelBackButtonPressed:" destination="5Vo-Yv-qZR" eventType="touchUpInside" id="UkI-TZ-RrZ"/>
                                         </connections>
@@ -169,7 +175,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.20132382074400268" green="0.21519526768505809" blue="0.3333333432674408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="sOL-uL-u8N" firstAttribute="leading" secondItem="bU0-IP-cY6" secondAttribute="leading" constant="0.20000000000000001" id="07y-f2-Rya"/>
                             <constraint firstItem="bU0-IP-cY6" firstAttribute="bottom" secondItem="ORf-DG-SC8" secondAttribute="bottom" constant="20" id="1HK-jc-4hu"/>

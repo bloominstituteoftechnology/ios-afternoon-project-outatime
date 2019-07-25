@@ -11,9 +11,13 @@ import UIKit
 class TimeCircuitsViewController: UIViewController {
     
     @IBOutlet weak var destinationTimeLabel: UILabel!
-    @IBOutlet weak var presentTimeLabel: DateFormatter!
+    @IBOutlet weak var presentTimeLabel: UILabel!
     @IBOutlet weak var lastTimeDepartedLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
+    
+    let currentDate = Date()
+    
+    var timer: Timer?
     
     var currentSpeed = 0
     
@@ -23,51 +27,74 @@ class TimeCircuitsViewController: UIViewController {
         formatter.timeZone = TimeZone(secondsFromGMT: 0)
         return formatter
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        presentTimeLabel.text = dateFormatter.string(from: currentDate)
         
         speedLabel.text = "\(currentSpeed) MPH"
         lastTimeDepartedLabel.text = "--- -- ----"
         // TODO: set destinationTimeLabel with data from formatter object
         destinationTimeLabel.text = ""
-
+        
     }
     
     
     
     
     @IBAction func travelBackButtonPressed(_ sender: UIButton) {
-        func startTimer() {
-            
-            
-            func updateSpeed() {
-                
+        startTimer()
+    }
+    
+    func startTimer() {
+        resetTimer()
+        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateSpeed(timer:))
+    }
+    
+    
+    func resetTimer() {
+        timer?.invalidate()
+        timer = nil
+    }
+    
+    func updateSpeed(timer: Timer) {
+        if currentSpeed <= 87 {
+            currentSpeed += 1
+            speedLabel.text = String(currentSpeed)
+        } else {
+            resetTimer()
+            lastTimeDepartedLabel.text = presentTimeLabel.text
+            presentTimeLabel.text = destinationTimeLabel.text
+            currentSpeed = 0
+            let alert = UIAlertController(title: "Timer Travel Successful!", message: "Your new date is \(presentTimeLabel.text ?? "")", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ModalDestinationDatePickerSegue" {
+            if let DatePickerVC = segue.destination as? DatePickerViewController {
+                DatePickerVC.delegate = self
             }
+            
         }
         
-        func resetTimer() {
-            
-        }
-      
     }
     
-
-    
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        DatePickerDelegate = self
-
-    }
-    
-
 }
 
-extension TimeCircuitsViewController: DatePickerViewDelegate {
-    // TODO: add function probably
-    func placeHodler() {
-    
+
+
+
+
+
+
+extension TimeCircuitsViewController: DatePickerDelegate {
+    func destinationDateWasChosen(date: Date) {
+        destinationTimeLabel.text = dateFormatter.string(from: date)
     }
+    
+    
 }
