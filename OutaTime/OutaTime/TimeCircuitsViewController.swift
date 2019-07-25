@@ -40,13 +40,16 @@ class TimeCircuitsViewController: UIViewController {
     @IBAction func travelBackButtonPressed(_ sender: UIButton) {
         func startTimer() {
             
+            
+            func updateSpeed() {
+                
+            }
         }
+        
         func resetTimer() {
             
         }
-        func updateSpeed() {
-            
-        }
+      
     }
     
 
@@ -55,7 +58,7 @@ class TimeCircuitsViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        DatePickerViewController
+        DatePickerDelegate = self
 
     }
     
