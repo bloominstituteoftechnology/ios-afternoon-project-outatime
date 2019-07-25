@@ -29,6 +29,7 @@
                                         </state>
                                         <connections>
                                             <action selector="setDestinationTimeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M9H-0N-w3B"/>
+                                            <segue destination="NtQ-n2-89A" kind="show" identifier="setDestinationTimeSegue" id="9gz-5K-rND"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCj-La-Ivp">
@@ -184,7 +185,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xD1-9l-QvH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1361" y="21"/>
+            <point key="canvasLocation" x="845" y="21"/>
         </scene>
     </scenes>
 </document>
