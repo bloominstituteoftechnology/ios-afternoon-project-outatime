@@ -29,30 +29,48 @@ class TimeCircuitsViewController: UIViewController {
         dateFormatter.timeZone = TimeZone(abbreviation: "MT")
         return dateFormatter
     }()
-    
-    
     var currentSpeed = 0
+    var timer: Timer?
+    var dateSelected: Date?
     // MARK: - Actions
     
-    @IBAction func setDestinationTImeTapped(_ sender: UIButton) {
-    }
+  
     @IBAction func travelBackTapped(_ sender: UIButton) {
         startTimer()
     }
+
     func updateSpeed() {
+        if currentSpeed != 88 {
         while currentSpeed <= 88 {
             currentSpeed += 1
             speedLabel.text = "\(currentSpeed) MPH"
+            if currentSpeed == 88 {
+                resetTimer()
+                lastTimeDeparted.text = presentTimeLabel.text
+                presentTimeLabel.text = destinationTimeLabel.text
+                currentSpeed = 0
+            }
+        }
         }
     }
     func startTimer() {
-       
+        let timer = Timer.scheduledTimer(withTimeInterval: 12.0, repeats: false) {timer in }
+        updateSpeed()
     }
-    
+    func resetTimer() {
+        dateSelected = nil
+        cancelTimer()
+    }
+    func cancelTimer() {
+        timer?.invalidate()
+        timer = nil
+    }
+    @objc func fireTimer() {
+    }
 }
 extension TimeCircuitsViewController: DatePickerDelegate {
     func destinationDateWasChosen(_ date: Date) {
-    
+        destinationTimeLabel.text = dateFormatter.string(from: date)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -64,9 +82,10 @@ extension TimeCircuitsViewController: DatePickerDelegate {
 }
 extension TimeCircuitsViewController {
     func CreateActionAlerts() -> UIAlertController {
-        let alert = UIAlertController(title:"Time Travel Succesful", message: "Your new date is \(presentTimeLabel.text)", preferredStyle: .alert)
+        let alert = UIAlertController(title:"Time Travel Succesful", message: "Your new date is \(String(describing: presentTimeLabel.text))", preferredStyle: .alert)
          alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
         present(alert,animated: true)
         return alert
     }
 }
+

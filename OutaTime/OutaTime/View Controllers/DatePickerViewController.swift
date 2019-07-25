@@ -18,6 +18,7 @@ class DatePickerViewController: UIViewController {
 
     @IBOutlet weak var datePicker: UIDatePicker!
     
+    
      //MARK: Actions
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +35,7 @@ class DatePickerViewController: UIViewController {
 }
 extension DatePickerViewController: DatePickerDelegate {
     func destinationDateWasChosen(_ date: Date) {
-    let selectedDate = date
+    
         
     }
 }
