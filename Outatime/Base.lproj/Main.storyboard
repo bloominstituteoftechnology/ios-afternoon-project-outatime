@@ -15,20 +15,6 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Outatime" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
         <!--Time Circuits View Controller-->
         <scene sceneID="moq-Kw-IAZ">
             <objects>
@@ -125,16 +111,52 @@
             </objects>
             <point key="canvasLocation" x="1529" y="21"/>
         </scene>
-        <!--Date Picker View Controller-->
+        <!--Title-->
         <scene sceneID="noc-bu-r9u">
             <objects>
                 <viewController id="eHH-ye-Y3L" customClass="DatePickerViewController" customModule="Outatime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ucX-7O-kAO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xd6-DA-7ET">
+                                <rect key="frame" x="0.0" y="769" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="cancel" id="f2Q-Uo-vEX">
+                                        <connections>
+                                            <action selector="cancelButtonTapped:" destination="eHH-ye-Y3L" id="NzL-Nk-iBL"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="280" style="plain" systemItem="fixedSpace" id="Bwu-Uv-BE9"/>
+                                    <barButtonItem systemItem="done" id="HCO-8u-64x">
+                                        <connections>
+                                            <action selector="doneButtonTapped:" destination="eHH-ye-Y3L" id="JcY-bA-IFR"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="4Ym-sV-FPk">
+                                <rect key="frame" x="0.0" y="340" width="414" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="585705083.80858803">
+                                    <!--2019-07-24 23:51:23 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4Ym-sV-FPk" firstAttribute="centerY" secondItem="ucX-7O-kAO" secondAttribute="centerY" id="6UZ-7v-j8O"/>
+                            <constraint firstItem="4Ym-sV-FPk" firstAttribute="trailing" secondItem="mHu-ht-vq8" secondAttribute="trailing" id="7yb-qN-rv0"/>
+                            <constraint firstItem="4Ym-sV-FPk" firstAttribute="leading" secondItem="mHu-ht-vq8" secondAttribute="leading" id="oKf-bF-cr4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="mHu-ht-vq8"/>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="GFh-WQ-YD1"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="datePicker" destination="4Ym-sV-FPk" id="2G4-T4-peh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EYg-1Z-LR1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

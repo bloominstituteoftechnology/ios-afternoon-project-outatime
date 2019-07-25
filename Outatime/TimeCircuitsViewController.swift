@@ -51,4 +51,25 @@ class TimeCircuitsViewController: UIViewController {
     @IBAction func travelBackButtonTapped(_ sender: Any) {
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        #warning("Will this work? Hmmm.")
+        if let destination = segue.destination as? DatePickerViewController {
+            destination.delegate = self
+        }
+        
+        
+    }
+    
 }
+
+extension TimeCircuitsViewController: DatePickerDelegate {
+    
+    #warning("Not sure if this is correct.")
+    func destinationDateWasChosen(date: Date) {
+        print("Hello")
+        destinationTime.text = dateFormatter.string(from: date)
+    }
+}
+
+
