@@ -17,8 +17,8 @@ class TimeCircuitsViewController: UIViewController {
 	
 	var dateFormatter: DateFormatter {
 		let formatter = DateFormatter()
-		formatter.dateFormat = "MMM d, yy"
-		formatter.timeZone = TimeZone(secondsFromGMT: 0)
+		formatter.dateFormat = "MMM dd yyyy"
+		formatter.timeZone = TimeZone(secondsFromGMT: -28000)
 		return formatter
 	}
 
@@ -66,12 +66,12 @@ class TimeCircuitsViewController: UIViewController {
 			self.resetTimer()
 			presentTime.text = lastTimeDeparted.text
 			lastTimeDeparted.text = "--- -- ----"
-			
 			showAlert(newDate: presentTime.text ?? "")
 		} else {
 			self.resetTimer()
 			lastTimeDeparted.text = presentTime.text
 			presentTime.text = destinationTime.text
+			showAlert(newDate: presentTime.text ?? "")
 		}
 	}
 	
