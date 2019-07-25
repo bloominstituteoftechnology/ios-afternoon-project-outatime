@@ -23,6 +23,8 @@ class TimeCircuitsViewController: UIViewController {
 	}
 
 	var currentSpeed: Int = 0
+	var timer: Timer?
+	var reversing: Bool = false
 	
 	
 	override func viewDidLoad() {
@@ -37,16 +39,63 @@ class TimeCircuitsViewController: UIViewController {
 	
 	//MARK: - Methods
 	
-//	private func updateSpeed() {
-//		switch speed {
-//		case currentSpeed != 88 :
-//			<#code#>
-//		default:
-//			<#code#>
-//		}
-//	}
+	
+	func startTimer() {
+		timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { (timer) in
+			self.updateSpeed()
+		}
+	}
+	
+	func resetTimer() {
+		timer?.invalidate()
+		timer = nil
+	}
 	
 	@IBAction func travelBack(_ sender: UIButton) {
+		startTimer()
+	}
+	
+	func updateSpeed() {
+		if currentSpeed != 88 && !reversing {
+			currentSpeed += 1
+			speed.text = "\(currentSpeed) MPH"
+		} else if currentSpeed != 0 && reversing {
+			currentSpeed -= 1
+			speed.text = "\(currentSpeed) MPH"
+		} else if currentSpeed == 0 && reversing {
+			self.resetTimer()
+			presentTime.text = lastTimeDeparted.text
+			lastTimeDeparted.text = "--- -- ----"
+			
+			showAlert(newDate: presentTime.text ?? "")
+		} else {
+			self.resetTimer()
+			lastTimeDeparted.text = presentTime.text
+			presentTime.text = destinationTime.text
+		}
+	}
+	
+	func showAlert(newDate: String) {
+		
+		let alertController = UIAlertController(title: "Time travel was sucessful! :-)", message: "The date is now \(newDate)", preferredStyle: .alert)
+		let okAction = UIAlertAction(title: "Stay", style: .default) {(action) in
+			self.destinationTime.text = "--- -- ----"
+			self.reversing = false
+			self.currentSpeed = 0
+		}
+		
+		let reverseAction = UIAlertAction(title: "Reverse Time", style: .default) { (action) in
+			self.reversing = true
+			self.startTimer()
+		}
+		
+		alertController.addAction(okAction)
+		if !reversing{
+			alertController.addAction(reverseAction)
+		}
+		
+		present(alertController, animated:  true)
+	
 	}
 	
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -61,6 +110,6 @@ class TimeCircuitsViewController: UIViewController {
 
 extension TimeCircuitsViewController: DatePickerDelegate {
 	func destinationDateWasChosen(date: Date) {
-		
+		destinationTime.text = dateFormatter.string(from: date)
 	}
 }
