@@ -15,6 +15,7 @@ class DatePickerViewController: UIViewController {
 
     //MARK: Properties
     var delegate: DatePickerDelegate?
+
     @IBOutlet weak var datePicker: UIDatePicker!
     
      //MARK: Actions
@@ -26,16 +27,14 @@ class DatePickerViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     @IBAction func doneButtonTapped(_ sender: UIBarButtonItem) {
-        guard let date = datePicker else {return }
-       // delegate?.destinationDateWasChosen(date)
+        guard let delegate = delegate else {return}
+        delegate.destinationDateWasChosen(datePicker.date)
         dismiss(animated: true, completion: nil)
     }
-    
 }
-
 extension DatePickerViewController: DatePickerDelegate {
     func destinationDateWasChosen(_ date: Date) {
-       let selectedDate = date
+    let selectedDate = date
         
     }
 }

@@ -37,6 +37,7 @@ class TimeCircuitsViewController: UIViewController {
     @IBAction func setDestinationTImeTapped(_ sender: UIButton) {
     }
     @IBAction func travelBackTapped(_ sender: UIButton) {
+        startTimer()
     }
     func updateSpeed() {
         while currentSpeed <= 88 {
@@ -45,7 +46,7 @@ class TimeCircuitsViewController: UIViewController {
         }
     }
     func startTimer() {
-       timer = Timer(fire: <#T##Date#>, interval: 12.0, repeats: false, block: nil)
+       
     }
     
 }

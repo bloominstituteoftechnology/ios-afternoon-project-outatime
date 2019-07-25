@@ -148,7 +148,7 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZM6-96-euR">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZM6-96-euR">
                                 <rect key="frame" x="47" y="340" width="320" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="585702514.98725295">
                                     <!--2019-07-24 23:08:34 +0000-->
@@ -169,7 +169,7 @@
                         <viewLayoutGuide key="safeArea" id="h9Y-kO-gIS"/>
                     </view>
                     <connections>
-                        <outlet property="datePicker" destination="ZM6-96-euR" id="pfG-ij-1z6"/>
+                        <outlet property="datePicker" destination="ZM6-96-euR" id="o2f-lQ-oGy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C1G-3D-5Pn" userLabel="First Responder" sceneMemberID="firstResponder"/>
