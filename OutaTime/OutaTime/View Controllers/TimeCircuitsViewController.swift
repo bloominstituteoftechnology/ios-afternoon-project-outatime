@@ -39,35 +39,41 @@ class TimeCircuitsViewController: UIViewController {
         startTimer()
     }
 
-    func updateSpeed() {
-        if currentSpeed != 88 {
-        while currentSpeed <= 88 {
-            currentSpeed += 1
-            speedLabel.text = "\(currentSpeed) MPH"
-            if currentSpeed == 88 {
-                resetTimer()
+        func updateSpeed(timer: Timer) {
+            
+            if currentSpeed != 88 {
+                currentSpeed += 1
+                speedLabel.text = "\(currentSpeed) MPH"
+            } else {
                 lastTimeDeparted.text = presentTimeLabel.text
                 presentTimeLabel.text = destinationTimeLabel.text
-                currentSpeed = 0
+                cancelTimer()
+                resetTimer()
             }
-        }
-        }
+
     }
+    
+    
     func startTimer() {
-        let timer = Timer.scheduledTimer(withTimeInterval: 12.0, repeats: false) {timer in }
-        updateSpeed()
-    }
+       let timer = Timer.scheduledTimer(withTimeInterval: 0.10, repeats: true, block: updateSpeed(timer:))
+        updateSpeed(timer: timer)
+            }
+    
     func resetTimer() {
+        currentSpeed = 0
         dateSelected = nil
-        cancelTimer()
-    }
+            }
+    
     func cancelTimer() {
-        timer?.invalidate()
         timer = nil
+    timer?.invalidate()
+       
     }
-    @objc func fireTimer() {
-    }
+ 
+  
 }
+
+
 extension TimeCircuitsViewController: DatePickerDelegate {
     func destinationDateWasChosen(_ date: Date) {
         destinationTimeLabel.text = dateFormatter.string(from: date)
