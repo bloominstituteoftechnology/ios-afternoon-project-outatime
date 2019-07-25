@@ -29,6 +29,8 @@ class TimeCircuitsViewController: UIViewController {
         
         speedLabel.text = "\(currentSpeed) MPH"
         lastTimeDepartedLabel.text = "--- -- ----"
+        // TODO: set destinationTimeLabel with data from formatter object
+        destinationTimeLabel.text = ""
 
     }
     
@@ -36,19 +38,33 @@ class TimeCircuitsViewController: UIViewController {
     
     
     @IBAction func travelBackButtonPressed(_ sender: UIButton) {
-
+        func startTimer() {
+            
+        }
+        func resetTimer() {
+            
+        }
+        func updateSpeed() {
+            
+        }
     }
     
-    
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        DatePickerViewController
 
+    }
+    
+
+}
+
+extension TimeCircuitsViewController: DatePickerViewDelegate {
+    // TODO: add function probably
+    func placeHodler() {
+    
+    }
 }
