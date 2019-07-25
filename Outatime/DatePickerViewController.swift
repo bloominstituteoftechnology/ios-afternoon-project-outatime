@@ -32,7 +32,7 @@ class DatePickerViewController: UIViewController {
     
     @IBAction func doneButtonTapped(_ sender: Any) {
         delegate?.destinationDateWasChosen(date: datePicker.date)
-        print(datePicker.date)
+        print(datePicker.date) // Just to test
         dismiss(animated: true, completion: nil)
     }
     
