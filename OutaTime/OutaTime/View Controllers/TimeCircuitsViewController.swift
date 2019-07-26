@@ -49,14 +49,19 @@ class TimeCircuitsViewController: UIViewController {
                 presentTimeLabel.text = destinationTimeLabel.text
                 cancelTimer()
                 resetTimer()
+                speedLabel.text = "\(currentSpeed) MPH"
+                let alert = UIAlertController(title:"Time Travel Succesful", message: "Your new date is \(presentTimeLabel.text!)", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
+                present(alert,animated: true)
             }
 
     }
     
     
     func startTimer() {
-       let timer = Timer.scheduledTimer(withTimeInterval: 0.10, repeats: true, block: updateSpeed(timer:))
-        updateSpeed(timer: timer)
+     //   guard let timer = timer else {return}
+    timer = Timer.scheduledTimer(withTimeInterval: 0.10, repeats: true, block: updateSpeed(timer:))
+        
             }
     
     func resetTimer() {
@@ -65,8 +70,8 @@ class TimeCircuitsViewController: UIViewController {
             }
     
     func cancelTimer() {
-        timer = nil
     timer?.invalidate()
+        timer = nil
        
     }
  
@@ -88,7 +93,8 @@ extension TimeCircuitsViewController: DatePickerDelegate {
 }
 extension TimeCircuitsViewController {
     func CreateActionAlerts() -> UIAlertController {
-        let alert = UIAlertController(title:"Time Travel Succesful", message: "Your new date is \(String(describing: presentTimeLabel.text))", preferredStyle: .alert)
+        
+        let alert = UIAlertController(title:"Time Travel Succesful", message: "Your new date is \(presentTimeLabel.text!)", preferredStyle: .alert)
          alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
         present(alert,animated: true)
         return alert
