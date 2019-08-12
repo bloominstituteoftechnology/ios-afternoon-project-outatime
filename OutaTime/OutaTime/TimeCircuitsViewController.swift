@@ -16,11 +16,13 @@ class TimeCircuitsViewController: UIViewController {
     @IBOutlet weak var speedLabel: UILabel!
     
     var dateFormatter: DateFormatter {
-        self.dateFormatter.dateStyle = .medium
-        return self.dateFormatter
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM d, yyyy"
+        return formatter
     }
     
     var currentSpeed = 0
+    var timer: Timer?
     
     let currentDate = Date()
 
@@ -44,13 +46,15 @@ class TimeCircuitsViewController: UIViewController {
     }
     
     func startTimer() {
-        let timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: false) { (timer) in
+        resetTimer()
+        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { (timer) in
             self.updateSpeed()
-        }
+        })
     }
     
     func resetTimer() {
-        
+        timer?.invalidate()
+        timer = nil
     }
     
     func updateSpeed() {
@@ -67,7 +71,7 @@ class TimeCircuitsViewController: UIViewController {
     }
     
     func presentAlert() {
-        let alert = UIAlertController(title: "Time Travel Successful", message: "You're new date is \(destinationTimeLabel.text)", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Time Travel Successful", message: "You're new date is \(destinationTimeLabel.text ?? "")", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(okAction)
         present(alert, animated: true, completion: nil)
