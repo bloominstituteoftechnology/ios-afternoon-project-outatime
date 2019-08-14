@@ -19,11 +19,14 @@ class TimeCircuitsViewController: UIViewController {
     var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "MMM dd yyyy"
-        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        //formatter.timeZone = TimeZone(secondsFromGMT: -5)
         return formatter
     }()
     
     var speed = 0
+    private var timer: Timer?
+    private var stopDate: Date?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,12 +45,11 @@ class TimeCircuitsViewController: UIViewController {
                 datePickerVC.delegate = self
             }
         }
-     
-     }
-    
-    @IBAction func travelBackTapped(_ sender: Any) {
     }
     
+    @IBAction func travelBackTapped(_ sender: Any) {
+        startTimer()
+    }
 }
 
 extension TimeCircuitsViewController: DatePickerDelegate {
@@ -55,6 +57,48 @@ extension TimeCircuitsViewController: DatePickerDelegate {
         destinationTimeLabel.text = dateFormatter.string(from: date)
     
     }
+}
+
+// timing methods
+extension TimeCircuitsViewController {
     
+    func startTimer() {
+        // Cancel timer before starting new timer
+        cancelTimer()
+        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateSpeed(timer:))
+    }
     
+    func resetTimer() {
+        stopDate = nil
+        cancelTimer()
+        //state = .reset
+    }
+    
+    func cancelTimer() {
+        // We must invalidate a timer, or it will continue to run even if we
+        // start a new timer
+        timer?.invalidate()
+        timer = nil
+    }
+    private func showAlert() {
+        guard let destination = destinationTimeLabel.text else { return }
+        let alert = UIAlertController(title: "Time Travel Successful!", message: "Your new date is \(destination)", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        self.present(alert, animated: true)
+    }
+    
+    // called each time the timer object fires
+    private func updateSpeed(timer: Timer) {
+        
+        if speed < 88, speed >= 0 {
+            speed += 1
+            speedLabel.text = "\(speed) MPH"
+        } else {
+            cancelTimer()
+            lastTimeLabel.text = presentTimeLabel.text
+            presentTimeLabel.text = destinationTimeLabel.text
+            speed = 0
+            showAlert()
+        }
+    }
 }
