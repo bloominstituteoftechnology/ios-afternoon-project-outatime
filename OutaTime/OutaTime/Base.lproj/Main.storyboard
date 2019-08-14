@@ -101,11 +101,17 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="72.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="SET DESTINATION TIME"/>
+                                                <connections>
+                                                    <segue destination="bcU-G5-wgE" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="4eJ-eC-XQW"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNZ-ER-4HO">
                                                 <rect key="frame" x="0.0" y="42.5" width="374" height="73"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="TRAVEL BACK"/>
+                                                <connections>
+                                                    <action selector="travelBackTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fze-Lm-psu"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -121,6 +127,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="lblCurrentSpeed" destination="8hB-mf-Yp2" id="ve0-va-w32"/>
+                        <outlet property="lblDestinationDate" destination="kj1-y0-CQc" id="xPU-4n-uic"/>
+                        <outlet property="lblLastDepartedDate" destination="SB1-on-vpf" id="GPQ-AJ-POX"/>
+                        <outlet property="lblPresentDate" destination="4hj-3K-ojX" id="FjY-x4-oYr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -133,9 +145,38 @@
                     <view key="view" contentMode="scaleToFill" id="j6P-hh-JEM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ksC-v5-5JT">
+                                <rect key="frame" x="0.0" y="340" width="414" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="587441634.98141694">
+                                    <!--2019-08-14 02:13:54 +0000-->
+                                </date>
+                            </datePicker>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4wf-AL-r5n">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="cancel" id="KuC-rw-hSz">
+                                        <connections>
+                                            <action selector="cancelTapped:" destination="bcU-G5-wgE" id="eC8-7k-lHH"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="PnO-Pp-GVO"/>
+                                    <barButtonItem systemItem="done" id="prK-78-cdw">
+                                        <connections>
+                                            <action selector="doneTapped:" destination="bcU-G5-wgE" id="eDh-H8-f3K"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="OWF-RZ-VDv"/>
                     </view>
+                    <connections>
+                        <outlet property="pkrDate" destination="ksC-v5-5JT" id="nMe-C1-HFq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZrA-34-5o6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

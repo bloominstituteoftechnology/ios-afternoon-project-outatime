@@ -10,6 +10,12 @@ import UIKit
 
 class TimeCircuitsViewController: UIViewController {
 
+    @IBOutlet weak var lblDestinationDate: UILabel!
+    @IBOutlet weak var lblPresentDate: UILabel!
+    @IBOutlet weak var lblLastDepartedDate: UILabel!
+    @IBOutlet weak var lblCurrentSpeed: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,4 +33,6 @@ class TimeCircuitsViewController: UIViewController {
     }
     */
 
+    @IBAction func travelBackTapped(_ sender: Any) {
+    }
 }
