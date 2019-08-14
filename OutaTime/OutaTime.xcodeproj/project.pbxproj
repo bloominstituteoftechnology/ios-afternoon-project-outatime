@@ -27,7 +27,7 @@
 		F3967274230264C900D3B672 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
 		F3967276230264D400D3B672 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		F39672782303A70A00D3B672 /* DatePickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerDelegate.swift; sourceTree = "<group>"; };
-		F3B5E0232303B69900A24BCE /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../../digital-7.ttf"; sourceTree = "<group>"; };
+		F3B5E0232303B69900A24BCE /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +60,49 @@
 		F3967261230264A400D3B672 /* OutaTime */ = {
 			isa = PBXGroup;
 			children = (
+				F3B5E0282303BAB500A24BCE /* Fonts */,
+				F3B5E0272303BA9700A24BCE /* Controller */,
+				F3B5E0262303BA9100A24BCE /* View */,
+				F3B5E0252303BA8200A24BCE /* Model */,
 				F3967262230264A400D3B672 /* AppDelegate.swift */,
 				F3967266230264A400D3B672 /* Main.storyboard */,
 				F3967269230264A500D3B672 /* Assets.xcassets */,
 				F396726B230264A500D3B672 /* LaunchScreen.storyboard */,
 				F396726E230264A500D3B672 /* Info.plist */,
-				F3B5E0232303B69900A24BCE /* digital-7.ttf */,
-				F3967274230264C900D3B672 /* TimeCircuitsViewController.swift */,
-				F3967276230264D400D3B672 /* DatePickerViewController.swift */,
-				F39672782303A70A00D3B672 /* DatePickerDelegate.swift */,
 			);
 			path = OutaTime;
+			sourceTree = "<group>";
+		};
+		F3B5E0252303BA8200A24BCE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F39672782303A70A00D3B672 /* DatePickerDelegate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F3B5E0262303BA9100A24BCE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3B5E0272303BA9700A24BCE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F3967274230264C900D3B672 /* TimeCircuitsViewController.swift */,
+				F3967276230264D400D3B672 /* DatePickerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F3B5E0282303BAB500A24BCE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F3B5E0232303B69900A24BCE /* digital-7.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

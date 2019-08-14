@@ -10,11 +10,13 @@ import UIKit
 
 class TimeCircuitsViewController: UIViewController {
     
+    // MARK: Outlets
     @IBOutlet weak var destinationTimeLabel: UILabel!
     @IBOutlet weak var presentTimeLabel: UILabel!
     @IBOutlet weak var lastTimeDepartedLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
     
+    // MARK: Properties
     var dateFormatter: DateFormatter = {
         let date = Date()
         let formatter = DateFormatter()
@@ -23,18 +25,20 @@ class TimeCircuitsViewController: UIViewController {
         return formatter
     }()
     
-   let date = Date()
-   var currentSpeed = 0
-   
-
+    let date = Date()
+    var currentSpeed = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateViews()
     }
     
+    // MARK: IBActions
     @IBAction func travelBackTapped(_ sender: UIButton) {
         startTimer()
     }
+    
+    // MARK: Helper Functions
     
     func updateViews() {
         presentTimeLabel.text = dateFormatter.string(from: date)
@@ -45,26 +49,28 @@ class TimeCircuitsViewController: UIViewController {
         
     }
     
+    func resetTimer() {
+        
+    }
     
-    
- 
+    func updateSpeed() {
+        
+    }
+
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ModalDestinationDatePickerSegue" {
             if let datePickerVC = segue.destination as? DatePickerViewController {
                 datePickerVC.delegate = self
-                
             }
         }
     }
  
-
 }
 
+// MARK: Extensions
 extension TimeCircuitsViewController: DatePickerDelegate {
     func destinationDateWasChosen(date: Date) {
         destinationTimeLabel.text = dateFormatter.string(from: date)
     }
-    
-    
 }
