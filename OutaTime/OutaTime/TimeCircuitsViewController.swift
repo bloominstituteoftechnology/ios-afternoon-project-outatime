@@ -29,24 +29,26 @@ class TimeCircuitsViewController: UIViewController {
     }()
     
     
-
+    func updateViews(){
+        presentTimeLabel.text = dateFormatter.string(from: Date())
+        milesPerHourLabel.text = "\(currentSpeed) MPH"
+        lastTimeDepartedLabel.text = "--- -- ----"
+    }
    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        presentTimeLabel.text = dateFormatter.string(from: Date())
-        milesPerHourLabel.text = "\(currentSpeed) MPH"
-        lastTimeDepartedLabel.text = "--- -- ----"
-      
+        updateViews()
     }
     
     
     
     @IBAction func destinationTimeAction(_ sender: UIButton) {
+        
     }
     
     @IBAction func travelBackAction(_ sender: UIButton) {
+        timeStart()
     }
   
 
