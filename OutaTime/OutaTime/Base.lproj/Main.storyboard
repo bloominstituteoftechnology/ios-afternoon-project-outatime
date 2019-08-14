@@ -27,17 +27,17 @@
                                 <rect key="frame" x="20" y="64" width="374" height="778"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="75N-m7-6UZ">
-                                        <rect key="frame" x="79" y="0.0" width="216" height="75"/>
+                                        <rect key="frame" x="48.5" y="0.0" width="277.5" height="87"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESTINATION TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11f-18-QW3">
-                                                <rect key="frame" x="24" y="0.0" width="168.5" height="23"/>
+                                                <rect key="frame" x="54.5" y="0.0" width="168.5" height="23"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                 <color key="textColor" red="0.96078431369999995" green="0.95686274510000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAN 01 2000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="RLJ-n2-CJD">
-                                                <rect key="frame" x="0.0" y="31" width="216" height="44"/>
+                                                <rect key="frame" x="0.0" y="31" width="277.5" height="56"/>
                                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="48"/>
                                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -45,17 +45,17 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="k5o-PD-qXH">
-                                        <rect key="frame" x="86.5" y="174.5" width="201" height="75"/>
+                                        <rect key="frame" x="46.5" y="174.5" width="281.5" height="87"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRESENT TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ue-wY-0tq">
-                                                <rect key="frame" x="35.5" y="0.0" width="130" height="23"/>
+                                                <rect key="frame" x="75.5" y="0.0" width="130" height="23"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                 <color key="textColor" red="0.96078431369999995" green="0.95686274510000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JUN 19 2019" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="M1e-6L-vDI">
-                                                <rect key="frame" x="0.0" y="31" width="201" height="44"/>
+                                                <rect key="frame" x="0.0" y="31" width="281.5" height="56"/>
                                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="48"/>
                                                 <color key="textColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -63,7 +63,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4i7-bx-gr5">
-                                        <rect key="frame" x="90" y="349" width="194" height="75"/>
+                                        <rect key="frame" x="90" y="349" width="194" height="87"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAST TIME DEPARTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPR-a1-XZl">
                                                 <rect key="frame" x="0.0" y="0.0" width="194" height="23"/>
@@ -73,7 +73,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="... .. ...." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mRw-0N-GbH">
-                                                <rect key="frame" x="0.0" y="31" width="194" height="44"/>
+                                                <rect key="frame" x="0.0" y="31" width="194" height="56"/>
                                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="48"/>
                                                 <color key="textColor" red="0.99233490228652954" green="0.85808247327804565" blue="0.016608815640211105" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -81,7 +81,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cCb-6l-y91">
-                                        <rect key="frame" x="158" y="523.5" width="58.5" height="75"/>
+                                        <rect key="frame" x="158" y="523.5" width="58.5" height="87"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPEED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUB-av-Dz8">
                                                 <rect key="frame" x="0.0" y="0.0" width="58.5" height="23"/>
@@ -91,7 +91,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="O37-VM-scJ">
-                                                <rect key="frame" x="17.5" y="31" width="23" height="44"/>
+                                                <rect key="frame" x="15.5" y="31" width="27" height="56"/>
                                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="48"/>
                                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -148,10 +148,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--Data Picker View Controller-->
+        <!--Date Picker View Controller-->
         <scene sceneID="gqA-B8-PBG">
             <objects>
-                <viewController id="eFw-Ow-e5y" customClass="DataPickerViewController" customModule="OutaTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eFw-Ow-e5y" customClass="DatePickerViewController" customModule="OutaTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rhh-id-mkY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -171,15 +171,15 @@
                         <viewLayoutGuide key="safeArea" id="Irm-J0-Jnb"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem systemItem="cancel" id="2C7-nv-nZn">
+                        <barButtonItem systemItem="cancel" id="D8w-f0-7mH">
                             <connections>
-                                <action selector="cancelTapped:" destination="eFw-Ow-e5y" id="xq1-2v-nRM"/>
+                                <action selector="cancelTapped:" destination="eFw-Ow-e5y" id="EIb-dI-uJM"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="6AH-YY-DtI"/>
-                        <barButtonItem systemItem="done" id="H9s-0p-pdz">
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="4GZ-W5-fQ0"/>
+                        <barButtonItem systemItem="done" id="C6Z-MM-H51">
                             <connections>
-                                <action selector="doneTapped:" destination="eFw-Ow-e5y" id="bna-i0-1gr"/>
+                                <action selector="doneTapped:" destination="eFw-Ow-e5y" id="E1k-MK-3CG"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
