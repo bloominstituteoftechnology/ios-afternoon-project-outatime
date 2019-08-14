@@ -12,6 +12,8 @@
 		92A45051230398E600F1AD16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A4504F230398E600F1AD16 /* Main.storyboard */; };
 		92A45053230398E700F1AD16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92A45052230398E700F1AD16 /* Assets.xcassets */; };
 		92A45056230398E700F1AD16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A45054230398E700F1AD16 /* LaunchScreen.storyboard */; };
+		92A4505E2303992C00F1AD16 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A4505D2303992C00F1AD16 /* TimeCircuitsViewController.swift */; };
+		92A4506223039A5F00F1AD16 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A4506123039A5F00F1AD16 /* DatePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,23 @@
 		92A45052230398E700F1AD16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92A45055230398E700F1AD16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92A45057230398E700F1AD16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92A4505D2303992C00F1AD16 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
+		92A4506123039A5F00F1AD16 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		92A4506423039CF600F1AD16 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../../../digital-7.ttf"; sourceTree = "<group>"; };
+		92A4506523039F2000F1AD16 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Italic.ttf"; path = "../../../../../../../../../Downloads/Lato2OFL/Lato-Italic.ttf"; sourceTree = "<group>"; };
+		92A4506623039F2100F1AD16 /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-BlackItalic.ttf"; path = "../../../../../../../../../Downloads/Lato2OFL/Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		92A4506723039F2100F1AD16 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-LightItalic.ttf"; path = "../../../../../../../../../Downloads/Lato2OFL/Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		92A4506823039F2100F1AD16 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Light.ttf"; path = "../../../../../../../../../Downloads/Lato2OFL/Lato-Light.ttf"; sourceTree = "<group>"; };
+		92A4506923039F2100F1AD16 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Black.ttf"; path = "../../../../../../../../../Downloads/Lato2OFL/Lato-Black.ttf"; sourceTree = "<group>"; };
+		92A4506A23039F2100F1AD16 /* Lato-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Semibold.ttf"; path = "../../../../../../../../../Downloads/Lato2OFL/Lato-Semibold.ttf"; sourceTree = "<group>"; };
+		92A4506B23039F2100F1AD16 /* Lato-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-HeavyItalic.ttf"; path = "../../../../../../../../../Downloads/Lato2OFL/Lato-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		92A4506C23039F2100F1AD16 /* Lato-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Medium.ttf"; path = "../../../../../../../../../Downloads/Lato2OFL/Lato-Medium.ttf"; sourceTree = "<group>"; };
+		92A4506D23039F2100F1AD16 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Bold.ttf"; path = "../../../../../../../../../Downloads/Lato2OFL/Lato-Bold.ttf"; sourceTree = "<group>"; };
+		92A4506E23039F2100F1AD16 /* Lato-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-SemiboldItalic.ttf"; path = "../../../../../../../../../Downloads/Lato2OFL/Lato-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		92A4506F23039F2100F1AD16 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Regular.ttf"; path = "../../../../../../../../../Downloads/Lato2OFL/Lato-Regular.ttf"; sourceTree = "<group>"; };
+		92A4507023039F2100F1AD16 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-BoldItalic.ttf"; path = "../../../../../../../../../Downloads/Lato2OFL/Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		92A4507123039F2100F1AD16 /* Lato-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-MediumItalic.ttf"; path = "../../../../../../../../../Downloads/Lato2OFL/Lato-MediumItalic.ttf"; sourceTree = "<group>"; };
+		92A4507223039F2100F1AD16 /* Lato-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Heavy.ttf"; path = "../../../../../../../../../Downloads/Lato2OFL/Lato-Heavy.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +73,39 @@
 		92A4504A230398E600F1AD16 /* Outa Time */ = {
 			isa = PBXGroup;
 			children = (
+				92A4506323039CE300F1AD16 /* Fonts */,
 				92A4504B230398E600F1AD16 /* AppDelegate.swift */,
 				92A4504D230398E600F1AD16 /* ViewController.swift */,
 				92A4504F230398E600F1AD16 /* Main.storyboard */,
 				92A45052230398E700F1AD16 /* Assets.xcassets */,
 				92A45054230398E700F1AD16 /* LaunchScreen.storyboard */,
 				92A45057230398E700F1AD16 /* Info.plist */,
+				92A4505D2303992C00F1AD16 /* TimeCircuitsViewController.swift */,
+				92A4506123039A5F00F1AD16 /* DatePickerViewController.swift */,
 			);
 			path = "Outa Time";
+			sourceTree = "<group>";
+		};
+		92A4506323039CE300F1AD16 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				92A4506423039CF600F1AD16 /* digital-7.ttf */,
+				92A4506923039F2100F1AD16 /* Lato-Black.ttf */,
+				92A4506623039F2100F1AD16 /* Lato-BlackItalic.ttf */,
+				92A4506D23039F2100F1AD16 /* Lato-Bold.ttf */,
+				92A4507023039F2100F1AD16 /* Lato-BoldItalic.ttf */,
+				92A4507223039F2100F1AD16 /* Lato-Heavy.ttf */,
+				92A4506B23039F2100F1AD16 /* Lato-HeavyItalic.ttf */,
+				92A4506523039F2000F1AD16 /* Lato-Italic.ttf */,
+				92A4506823039F2100F1AD16 /* Lato-Light.ttf */,
+				92A4506723039F2100F1AD16 /* Lato-LightItalic.ttf */,
+				92A4506C23039F2100F1AD16 /* Lato-Medium.ttf */,
+				92A4507123039F2100F1AD16 /* Lato-MediumItalic.ttf */,
+				92A4506F23039F2100F1AD16 /* Lato-Regular.ttf */,
+				92A4506A23039F2100F1AD16 /* Lato-Semibold.ttf */,
+				92A4506E23039F2100F1AD16 /* Lato-SemiboldItalic.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +179,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92A4506223039A5F00F1AD16 /* DatePickerViewController.swift in Sources */,
+				92A4505E2303992C00F1AD16 /* TimeCircuitsViewController.swift in Sources */,
 				92A4504E230398E600F1AD16 /* ViewController.swift in Sources */,
 				92A4504C230398E600F1AD16 /* AppDelegate.swift in Sources */,
 			);
