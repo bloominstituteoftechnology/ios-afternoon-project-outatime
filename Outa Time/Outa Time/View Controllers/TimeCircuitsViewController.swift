@@ -30,9 +30,7 @@ class TimeCircuitsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presentTimeLabel.text = dateFormatter.string(from: Date())
-        speedLabel.text = "\(currentSpeed) MPH"
-        lastTimeDepartedLabel.text = "--- -- ----"
+        updateViews()
     }
     
 
@@ -52,7 +50,7 @@ class TimeCircuitsViewController: UIViewController {
     
     
     private func startTimer() {
-        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: false) { (timer) in
+        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { (timer) in
             self.updateSpeed()
         }
     }
@@ -67,15 +65,21 @@ class TimeCircuitsViewController: UIViewController {
             currentSpeed += 1
             speedLabel.text = "\(currentSpeed)"
         }
-        resetTimer()
-        lastTimeDepartedLabel = presentTimeLabel
-        presentTimeLabel = destinationTimeLabel
+        lastTimeDepartedLabel.text = presentTimeLabel.text
+        presentTimeLabel.text = destinationTimeLabel.text
         currentSpeed = 0
         guard let presentTime = presentTimeLabel.text else { return }
         let alert = UIAlertController(title: "Time Travel Successful", message: "Your new date is \(presentTime)", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         self.present(alert, animated: true)
-        
+        resetTimer()
+    }
+    
+    private func updateViews() {
+        destinationTimeLabel.text = "SELECT TIME"
+        presentTimeLabel.text = dateFormatter.string(from: Date())
+        speedLabel.text = "\(currentSpeed) MPH"
+        lastTimeDepartedLabel.text = "--- -- ----"
     }
     
 }
