@@ -112,9 +112,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxg-j9-BT6">
-                                                <rect key="frame" x="60.5" y="66" width="130" height="58"/>
+                                                <rect key="frame" x="63" y="66" width="125" height="58"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="20"/>
-                                                <state key="normal" title="TRAVEL BACK"/>
+                                                <state key="normal" title="TIME TRAVEL"/>
                                                 <connections>
                                                     <action selector="travelBackTapped:" destination="dBQ-sM-6Ev" eventType="touchUpInside" id="Nd0-5w-Nvd"/>
                                                 </connections>
