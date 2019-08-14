@@ -8,16 +8,20 @@
 
 import UIKit
 
+protocol DatePickerDelegate {
+    func destinationDateWasChosen(_ date: Date)
+}
+
 class DataPickerViewController: UIViewController {
 
     
     @IBOutlet weak var datePicker: UIDatePicker!
     
+    var delegate: DatePickerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
 
