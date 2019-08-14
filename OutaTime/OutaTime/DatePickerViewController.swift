@@ -8,8 +8,14 @@
 
 import UIKit
 
+protocol DatePickerDelegate {
+    func destinationDateWasChosen(for date: Date)
+}
+
 class DatePickerViewController: UIViewController {
 
+    var delegate: DatePickerDelegate?
+    
     @IBOutlet weak var datePicker: UIDatePicker!
     
     override func viewDidLoad() {
@@ -19,9 +25,12 @@ class DatePickerViewController: UIViewController {
     }
     
     @IBAction func cancelAction(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func doneAction(_ sender: UIButton) {
+        delegate?.destinationDateWasChosen(for: datePicker.date)
+        dismiss(animated: true, completion: nil)
     }
     /*
     // MARK: - Navigation
