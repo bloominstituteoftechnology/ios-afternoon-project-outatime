@@ -8,8 +8,21 @@
 
 import UIKit
 
+protocol DatePickerDelegate {
+    func destinationWasChosen(date: Date)
+}
+
 class DatePickerViewController: UIViewController {
 
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
+    var delegate: DatePickerDelegate?
+    
+    var destination: Date {
+        return datePicker.date
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,14 +30,21 @@ class DatePickerViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func cancelTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
-    */
+    
+    
+    @IBAction func doneTapped(_ sender: Any) {
+        delegate?.destinationWasChosen(date: destination)
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
+}
 
+extension DatePickerViewController: UIPickerViewDelegate {
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        delegate?.destinationWasChosen(date: destination)
+    }
 }
