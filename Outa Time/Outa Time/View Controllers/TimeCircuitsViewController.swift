@@ -63,7 +63,7 @@ class TimeCircuitsViewController: UIViewController {
     func updateSpeed() {
         while currentSpeed < 88 {
             currentSpeed += 1
-            speedLabel.text = "\(currentSpeed)"
+            speedLabel.text = "\(currentSpeed) MPH"
         }
         lastTimeDepartedLabel.text = presentTimeLabel.text
         presentTimeLabel.text = destinationTimeLabel.text
