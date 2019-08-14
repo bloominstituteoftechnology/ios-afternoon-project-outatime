@@ -76,7 +76,7 @@ class TimeCircuitsViewController: UIViewController {
     }
     
     private func updateViews() {
-        destinationTimeLabel.text = "SELECT TIME"
+        destinationTimeLabel.text = "SELECT DATE"
         presentTimeLabel.text = dateFormatter.string(from: Date())
         speedLabel.text = "\(currentSpeed) MPH"
         lastTimeDepartedLabel.text = "--- -- ----"
