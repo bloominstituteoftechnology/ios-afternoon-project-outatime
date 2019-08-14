@@ -16,18 +16,35 @@ class TimeCircuitsViewController: UIViewController {
     @IBOutlet weak var lastTimeDepartedLabel: UILabel!
     @IBOutlet weak var milesPerHourLabel: UILabel!
     
+    var dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM d, yyyy"
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        return formatter
+    }()
+    
+    var currentSpeed = 0
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        presentTimeLabel.text = dateFormatter.string(from: Date())
+        milesPerHourLabel.text = String(currentSpeed) + "MPH"
+        lastTimeDepartedLabel.text = "--- -- ----"
+      
     }
+    
+    
     
     @IBAction func destinationTimeAction(_ sender: UIButton) {
     }
     
     @IBAction func travelBackAction(_ sender: UIButton) {
     }
-    
+  
+
     /*
      // MARK: - Navigation
 
