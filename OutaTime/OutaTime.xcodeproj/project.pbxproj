@@ -8,19 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		F3967263230264A400D3B672 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3967262230264A400D3B672 /* AppDelegate.swift */; };
-		F3967265230264A400D3B672 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3967264230264A400D3B672 /* ViewController.swift */; };
 		F3967268230264A400D3B672 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3967266230264A400D3B672 /* Main.storyboard */; };
 		F396726A230264A500D3B672 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3967269230264A500D3B672 /* Assets.xcassets */; };
 		F396726D230264A500D3B672 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F396726B230264A500D3B672 /* LaunchScreen.storyboard */; };
 		F3967275230264C900D3B672 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3967274230264C900D3B672 /* TimeCircuitsViewController.swift */; };
 		F3967277230264D400D3B672 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3967276230264D400D3B672 /* DatePickerViewController.swift */; };
 		F39672792303A70A00D3B672 /* DatePickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39672782303A70A00D3B672 /* DatePickerDelegate.swift */; };
+		F3B5E0242303B98700A24BCE /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3B5E0232303B69900A24BCE /* digital-7.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F396725F230264A400D3B672 /* OutaTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutaTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3967262230264A400D3B672 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F3967264230264A400D3B672 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F3967267230264A400D3B672 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3967269230264A500D3B672 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F396726C230264A500D3B672 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -28,6 +27,7 @@
 		F3967274230264C900D3B672 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
 		F3967276230264D400D3B672 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		F39672782303A70A00D3B672 /* DatePickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerDelegate.swift; sourceTree = "<group>"; };
+		F3B5E0232303B69900A24BCE /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../../digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				F3967262230264A400D3B672 /* AppDelegate.swift */,
-				F3967264230264A400D3B672 /* ViewController.swift */,
 				F3967266230264A400D3B672 /* Main.storyboard */,
 				F3967269230264A500D3B672 /* Assets.xcassets */,
 				F396726B230264A500D3B672 /* LaunchScreen.storyboard */,
 				F396726E230264A500D3B672 /* Info.plist */,
+				F3B5E0232303B69900A24BCE /* digital-7.ttf */,
 				F3967274230264C900D3B672 /* TimeCircuitsViewController.swift */,
 				F3967276230264D400D3B672 /* DatePickerViewController.swift */,
 				F39672782303A70A00D3B672 /* DatePickerDelegate.swift */,
@@ -134,6 +134,7 @@
 				F396726D230264A500D3B672 /* LaunchScreen.storyboard in Resources */,
 				F396726A230264A500D3B672 /* Assets.xcassets in Resources */,
 				F3967268230264A400D3B672 /* Main.storyboard in Resources */,
+				F3B5E0242303B98700A24BCE /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +148,6 @@
 				F39672792303A70A00D3B672 /* DatePickerDelegate.swift in Sources */,
 				F3967277230264D400D3B672 /* DatePickerViewController.swift in Sources */,
 				F3967275230264C900D3B672 /* TimeCircuitsViewController.swift in Sources */,
-				F3967265230264A400D3B672 /* ViewController.swift in Sources */,
 				F3967263230264A400D3B672 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
