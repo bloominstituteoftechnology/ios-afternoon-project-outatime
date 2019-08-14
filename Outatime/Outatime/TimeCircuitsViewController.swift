@@ -15,26 +15,50 @@ class TimeCircuitsViewController: UIViewController {
     @IBOutlet weak var lastTimeDepartedLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
     
+    var dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM d yyyy"
+        return formatter
+    }()
+    
+    var currentSpeed = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        updateViews()
+        
+        
+        
         // Do any additional setup after loading the view.
     }
     
     @IBAction func travelBackButton(_ sender: Any) {
     }
     
+    private func updateViews() {
+        let date = Date()
+        presentTimeLabel.text = dateFormatter.string(from: date).uppercased()
+        speedLabel.text = "\(String(currentSpeed)) MPH"
+        lastTimeDepartedLabel.text = "___ __ ____"
+    }
     
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "ModalDestinationDatePickerSegue" {
+            if let datePickerVC = segue.destination as? DatePickerViewController {
+                datePickerVC.delegate = self
+            }
+        }
     }
-    */
+}
+
+extension TimeCircuitsViewController: DatePickerDelegate {
+    func destinationDateWasChosen(date: Date) {
+        self.destinationTimeLabel.text = self.dateFormatter.string(from: date).uppercased()
+    }
 
 }
