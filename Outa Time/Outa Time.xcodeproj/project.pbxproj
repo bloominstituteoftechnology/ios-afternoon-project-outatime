@@ -8,18 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		92A4504C230398E600F1AD16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A4504B230398E600F1AD16 /* AppDelegate.swift */; };
-		92A4504E230398E600F1AD16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A4504D230398E600F1AD16 /* ViewController.swift */; };
 		92A45051230398E600F1AD16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A4504F230398E600F1AD16 /* Main.storyboard */; };
 		92A45053230398E700F1AD16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92A45052230398E700F1AD16 /* Assets.xcassets */; };
 		92A45056230398E700F1AD16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A45054230398E700F1AD16 /* LaunchScreen.storyboard */; };
 		92A4505E2303992C00F1AD16 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A4505D2303992C00F1AD16 /* TimeCircuitsViewController.swift */; };
 		92A4506223039A5F00F1AD16 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A4506123039A5F00F1AD16 /* DatePickerViewController.swift */; };
+		92A450742303A60000F1AD16 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4506423039CF600F1AD16 /* digital-7.ttf */; };
+		92A450752303A60000F1AD16 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4506923039F2100F1AD16 /* Lato-Black.ttf */; };
+		92A450762303A60000F1AD16 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4506623039F2100F1AD16 /* Lato-BlackItalic.ttf */; };
+		92A450772303A60000F1AD16 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4506D23039F2100F1AD16 /* Lato-Bold.ttf */; };
+		92A450782303A60000F1AD16 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4507023039F2100F1AD16 /* Lato-BoldItalic.ttf */; };
+		92A450792303A60000F1AD16 /* Lato-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4507223039F2100F1AD16 /* Lato-Heavy.ttf */; };
+		92A4507A2303A60000F1AD16 /* Lato-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4506B23039F2100F1AD16 /* Lato-HeavyItalic.ttf */; };
+		92A4507B2303A60000F1AD16 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4506523039F2000F1AD16 /* Lato-Italic.ttf */; };
+		92A4507C2303A60000F1AD16 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4506823039F2100F1AD16 /* Lato-Light.ttf */; };
+		92A4507D2303A60000F1AD16 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4506723039F2100F1AD16 /* Lato-LightItalic.ttf */; };
+		92A4507E2303A60000F1AD16 /* Lato-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4506C23039F2100F1AD16 /* Lato-Medium.ttf */; };
+		92A4507F2303A60000F1AD16 /* Lato-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4507123039F2100F1AD16 /* Lato-MediumItalic.ttf */; };
+		92A450802303A60000F1AD16 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4506F23039F2100F1AD16 /* Lato-Regular.ttf */; };
+		92A450812303A60000F1AD16 /* Lato-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4506A23039F2100F1AD16 /* Lato-Semibold.ttf */; };
+		92A450822303A60000F1AD16 /* Lato-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4506E23039F2100F1AD16 /* Lato-SemiboldItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		92A45048230398E600F1AD16 /* Outa Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Outa Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92A4504B230398E600F1AD16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		92A4504D230398E600F1AD16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		92A45050230398E600F1AD16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92A45052230398E700F1AD16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92A45055230398E700F1AD16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -73,15 +86,13 @@
 		92A4504A230398E600F1AD16 /* Outa Time */ = {
 			isa = PBXGroup;
 			children = (
+				92A450732303A0BB00F1AD16 /* View Controllers */,
 				92A4506323039CE300F1AD16 /* Fonts */,
 				92A4504B230398E600F1AD16 /* AppDelegate.swift */,
-				92A4504D230398E600F1AD16 /* ViewController.swift */,
 				92A4504F230398E600F1AD16 /* Main.storyboard */,
 				92A45052230398E700F1AD16 /* Assets.xcassets */,
 				92A45054230398E700F1AD16 /* LaunchScreen.storyboard */,
 				92A45057230398E700F1AD16 /* Info.plist */,
-				92A4505D2303992C00F1AD16 /* TimeCircuitsViewController.swift */,
-				92A4506123039A5F00F1AD16 /* DatePickerViewController.swift */,
 			);
 			path = "Outa Time";
 			sourceTree = "<group>";
@@ -106,6 +117,15 @@
 				92A4506E23039F2100F1AD16 /* Lato-SemiboldItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		92A450732303A0BB00F1AD16 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				92A4505D2303992C00F1AD16 /* TimeCircuitsViewController.swift */,
+				92A4506123039A5F00F1AD16 /* DatePickerViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +186,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92A450742303A60000F1AD16 /* digital-7.ttf in Resources */,
+				92A450752303A60000F1AD16 /* Lato-Black.ttf in Resources */,
+				92A450762303A60000F1AD16 /* Lato-BlackItalic.ttf in Resources */,
+				92A450772303A60000F1AD16 /* Lato-Bold.ttf in Resources */,
+				92A450782303A60000F1AD16 /* Lato-BoldItalic.ttf in Resources */,
+				92A450792303A60000F1AD16 /* Lato-Heavy.ttf in Resources */,
+				92A4507A2303A60000F1AD16 /* Lato-HeavyItalic.ttf in Resources */,
+				92A4507B2303A60000F1AD16 /* Lato-Italic.ttf in Resources */,
+				92A4507C2303A60000F1AD16 /* Lato-Light.ttf in Resources */,
+				92A4507D2303A60000F1AD16 /* Lato-LightItalic.ttf in Resources */,
+				92A4507E2303A60000F1AD16 /* Lato-Medium.ttf in Resources */,
+				92A4507F2303A60000F1AD16 /* Lato-MediumItalic.ttf in Resources */,
+				92A450802303A60000F1AD16 /* Lato-Regular.ttf in Resources */,
+				92A450812303A60000F1AD16 /* Lato-Semibold.ttf in Resources */,
+				92A450822303A60000F1AD16 /* Lato-SemiboldItalic.ttf in Resources */,
 				92A45056230398E700F1AD16 /* LaunchScreen.storyboard in Resources */,
 				92A45053230398E700F1AD16 /* Assets.xcassets in Resources */,
 				92A45051230398E600F1AD16 /* Main.storyboard in Resources */,
@@ -181,7 +216,6 @@
 			files = (
 				92A4506223039A5F00F1AD16 /* DatePickerViewController.swift in Sources */,
 				92A4505E2303992C00F1AD16 /* TimeCircuitsViewController.swift in Sources */,
-				92A4504E230398E600F1AD16 /* ViewController.swift in Sources */,
 				92A4504C230398E600F1AD16 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
