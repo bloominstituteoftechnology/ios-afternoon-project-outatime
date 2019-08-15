@@ -13,6 +13,7 @@
 		97EFA5BE2303AA9700664687 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97EFA5BC2303AA9700664687 /* LaunchScreen.storyboard */; };
 		97EFA5C62303AB4800664687 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EFA5C52303AB4800664687 /* TimeCircuitsViewController.swift */; };
 		97EFA5C92303AB9300664687 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EFA5C82303AB9300664687 /* DatePickerViewController.swift */; };
+		97EFA5CB2303B47200664687 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97EFA5CA2303B47200664687 /* digital-7.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		97EFA5BF2303AA9700664687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97EFA5C52303AB4800664687 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
 		97EFA5C82303AB9300664687 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		97EFA5CA2303B47200664687 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		97EFA5B22303AA9600664687 /* OutaTime */ = {
 			isa = PBXGroup;
 			children = (
+				97EFA5CC2303B47A00664687 /* Fonts */,
 				97EFA5C72303AB4E00664687 /* View Controllers */,
 				97EFA5B32303AA9600664687 /* AppDelegate.swift */,
 				97EFA5B72303AA9600664687 /* Main.storyboard */,
@@ -73,6 +76,14 @@
 				97EFA5C82303AB9300664687 /* DatePickerViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		97EFA5CC2303B47A00664687 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				97EFA5CA2303B47200664687 /* digital-7.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +147,7 @@
 				97EFA5BE2303AA9700664687 /* LaunchScreen.storyboard in Resources */,
 				97EFA5BB2303AA9700664687 /* Assets.xcassets in Resources */,
 				97EFA5B92303AA9600664687 /* Main.storyboard in Resources */,
+				97EFA5CB2303B47200664687 /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

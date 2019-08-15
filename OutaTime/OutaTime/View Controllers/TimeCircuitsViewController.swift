@@ -10,6 +10,12 @@ import UIKit
 
 class TimeCircuitsViewController: UIViewController {
 
+    
+    @IBOutlet weak var destinationTimeTextField: UITextField!
+    @IBOutlet weak var presentTimeTextField: UITextField!
+    @IBOutlet weak var lastTimeDepartedTextField: UITextField!
+    @IBOutlet weak var speedTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,4 +33,7 @@ class TimeCircuitsViewController: UIViewController {
     }
     */
 
+    @IBAction func travelBackButtonTapped(_ sender: Any) {
+    }
+    
 }
