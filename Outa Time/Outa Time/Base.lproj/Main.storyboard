@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -29,7 +30,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="2Uf-x4-20s">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2Uf-x4-20s">
                                 <rect key="frame" x="79.5" y="64" width="255" height="768"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Z5x-he-FXh">
@@ -50,7 +51,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OXV-l6-Wzh">
-                                        <rect key="frame" x="0.0" y="161" width="255" height="81"/>
+                                        <rect key="frame" x="0.0" y="172" width="255" height="81"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRESENT DATE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wl2-Q9-Hig">
                                                 <rect key="frame" x="42" y="0.0" width="171.5" height="29"/>
@@ -67,7 +68,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Dg7-VI-M6M">
-                                        <rect key="frame" x="0.0" y="322" width="255" height="81"/>
+                                        <rect key="frame" x="0.0" y="344" width="255" height="81"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAST DATE DEPARTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtG-jd-gT8">
                                                 <rect key="frame" x="0.0" y="0.0" width="255" height="29"/>
@@ -84,7 +85,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tRI-iB-ujA">
-                                        <rect key="frame" x="0.0" y="483" width="255" height="81"/>
+                                        <rect key="frame" x="0.0" y="516" width="255" height="81"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPEED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vjj-os-8dn">
                                                 <rect key="frame" x="90.5" y="0.0" width="74.5" height="29"/>
@@ -101,10 +102,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Igi-Zz-jmN">
-                                        <rect key="frame" x="0.0" y="644" width="255" height="124"/>
+                                        <rect key="frame" x="0.0" y="688" width="255" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mQ-yD-1Vj">
-                                                <rect key="frame" x="14.5" y="0.0" width="226" height="58"/>
+                                                <rect key="frame" x="14.5" y="0.0" width="226" height="36"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="20"/>
                                                 <state key="normal" title="SET DESTINATION DATE"/>
                                                 <connections>
@@ -112,7 +113,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxg-j9-BT6">
-                                                <rect key="frame" x="65" y="66" width="125" height="58"/>
+                                                <rect key="frame" x="65" y="44" width="125" height="36"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="20"/>
                                                 <state key="normal" title="TIME TRAVEL"/>
                                                 <connections>
@@ -122,6 +123,12 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Igi-Zz-jmN" firstAttribute="top" relation="greaterThanOrEqual" secondItem="tRI-iB-ujA" secondAttribute="bottom" constant="8" id="0Pz-4b-gMw"/>
+                                    <constraint firstItem="Dg7-VI-M6M" firstAttribute="top" relation="greaterThanOrEqual" secondItem="OXV-l6-Wzh" secondAttribute="bottom" constant="8" id="Gdi-zf-VPg"/>
+                                    <constraint firstItem="tRI-iB-ujA" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Dg7-VI-M6M" secondAttribute="bottom" constant="8" id="gGY-RK-avv"/>
+                                    <constraint firstItem="OXV-l6-Wzh" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Z5x-he-FXh" secondAttribute="bottom" constant="8" id="xHI-Th-zad"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
