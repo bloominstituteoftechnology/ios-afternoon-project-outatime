@@ -10,6 +10,14 @@ import UIKit
 
 class TimeCircuitsViewController: UIViewController {
 
+    var dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM dd yyyy"
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        return formatter
+    }()
+    
+    var currentSpeed = 0
     
     @IBOutlet weak var destinationTimeTextField: UITextField!
     @IBOutlet weak var presentTimeTextField: UITextField!
@@ -18,8 +26,7 @@ class TimeCircuitsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        updateViews()
     }
     
 
@@ -33,6 +40,12 @@ class TimeCircuitsViewController: UIViewController {
     }
     */
 
+    private func updateViews() {
+        let currentDate = Date()
+        self.presentTimeTextField.text = dateFormatter.string(from: currentDate)
+        self.speedTextField.text = "\(String(currentSpeed)) MPH"
+    }
+    
     @IBAction func travelBackButtonTapped(_ sender: Any) {
     }
     
