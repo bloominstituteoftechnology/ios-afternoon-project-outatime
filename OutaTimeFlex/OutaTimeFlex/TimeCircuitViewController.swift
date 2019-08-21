@@ -15,9 +15,24 @@ class TimeCircuitViewController: UIViewController {
     @IBOutlet weak var lastTimeDeparetedLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
     
+    let currentDate = Date()
+    
+    var currentSpeed = 0
+    
+    var dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM d yyyy"
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        return formatter
+    }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        presentTimeLabel.text = dateFormatter.string(from: currentDate)
+        speedLabel.text = "\(currentSpeed) MPH"
+        lastTimeDeparetedLabel.text = "___ __ ____"
 
         // Do any additional setup after loading the view.
     }
@@ -37,4 +52,12 @@ class TimeCircuitViewController: UIViewController {
     }
     */
 
+}
+
+extension TimeCircuitViewController: DatePickerDelegate {
+    func destinationDateWasChosen(date: Date) {
+        <#code#>
+    }
+    
+    
 }
