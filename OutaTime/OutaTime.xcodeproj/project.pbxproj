@@ -13,6 +13,7 @@
 		DD1C4E22230DD43500C89303 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD1C4E20230DD43500C89303 /* LaunchScreen.storyboard */; };
 		DD1C4E30230DD8CD00C89303 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1C4E2F230DD8CD00C89303 /* TimeCircuitsViewController.swift */; };
 		DD1C4E32230DD8DC00C89303 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1C4E31230DD8DC00C89303 /* DatePickerViewController.swift */; };
+		DD1C4E34230E01F900C89303 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD1C4E33230E01F900C89303 /* digital-7.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,9 +23,9 @@
 		DD1C4E1E230DD43500C89303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD1C4E21230DD43500C89303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD1C4E23230DD43500C89303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD1C4E2E230DD51100C89303 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../../../digital-7.ttf"; sourceTree = "<group>"; };
 		DD1C4E2F230DD8CD00C89303 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
 		DD1C4E31230DD8DC00C89303 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		DD1C4E33230E01F900C89303 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../../../../../.Trash/digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +103,7 @@
 		DD1C4E2D230DD48E00C89303 /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				DD1C4E2E230DD51100C89303 /* digital-7.ttf */,
+				DD1C4E33230E01F900C89303 /* digital-7.ttf */,
 				DD1C4E17230DD43400C89303 /* AppDelegate.swift */,
 				DD1C4E23230DD43500C89303 /* Info.plist */,
 			);
@@ -170,6 +171,7 @@
 				DD1C4E22230DD43500C89303 /* LaunchScreen.storyboard in Resources */,
 				DD1C4E1F230DD43500C89303 /* Assets.xcassets in Resources */,
 				DD1C4E1D230DD43400C89303 /* Main.storyboard in Resources */,
+				DD1C4E34230E01F900C89303 /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

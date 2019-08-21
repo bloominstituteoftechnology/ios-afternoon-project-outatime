@@ -66,8 +66,8 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="__ __ ____" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpj-gL-kZU">
-                                        <rect key="frame" x="104.5" y="32" width="173" height="36.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- -- ----" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpj-gL-kZU">
+                                        <rect key="frame" x="116" y="32" width="150" height="36.5"/>
                                         <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="40"/>
                                         <color key="textColor" red="1" green="0.88955364420000005" blue="0.080935061700000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -140,11 +140,6 @@
                         <outlet property="speedLabel" destination="OO0-m5-oHp" id="QWE-Ko-4gr"/>
                     </connections>
                 </viewController>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" id="8Qh-rI-K0T">
-                    <rect key="frame" x="0.0" y="0.0" width="382" height="65.5"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <viewLayoutGuide key="safeArea" id="ztD-LA-Gzb"/>
-                </stackView>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-33" y="100"/>
