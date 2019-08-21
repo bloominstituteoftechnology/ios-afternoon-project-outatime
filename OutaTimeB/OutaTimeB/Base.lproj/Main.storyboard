@@ -131,7 +131,7 @@
                         <outlet property="destinationTimeLabel" destination="9tI-ju-GYc" id="Iqf-Ys-bcI"/>
                         <outlet property="lastTimeDepartedLabel" destination="cRZ-Va-mMu" id="bHZ-qX-DOY"/>
                         <outlet property="presentDate" destination="JVE-fd-ode" id="Yr7-nJ-XdG"/>
-                        <outlet property="presentDateLabel" destination="j6q-9p-ZAp" id="AoU-dG-DWD"/>
+                        <outlet property="presentTimeLabel" destination="j6q-9p-ZAp" id="jRd-Ku-zeC"/>
                         <outlet property="speedLabel" destination="OjY-uf-Yb9" id="Tpb-ey-ajg"/>
                     </connections>
                 </viewController>
