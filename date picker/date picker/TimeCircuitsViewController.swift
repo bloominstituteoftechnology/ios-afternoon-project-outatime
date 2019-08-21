@@ -42,12 +42,12 @@ class TimeCircuitsViewController: UIViewController {
     
     @IBAction func travelBack(_ sender: UIButton) {
         func startTimer(){
-            Timer.scheduledTimer(withTimeInterval: 0.1, repeats: false, block: speedLabel.text = )
+            Timer.scheduledTimer(withTimeInterval: 0.1, repeats: false, block: )
         }
     }
     
-    
 
+    func updateSpeed(){
     
     // MARK: - Navigation
 
