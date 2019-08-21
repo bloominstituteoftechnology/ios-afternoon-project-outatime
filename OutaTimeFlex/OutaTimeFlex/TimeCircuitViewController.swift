@@ -62,7 +62,7 @@ class TimeCircuitViewController: UIViewController {
             lastTimeDeparetedLabel.text = presentTimeLabel.text
             presentTimeLabel.text = destinationTimeLabel.text
             currentSpeed = 0
-            let alert = UIAlertController(title: "Time Travel Successful!", message: "Your new date is \(presentTimeLabel.text)", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Time Travel Successful!", message: "Your new date is \(presentTimeLabel.text ?? "")", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             present(alert, animated: true, completion: nil)
         }
