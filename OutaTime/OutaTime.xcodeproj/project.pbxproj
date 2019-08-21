@@ -20,6 +20,7 @@
 		DD1C4E1E230DD43500C89303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD1C4E21230DD43500C89303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD1C4E23230DD43500C89303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD1C4E2E230DD51100C89303 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../../../digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +96,7 @@
 		DD1C4E2D230DD48E00C89303 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				DD1C4E2E230DD51100C89303 /* digital-7.ttf */,
 				DD1C4E17230DD43400C89303 /* AppDelegate.swift */,
 				DD1C4E23230DD43500C89303 /* Info.plist */,
 			);
