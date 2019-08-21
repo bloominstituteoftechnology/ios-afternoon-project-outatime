@@ -161,7 +161,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="maA-Gq-ne8">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="maA-Gq-ne8">
                                 <rect key="frame" x="16" y="340" width="382" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="588113462.58846498">
                                     <!--2019-08-21 20:51:02 +0000-->
