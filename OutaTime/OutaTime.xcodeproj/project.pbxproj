@@ -13,6 +13,7 @@
 		45094933230D8E54001C77C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45094931230D8E54001C77C2 /* LaunchScreen.storyboard */; };
 		4509493B230D8EA0001C77C2 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4509493A230D8EA0001C77C2 /* TimeCircuitsViewController.swift */; };
 		4509493D230D8EB1001C77C2 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4509493C230D8EB0001C77C2 /* DatePickerViewController.swift */; };
+		45094946230D9B55001C77C2 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45094945230D9B52001C77C2 /* digital-7.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		45094934230D8E54001C77C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4509493A230D8EA0001C77C2 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
 		4509493C230D8EB0001C77C2 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		45094945230D9B52001C77C2 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				4509492C230D8E53001C77C2 /* Main.storyboard */,
 				4509492F230D8E54001C77C2 /* Assets.xcassets */,
 				45094931230D8E54001C77C2 /* LaunchScreen.storyboard */,
+				45094945230D9B52001C77C2 /* digital-7.ttf */,
 				45094934230D8E54001C77C2 /* Info.plist */,
 			);
 			path = OutaTime;
@@ -128,6 +131,7 @@
 				45094933230D8E54001C77C2 /* LaunchScreen.storyboard in Resources */,
 				45094930230D8E54001C77C2 /* Assets.xcassets in Resources */,
 				4509492E230D8E53001C77C2 /* Main.storyboard in Resources */,
+				45094946230D9B55001C77C2 /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
