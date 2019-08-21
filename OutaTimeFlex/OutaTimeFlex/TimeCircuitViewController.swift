@@ -9,11 +9,21 @@
 import UIKit
 
 class TimeCircuitViewController: UIViewController {
-
+    
+    @IBOutlet weak var destinationTimeLabel: UILabel!
+    @IBOutlet weak var presentTimeLabel: UILabel!
+    @IBOutlet weak var lastTimeDeparetedLabel: UILabel!
+    @IBOutlet weak var speedLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    
+    @IBAction func travelBackButton(_ sender: Any) {
     }
     
 
