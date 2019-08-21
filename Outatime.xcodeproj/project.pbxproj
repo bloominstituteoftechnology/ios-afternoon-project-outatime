@@ -8,20 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		86AA5639230DDAEB005B9756 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA5638230DDAEB005B9756 /* AppDelegate.swift */; };
-		86AA563B230DDAEB005B9756 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA563A230DDAEB005B9756 /* ViewController.swift */; };
 		86AA563E230DDAEB005B9756 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86AA563C230DDAEB005B9756 /* Main.storyboard */; };
 		86AA5640230DDAED005B9756 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86AA563F230DDAED005B9756 /* Assets.xcassets */; };
 		86AA5643230DDAED005B9756 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86AA5641230DDAED005B9756 /* LaunchScreen.storyboard */; };
+		86AA564B230DDBD7005B9756 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA564A230DDBD7005B9756 /* TimeCircuitsViewController.swift */; };
+		86AA564D230DDBF2005B9756 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA564C230DDBF2005B9756 /* DatePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		86AA5635230DDAEB005B9756 /* Outatime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Outatime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86AA5638230DDAEB005B9756 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		86AA563A230DDAEB005B9756 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		86AA563D230DDAEB005B9756 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		86AA563F230DDAED005B9756 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86AA5642230DDAED005B9756 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86AA5644230DDAED005B9756 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86AA564A230DDBD7005B9756 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
+		86AA564C230DDBF2005B9756 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		86AA564F230DDD25005B9756 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../../../../../../Downloads/ios-afternoon-project-outatime-master/digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +43,7 @@
 			children = (
 				86AA5637230DDAEB005B9756 /* Outatime */,
 				86AA5636230DDAEB005B9756 /* Products */,
+				86AA564F230DDD25005B9756 /* digital-7.ttf */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +59,22 @@
 			isa = PBXGroup;
 			children = (
 				86AA5638230DDAEB005B9756 /* AppDelegate.swift */,
-				86AA563A230DDAEB005B9756 /* ViewController.swift */,
+				86AA564E230DDC21005B9756 /* View Controllers */,
 				86AA563C230DDAEB005B9756 /* Main.storyboard */,
 				86AA563F230DDAED005B9756 /* Assets.xcassets */,
 				86AA5641230DDAED005B9756 /* LaunchScreen.storyboard */,
 				86AA5644230DDAED005B9756 /* Info.plist */,
 			);
 			path = Outatime;
+			sourceTree = "<group>";
+		};
+		86AA564E230DDC21005B9756 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				86AA564A230DDBD7005B9756 /* TimeCircuitsViewController.swift */,
+				86AA564C230DDBF2005B9756 /* DatePickerViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86AA563B230DDAEB005B9756 /* ViewController.swift in Sources */,
+				86AA564D230DDBF2005B9756 /* DatePickerViewController.swift in Sources */,
+				86AA564B230DDBD7005B9756 /* TimeCircuitsViewController.swift in Sources */,
 				86AA5639230DDAEB005B9756 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
