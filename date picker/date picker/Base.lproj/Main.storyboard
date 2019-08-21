@@ -88,12 +88,16 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="143" height="30"/>
                                                 <state key="normal" title="Set Destination TIme"/>
                                                 <connections>
+                                                    <action selector="setDestinationTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BB6-f1-TTd"/>
                                                     <segue destination="frn-Bf-ZQu" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="DMa-2E-hQM"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ov-qk-WGK">
                                                 <rect key="frame" x="32" y="31" width="79" height="30"/>
                                                 <state key="normal" title="Travel Back"/>
+                                                <connections>
+                                                    <action selector="travelBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="quP-Xe-Ggq"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -139,10 +143,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZa-xg-jQj">
                                         <rect key="frame" x="0.0" y="0.0" width="81" height="30"/>
                                         <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancelButtonPressed:" destination="frn-Bf-ZQu" eventType="touchUpInside" id="1LP-En-OrR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lhv-do-IRW">
                                         <rect key="frame" x="340" y="0.0" width="34" height="30"/>
                                         <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="saveButtonPressed:" destination="frn-Bf-ZQu" eventType="touchUpInside" id="Wtr-CF-xUP"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -158,6 +168,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PhT-QC-4e8"/>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="LqW-EM-061" id="qlu-Gn-sLy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2gb-kk-NZh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
