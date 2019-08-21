@@ -29,10 +29,10 @@ class TimeCircuitsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        destinationTimeLabel.font = UIFont(name: "Digital-7", size: destinationTimeLabel.font.pointSize)
-        presentTimeLabel.font = UIFont(name: "Digital-7", size: presentTimeLabel.font.pointSize)
-        lastDepartureLabel.font = UIFont(name: "Digital-7", size: lastDepartureLabel.font.pointSize)
-        speedLabel.font = UIFont(name: "digital-7.ttf", size: speedLabel.font.pointSize)
+        destinationTimeLabel.font = UIFont(name: "digital-7", size: destinationTimeLabel.font.pointSize)
+        presentTimeLabel.font = UIFont(name: "digital-7", size: presentTimeLabel.font.pointSize)
+        lastDepartureLabel.font = UIFont(name: "digital-7", size: lastDepartureLabel.font.pointSize)
+        speedLabel.font = UIFont(name: "digital-7", size: speedLabel.font.pointSize)
         
         updateViews()
     }
