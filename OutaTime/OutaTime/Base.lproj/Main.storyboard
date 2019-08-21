@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cJg-D2-Y06">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,25 +23,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyO-jp-ehL">
-                                <rect key="frame" x="136" y="790" width="143" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Set Destination Time"/>
-                                <connections>
-                                    <action selector="setDestinationTime:" destination="cJg-D2-Y06" eventType="touchUpInside" id="nRK-JE-gSU"/>
-                                    <segue destination="xFX-lE-FBx" kind="show" id="1l2-df-DLx"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIH-Mu-NfX">
-                                <rect key="frame" x="168" y="828" width="79" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Travel Back"/>
-                                <connections>
-                                    <action selector="travelBackTapped:" destination="cJg-D2-Y06" eventType="touchUpInside" id="j2x-MQ-0A1"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="14h-jc-x33">
-                                <rect key="frame" x="20" y="94" width="374" height="560"/>
+                                <rect key="frame" x="20" y="94" width="374" height="678"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESTINATION TIME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUa-3Z-564">
                                         <rect key="frame" x="111.5" y="0.0" width="151.5" height="20.5"/>
@@ -91,6 +74,26 @@
                                         <color key="textColor" red="1" green="0.0" blue="0.037429042760000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="k5m-Ws-1Gf">
+                                        <rect key="frame" x="115.5" y="610" width="143" height="68"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyO-jp-ehL">
+                                                <rect key="frame" x="0.0" y="0.0" width="143" height="30"/>
+                                                <state key="normal" title="Set Destination Time"/>
+                                                <connections>
+                                                    <action selector="setDestinationTime:" destination="cJg-D2-Y06" eventType="touchUpInside" id="nRK-JE-gSU"/>
+                                                    <segue destination="xFX-lE-FBx" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="9lr-Wf-jWj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIH-Mu-NfX">
+                                                <rect key="frame" x="32" y="38" width="79" height="30"/>
+                                                <state key="normal" title="Travel Back"/>
+                                                <connections>
+                                                    <action selector="travelBackTapped:" destination="cJg-D2-Y06" eventType="touchUpInside" id="j2x-MQ-0A1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -102,6 +105,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XU8-mI-WfK"/>
                     </view>
+                    <connections>
+                        <outlet property="destinationTimeLabel" destination="eos-ld-pKi" id="QT6-Q1-nMy"/>
+                        <outlet property="lastTimeDepartedLabel" destination="6bB-sh-eeh" id="ebz-Ci-GaF"/>
+                        <outlet property="presentTimeLabel" destination="IaC-al-1Aj" id="eV1-yV-gdj"/>
+                        <outlet property="speedLabel" destination="gfl-y6-xLc" id="egV-hi-cpi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yO1-ql-1QD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -114,9 +123,47 @@
                     <view key="view" contentMode="scaleToFill" id="ESH-31-KIi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="VFg-PR-skb">
+                                <rect key="frame" x="0.0" y="340" width="414" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="588104400.89415503">
+                                    <!--2019-08-21 18:20:00 +0000-->
+                                </date>
+                            </datePicker>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="276" translatesAutoresizingMaskIntoConstraints="NO" id="JSb-zA-PaJ">
+                                <rect key="frame" x="16" y="812" width="382" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSZ-zO-DPm">
+                                        <rect key="frame" x="0.0" y="0.0" width="69" height="30"/>
+                                        <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancelTapped:" destination="xFX-lE-FBx" eventType="touchUpInside" id="R3R-8i-Q4y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acH-Dl-zsi">
+                                        <rect key="frame" x="345" y="0.0" width="37" height="30"/>
+                                        <state key="normal" title="Done"/>
+                                        <connections>
+                                            <action selector="doneTapped:" destination="xFX-lE-FBx" eventType="touchUpInside" id="ox2-4F-CxE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ih0-50-jfs" firstAttribute="trailing" secondItem="JSb-zA-PaJ" secondAttribute="trailing" constant="16" id="05u-ns-3eC"/>
+                            <constraint firstItem="ih0-50-jfs" firstAttribute="bottom" secondItem="JSb-zA-PaJ" secondAttribute="bottom" constant="20" id="Bao-WC-c10"/>
+                            <constraint firstItem="VFg-PR-skb" firstAttribute="trailing" secondItem="ih0-50-jfs" secondAttribute="trailing" id="HgT-Jc-kuc"/>
+                            <constraint firstItem="JSb-zA-PaJ" firstAttribute="leading" secondItem="ih0-50-jfs" secondAttribute="leading" constant="16" id="ab0-NF-Ilu"/>
+                            <constraint firstItem="VFg-PR-skb" firstAttribute="leading" secondItem="ih0-50-jfs" secondAttribute="leading" id="bdl-8S-e2H"/>
+                            <constraint firstItem="VFg-PR-skb" firstAttribute="centerY" secondItem="ESH-31-KIi" secondAttribute="centerY" id="yqd-MM-F4d"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ih0-50-jfs"/>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="VFg-PR-skb" id="0Rp-3S-DS4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M6m-ui-1zS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

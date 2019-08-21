@@ -42,9 +42,9 @@
 		4509491C230D8E53001C77C2 = {
 			isa = PBXGroup;
 			children = (
+				45094927230D8E53001C77C2 /* OutaTime */,
 				4509493C230D8EB0001C77C2 /* DatePickerViewController.swift */,
 				4509493A230D8EA0001C77C2 /* TimeCircuitsViewController.swift */,
-				45094927230D8E53001C77C2 /* OutaTime */,
 				45094926230D8E53001C77C2 /* Products */,
 			);
 			sourceTree = "<group>";
