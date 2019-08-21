@@ -105,7 +105,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="SET DESTINATION TIME"/>
                                         <connections>
-                                            <action selector="setDestinationTImeButton:" destination="dq0-H6-VoQ" eventType="touchUpInside" id="Qes-Eb-9DO"/>
                                             <segue destination="bQw-Hy-1fe" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="HLC-Zc-kbp"/>
                                         </connections>
                                     </button>

@@ -32,7 +32,10 @@ class TimeCircuitViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        guard let customFont = UIFont(name: "Digital-7", size: UIFont.labelFontSize) else {return}
+        
         presentTimeLabel.text = dateFormatter.string(from: currentDate)
+        presentTimeLabel.font = UIFontMetrics.default.scaledFont(for: customFont)
         speedLabel.text = "\(currentSpeed) MPH"
         lastTimeDeparetedLabel.text = "___ __ ____"
 
@@ -40,6 +43,7 @@ class TimeCircuitViewController: UIViewController {
     }
     
     
+   
     @IBAction func travelBackButton(_ sender: Any) {
         startTimer()
     }
@@ -59,10 +63,11 @@ class TimeCircuitViewController: UIViewController {
             speedLabel.text = "\(currentSpeed) MPH"
         } else {
             resetTimer()
+            guard let presentTime = presentTimeLabel.text else {return}
             lastTimeDeparetedLabel.text = presentTimeLabel.text
             presentTimeLabel.text = destinationTimeLabel.text
             currentSpeed = 0
-            let alert = UIAlertController(title: "Time Travel Successful!", message: "Your new date is \(presentTimeLabel.text ?? "")", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Time Travel Successful!", message: "Your new date is \(presentTime)", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             present(alert, animated: true, completion: nil)
         }
