@@ -131,7 +131,7 @@
                                 </date>
                             </datePicker>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="276" translatesAutoresizingMaskIntoConstraints="NO" id="JSb-zA-PaJ">
-                                <rect key="frame" x="16" y="812" width="382" height="30"/>
+                                <rect key="frame" x="16" y="832" width="382" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSZ-zO-DPm">
                                         <rect key="frame" x="0.0" y="0.0" width="69" height="30"/>
@@ -153,10 +153,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ih0-50-jfs" firstAttribute="trailing" secondItem="JSb-zA-PaJ" secondAttribute="trailing" constant="16" id="05u-ns-3eC"/>
-                            <constraint firstItem="ih0-50-jfs" firstAttribute="bottom" secondItem="JSb-zA-PaJ" secondAttribute="bottom" constant="20" id="Bao-WC-c10"/>
                             <constraint firstItem="VFg-PR-skb" firstAttribute="trailing" secondItem="ih0-50-jfs" secondAttribute="trailing" id="HgT-Jc-kuc"/>
                             <constraint firstItem="JSb-zA-PaJ" firstAttribute="leading" secondItem="ih0-50-jfs" secondAttribute="leading" constant="16" id="ab0-NF-Ilu"/>
                             <constraint firstItem="VFg-PR-skb" firstAttribute="leading" secondItem="ih0-50-jfs" secondAttribute="leading" id="bdl-8S-e2H"/>
+                            <constraint firstItem="ih0-50-jfs" firstAttribute="bottom" secondItem="JSb-zA-PaJ" secondAttribute="bottom" id="h7o-1u-b47"/>
                             <constraint firstItem="VFg-PR-skb" firstAttribute="centerY" secondItem="ESH-31-KIi" secondAttribute="centerY" id="yqd-MM-F4d"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ih0-50-jfs"/>
