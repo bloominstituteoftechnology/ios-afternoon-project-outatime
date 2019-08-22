@@ -27,16 +27,16 @@
                                 <rect key="frame" x="0.0" y="64" width="414" height="788"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Elt-z8-3gR">
-                                        <rect key="frame" x="94.5" y="0.0" width="225" height="76.5"/>
+                                        <rect key="frame" x="62.5" y="0.0" width="289.5" height="89.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESTINATION TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCi-I4-udT">
-                                                <rect key="frame" x="19.5" y="0.0" width="186" height="23"/>
+                                                <rect key="frame" x="51.5" y="0.0" width="186" height="23"/>
                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAN 01 2000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tI-ju-GYc">
-                                                <rect key="frame" x="0.0" y="31" width="225" height="45.5"/>
+                                                <rect key="frame" x="0.0" y="31" width="289.5" height="58.5"/>
                                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="50"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -44,16 +44,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MZB-xD-3G0">
-                                        <rect key="frame" x="98.5" y="177.5" width="217.5" height="76.5"/>
+                                        <rect key="frame" x="53.5" y="177.5" width="307" height="89.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRESENT TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6q-9p-ZAp">
-                                                <rect key="frame" x="35" y="0.0" width="147.5" height="23"/>
+                                                <rect key="frame" x="80" y="0.0" width="147.5" height="23"/>
                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JUN 12, 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVE-fd-ode">
-                                                <rect key="frame" x="0.0" y="31" width="217.5" height="45.5"/>
+                                                <rect key="frame" x="0.0" y="31" width="307" height="58.5"/>
                                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="50"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -61,7 +61,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="liH-9r-Cu0">
-                                        <rect key="frame" x="99.5" y="355" width="215.5" height="76.5"/>
+                                        <rect key="frame" x="99.5" y="355" width="215.5" height="89.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAST TIME DEPARTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yg-y1-4jY">
                                                 <rect key="frame" x="0.0" y="0.0" width="215.5" height="23"/>
@@ -70,7 +70,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--- -- ----" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRZ-Va-mMu">
-                                                <rect key="frame" x="0.0" y="31" width="215.5" height="45.5"/>
+                                                <rect key="frame" x="0.0" y="31" width="215.5" height="58.5"/>
                                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="50"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -78,16 +78,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ig8-jE-bxH">
-                                        <rect key="frame" x="153" y="532.5" width="108.5" height="76.5"/>
+                                        <rect key="frame" x="136" y="532.5" width="142" height="89.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPEED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wH7-y3-Wxj">
-                                                <rect key="frame" x="20" y="0.0" width="68" height="23"/>
+                                                <rect key="frame" x="37" y="0.0" width="68" height="23"/>
                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 mph" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjY-uf-Yb9">
-                                                <rect key="frame" x="0.0" y="31" width="108.5" height="45.5"/>
+                                                <rect key="frame" x="0.0" y="31" width="142" height="58.5"/>
                                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="50"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -128,11 +128,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="currentSpeedLabel" destination="OjY-uf-Yb9" id="2ds-o2-i5m"/>
+                        <outlet property="destinationLabel" destination="XCi-I4-udT" id="f8j-T2-D8H"/>
                         <outlet property="destinationTimeLabel" destination="9tI-ju-GYc" id="Iqf-Ys-bcI"/>
                         <outlet property="lastTimeDepartedLabel" destination="cRZ-Va-mMu" id="bHZ-qX-DOY"/>
+                        <outlet property="lastTimeLabel" destination="7yg-y1-4jY" id="9r7-UK-Bms"/>
                         <outlet property="presentDate" destination="JVE-fd-ode" id="Yr7-nJ-XdG"/>
                         <outlet property="presentTimeLabel" destination="j6q-9p-ZAp" id="jRd-Ku-zeC"/>
-                        <outlet property="speedLabel" destination="OjY-uf-Yb9" id="Tpb-ey-ajg"/>
+                        <outlet property="setDestinationTimeButton" destination="XsR-Nd-DkW" id="mDO-2L-DDy"/>
+                        <outlet property="speedLabel" destination="wH7-y3-Wxj" id="c4a-Ud-lFh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -147,7 +151,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Zsj-6X-XHl">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Zsj-6X-XHl">
                                 <rect key="frame" x="47" y="340" width="320" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="588116814.84281898">
                                     <!--2019-08-21 21:46:54 +0000-->
@@ -173,7 +177,7 @@
                                 </items>
                             </toolbar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="8g9-vm-xbI" firstAttribute="trailing" secondItem="feS-Ds-3iJ" secondAttribute="trailing" id="4Ye-tB-Lfp"/>
                             <constraint firstItem="8g9-vm-xbI" firstAttribute="leading" secondItem="feS-Ds-3iJ" secondAttribute="leading" id="byc-wB-pUx"/>

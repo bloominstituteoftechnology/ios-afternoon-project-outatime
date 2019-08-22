@@ -62,13 +62,13 @@
 			isa = PBXGroup;
 			children = (
 				DD1DDE5E230DD8FE00154F5C /* Main.storyboard */,
+				DD1DDE66230DD90000154F5C /* Info.plist */,
 				DD1DDE6C230DD94600154F5C /* TimeCircuitsViewController.swift */,
 				DD1DDE6E230DD96400154F5C /* DatePickerViewController.swift */,
 				DD1DDE5C230DD8FE00154F5C /* ViewController.swift */,
 				DD1DDE5A230DD8FE00154F5C /* AppDelegate.swift */,
 				DD1DDE61230DD90000154F5C /* Assets.xcassets */,
 				DD1DDE63230DD90000154F5C /* LaunchScreen.storyboard */,
-				DD1DDE66230DD90000154F5C /* Info.plist */,
 			);
 			path = OutaTimeB;
 			sourceTree = "<group>";
