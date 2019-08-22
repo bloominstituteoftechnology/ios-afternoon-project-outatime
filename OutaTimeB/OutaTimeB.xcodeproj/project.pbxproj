@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DD1DDE5B230DD8FE00154F5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1DDE5A230DD8FE00154F5C /* AppDelegate.swift */; };
-		DD1DDE5D230DD8FE00154F5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1DDE5C230DD8FE00154F5C /* ViewController.swift */; };
 		DD1DDE60230DD8FE00154F5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD1DDE5E230DD8FE00154F5C /* Main.storyboard */; };
 		DD1DDE62230DD90000154F5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD1DDE61230DD90000154F5C /* Assets.xcassets */; };
 		DD1DDE65230DD90000154F5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD1DDE63230DD90000154F5C /* LaunchScreen.storyboard */; };
@@ -20,14 +19,13 @@
 /* Begin PBXFileReference section */
 		DD1DDE57230DD8FE00154F5C /* OutaTimeB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutaTimeB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD1DDE5A230DD8FE00154F5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD1DDE5C230DD8FE00154F5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD1DDE5F230DD8FE00154F5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD1DDE61230DD90000154F5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD1DDE64230DD90000154F5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD1DDE66230DD90000154F5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD1DDE6C230DD94600154F5C /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
 		DD1DDE6E230DD96400154F5C /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
-		DD1DDE70230DDDC400154F5C /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../digital-7.ttf"; sourceTree = "<group>"; };
+		DD1DDE70230DDDC400154F5C /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +44,6 @@
 			children = (
 				DD1DDE59230DD8FE00154F5C /* OutaTimeB */,
 				DD1DDE58230DD8FE00154F5C /* Products */,
-				DD1DDE70230DDDC400154F5C /* digital-7.ttf */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,16 +58,32 @@
 		DD1DDE59230DD8FE00154F5C /* OutaTimeB */ = {
 			isa = PBXGroup;
 			children = (
-				DD1DDE5E230DD8FE00154F5C /* Main.storyboard */,
-				DD1DDE66230DD90000154F5C /* Info.plist */,
+				DDE700A1230F1A9100D7B057 /* Resources */,
+				DDE700A0230F18BF00D7B057 /* View Controlllers */,
+			);
+			path = OutaTimeB;
+			sourceTree = "<group>";
+		};
+		DDE700A0230F18BF00D7B057 /* View Controlllers */ = {
+			isa = PBXGroup;
+			children = (
 				DD1DDE6C230DD94600154F5C /* TimeCircuitsViewController.swift */,
 				DD1DDE6E230DD96400154F5C /* DatePickerViewController.swift */,
-				DD1DDE5C230DD8FE00154F5C /* ViewController.swift */,
+			);
+			path = "View Controlllers";
+			sourceTree = "<group>";
+		};
+		DDE700A1230F1A9100D7B057 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD1DDE5E230DD8FE00154F5C /* Main.storyboard */,
+				DD1DDE66230DD90000154F5C /* Info.plist */,
 				DD1DDE5A230DD8FE00154F5C /* AppDelegate.swift */,
 				DD1DDE61230DD90000154F5C /* Assets.xcassets */,
 				DD1DDE63230DD90000154F5C /* LaunchScreen.storyboard */,
+				DD1DDE70230DDDC400154F5C /* digital-7.ttf */,
 			);
-			path = OutaTimeB;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +160,6 @@
 			files = (
 				DD1DDE6F230DD96400154F5C /* DatePickerViewController.swift in Sources */,
 				DD1DDE6D230DD94600154F5C /* TimeCircuitsViewController.swift in Sources */,
-				DD1DDE5D230DD8FE00154F5C /* ViewController.swift in Sources */,
 				DD1DDE5B230DD8FE00154F5C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,7 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = OutaTimeB/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/OutaTimeB/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +324,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = OutaTimeB/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/OutaTimeB/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

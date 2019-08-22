@@ -22,7 +22,9 @@ class TimeCircuitsViewController: UIViewController {
 	@IBOutlet weak var currentSpeedLabel: UILabel!
 	@IBOutlet weak var speedLabel: UILabel!
 
-	
+
+	// MARK: - Properties
+
 	var dateFormatter: DateFormatter = {
 
 		let formatter = DateFormatter()
@@ -30,7 +32,6 @@ class TimeCircuitsViewController: UIViewController {
 		formatter.timeZone = TimeZone(secondsFromGMT: 0)
 		return formatter
 	}()
-
 
 	var currentSpeed: Int = 0
 	var timer: Timer?
@@ -57,19 +58,15 @@ class TimeCircuitsViewController: UIViewController {
 
 		presentDate.text = date
 
-		speedLabel.text = String("\(currentSpeed) MPH")
+		currentSpeedLabel.text = String("\(currentSpeed) MPH")
 		lastTimeDepartedLabel.text = "--- -- ----"
 
 
     }
 
 
-    
-
 	@IBAction func travelBackButton(_ sender: UIButton) {
-
 		startTimer()
-
 	}
 
 
@@ -81,6 +78,8 @@ class TimeCircuitsViewController: UIViewController {
 }
 
 
+	// MARK: - Methods
+
 	func resetTimer() {
 		timer?.invalidate()
 		timer = nil
@@ -89,7 +88,7 @@ class TimeCircuitsViewController: UIViewController {
 	func updateSpeed(timer: Timer) {
 		if currentSpeed < 88 {
 			currentSpeed += 1
-			currentSpeedLabel.text = String(currentSpeed)
+			currentSpeedLabel.text = String("\(currentSpeed) MPH")
 		} else {
 			resetTimer()
 			lastTimeDepartedLabel.text = presentTimeLabel.text
@@ -110,6 +109,9 @@ class TimeCircuitsViewController: UIViewController {
 		timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateSpeed(timer:))
 	}
 }
+
+
+// MARK: - Extensions
 
 extension TimeCircuitsViewController: DatePickerDelegate {
 	func destinationDateWasChosen(date: Date) {
