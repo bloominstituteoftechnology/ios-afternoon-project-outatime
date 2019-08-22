@@ -18,6 +18,8 @@ class TimeCircuitsViewController: UIViewController {
     @IBOutlet weak var speedLabel: UILabel!
     
     var currentSpeed = 0
+    var timer: Timer?
+    
     
     var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -41,18 +43,44 @@ class TimeCircuitsViewController: UIViewController {
     }
     
     @IBAction func travelBack(_ sender: UIButton) {
-        func startTimer(){
-            Timer.scheduledTimer(withTimeInterval: 0.1, repeats: false, block: )
+        startTimer()
+    }
+    
+    func startTimer(){
+        Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateSpeed(timer:) )
+    }
+
+    func updateSpeed(timer: Timer){
+        if currentSpeed != 88 {
+             currentSpeed += 1
+             speedLabel.text = String(currentSpeed)
+        }else if currentSpeed == 88 {
+            stopTimer()
+            lastTimeDeparted.text = presentTimeLabel.text
+            presentTimeLabel.text = destinationTimeLabel.text
+            currentSpeed = 0
+            showAlert()
+
         }
     }
     
+    private func showAlert() {
+        let alert = UIAlertController(title: "Time Travel Finished ", message: "You're new date is \(presentTimeLabel?.text)", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
 
-    func updateSpeed(){
-    
+    func stopTimer(){
+        timer?.invalidate()
+        timer = nil
+    }
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let timeVC = segue.destination as? DatePickerViewController else { return }
+        timeVC.delegate = self
+        
         
      
     }
@@ -62,7 +90,7 @@ class TimeCircuitsViewController: UIViewController {
 
 extension TimeCircuitsViewController : DatePickerDelegate {
     func destinationWasChosen(_ date: Date) {
-        <#code#>
+        destinationTimeLabel.text = dateFormatter.string(from: Date())
     }
     
 }

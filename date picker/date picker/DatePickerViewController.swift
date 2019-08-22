@@ -30,8 +30,8 @@ class DatePickerViewController: UIViewController {
     }
     
     @IBAction func saveButtonPressed(_ sender: UIButton) {
-        delegate?.destinationWasChosen(Date())
-        
+        delegate?.destinationWasChosen(datePicker.date)
+         dismiss(animated: true, completion: nil)
     }
     /*
     // MARK: - Navigation
