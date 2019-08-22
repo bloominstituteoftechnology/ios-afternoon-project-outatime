@@ -27,6 +27,7 @@ class TimeCircuitsViewController: UIViewController {
         formatter.timeZone = TimeZone(secondsFromGMT: 0)
         return formatter
     }()
+    
     override func viewDidLoad() {
         presentTimeLabel.text = dateFormatter.string(from: Date())
         speedLabel.text = "\(currentSpeed) MPH"
@@ -51,10 +52,10 @@ class TimeCircuitsViewController: UIViewController {
     }
 
     func updateSpeed(timer: Timer){
-        if currentSpeed != 88 {
+        if currentSpeed < 88 {
              currentSpeed += 1
              speedLabel.text = String(currentSpeed)
-        }else if currentSpeed == 88 {
+        }else if currentSpeed >= 88 {
             stopTimer()
             lastTimeDeparted.text = presentTimeLabel.text
             presentTimeLabel.text = destinationTimeLabel.text
@@ -66,8 +67,8 @@ class TimeCircuitsViewController: UIViewController {
     
     private func showAlert() {
         guard let presentTime = presentTimeLabel.text else { return }
-        let alert = UIAlertController(title: "Time Travel Finished ", message: "You're new date is \(presentTime)", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        let alert = UIAlertController(title: "Time Travel Finished ", message: "You're new date is \(presentTime)", preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: nil))
         present(alert, animated: true, completion: nil)
     }
 
