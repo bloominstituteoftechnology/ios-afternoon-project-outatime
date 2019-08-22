@@ -65,7 +65,8 @@ class TimeCircuitsViewController: UIViewController {
     }
     
     private func showAlert() {
-        let alert = UIAlertController(title: "Time Travel Finished ", message: "You're new date is \(presentTimeLabel?.text)", preferredStyle: .alert)
+        guard let presentTime = presentTimeLabel.text else { return }
+        let alert = UIAlertController(title: "Time Travel Finished ", message: "You're new date is \(presentTime)", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
     }
