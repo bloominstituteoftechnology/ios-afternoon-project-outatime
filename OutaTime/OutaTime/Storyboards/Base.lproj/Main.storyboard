@@ -27,16 +27,16 @@
                                 <rect key="frame" x="16" y="68" width="382" height="611"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2Za-En-5w0" userLabel="Destination">
-                                        <rect key="frame" x="56.5" y="0.0" width="269.5" height="92"/>
+                                        <rect key="frame" x="66.5" y="0.0" width="249" height="92"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESTINATION TIME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQs-W4-YAB">
-                                                <rect key="frame" x="30" y="0.0" width="209.5" height="29"/>
+                                                <rect key="frame" x="20" y="0.0" width="209.5" height="29"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jan 01 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fj3-ah-SOg">
-                                                <rect key="frame" x="0.0" y="37" width="269.5" height="55"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--- -- ----" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fj3-ah-SOg">
+                                                <rect key="frame" x="0.0" y="37" width="249" height="55"/>
                                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="60"/>
                                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -107,7 +107,6 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="setDestinationTimeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="diD-xs-4jk"/>
                                             <segue destination="MKa-RV-ASc" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="FdT-Ji-GBy"/>
                                         </connections>
                                     </button>
