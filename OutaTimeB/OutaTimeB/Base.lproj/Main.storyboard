@@ -156,9 +156,6 @@
                                 <date key="date" timeIntervalSinceReferenceDate="588116814.84281898">
                                     <!--2019-08-21 21:46:54 +0000-->
                                 </date>
-                                <connections>
-                                    <action selector="datePicker:" destination="f14-w1-cxb" eventType="valueChanged" id="rnn-L0-tB1"/>
-                                </connections>
                             </datePicker>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8g9-vm-xbI">
                                 <rect key="frame" x="0.0" y="813" width="414" height="49"/>
@@ -188,12 +185,12 @@
                         <viewLayoutGuide key="safeArea" id="feS-Ds-3iJ"/>
                     </view>
                     <connections>
-                        <outlet property="datePicker" destination="Zsj-6X-XHl" id="WV4-Lc-B4G"/>
+                        <outlet property="datePicker" destination="Zsj-6X-XHl" id="Hcv-E5-uUa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TAx-J3-bMV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="777" y="139"/>
+            <point key="canvasLocation" x="746" y="139"/>
         </scene>
     </scenes>
 </document>
