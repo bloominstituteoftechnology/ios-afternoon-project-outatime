@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2dz-Um-E9y">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -15,20 +15,6 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OutaTime" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
         <!--Time Circuits View Controller-->
         <scene sceneID="Qct-1G-cMJ">
             <objects>
@@ -129,6 +115,7 @@
                                         <state key="normal" title="SET DESTINATION TIME"/>
                                         <connections>
                                             <action selector="setDestinationButton:" destination="2dz-Um-E9y" eventType="touchUpInside" id="pmA-cE-Kci"/>
+                                            <segue destination="ryk-Bj-TGa" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="Stk-SM-T7B"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nY-C5-Lj7">
@@ -169,7 +156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kOa-bL-YNN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1045" y="-341"/>
+            <point key="canvasLocation" x="286" y="-42"/>
         </scene>
         <!--Dat Picker View Controller-->
         <scene sceneID="4ih-DQ-ku8">
@@ -178,13 +165,45 @@
                     <view key="view" contentMode="scaleToFill" id="azV-s0-dfX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="gsx-kO-h4v">
+                                <rect key="frame" x="0.0" y="340" width="414" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="590529526.98156595">
+                                    <!--2019-09-18 19:58:46 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofP-y9-gnX">
+                                <rect key="frame" x="20" y="836" width="48" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelButton:" destination="ryk-Bj-TGa" eventType="touchUpInside" id="X2r-If-yw9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2A-MJ-iHZ">
+                                <rect key="frame" x="357" y="836" width="37" height="30"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="doneButton:" destination="ryk-Bj-TGa" eventType="touchUpInside" id="PzZ-lu-pRV"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ofP-y9-gnX" firstAttribute="leading" secondItem="d3T-mr-Tvc" secondAttribute="leading" constant="20" id="B7g-er-kbA"/>
+                            <constraint firstAttribute="bottom" secondItem="ofP-y9-gnX" secondAttribute="bottom" constant="30" id="Bfx-6q-Iqm"/>
+                            <constraint firstAttribute="bottom" secondItem="V2A-MJ-iHZ" secondAttribute="bottom" constant="30" id="J1y-sP-yR7"/>
+                            <constraint firstItem="d3T-mr-Tvc" firstAttribute="trailing" secondItem="V2A-MJ-iHZ" secondAttribute="trailing" constant="20" id="vtE-aB-nKa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="d3T-mr-Tvc"/>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="gsx-kO-h4v" id="4zg-fM-f7O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Cv-5y-aX6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1045" y="335"/>
+            <point key="canvasLocation" x="1168" y="-42"/>
         </scene>
     </scenes>
 </document>

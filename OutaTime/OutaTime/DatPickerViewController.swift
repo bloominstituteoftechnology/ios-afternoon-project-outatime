@@ -10,10 +10,20 @@ import UIKit
 
 class DatPickerViewController: UIViewController {
 
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    
+    @IBAction func cancelButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func doneButton(_ sender: UIButton) {
     }
     
 

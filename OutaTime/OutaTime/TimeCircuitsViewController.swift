@@ -15,16 +15,17 @@ class TimeCircuitsViewController: UIViewController {
     @IBOutlet weak var lastLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
     
-    
+    var dateFormatter: DateFormatter  {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM d yyyy"
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        return formatter
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
-    
-    
-    @IBAction func setDestinationButton(_ sender: UIButton) {
     }
     
     
