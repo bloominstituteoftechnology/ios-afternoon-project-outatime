@@ -17,7 +17,9 @@ class TimeCircuitsViewController: UIViewController {
     
     let currentDate = Date()
     
-    let currentSpeed = 0
+    var currentSpeed = 0
+    
+    var timer: Timer?
     
     var dateFormatter: DateFormatter  {
         let formatter = DateFormatter()
@@ -38,17 +40,45 @@ class TimeCircuitsViewController: UIViewController {
     
     
     @IBAction func travelBackButton(_ sender: UIButton) {
+        startTimer()
     }
     
-    /*
+    func startTimer() {
+        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateSpeed(timer:))
+    }
+    
+    func resetTimer() {
+        timer?.invalidate()
+        timer = nil
+    }
+    
+    func updateSpeed(timer: Timer) {
+        if currentSpeed < 88 {
+            currentSpeed += 1
+            speedLabel.text = "\(currentSpeed) MPH"
+        } else {
+            resetTimer()
+            guard let presentTime = presentLabel.text else { return }
+            lastLabel.text = presentLabel.text
+            currentSpeed = 0
+            let alert = UIAlertController(title: "Time Travel Successful!", message: "Your new date is \(presentTime)", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "ModalDestinationDatePickerSegue" {
+            if let datePickerVC = segue.destination as? DatPickerViewController {
+                datePickerVC.delegate = self
+            }
+        }
     }
-    */
+    
 
 }
 
