@@ -25,6 +25,7 @@ class TimeCircuitsViewController: UIViewController {
         return formatter
     }
     var speed = 0
+    var timer: Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,12 +38,42 @@ class TimeCircuitsViewController: UIViewController {
     //MARK: Actions
     
     @IBAction func travelBackTapped(_ sender: UIButton) {
+        startTimer()
     }
     
     //MARK: Private
     
     private func updateViews() {
         speedLabel.text = "\(speed) MPH"
+    }
+    
+    private func startTimer() {
+        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateSpeed(timer:))
+    }
+    
+    private func resetTimer() {
+        timer?.invalidate()
+        timer = nil
+    }
+    
+    private func showAlert() {
+        let alert = UIAlertController(title: "Time Travel Successful", message: "Your new date is \(presentTimeLabel.text ?? "")", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+    
+    private func updateSpeed(timer: Timer) {
+        if speed < 88 {
+            speed += 1
+        } else {
+            resetTimer()
+            lastTimeLabel.text = presentTimeLabel.text
+            presentTimeLabel.text = destinationTimeLabel.text
+            speed = 0
+            showAlert()
+        }
+        
+        updateViews()
     }
 
     // MARK: - Navigation
