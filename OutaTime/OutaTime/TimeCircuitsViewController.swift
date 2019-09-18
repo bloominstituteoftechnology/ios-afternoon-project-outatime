@@ -10,23 +10,58 @@ import UIKit
 
 class TimeCircuitsViewController: UIViewController {
     
-    
+    // MARK: - Outlets
     @IBOutlet weak var destinationTimeLabel: UILabel!
-    
     @IBOutlet weak var presentTimeLabel: UILabel!
-    
     @IBOutlet weak var lastTimeDepartedLabel: UILabel!
-    
     @IBOutlet weak var speedLabel: UILabel!
     
+    
+    // MARK: - Properties
+     var currentSpeed = 0
+    
+    var dateFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        
+        formatter.dateFormat = "HH:mm"
+        formatter.timeZone = TimeZone(abbreviation: "UTC -8")  // you might have to take the " -8" out
+        
+        return formatter
+    }
+    
 
+   
+
+    
+    
+    
+    // VIEW DID LOAD
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
+        presentTimeLabel.text = dateFormatter.dateFormat
+        speedLabel.text = "\(currentSpeed) MPH"
+        lastTimeDepartedLabel.text = "--- -- ----"
     }
+    
+    //"MM-dd-yyyy"
+    
+    
+    
+    
+    // IBAction
     @IBAction func travelBackButton(_ sender: UIButton) {
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 
     /*

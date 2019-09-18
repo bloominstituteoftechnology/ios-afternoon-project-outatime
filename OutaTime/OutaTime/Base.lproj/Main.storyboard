@@ -109,6 +109,9 @@
                                         <state key="normal" title="SET DESTINATION TIME">
                                             <color key="titleColor" red="0.96735634179999996" green="1" blue="0.2390937501" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="KPc-Hm-3gX" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="gZV-xA-bed"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cwo-Qt-0wD">
                                         <rect key="frame" x="0.0" y="66" width="414" height="36"/>
@@ -166,10 +169,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oel-bb-Ric">
                                         <rect key="frame" x="0.0" y="0.0" width="48" height="30"/>
                                         <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancelButton:" destination="KPc-Hm-3gX" eventType="touchUpInside" id="zX0-dE-0Mi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCh-Eb-hMx">
                                         <rect key="frame" x="347" y="0.0" width="37" height="30"/>
                                         <state key="normal" title="Done"/>
+                                        <connections>
+                                            <action selector="doneButton:" destination="KPc-Hm-3gX" eventType="touchUpInside" id="dpt-of-h2D"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -182,6 +191,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="z29-Ta-bta"/>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="V7V-z6-TKY" id="L6B-cT-iF5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="drF-5e-1mq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
