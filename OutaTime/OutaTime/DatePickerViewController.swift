@@ -9,14 +9,14 @@
 import UIKit
 
 
+// MARK: - DatePickerDeledate Protocol
 protocol DatePickerDelegate {
     func destinationDateWasChosen(date: Date)
 }
 
 
 
-
-
+// MARK : - Class
 class DatePickerViewController: UIViewController {
     
     //MARK: - IBOutlets
@@ -35,10 +35,20 @@ class DatePickerViewController: UIViewController {
     
     
     // MARK: - IBActions
+    
+    // Done
+    // call the delegate method to inform the delegate of the new date chosen by the user. This will inform the delegate of the change, and then dismiss the view
     @IBAction func doneButton(_ sender: UIButton) {
+        
+        delegate?.destinationDateWasChosen(date: <#T##Date#>)
+        
+        dismiss(animated: true, completion: nil)
     }
     
+    
+    // Cancel
     @IBAction func cancelButton(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
     }
     
     
