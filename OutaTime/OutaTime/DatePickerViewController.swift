@@ -8,7 +8,7 @@
 
 import UIKit
 
-//MARK: delegate protocol
+//MARK: delegate protocol: Declare a single function and have it take a Date as an argument
 protocol DatePickerDelegate: AnyObject {
     func destinationDateWasChosen(date: Date)
 }
@@ -16,7 +16,7 @@ protocol DatePickerDelegate: AnyObject {
 class DatePickerViewController: UIViewController {
 
     //MARK: Properties
-    weak var delegate: DatePickerDelegate?
+    weak var delegate: DatePickerDelegate? // optional variable delegate of type DatePickerDelegate
     
     //MARK: Outlets
     @IBOutlet var datePicker: UIDatePicker!
@@ -30,12 +30,12 @@ class DatePickerViewController: UIViewController {
     //MARK: IBActions
     
     @IBAction func cancelButtonTapped(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil) // simply dismiss the view
     }
     
     @IBAction func doneButtonTapped(_ sender: Any) {
         print("done")
         delegate?.destinationDateWasChosen(date: datePicker.date)
-        dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil) // call the delegate method to inform the delegate of the new date and then dismiss
     }
 }
