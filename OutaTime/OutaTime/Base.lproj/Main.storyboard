@@ -23,8 +23,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="gIU-hS-yDy">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="gIU-hS-yDy">
+                                <rect key="frame" x="0.0" y="64" width="414" height="798"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6MH-wi-6VT">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
@@ -46,7 +46,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Sw2-p7-5OO">
-                                        <rect key="frame" x="0.0" y="94" width="414" height="66"/>
+                                        <rect key="frame" x="0.0" y="182.5" width="414" height="66"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oct 26 1985" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wgU-nd-QOt">
                                                 <rect key="frame" x="113.5" y="0.0" width="187.5" height="38.5"/>
@@ -65,7 +65,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="loa-mF-vCY">
-                                        <rect key="frame" x="0.0" y="188" width="414" height="66"/>
+                                        <rect key="frame" x="0.0" y="364.5" width="414" height="66"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oct 26 1985" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ayk-gV-eBJ">
                                                 <rect key="frame" x="113.5" y="0.0" width="187.5" height="38.5"/>
@@ -84,7 +84,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uDD-cG-Zhy">
-                                        <rect key="frame" x="0.0" y="282" width="414" height="66"/>
+                                        <rect key="frame" x="0.0" y="547" width="414" height="66"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 MPH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="X5V-fy-AJ2">
                                                 <rect key="frame" x="161.5" y="0.0" width="91" height="38.5"/>
@@ -103,10 +103,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FJe-kD-IDp">
-                                        <rect key="frame" x="0.0" y="376" width="414" height="442"/>
+                                        <rect key="frame" x="0.0" y="726" width="414" height="72"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zF-54-cJ1">
-                                                <rect key="frame" x="118.5" y="0.0" width="177" height="217"/>
+                                                <rect key="frame" x="118.5" y="0.0" width="177" height="32"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <state key="normal" title="SET DESTINATION TIME"/>
                                                 <connections>
@@ -114,7 +114,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxd-rD-cBl">
-                                                <rect key="frame" x="155" y="225" width="104" height="217"/>
+                                                <rect key="frame" x="155" y="40" width="104" height="32"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <state key="normal" title="TRAVEL BACK"/>
                                                 <connections>
@@ -130,7 +130,7 @@
                         <constraints>
                             <constraint firstItem="gIU-hS-yDy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Txm-j5-6fb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gIU-hS-yDy" secondAttribute="trailing" id="uqA-TB-KBl"/>
-                            <constraint firstItem="gIU-hS-yDy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wo2-qr-hxy"/>
+                            <constraint firstItem="gIU-hS-yDy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="wo2-qr-hxy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gIU-hS-yDy" secondAttribute="bottom" id="zvp-86-uMX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -194,7 +194,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9FH-zY-qID" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="849" y="19"/>
+            <point key="canvasLocation" x="1410" y="19"/>
         </scene>
     </scenes>
 </document>
