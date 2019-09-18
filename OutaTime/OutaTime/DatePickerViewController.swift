@@ -8,7 +8,13 @@
 
 import UIKit
 
+protocol DatePickerDelegate {
+    func destinationDateWasChosen(_: Date)
+}
+
 class DatePickerViewController: UIViewController {
+    
+    var delegate: DatePickerDelegate?
 
     // MARK: - Outlet
     
@@ -21,8 +27,13 @@ class DatePickerViewController: UIViewController {
     // MARL: - Action
     
     @IBAction func cancelButtonTapped(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
     }
     @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
+        guard let newDate = datePicker else { return }
+        let date = Date(newDate)
+        dismiss(animated: true, completion: nil)
+            
     }
     
     /*
