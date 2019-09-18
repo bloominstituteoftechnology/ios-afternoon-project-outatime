@@ -9,23 +9,24 @@
 /* Begin PBXBuildFile section */
 		4F96FC442332BEC800B1EBE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F96FC432332BEC800B1EBE2 /* AppDelegate.swift */; };
 		4F96FC462332BEC800B1EBE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F96FC452332BEC800B1EBE2 /* SceneDelegate.swift */; };
-		4F96FC482332BEC800B1EBE2 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F96FC472332BEC800B1EBE2 /* TimeCircuitsViewController.swift */; };
 		4F96FC4B2332BEC800B1EBE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F96FC492332BEC800B1EBE2 /* Main.storyboard */; };
 		4F96FC4D2332BECE00B1EBE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F96FC4C2332BECE00B1EBE2 /* Assets.xcassets */; };
 		4F96FC502332BECE00B1EBE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F96FC4E2332BECE00B1EBE2 /* LaunchScreen.storyboard */; };
 		4F96FC582332C2CF00B1EBE2 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F96FC572332C2CF00B1EBE2 /* DatePickerViewController.swift */; };
+		4F96FC5B2332D53300B1EBE2 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F96FC5A2332D53300B1EBE2 /* TimeCircuitsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4F96FC402332BEC800B1EBE2 /* OutaTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutaTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F96FC432332BEC800B1EBE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F96FC452332BEC800B1EBE2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4F96FC472332BEC800B1EBE2 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
 		4F96FC4A2332BEC800B1EBE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F96FC4C2332BECE00B1EBE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F96FC4F2332BECE00B1EBE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F96FC512332BECE00B1EBE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F96FC572332C2CF00B1EBE2 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		4F96FC592332C3F800B1EBE2 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../../digital-7.ttf"; sourceTree = "<group>"; };
+		4F96FC5A2332D53300B1EBE2 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +61,13 @@
 			children = (
 				4F96FC432332BEC800B1EBE2 /* AppDelegate.swift */,
 				4F96FC452332BEC800B1EBE2 /* SceneDelegate.swift */,
-				4F96FC472332BEC800B1EBE2 /* TimeCircuitsViewController.swift */,
 				4F96FC572332C2CF00B1EBE2 /* DatePickerViewController.swift */,
+				4F96FC5A2332D53300B1EBE2 /* TimeCircuitsViewController.swift */,
 				4F96FC492332BEC800B1EBE2 /* Main.storyboard */,
 				4F96FC4C2332BECE00B1EBE2 /* Assets.xcassets */,
 				4F96FC4E2332BECE00B1EBE2 /* LaunchScreen.storyboard */,
 				4F96FC512332BECE00B1EBE2 /* Info.plist */,
+				4F96FC592332C3F800B1EBE2 /* digital-7.ttf */,
 			);
 			path = OutaTime;
 			sourceTree = "<group>";
@@ -142,8 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F96FC582332C2CF00B1EBE2 /* DatePickerViewController.swift in Sources */,
-				4F96FC482332BEC800B1EBE2 /* TimeCircuitsViewController.swift in Sources */,
 				4F96FC442332BEC800B1EBE2 /* AppDelegate.swift in Sources */,
+				4F96FC5B2332D53300B1EBE2 /* TimeCircuitsViewController.swift in Sources */,
 				4F96FC462332BEC800B1EBE2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

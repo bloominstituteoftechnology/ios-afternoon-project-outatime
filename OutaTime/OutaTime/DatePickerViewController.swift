@@ -8,23 +8,34 @@
 
 import UIKit
 
+//MARK: delegate protocol
+protocol DatePickerDelegate: AnyObject {
+    func destinationDateWasChosen(date: Date)
+}
+
 class DatePickerViewController: UIViewController {
 
+    //MARK: Properties
+    weak var delegate: DatePickerDelegate?
+    
+    //MARK: Outlets
+    @IBOutlet var datePicker: UIDatePicker!
+    
+    
+    //MARK: View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //MARK: IBActions
+    
+    @IBAction func cancelButtonTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
-    */
-
+    
+    @IBAction func doneButtonTapped(_ sender: Any) {
+        print("done")
+        delegate?.destinationDateWasChosen(date: datePicker.date)
+        dismiss(animated: true, completion: nil)
+    }
 }
