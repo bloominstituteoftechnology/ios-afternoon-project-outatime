@@ -64,7 +64,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="uiR-gH-1zV">
                                         <rect key="frame" x="1" y="282" width="382" height="266"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAST TIME DEPARTED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5w-ao-XLc">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAST TIME DEPARTED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="i5w-ao-XLc">
                                                 <rect key="frame" x="43" y="0.0" width="296" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <nil key="textColor"/>
@@ -115,7 +115,7 @@
                                         <state key="normal" title="SET DESTINATION TIME"/>
                                         <connections>
                                             <action selector="setDestinationButton:" destination="2dz-Um-E9y" eventType="touchUpInside" id="pmA-cE-Kci"/>
-                                            <segue destination="ryk-Bj-TGa" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="Stk-SM-T7B"/>
+                                            <segue destination="ryk-Bj-TGa" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="M22-ym-Nv3"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nY-C5-Lj7">
