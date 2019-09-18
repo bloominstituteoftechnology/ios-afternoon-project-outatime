@@ -46,7 +46,13 @@ class TimeCircuitsViewController: UIViewController {
     }
     
     @IBAction func travelBackButtonTabbed(_ sender: UIButton) {
-        startTimer()
+        if destinationTimeLabel.text != presentTimeLabel.text {
+            startTimer()
+        } else {
+            let alert = UIAlertController(title: "Time Travel Failed", message: "You are already in \(destinationTimeLabel.text!)", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+        }
     }
     
     private func startTimer() {
