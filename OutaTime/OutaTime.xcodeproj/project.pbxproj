@@ -13,6 +13,7 @@
 		A6CC36412332C89A008C6C76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6CC363F2332C89A008C6C76 /* LaunchScreen.storyboard */; };
 		A6CC36492332CA1A008C6C76 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC36482332CA1A008C6C76 /* TimeCircuitsViewController.swift */; };
 		A6CC364B2332CA31008C6C76 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC364A2332CA31008C6C76 /* DatePickerViewController.swift */; };
+		A6CC364E2332ECDD008C6C76 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6CC364D2332CC21008C6C76 /* digital-7.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -138,6 +139,7 @@
 				A6CC36412332C89A008C6C76 /* LaunchScreen.storyboard in Resources */,
 				A6CC363E2332C89A008C6C76 /* Assets.xcassets in Resources */,
 				A6CC363C2332C899008C6C76 /* Main.storyboard in Resources */,
+				A6CC364E2332ECDD008C6C76 /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

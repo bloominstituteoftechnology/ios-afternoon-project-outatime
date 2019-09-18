@@ -25,18 +25,65 @@ class TimeCircuitsViewController: UIViewController {
     
     var currentSpeed = 0
     
+    private var timer: Timer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        destinationTimeLabel.text = "OCT 15 1993"
         presentTimeLabel.text = dateFormatter.string(from: Date())
+        speedLabel.text = "\(currentSpeed) MPH"
+        lastTimeLabel.text = "___ __ ____"
 
     }
     
-    @IBAction func setDestinationTimeButtonTabbed(_ sender: UIButton) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ModalDestinationDatePickerSegue" {
+            if let datePickerVC = segue.destination as? DatePickerViewController {
+                datePickerVC.delegate = self
+            }
+        }
     }
+    
     @IBAction func travelBackButtonTabbed(_ sender: UIButton) {
+        startTimer()
+    }
+    
+    private func startTimer() {
+        timer = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true, block: updateSpeed(timer:))
+    }
+    
+    private func resetTimer() {
+        timer?.invalidate()
+        timer = nil
+    }
+    
+    private func updateSpeed(timer: Timer) {
+        if currentSpeed >= 88 {
+            resetTimer()
+            lastTimeLabel.text = presentTimeLabel.text
+            presentTimeLabel.text = destinationTimeLabel.text
+            currentSpeed = 0
+            speedLabel.text = "\(currentSpeed) MPH"
+            showAlert()
+        } else {
+            currentSpeed += 1
+            speedLabel.text = "\(currentSpeed) MPH"
+        }
+    }
+    
+    private func showAlert() {
+        let alert = UIAlertController(title: "Time Travel Successful", message: "You are now in \(presentTimeLabel.text!)", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
     
     
 
+}
+
+extension TimeCircuitsViewController: DatePickerDelegate {
+    func destinationDateWasChosen(date: Date) {
+        destinationTimeLabel.text = dateFormatter.string(from: date)
+    }
 }

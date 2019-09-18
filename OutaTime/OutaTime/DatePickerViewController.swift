@@ -8,28 +8,31 @@
 
 import UIKit
 
+protocol DatePickerDelegate {
+    func destinationDateWasChosen (date: Date)
+}
+
 class DatePickerViewController: UIViewController {
+    
+    // MARK: - Properties
     @IBOutlet weak var datePicker: UIDatePicker!
+    
+    var delegate: DatePickerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        datePicker.setValue(UIColor.white, forKey: "textColor")
 
-        // Do any additional setup after loading the view.
-    }
-    @IBAction func cancelButtonTabbed(_ sender: UIBarButtonItem) {
-    }
-    @IBAction func doneButtonTabbed(_ sender: UIBarButtonItem) {
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func cancelButtonTabbed(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
     }
-    */
-
+    
+    @IBAction func doneButtonTabbed(_ sender: UIBarButtonItem) {
+        delegate?.destinationDateWasChosen(date: datePicker.date)
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
