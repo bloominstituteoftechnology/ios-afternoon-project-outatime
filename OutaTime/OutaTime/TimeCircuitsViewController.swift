@@ -23,17 +23,15 @@ class TimeCircuitsViewController: UIViewController {
     var dateFormatter: DateFormatter {
         let formatter = DateFormatter()
         
-        formatter.dateFormat = "HH:mm"
-        formatter.timeZone = TimeZone(abbreviation: "UTC -8")  // you might have to take the " -8" out
+        formatter.dateFormat = "MM-dd-yyyy"
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
         
         return formatter
     }
     
-
-   
-
+    var destinationDate: Date?
     
-    
+
     
     // VIEW DID LOAD
     override func viewDidLoad() {
@@ -45,7 +43,6 @@ class TimeCircuitsViewController: UIViewController {
         lastTimeDepartedLabel.text = "--- -- ----"
     }
     
-    //"MM-dd-yyyy"
     
     
     
@@ -56,29 +53,30 @@ class TimeCircuitsViewController: UIViewController {
     
     
     
-    
-    
-    
-    
-    
-    
-    
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "ModalDestinationDatePickerSegue" {
+            
+        }
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
+ 
 
 }
 
+
+// Conforming to the DatePickerDelegate protocol
 extension TimeCircuitsViewController: DatePickerDelegate {
+    
     func destinationDateWasChosen(date: Date) {
-        <#code#>
+        destinationDate = date
+        destinationTimeLabel.text = dateFormatter.string(from: date)
         //updateViews()
     }
     

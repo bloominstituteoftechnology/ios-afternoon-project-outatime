@@ -40,7 +40,7 @@ class DatePickerViewController: UIViewController {
     // call the delegate method to inform the delegate of the new date chosen by the user. This will inform the delegate of the change, and then dismiss the view
     @IBAction func doneButton(_ sender: UIButton) {
         
-        delegate?.destinationDateWasChosen(date: <#T##Date#>)
+        delegate?.destinationDateWasChosen(date: datePicker.date)
         
         dismiss(animated: true, completion: nil)
     }
@@ -51,21 +51,6 @@ class DatePickerViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    
-    
-    
-    
-    
-    
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
