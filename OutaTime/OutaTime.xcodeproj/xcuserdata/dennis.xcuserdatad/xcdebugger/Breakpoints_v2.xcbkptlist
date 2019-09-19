@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OutaTime/TimeCurcuitsViewController.swift"
+            timestampString = "590544112.0550261"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "destinationDateWasChosen(date:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OutaTime/TimeCurcuitsViewController.swift"
+            timestampString = "590544112.05551"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "destinationDateWasChosen(date:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OutaTime/DatePickerViewController.swift"
+            timestampString = "590543899.631914"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "DatePickerViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OutaTime.DatePickerViewController.delegate.getter : Swift.Optional&lt;OutaTime.DatePickerDelegate&gt;"
+                  moduleName = "OutaTime"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dennis/Desktop/ios-afternoon-project-outatime/OutaTime/OutaTime/DatePickerViewController.swift"
+                  timestampString = "590544017.786285"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "95">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OutaTime.DatePickerViewController.delegate.setter : Swift.Optional&lt;OutaTime.DatePickerDelegate&gt;"
+                  moduleName = "OutaTime"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dennis/Desktop/ios-afternoon-project-outatime/OutaTime/OutaTime/DatePickerViewController.swift"
+                  timestampString = "590544017.790435"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OutaTime.DatePickerViewController.delegate.modify : Swift.Optional&lt;OutaTime.DatePickerDelegate&gt;"
+                  moduleName = "OutaTime"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dennis/Desktop/ios-afternoon-project-outatime/OutaTime/OutaTime/DatePickerViewController.swift"
+                  timestampString = "590544017.7936389"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OutaTime.DatePickerViewController.delegate.modify : Swift.Optional&lt;OutaTime.DatePickerDelegate&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "OutaTime"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dennis/Desktop/ios-afternoon-project-outatime/OutaTime/OutaTime/DatePickerViewController.swift"
+                  timestampString = "590544017.797179"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OutaTime.DatePickerViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; OutaTime.DatePickerViewController"
+                  moduleName = "OutaTime"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dennis/Desktop/ios-afternoon-project-outatime/OutaTime/OutaTime/DatePickerViewController.swift"
+                  timestampString = "590544017.800424"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "361">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OutaTime.DatePickerViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;OutaTime.DatePickerViewController&gt;"
+                  moduleName = "OutaTime"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dennis/Desktop/ios-afternoon-project-outatime/OutaTime/OutaTime/DatePickerViewController.swift"
+                  timestampString = "590544017.804315"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "275">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OutaTime/DatePickerViewController.swift"
+            timestampString = "590543903.4102089"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "doneButtonTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OutaTime/TimeCurcuitsViewController.swift"
+            timestampString = "590544112.055831"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
