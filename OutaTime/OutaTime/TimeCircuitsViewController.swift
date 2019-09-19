@@ -34,11 +34,11 @@ class TimeCircuitsViewController: UIViewController {
         guard let customFont = UIFont(name: "Digital-7", size: UIFont.labelFontSize) else { return }
         
         presentLabel.text = dateFormatter.string(from: currentDate)
-        presentLabel.font = UIFontMetrics.default.scaledFont(for: customFont)
+        //presentLabel.font = UIFontMetrics.default.scaledFont(for: customFont)
         speedLabel.text = "\(currentSpeed) MPH"
-        speedLabel.font = UIFontMetrics.default.scaledFont(for: customFont)
+        //speedLabel.font = UIFontMetrics.default.scaledFont(for: customFont)
         lastLabel.text = "___ __ ____"
-        lastLabel.font = UIFontMetrics.default.scaledFont(for: customFont)
+        //lastLabel.font = UIFontMetrics.default.scaledFont(for: customFont)
 
 
         // Do any additional setup after loading the view.
