@@ -175,8 +175,8 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="V7V-z6-TKY">
-                                <rect key="frame" x="20" y="172" width="414" height="216"/>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="V7V-z6-TKY">
+                                <rect key="frame" x="0.0" y="162" width="414" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="590531506.82093501">
                                     <!--2019-09-18 20:31:46 +0000-->

@@ -20,6 +20,8 @@ class TimeCircuitsViewController: UIViewController {
     // MARK: - Properties
      var currentSpeed = 0
     
+    var timer: Timer?
+    
     var dateFormatter: DateFormatter {
         let formatter = DateFormatter()
         
@@ -38,7 +40,7 @@ class TimeCircuitsViewController: UIViewController {
         super.viewDidLoad()
         
         
-        presentTimeLabel.text = dateFormatter.dateFormat
+        presentTimeLabel.text = dateFormatter.string(from: Date())
         speedLabel.text = "\(currentSpeed) MPH"
         lastTimeDepartedLabel.text = "--- -- ----"
     }
@@ -49,9 +51,49 @@ class TimeCircuitsViewController: UIViewController {
     
     // IBAction
     @IBAction func travelBackButton(_ sender: UIButton) {
+        startTimer()
+        
     }
     
     
+    func startTimer () {
+        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateSpeed(timer:))
+        
+        
+    }
+    
+    
+    func resetTimer() {
+    
+        timer?.invalidate()
+        timer = nil
+    }
+    
+    
+    func updateSpeed(timer: Timer) {
+        
+        if currentSpeed <= 88 {
+            currentSpeed += 1
+            speedLabel.text = String(currentSpeed)
+        } else {
+            resetTimer()
+            lastTimeDepartedLabel.text = presentTimeLabel.text
+            presentTimeLabel.text = destinationTimeLabel.text
+            currentSpeed = 0
+            showAlert()
+            
+        }
+        
+    }
+    
+    
+    
+    private func showAlert() {
+        let alert = UIAlertController(title: "Time Travel Successful", message: "Your new date is \(presentTimeLabel.text)", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+        
+    }
     
 
     
@@ -62,13 +104,18 @@ class TimeCircuitsViewController: UIViewController {
         
         if segue.identifier == "ModalDestinationDatePickerSegue" {
             
+            if let datePickerVC = segue.destination as? DatePickerViewController {
+                datePickerVC.delegate = self
+
+            }
+            
         }
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
  
 
-}
+} // class
 
 
 // Conforming to the DatePickerDelegate protocol
