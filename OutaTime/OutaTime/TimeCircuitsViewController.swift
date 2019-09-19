@@ -11,6 +11,7 @@ import UIKit
 class TimeCircuitsViewController: UIViewController {
     
     // MARK: - Outlets
+    
     @IBOutlet weak var destinationTimeLabel: UILabel!
     @IBOutlet weak var presentTimeLabel: UILabel!
     @IBOutlet weak var timeDepartedLabel: UILabel!
@@ -25,7 +26,6 @@ class TimeCircuitsViewController: UIViewController {
     
     var currentSpeed = 0
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,7 +35,6 @@ class TimeCircuitsViewController: UIViewController {
         speedLabel.text = "\(currentSpeed) MPH"
         timeDepartedLabel.text = "--- -- ----"
         
-//        var newDate = destinationDateWasChosen(date: date)
         destinationTimeLabel.text = dateFormatter.string(from: Date())
     }
     
@@ -44,10 +43,11 @@ class TimeCircuitsViewController: UIViewController {
     var timer: Timer?
     
     @IBAction func travelBackButtonTapped(_ sender: UIButton) {
-        func startTimer() {
-            Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateSpeedLabel(timer:))
-        }
         startTimer()
+    }
+    
+    func startTimer() {
+        Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateSpeedLabel(timer:))
     }
     
     func resetTimer() {
@@ -64,10 +64,14 @@ class TimeCircuitsViewController: UIViewController {
             timeDepartedLabel.text = presentTimeLabel.text
             presentTimeLabel.text = destinationTimeLabel.text
             currentSpeed = 0
-            let alert = UIAlertController(title: "Time Travel Successful!", message: "Your new date is \(presentTimeLabel.text).", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            present(alert, animated: true, completion: nil)
+            alert()
         }
+    }
+    
+    func alert() {
+        let alert = UIAlertController(title: "Time Travel Successful!", message: "Your new date is \(presentTimeLabel.text).", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

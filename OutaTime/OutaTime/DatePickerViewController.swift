@@ -15,7 +15,7 @@ protocol DatePickerDelegate {
 class DatePickerViewController: UIViewController {
     
     var delegate: DatePickerDelegate?
-
+    
     // MARK: - Outlet
     
     @IBOutlet weak var datePicker: UIDatePicker!
@@ -32,8 +32,6 @@ class DatePickerViewController: UIViewController {
     
     @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
         delegate?.destinationDateWasChosen(date: datePicker.date)
-//        guard let newDateChosen = delegate?.destinationDateWasChosen(date: datePicker.date) else { return }
-//        return newDateChosen
         dismiss(animated: true, completion: nil)
     }
 }
