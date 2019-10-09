@@ -10,12 +10,25 @@ import UIKit
 
 class DatePickerViewController: UIViewController {
 
+    // MARK: - Outlets
+    
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
+    // MARK: - Actions
+
+    @IBAction func cancelOperation(_ sender: UIBarButtonItem) {
+        
+    }
+    
+    @IBAction func doneOperation(_ sender: UIBarButtonItem) {
+        
+    }
 
     /*
     // MARK: - Navigation

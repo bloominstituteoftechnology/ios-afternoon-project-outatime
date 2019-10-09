@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Sdd-ux-LHr">
-                                <rect key="frame" x="16" y="112" width="382" height="81.5"/>
+                                <rect key="frame" x="16" y="64" width="382" height="81.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESTINATION TIME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clR-cZ-HFr">
                                         <rect key="frame" x="101.5" y="0.0" width="179" height="24"/>
@@ -38,7 +38,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="8Ir-iX-jPm">
-                                <rect key="frame" x="16" y="273.5" width="382" height="81.5"/>
+                                <rect key="frame" x="16" y="225.5" width="382" height="81.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRESENT TIME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g92-A6-D6H">
                                         <rect key="frame" x="122.5" y="0.0" width="137.5" height="24"/>
@@ -46,8 +46,8 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JUN 12, 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hvy-5d-j4g">
-                                        <rect key="frame" x="82.5" y="36" width="217.5" height="45.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OCT 08, 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hvy-5d-j4g">
+                                        <rect key="frame" x="75.5" y="36" width="231" height="45.5"/>
                                         <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="50"/>
                                         <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -55,7 +55,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="EYB-YV-wkz">
-                                <rect key="frame" x="16" y="435" width="382" height="81.5"/>
+                                <rect key="frame" x="16" y="387" width="382" height="81.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAST TIME DEPARTED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLO-m7-bko">
                                         <rect key="frame" x="89" y="0.0" width="204.5" height="24"/>
@@ -72,7 +72,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="aLW-pL-EtS">
-                                <rect key="frame" x="16" y="596.5" width="382" height="81.5"/>
+                                <rect key="frame" x="16" y="548.5" width="382" height="81.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPEED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0MQ-Kr-nTu">
                                         <rect key="frame" x="160" y="0.0" width="62" height="24"/>
@@ -89,19 +89,25 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="hvL-Fq-KB6">
-                                <rect key="frame" x="16" y="758" width="382" height="84"/>
+                                <rect key="frame" x="16" y="710" width="382" height="132"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mdb-0Q-f28">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="36"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="60"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                         <state key="normal" title="SET DESTINATION TIME"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2V-N4-9Gf">
-                                        <rect key="frame" x="0.0" y="48" width="382" height="36"/>
+                                        <rect key="frame" x="0.0" y="72" width="382" height="60"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                         <state key="normal" title="TRAVEL BACK"/>
+                                        <connections>
+                                            <action selector="travelBackButtonTapped:" destination="8ko-eW-mnb" eventType="touchUpInside" id="Gb3-cZ-npN"/>
+                                        </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Mdb-0Q-f28" firstAttribute="height" secondItem="b2V-N4-9Gf" secondAttribute="height" id="P8W-aK-gic"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -120,10 +126,17 @@
                             <constraint firstItem="EYB-YV-wkz" firstAttribute="top" secondItem="8Ir-iX-jPm" secondAttribute="bottom" constant="80" id="npI-0q-2nk"/>
                             <constraint firstItem="8Ir-iX-jPm" firstAttribute="top" secondItem="Sdd-ux-LHr" secondAttribute="bottom" constant="80" id="rDl-2H-G81"/>
                             <constraint firstItem="5R8-da-WnM" firstAttribute="bottom" secondItem="hvL-Fq-KB6" secondAttribute="bottom" constant="20" id="tV4-3u-Epk"/>
+                            <constraint firstItem="Sdd-ux-LHr" firstAttribute="top" secondItem="5R8-da-WnM" secondAttribute="top" constant="20" id="ubO-gT-q2c"/>
                             <constraint firstItem="5R8-da-WnM" firstAttribute="trailing" secondItem="8Ir-iX-jPm" secondAttribute="trailing" constant="16" id="yoy-Xf-7wl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5R8-da-WnM"/>
                     </view>
+                    <connections>
+                        <outlet property="destinationTimeLabel" destination="boe-yw-Grl" id="bVK-mX-cCm"/>
+                        <outlet property="lastTimeDepartedLabel" destination="aFr-L1-xNP" id="QHw-ic-Rf9"/>
+                        <outlet property="presentTimeLabel" destination="Hvy-5d-j4g" id="u8z-Y7-Gza"/>
+                        <outlet property="speedLabel" destination="Yvv-ls-zzY" id="WsV-tb-xMY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5lX-xo-71M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -136,9 +149,32 @@
                     <view key="view" contentMode="scaleToFill" id="lbC-ee-UEd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="R7u-uB-D9S">
+                                <rect key="frame" x="0.0" y="340" width="414" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="2Uk-wL-9ES"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem systemItem="cancel" id="H41-U2-vWX">
+                            <connections>
+                                <action selector="cancelOperation:" destination="mbX-Yx-F7P" id="1Kc-CB-z5k"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="C7y-VI-Mil"/>
+                        <barButtonItem systemItem="done" id="w0a-gN-xk2">
+                            <connections>
+                                <action selector="doneOperation:" destination="mbX-Yx-F7P" id="jcW-QV-ROh"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="datePicker" destination="R7u-uB-D9S" id="Ksn-KL-2WF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YA3-sw-QPf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
