@@ -14,6 +14,16 @@ class DatePickerViewController: UIViewController {
     
     @IBOutlet weak var datePicker: UIDatePicker!
     
+    // MARK: - Properties
+    
+    private var dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        // may need to add code here
+        return formatter
+    }()
+    
+    // MARK: - View Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
