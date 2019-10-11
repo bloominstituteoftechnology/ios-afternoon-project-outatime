@@ -16,6 +16,8 @@ class TimeCircuitsViewController: UIViewController {
     @IBAction func destinationTimePressed(_ sender: UIButton) {
     }
     @IBAction func travelBackLabel(_ sender: UIButton) {
+        startTimer()
+        
     }
     
     var dateFormatter: DateFormatter {
@@ -41,27 +43,40 @@ class TimeCircuitsViewController: UIViewController {
     
     var timer: Timer?
     
+    func startTimer() {
+        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateSpeedLabel(timer:))
+    }
+    
     func resetTimer() {
         timer?.invalidate()
         timer = nil
     }
     
     func updateSpeedLabel(timer: Timer) {
-        if currentSpeed != 88 {
+        if currentSpeed < 88 {
             currentSpeed += 1
             speedLabel.text = "\(currentSpeed) MPH"
+        
         } else {
+            guard let presentTime = presentTimeLabel.text else { return }
+            
             resetTimer()
             timeLabel.text = presentTimeLabel.text
             presentTimeLabel.text = destinationTimeLabel.text
             currentSpeed = 0
-            alert()
+            
+            let alert = UIAlertController(title: "Time travel successful!", message: "Your new date is \(presentTime)", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            
+            present(alert, animated: true, completion: nil)
+            
         }
     }
     
     func alert() {
         let alert = UIAlertController(title: "Time travel successful!", message: "You new date is \(String(describing: presentTimeLabel.text)).", preferredStyle: .alert)
-        present(alert, animated: true, completion: nil)
+        present(alert, animated: true, completion: .none)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ModalDestinationDatePickerSegue" {

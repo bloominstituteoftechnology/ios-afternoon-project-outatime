@@ -26,6 +26,7 @@ class DatePickerViewController: UIViewController {
     }
        
     @IBAction func doneButtonTapped(_ sender: UIBarButtonItem) {
+        let date = datePickerItem.date
         delegate?.destinationDateWasChosen(date: datePickerItem.date)
         dismiss(animated: true, completion: nil)
         
