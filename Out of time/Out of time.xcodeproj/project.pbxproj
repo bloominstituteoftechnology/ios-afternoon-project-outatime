@@ -10,7 +10,6 @@
 		1F53779D234D9011009E81E4 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F53779C234D9010009E81E4 /* digital-7.ttf */; };
 		1F90F67C234D719D00A18C31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90F67B234D719D00A18C31 /* AppDelegate.swift */; };
 		1F90F67E234D719D00A18C31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90F67D234D719D00A18C31 /* SceneDelegate.swift */; };
-		1F90F680234D719D00A18C31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90F67F234D719D00A18C31 /* ViewController.swift */; };
 		1F90F683234D719D00A18C31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F90F681234D719D00A18C31 /* Main.storyboard */; };
 		1F90F685234D71A300A18C31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F90F684234D71A300A18C31 /* Assets.xcassets */; };
 		1F90F688234D71A300A18C31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F90F686234D71A300A18C31 /* LaunchScreen.storyboard */; };
@@ -18,14 +17,14 @@
 		1F90F692234D732800A18C31 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90F691234D732800A18C31 /* TimeCircuitsViewController.swift */; };
 		1F90F694234D733D00A18C31 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90F693234D733D00A18C31 /* DatePickerViewController.swift */; };
 		1F90F696234D7DEF00A18C31 /* time-circuits.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F90F695234D7DEF00A18C31 /* time-circuits.png */; };
+		1FA5C4AF234EB2FC0064EF54 /* date-picker-modal.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA5C4AE234EB2FC0064EF54 /* date-picker-modal.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1F53779C234D9010009E81E4 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../digital-7.ttf"; sourceTree = "<group>"; };
+		1F53779C234D9010009E81E4 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../digital-7.ttf"; sourceTree = SOURCE_ROOT; };
 		1F90F678234D719D00A18C31 /* Out of time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Out of time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F90F67B234D719D00A18C31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F90F67D234D719D00A18C31 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1F90F67F234D719D00A18C31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1F90F682234D719D00A18C31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F90F684234D71A300A18C31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F90F687234D71A300A18C31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +33,7 @@
 		1F90F691234D732800A18C31 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
 		1F90F693234D733D00A18C31 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		1F90F695234D7DEF00A18C31 /* time-circuits.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "time-circuits.png"; path = "../time-circuits.png"; sourceTree = "<group>"; };
+		1FA5C4AE234EB2FC0064EF54 /* date-picker-modal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "date-picker-modal.png"; path = "../date-picker-modal.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +55,7 @@
 				1F90F679234D719D00A18C31 /* Products */,
 				1F90F695234D7DEF00A18C31 /* time-circuits.png */,
 				1F53779C234D9010009E81E4 /* digital-7.ttf */,
+				1FA5C4AE234EB2FC0064EF54 /* date-picker-modal.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,7 +74,6 @@
 				1F90F693234D733D00A18C31 /* DatePickerViewController.swift */,
 				1F90F67B234D719D00A18C31 /* AppDelegate.swift */,
 				1F90F67D234D719D00A18C31 /* SceneDelegate.swift */,
-				1F90F67F234D719D00A18C31 /* ViewController.swift */,
 				1F90F681234D719D00A18C31 /* Main.storyboard */,
 				1F90F684234D71A300A18C31 /* Assets.xcassets */,
 				1F90F686234D71A300A18C31 /* LaunchScreen.storyboard */,
@@ -143,6 +143,7 @@
 				1F90F688234D71A300A18C31 /* LaunchScreen.storyboard in Resources */,
 				1F53779D234D9011009E81E4 /* digital-7.ttf in Resources */,
 				1F90F685234D71A300A18C31 /* Assets.xcassets in Resources */,
+				1FA5C4AF234EB2FC0064EF54 /* date-picker-modal.png in Resources */,
 				1F90F690234D71BD00A18C31 /* README.md in Resources */,
 				1F90F696234D7DEF00A18C31 /* time-circuits.png in Resources */,
 				1F90F683234D719D00A18C31 /* Main.storyboard in Resources */,
@@ -156,7 +157,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F90F680234D719D00A18C31 /* ViewController.swift in Sources */,
 				1F90F694234D733D00A18C31 /* DatePickerViewController.swift in Sources */,
 				1F90F67C234D719D00A18C31 /* AppDelegate.swift in Sources */,
 				1F90F692234D732800A18C31 /* TimeCircuitsViewController.swift in Sources */,
