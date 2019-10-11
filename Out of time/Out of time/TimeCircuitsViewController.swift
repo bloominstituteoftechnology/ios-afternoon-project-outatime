@@ -57,6 +57,7 @@ class TimeCircuitsViewController: UIViewController {
         if currentSpeed < 200 {
             currentSpeed += 1
             speedLabel.text = "\(currentSpeed) MPH"
+            timeLabel.text = presentTimeLabel.text
             if currentSpeed == 200 {
                 presentTimeLabel.text = destinationTimeLabel.text
             } else {
@@ -66,7 +67,7 @@ class TimeCircuitsViewController: UIViewController {
             guard let presentTime = presentTimeLabel.text else { return }
             
             
-            timeLabel.text = presentTimeLabel.text
+            
 //            presentTimeLabel.text = destinationTimeLabel.text
             currentSpeed = 0
             resetTimer()
