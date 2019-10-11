@@ -18,6 +18,7 @@ class TimeCircuitsViewController: UIViewController {
     @IBAction func travelBackLabel(_ sender: UIButton) {
         startTimer()
         
+        
     }
     
     var dateFormatter: DateFormatter {
@@ -44,7 +45,7 @@ class TimeCircuitsViewController: UIViewController {
     var timer: Timer?
     
     func startTimer() {
-        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateSpeedLabel(timer:))
+        timer = Timer.scheduledTimer(withTimeInterval: 0.02, repeats: true, block: updateSpeedLabel(timer:))
     }
     
     func resetTimer() {
@@ -53,18 +54,22 @@ class TimeCircuitsViewController: UIViewController {
     }
     
     func updateSpeedLabel(timer: Timer) {
-        if currentSpeed < 88 {
+        if currentSpeed < 200 {
             currentSpeed += 1
             speedLabel.text = "\(currentSpeed) MPH"
-        
+            if currentSpeed == 200 {
+                presentTimeLabel.text = destinationTimeLabel.text
+            } else {
+                return
+            }
         } else {
             guard let presentTime = presentTimeLabel.text else { return }
             
-            resetTimer()
-            timeLabel.text = presentTimeLabel.text
-            presentTimeLabel.text = destinationTimeLabel.text
-            currentSpeed = 0
             
+            timeLabel.text = presentTimeLabel.text
+//            presentTimeLabel.text = destinationTimeLabel.text
+            currentSpeed = 0
+            resetTimer()
             let alert = UIAlertController(title: "Time travel successful!", message: "Your new date is \(presentTime)", preferredStyle: .alert)
             
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
@@ -75,7 +80,7 @@ class TimeCircuitsViewController: UIViewController {
     }
     
     func alert() {
-        let alert = UIAlertController(title: "Time travel successful!", message: "You new date is \(String(describing: presentTimeLabel.text)).", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Time travel successful!", message: "You new date is \(String(describing: destinationTimeLabel.text)).", preferredStyle: .alert)
         present(alert, animated: true, completion: .none)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
