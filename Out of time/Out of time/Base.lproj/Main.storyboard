@@ -100,7 +100,7 @@
                                                 <state key="normal" title="SET DESTINATION TIME"/>
                                                 <connections>
                                                     <action selector="destinationTimePressed:" destination="Xjg-R1-ORg" eventType="touchUpInside" id="J9c-sT-RHl"/>
-                                                    <segue destination="5R0-ms-yYa" kind="show" customClass="ModalDestinationDatePickerSegue" id="RZH-DP-bAc"/>
+                                                    <segue destination="np3-hj-S0c" kind="show" identifier="ModalDestinationDatePickerSegue" id="8Pl-aR-cAg"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UxC-Hc-P87">
@@ -132,32 +132,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MDE-hE-dYQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1129" y="-81"/>
+            <point key="canvasLocation" x="-1374" y="-81"/>
         </scene>
         <!--Date Picker View Controller-->
-        <scene sceneID="WyE-Nd-6XO">
+        <scene sceneID="2R9-0b-e7b">
             <objects>
-                <viewController id="5R0-ms-yYa" customClass="DatePickerViewController" customModule="Out_of_time" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="FoC-FE-HLn">
+                <viewController id="np3-hj-S0c" customClass="DatePickerViewController" customModule="Out_of_time" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fqv-YZ-KpA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="5AK-su-2D2">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="33g-sh-xs1">
                                 <rect key="frame" x="47" y="313" width="320" height="216"/>
                             </datePicker>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6fl-oc-vpW">
-                                <rect key="frame" x="0.0" y="798" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZYT-Z6-Hrw">
+                                <rect key="frame" x="0.0" y="759" width="414" height="49"/>
                                 <items>
-                                    <barButtonItem systemItem="cancel" id="nbE-6L-slu">
+                                    <barButtonItem systemItem="cancel" id="NNp-wY-k7l">
                                         <connections>
-                                            <action selector="cancelButtonTapped:" destination="5R0-ms-yYa" id="tk0-vd-9Jv"/>
+                                            <action selector="cancelButtonTapped:" destination="np3-hj-S0c" id="fEy-Ny-bC6"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="GG4-48-Bmc"/>
-                                    <barButtonItem systemItem="done" id="JLz-2G-1OB">
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ToN-72-NNs"/>
+                                    <barButtonItem systemItem="done" id="UfM-7g-BMS">
                                         <connections>
-                                            <action selector="doneButtonTapped:" destination="5R0-ms-yYa" id="qEa-Xw-Ncq"/>
+                                            <action selector="doneButtonTapped:" destination="np3-hj-S0c" id="RKG-4Q-JnF"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -165,21 +164,22 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="5AK-su-2D2" firstAttribute="centerX" secondItem="FoC-FE-HLn" secondAttribute="centerX" id="XaD-VR-skh"/>
-                            <constraint firstItem="5AK-su-2D2" firstAttribute="centerY" secondItem="FoC-FE-HLn" secondAttribute="centerY" id="uF2-Qu-jb7"/>
+                            <constraint firstItem="33g-sh-xs1" firstAttribute="centerX" secondItem="Fqv-YZ-KpA" secondAttribute="centerX" id="Dzm-Ga-58F"/>
+                            <constraint firstItem="ZYT-Z6-Hrw" firstAttribute="bottom" secondItem="8BC-se-FqP" secondAttribute="bottom" id="ixu-0Q-OBM"/>
+                            <constraint firstItem="ZYT-Z6-Hrw" firstAttribute="leading" secondItem="8BC-se-FqP" secondAttribute="leading" id="nWU-ya-glp"/>
+                            <constraint firstItem="ZYT-Z6-Hrw" firstAttribute="trailing" secondItem="8BC-se-FqP" secondAttribute="trailing" id="ugX-mb-k5i"/>
+                            <constraint firstItem="33g-sh-xs1" firstAttribute="centerY" secondItem="Fqv-YZ-KpA" secondAttribute="centerY" id="x3X-pf-c5p"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Q28-k1-55Q"/>
+                        <viewLayoutGuide key="safeArea" id="8BC-se-FqP"/>
                     </view>
-                    <navigationItem key="navigationItem" id="zpT-VE-a1U"/>
+                    <navigationItem key="navigationItem" id="lZx-pJ-ehG"/>
                     <connections>
-                        <outlet property="cancelButtonTapped" destination="6fl-oc-vpW" id="yHd-1S-IoC"/>
-                        <outlet property="datePickerItem" destination="5AK-su-2D2" id="Jzq-GB-1cM"/>
-                        <outlet property="doneButtonTapped" destination="JLz-2G-1OB" id="GnT-iI-XLK"/>
+                        <outlet property="datePickerItem" destination="33g-sh-xs1" id="5jA-Zd-eZq"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="myh-gW-Ovj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dgr-nP-Rkj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-375" y="-81"/>
+            <point key="canvasLocation" x="-230" y="-73"/>
         </scene>
     </scenes>
 </document>
