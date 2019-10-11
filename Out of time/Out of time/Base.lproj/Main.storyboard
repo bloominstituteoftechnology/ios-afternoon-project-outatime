@@ -100,7 +100,7 @@
                                                 <state key="normal" title="SET DESTINATION TIME"/>
                                                 <connections>
                                                     <action selector="destinationTimePressed:" destination="Xjg-R1-ORg" eventType="touchUpInside" id="J9c-sT-RHl"/>
-                                                    <segue destination="5R0-ms-yYa" kind="custom" identifier="ModalDestinationDatePickerSegue" id="7he-94-i2t"/>
+                                                    <segue destination="5R0-ms-yYa" kind="show" customClass="ModalDestinationDatePickerSegue" id="RZH-DP-bAc"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UxC-Hc-P87">
@@ -139,14 +139,14 @@
             <objects>
                 <viewController id="5R0-ms-yYa" customClass="DatePickerViewController" customModule="Out_of_time" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FoC-FE-HLn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="5AK-su-2D2">
-                                <rect key="frame" x="47" y="340" width="320" height="216"/>
+                                <rect key="frame" x="47" y="313" width="320" height="216"/>
                             </datePicker>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6fl-oc-vpW">
-                                <rect key="frame" x="0.0" y="852" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="798" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem systemItem="cancel" id="nbE-6L-slu">
@@ -170,6 +170,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Q28-k1-55Q"/>
                     </view>
+                    <navigationItem key="navigationItem" id="zpT-VE-a1U"/>
                     <connections>
                         <outlet property="cancelButtonTapped" destination="6fl-oc-vpW" id="yHd-1S-IoC"/>
                         <outlet property="datePickerItem" destination="5AK-su-2D2" id="Jzq-GB-1cM"/>

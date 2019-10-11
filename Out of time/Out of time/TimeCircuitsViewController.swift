@@ -60,7 +60,7 @@ class TimeCircuitsViewController: UIViewController {
     }
     
     func alert() {
-        let alert = UIAlertController(title: "Time travel successful!", message: "You new date is \(presentTimeLabel.text).", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Time travel successful!", message: "You new date is \(String(describing: presentTimeLabel.text)).", preferredStyle: .alert)
         present(alert, animated: true, completion: nil)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -72,7 +72,7 @@ class TimeCircuitsViewController: UIViewController {
     }
 }
     
-    extension TimeCircuitsViewController {
+extension TimeCircuitsViewController: DatePickerDelegate {
         func destinationDateWasChosen(date: Date) {
             destinationTimeLabel.text = dateFormatter.string(from: date)
         }
