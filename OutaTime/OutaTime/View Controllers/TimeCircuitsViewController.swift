@@ -70,7 +70,7 @@ class TimeCircuitsViewController: UIViewController {
 }
 
 extension TimeCircuitsViewController: DatePickerDelegate {
-    func destinationDateWasChosen(_ date: Date) {
-        //
+    func destinationDateWasChosen(_ destinationDate: Date) {
+        destinationTimeLabel.text = dateFormatter.string(from: destinationDate)
     }
 }
