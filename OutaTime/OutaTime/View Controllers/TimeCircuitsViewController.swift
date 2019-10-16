@@ -44,11 +44,6 @@ class TimeCircuitsViewController: UIViewController {
         
     }
     
-    private func dateFormatterString(from time: TimeInterval) -> String {
-        let date = Date(timeIntervalSinceReferenceDate: time)
-        return dateFormatter.string(from: date)
-    }
-    
     func startTimer() {
         cancelTimer()
         timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateSpeed(timer:))
@@ -69,19 +64,51 @@ class TimeCircuitsViewController: UIViewController {
         
         if (currentSpeed < 88) {
             currentSpeed += 1
+            speedLabel.textColor = randomColor()
             speedLabel.text = "\(currentSpeed) MPH"
         } else {
             cancelTimer()
             lastTimeDepartedLabel.text = presentTimeLabel.text
             presentTimeLabel.text = destinationTimeLabel.text
             currentSpeed = 0
+            speedLabel.textColor = UIColor.white
             speedLabel.text = "\(currentSpeed) MPH"
             showAlert()
         }
     }
     
+    private func randomColor() -> UIColor {
+        let color = Int.random(in: 1...6)
+        switch color {
+        case 1:
+            return UIColor.systemRed
+        case 2:
+            return UIColor.systemGreen
+        case 3:
+            return UIColor.systemOrange
+        case 4:
+            return UIColor.systemPink
+        case 5:
+            return UIColor.systemTeal
+        case 6:
+            return UIColor.systemYellow
+        default:
+            return UIColor.white
+        }
+    }
+    
     @IBAction func travelBackButtonTapped(_ sender: UIButton) {
-        startTimer()
+        if(destinationTimeLabel.text == "--- -- ----") {
+            showSetDestinationAlert()
+        } else {
+            startTimer()
+        }
+    }
+    
+    private func showSetDestinationAlert() {
+        let alert = UIAlertController(title: "Set Destination Time!", message: "Your destination is \(destinationTimeLabel.text!).", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
     
     private func showAlert() {
