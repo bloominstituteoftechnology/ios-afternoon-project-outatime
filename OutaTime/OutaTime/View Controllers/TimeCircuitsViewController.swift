@@ -13,6 +13,7 @@ class TimeCircuitsViewController: UIViewController {
     // MARK: Properties
     
     var speed = 0
+    var timer: Timer?
     
     var dateFormatter = DateFormatter()
     // computed version: (less CPU-efficient, though it probably doesn't matter)
@@ -23,6 +24,9 @@ class TimeCircuitsViewController: UIViewController {
 //        return formatter
 //    }
     var nilTimeString = "--- -- ----"
+    var speedString: String {
+        return "\(speed) MPH"
+    }
     
     // MARK: Labels
     @IBOutlet weak var destinationTimeLabel: UILabel!
@@ -46,13 +50,42 @@ class TimeCircuitsViewController: UIViewController {
     
     // MARK: Private Methods
     
-    
-    // MARK: UI Actions
-    
-    @IBAction func setDestinationTapped(_ sender: Any) {
+    private func startTimer() {
+        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateSpeed(_:))
     }
     
+    private func updateSpeed(_ timer: Timer) {
+        if !(speed >= 88) {
+            speed += 1
+            speedLabel.text = speedString
+        } else {
+            resetTimer()
+            guard let presentTimeString = presentTimeLabel.text,
+                let destinationTimeString = destinationTimeLabel.text
+                else { return }
+            lastDepartedTimeLabel.text = presentTimeString
+            presentTimeLabel.text = destinationTimeString
+            speed = 0
+            speedLabel.text = speedString
+            
+            let alert = UIAlertController(title: "Time travel successful", message: "Your new date is \(destinationTimeString).", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    private func resetTimer() {
+        timer?.invalidate()
+        timer = nil
+    }
+    
+    
+    // MARK: UI Actions
+
+    @IBAction func setDestinationTapped(_ sender: Any) {}
+    
     @IBAction func travelBackTapped(_ sender: Any) {
+        startTimer()
     }
     
 
