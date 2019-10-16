@@ -13,8 +13,12 @@ protocol DatePickerDelegate {
 }
 
 class DatePickerViewController: UIViewController {
+    
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
 
     var delegate: DatePickerDelegate?
+    var date: Date?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +26,17 @@ class DatePickerViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func cancel(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func done(_ sender: Any) {
+        guard let date = date else { return }
+        delegate?.destinationWasChosen(date)
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
     /*
     // MARK: - Navigation
 

@@ -184,10 +184,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwu-FU-d4S">
                                         <rect key="frame" x="0.0" y="0.0" width="66" height="30"/>
                                         <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancel:" destination="I96-gJ-Qns" eventType="touchUpInside" id="cQX-Na-t8z"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bz-U4-JQl">
                                         <rect key="frame" x="317" y="0.0" width="37" height="30"/>
                                         <state key="normal" title="Done"/>
+                                        <connections>
+                                            <action selector="done:" destination="I96-gJ-Qns" eventType="touchUpInside" id="gkS-nD-Ii7"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -204,6 +210,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aTx-qn-Atp"/>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="qNN-Jt-d1r" id="CGF-lz-TyK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YCC-J4-MrD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
