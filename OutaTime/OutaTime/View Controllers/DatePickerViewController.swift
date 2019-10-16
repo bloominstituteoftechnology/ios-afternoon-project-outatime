@@ -17,13 +17,20 @@ class DatePickerViewController: UIViewController {
     @IBOutlet weak var datePicker: UIDatePicker!
     
     var datePickerDelegate: DatePickerDelegate?
+    var destinationDate: Date?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        updateViews()
     }
     
+    func updateViews() {
+        guard let destinationDate = destinationDate else { return }
+        
+        datePicker.setDate(destinationDate, animated: false)
+    }
 
     @IBAction func doneTapped(_ sender: UIBarButtonItem) {
         datePickerDelegate?.destinationDateWasChosen(datePicker.date)

@@ -25,6 +25,7 @@ class TimeCircuitsViewController: UIViewController {
     var currentSpeed = 0
     
     private var timer: Timer?
+    private var destinationDate: Date?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -124,6 +125,8 @@ class TimeCircuitsViewController: UIViewController {
         if (segue.identifier == "ModalDestinationDatePickerSegue") {
             if let datePickerVC = segue.destination as? DatePickerViewController {
                 datePickerVC.datePickerDelegate = self
+                datePickerVC.destinationDate = self.destinationDate
+                
             }
         }
     }
@@ -133,5 +136,6 @@ extension TimeCircuitsViewController: DatePickerDelegate {
     
     func destinationDateWasChosen(_ destinationDate: Date) {
         destinationTimeLabel.text = dateFormatter.string(from: destinationDate)
+        self.destinationDate = destinationDate
     }
 }
