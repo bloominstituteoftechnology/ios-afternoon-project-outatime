@@ -76,8 +76,11 @@ class TimeCircuitsViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
     }
-    
+}
 
-
+extension TimeCircuitsViewController: DatePickerDelegate {
+    func destinationWasChosen(_ date: Date) {
+        <#code#>
+    }
 }
 
