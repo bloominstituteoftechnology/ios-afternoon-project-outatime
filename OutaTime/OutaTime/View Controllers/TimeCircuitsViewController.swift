@@ -79,6 +79,9 @@ class TimeCircuitsViewController: UIViewController {
     // MARK: Private Methods
     
     private func startTimer() {
+        travelButton.isEnabled = false
+        setDestinationButton.isEnabled = false
+        
         timer = Timer.scheduledTimer(
             withTimeInterval: 0.1,
             repeats: true,
@@ -117,6 +120,9 @@ class TimeCircuitsViewController: UIViewController {
         )
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
+        
+        travelButton.isEnabled = true
+        setDestinationButton.isEnabled = true
     }
     
     
