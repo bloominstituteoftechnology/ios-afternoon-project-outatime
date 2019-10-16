@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4BD2A6202332C35C00CA4CDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD2A61F2332C35C00CA4CDD /* AppDelegate.swift */; };
-		4BD2A6252332C35C00CA4CDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BD2A6232332C35C00CA4CDD /* Main.storyboard */; };
-		4BD2A6272332C35D00CA4CDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD2A6262332C35D00CA4CDD /* Assets.xcassets */; };
-		4BD2A62A2332C35D00CA4CDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BD2A6282332C35D00CA4CDD /* LaunchScreen.storyboard */; };
-		4BD2A6322332C39000CA4CDD /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD2A6312332C39000CA4CDD /* TimeCircuitsViewController.swift */; };
-		4BD2A6342332C3B900CA4CDD /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD2A6332332C3B900CA4CDD /* DatePickerViewController.swift */; };
-		4BD2A6362332C53200CA4CDD /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BD2A6352332C53200CA4CDD /* digital-7.ttf */; };
+		4BDDD9902357B3EF00BB5D7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDDD98F2357B3EF00BB5D7D /* AppDelegate.swift */; };
+		4BDDD9922357B3EF00BB5D7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDDD9912357B3EF00BB5D7D /* SceneDelegate.swift */; };
+		4BDDD9942357B3EF00BB5D7D /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDDD9932357B3EF00BB5D7D /* TimeCircuitsViewController.swift */; };
+		4BDDD9972357B3EF00BB5D7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BDDD9952357B3EF00BB5D7D /* Main.storyboard */; };
+		4BDDD9992357B3F000BB5D7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BDDD9982357B3F000BB5D7D /* Assets.xcassets */; };
+		4BDDD99C2357B3F000BB5D7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BDDD99A2357B3F000BB5D7D /* LaunchScreen.storyboard */; };
+		4BDDD9A42357B42D00BB5D7D /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDDD9A32357B42D00BB5D7D /* DatePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4BD2A61C2332C35C00CA4CDD /* OutaTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutaTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BD2A61F2332C35C00CA4CDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4BD2A6242332C35C00CA4CDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4BD2A6262332C35D00CA4CDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4BD2A6292332C35D00CA4CDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4BD2A62B2332C35D00CA4CDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4BD2A6312332C39000CA4CDD /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
-		4BD2A6332332C3B900CA4CDD /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
-		4BD2A6352332C53200CA4CDD /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../digital-7.ttf"; sourceTree = "<group>"; };
+		4BDDD98C2357B3EF00BB5D7D /* OutaTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutaTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BDDD98F2357B3EF00BB5D7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4BDDD9912357B3EF00BB5D7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4BDDD9932357B3EF00BB5D7D /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
+		4BDDD9962357B3EF00BB5D7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4BDDD9982357B3F000BB5D7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4BDDD99B2357B3F000BB5D7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4BDDD99D2357B3F000BB5D7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BDDD9A32357B42D00BB5D7D /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4BD2A6192332C35C00CA4CDD /* Frameworks */ = {
+		4BDDD9892357B3EF00BB5D7D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,33 +39,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4BD2A6132332C35C00CA4CDD = {
+		4BDDD9832357B3EF00BB5D7D = {
 			isa = PBXGroup;
 			children = (
-				4BD2A61E2332C35C00CA4CDD /* OutaTime */,
-				4BD2A61D2332C35C00CA4CDD /* Products */,
-				4BD2A6352332C53200CA4CDD /* digital-7.ttf */,
+				4BDDD98E2357B3EF00BB5D7D /* OutaTime */,
+				4BDDD98D2357B3EF00BB5D7D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4BD2A61D2332C35C00CA4CDD /* Products */ = {
+		4BDDD98D2357B3EF00BB5D7D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4BD2A61C2332C35C00CA4CDD /* OutaTime.app */,
+				4BDDD98C2357B3EF00BB5D7D /* OutaTime.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4BD2A61E2332C35C00CA4CDD /* OutaTime */ = {
+		4BDDD98E2357B3EF00BB5D7D /* OutaTime */ = {
 			isa = PBXGroup;
 			children = (
-				4BD2A61F2332C35C00CA4CDD /* AppDelegate.swift */,
-				4BD2A6312332C39000CA4CDD /* TimeCircuitsViewController.swift */,
-				4BD2A6332332C3B900CA4CDD /* DatePickerViewController.swift */,
-				4BD2A6232332C35C00CA4CDD /* Main.storyboard */,
-				4BD2A6262332C35D00CA4CDD /* Assets.xcassets */,
-				4BD2A6282332C35D00CA4CDD /* LaunchScreen.storyboard */,
-				4BD2A62B2332C35D00CA4CDD /* Info.plist */,
+				4BDDD98F2357B3EF00BB5D7D /* AppDelegate.swift */,
+				4BDDD9912357B3EF00BB5D7D /* SceneDelegate.swift */,
+				4BDDD9932357B3EF00BB5D7D /* TimeCircuitsViewController.swift */,
+				4BDDD9A32357B42D00BB5D7D /* DatePickerViewController.swift */,
+				4BDDD9952357B3EF00BB5D7D /* Main.storyboard */,
+				4BDDD9982357B3F000BB5D7D /* Assets.xcassets */,
+				4BDDD99A2357B3F000BB5D7D /* LaunchScreen.storyboard */,
+				4BDDD99D2357B3F000BB5D7D /* Info.plist */,
 			);
 			path = OutaTime;
 			sourceTree = "<group>";
@@ -73,13 +73,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4BD2A61B2332C35C00CA4CDD /* OutaTime */ = {
+		4BDDD98B2357B3EF00BB5D7D /* OutaTime */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4BD2A62E2332C35D00CA4CDD /* Build configuration list for PBXNativeTarget "OutaTime" */;
+			buildConfigurationList = 4BDDD9A02357B3F000BB5D7D /* Build configuration list for PBXNativeTarget "OutaTime" */;
 			buildPhases = (
-				4BD2A6182332C35C00CA4CDD /* Sources */,
-				4BD2A6192332C35C00CA4CDD /* Frameworks */,
-				4BD2A61A2332C35C00CA4CDD /* Resources */,
+				4BDDD9882357B3EF00BB5D7D /* Sources */,
+				4BDDD9892357B3EF00BB5D7D /* Frameworks */,
+				4BDDD98A2357B3EF00BB5D7D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -87,25 +87,25 @@
 			);
 			name = OutaTime;
 			productName = OutaTime;
-			productReference = 4BD2A61C2332C35C00CA4CDD /* OutaTime.app */;
+			productReference = 4BDDD98C2357B3EF00BB5D7D /* OutaTime.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4BD2A6142332C35C00CA4CDD /* Project object */ = {
+		4BDDD9842357B3EF00BB5D7D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1030;
-				LastUpgradeCheck = 1030;
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Lambda School";
 				TargetAttributes = {
-					4BD2A61B2332C35C00CA4CDD = {
-						CreatedOnToolsVersion = 10.3;
+					4BDDD98B2357B3EF00BB5D7D = {
+						CreatedOnToolsVersion = 11.1;
 					};
 				};
 			};
-			buildConfigurationList = 4BD2A6172332C35C00CA4CDD /* Build configuration list for PBXProject "OutaTime" */;
+			buildConfigurationList = 4BDDD9872357B3EF00BB5D7D /* Build configuration list for PBXProject "OutaTime" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,56 +113,56 @@
 				en,
 				Base,
 			);
-			mainGroup = 4BD2A6132332C35C00CA4CDD;
-			productRefGroup = 4BD2A61D2332C35C00CA4CDD /* Products */;
+			mainGroup = 4BDDD9832357B3EF00BB5D7D;
+			productRefGroup = 4BDDD98D2357B3EF00BB5D7D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4BD2A61B2332C35C00CA4CDD /* OutaTime */,
+				4BDDD98B2357B3EF00BB5D7D /* OutaTime */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4BD2A61A2332C35C00CA4CDD /* Resources */ = {
+		4BDDD98A2357B3EF00BB5D7D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BD2A62A2332C35D00CA4CDD /* LaunchScreen.storyboard in Resources */,
-				4BD2A6272332C35D00CA4CDD /* Assets.xcassets in Resources */,
-				4BD2A6252332C35C00CA4CDD /* Main.storyboard in Resources */,
-				4BD2A6362332C53200CA4CDD /* digital-7.ttf in Resources */,
+				4BDDD99C2357B3F000BB5D7D /* LaunchScreen.storyboard in Resources */,
+				4BDDD9992357B3F000BB5D7D /* Assets.xcassets in Resources */,
+				4BDDD9972357B3EF00BB5D7D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4BD2A6182332C35C00CA4CDD /* Sources */ = {
+		4BDDD9882357B3EF00BB5D7D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BD2A6322332C39000CA4CDD /* TimeCircuitsViewController.swift in Sources */,
-				4BD2A6202332C35C00CA4CDD /* AppDelegate.swift in Sources */,
-				4BD2A6342332C3B900CA4CDD /* DatePickerViewController.swift in Sources */,
+				4BDDD9A42357B42D00BB5D7D /* DatePickerViewController.swift in Sources */,
+				4BDDD9942357B3EF00BB5D7D /* TimeCircuitsViewController.swift in Sources */,
+				4BDDD9902357B3EF00BB5D7D /* AppDelegate.swift in Sources */,
+				4BDDD9922357B3EF00BB5D7D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4BD2A6232332C35C00CA4CDD /* Main.storyboard */ = {
+		4BDDD9952357B3EF00BB5D7D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4BD2A6242332C35C00CA4CDD /* Base */,
+				4BDDD9962357B3EF00BB5D7D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		4BD2A6282332C35D00CA4CDD /* LaunchScreen.storyboard */ = {
+		4BDDD99A2357B3F000BB5D7D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4BD2A6292332C35D00CA4CDD /* Base */,
+				4BDDD99B2357B3F000BB5D7D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4BD2A62C2332C35D00CA4CDD /* Debug */ = {
+		4BDDD99E2357B3F000BB5D7D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -202,7 +202,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -221,7 +220,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -231,7 +230,7 @@
 			};
 			name = Debug;
 		};
-		4BD2A62D2332C35D00CA4CDD /* Release */ = {
+		4BDDD99F2357B3F000BB5D7D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -263,7 +262,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -276,7 +274,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -286,7 +284,7 @@
 			};
 			name = Release;
 		};
-		4BD2A62F2332C35D00CA4CDD /* Debug */ = {
+		4BDDD9A12357B3F000BB5D7D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -303,7 +301,7 @@
 			};
 			name = Debug;
 		};
-		4BD2A6302332C35D00CA4CDD /* Release */ = {
+		4BDDD9A22357B3F000BB5D7D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -323,25 +321,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4BD2A6172332C35C00CA4CDD /* Build configuration list for PBXProject "OutaTime" */ = {
+		4BDDD9872357B3EF00BB5D7D /* Build configuration list for PBXProject "OutaTime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4BD2A62C2332C35D00CA4CDD /* Debug */,
-				4BD2A62D2332C35D00CA4CDD /* Release */,
+				4BDDD99E2357B3F000BB5D7D /* Debug */,
+				4BDDD99F2357B3F000BB5D7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4BD2A62E2332C35D00CA4CDD /* Build configuration list for PBXNativeTarget "OutaTime" */ = {
+		4BDDD9A02357B3F000BB5D7D /* Build configuration list for PBXNativeTarget "OutaTime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4BD2A62F2332C35D00CA4CDD /* Debug */,
-				4BD2A6302332C35D00CA4CDD /* Release */,
+				4BDDD9A12357B3F000BB5D7D /* Debug */,
+				4BDDD9A22357B3F000BB5D7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4BD2A6142332C35C00CA4CDD /* Project object */;
+	rootObject = 4BDDD9842357B3EF00BB5D7D /* Project object */;
 }
