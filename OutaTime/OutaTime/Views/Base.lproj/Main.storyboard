@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5Ip-td-9Gl">
-                                <rect key="frame" x="0.0" y="54" width="414" height="832"/>
+                                <rect key="frame" x="0.0" y="54" width="414" height="798"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="krn-Zy-8Fp">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
@@ -45,7 +45,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uN3-9D-xCW">
-                                        <rect key="frame" x="0.0" y="188" width="414" height="64"/>
+                                        <rect key="frame" x="0.0" y="179.5" width="414" height="64"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRESENT TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="DLL-rH-KLM">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
@@ -62,7 +62,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7g6-Bq-3g9">
-                                        <rect key="frame" x="0.0" y="375.5" width="414" height="64"/>
+                                        <rect key="frame" x="0.0" y="358.5" width="414" height="64"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAST TIME DEPARTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="59r-wI-bvl">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
@@ -79,7 +79,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eKO-zx-vh6">
-                                        <rect key="frame" x="0.0" y="563.5" width="414" height="64"/>
+                                        <rect key="frame" x="0.0" y="538" width="414" height="64"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPEED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="Fpw-kd-eCS">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
@@ -99,17 +99,24 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4o3-qx-Uf9">
-                                        <rect key="frame" x="0.0" y="751" width="414" height="81"/>
+                                        <rect key="frame" x="0.0" y="717" width="414" height="81"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hap-SV-bZ3">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="33"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                 <state key="normal" title="SET DESTINATION TIME"/>
+                                                <connections>
+                                                    <action selector="setDestinationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IeJ-WG-2AG"/>
+                                                    <segue destination="9jf-Zd-Rr1" kind="presentation" id="5uG-HZ-Jor"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHE-0V-oyZ">
                                                 <rect key="frame" x="0.0" y="48" width="414" height="33"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                 <state key="normal" title="TRAVEL BACK"/>
+                                                <connections>
+                                                    <action selector="travelBackTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r3A-qu-xjf"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -135,13 +142,19 @@
                         </subviews>
                         <color key="backgroundColor" red="0.17277230052132686" green="0.17277230052132686" blue="0.17277230052132686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5Ip-td-9Gl" secondAttribute="bottom" constant="10" id="77f-lc-V6S"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Ip-td-9Gl" secondAttribute="trailing" id="Bms-Hm-9Ow"/>
                             <constraint firstItem="5Ip-td-9Gl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="TEI-Om-n7s"/>
-                            <constraint firstAttribute="bottom" secondItem="5Ip-td-9Gl" secondAttribute="bottom" constant="10" id="ZZ5-En-ub8"/>
                             <constraint firstItem="5Ip-td-9Gl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="x0s-fe-ofc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="destinationTimeLabel" destination="gjC-ry-dK3" id="YPJ-YV-hUw"/>
+                        <outlet property="lastDepartedTimeLabel" destination="93e-N6-3cF" id="7fJ-cS-ZcW"/>
+                        <outlet property="presentTimeLabel" destination="FqH-Td-iW3" id="Wt1-VH-aHh"/>
+                        <outlet property="speedLabel" destination="gwJ-8q-x3q" id="Yi2-mg-GDf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -152,9 +165,25 @@
             <objects>
                 <viewController id="9jf-Zd-Rr1" customClass="DatePickerViewController" customModule="OutaTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0tL-tN-UXm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set destination time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swF-FO-ddI">
+                                <rect key="frame" x="20" y="20" width="289" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="y4N-gU-53c">
+                                <rect key="frame" x="0.0" y="244" width="414" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="swF-FO-ddI" firstAttribute="leading" secondItem="2de-Rj-k2Q" secondAttribute="leading" constant="20" id="hvC-eQ-Xfx"/>
+                            <constraint firstItem="swF-FO-ddI" firstAttribute="top" secondItem="2de-Rj-k2Q" secondAttribute="top" constant="20" id="vnN-6r-DSB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2de-Rj-k2Q"/>
                     </view>
                 </viewController>
