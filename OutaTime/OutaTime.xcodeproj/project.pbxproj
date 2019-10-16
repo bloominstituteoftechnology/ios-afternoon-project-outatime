@@ -60,13 +60,13 @@
 		BB6038842357A4D200422B40 /* OutaTime */ = {
 			isa = PBXGroup;
 			children = (
-				BB60389E2357A97F00422B40 /* digital-7.ttf */,
 				BB60389D2357A57000422B40 /* View Controllers */,
 				BB6038852357A4D200422B40 /* AppDelegate.swift */,
 				BB6038872357A4D200422B40 /* SceneDelegate.swift */,
 				BB60388B2357A4D200422B40 /* Main.storyboard */,
 				BB60388E2357A4D500422B40 /* Assets.xcassets */,
 				BB6038902357A4D500422B40 /* LaunchScreen.storyboard */,
+				BB60389E2357A97F00422B40 /* digital-7.ttf */,
 				BB6038932357A4D500422B40 /* Info.plist */,
 			);
 			path = OutaTime;
