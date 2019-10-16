@@ -101,7 +101,7 @@
                                                     <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="lVL-t8-OJj" kind="show" identifier="DateSegue" id="XCG-Nh-1Oo"/>
+                                                    <segue destination="lVL-t8-OJj" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="XCG-Nh-1Oo"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUC-wo-nBN">
@@ -110,6 +110,9 @@
                                                 <state key="normal" title="Travel Back">
                                                     <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="travelBackTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eI3-2q-g57"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -123,6 +126,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="destinationTimeLabel" destination="hGk-UQ-gra" id="Tsd-Zx-7ir"/>
+                        <outlet property="presentTimeLabel" destination="hGk-UQ-gra" id="GUr-mG-W8M"/>
+                        <outlet property="speedLabel" destination="JDR-rX-ugu" id="a4h-rE-1aU"/>
+                        <outlet property="timeDepartedLabel" destination="6Vi-L8-5KF" id="JdO-6i-Xvn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -148,12 +157,23 @@
                         <viewLayoutGuide key="safeArea" id="CIj-aZ-Ufw"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem systemItem="cancel" id="wU9-2N-Q0W"/>
+                        <barButtonItem systemItem="cancel" id="wU9-2N-Q0W">
+                            <connections>
+                                <action selector="cancelTapped:" destination="lVL-t8-OJj" id="iIX-8h-VH7"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="eI4-7y-OHI"/>
-                        <barButtonItem systemItem="done" id="074-rc-3g2"/>
+                        <barButtonItem systemItem="done" id="074-rc-3g2">
+                            <connections>
+                                <action selector="doneTapped:" destination="lVL-t8-OJj" id="igJ-N9-mou"/>
+                            </connections>
+                        </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="OCa-lU-KIx"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="datePicker" destination="2Bd-dK-EpW" id="one-kA-Acj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qjt-ID-VZe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
