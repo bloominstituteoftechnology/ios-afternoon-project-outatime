@@ -42,6 +42,8 @@ class TimeCircuitsViewController: UIViewController {
     @IBOutlet weak var presentTimeLabel: UILabel!
     @IBOutlet weak var lastDepartedTimeLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
+    @IBOutlet weak var setDestinationButton: UIButton!
+    @IBOutlet weak var travelButton: UIButton!
     
     // MARK: Methods
 
@@ -52,7 +54,22 @@ class TimeCircuitsViewController: UIViewController {
         dateFormatter.dateFormat = "MMM dd yyyy"
         dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
         
-        // set UI labels to defaults
+        // set button styles
+        let buttonLineWidth: CGFloat = 1
+        let buttonCornerRadius: CGFloat = 8
+        let buttonLineColor = UIColor.black.cgColor
+        let buttonDisabledColor = UIColor.gray
+        
+        setDestinationButton.layer.borderWidth = buttonLineWidth
+        travelButton.layer.borderWidth = buttonLineWidth
+        setDestinationButton.layer.borderColor = buttonLineColor
+        travelButton.layer.borderColor = buttonLineColor
+        setDestinationButton.layer.cornerRadius = buttonCornerRadius
+        travelButton.layer.cornerRadius = buttonCornerRadius
+        setDestinationButton.setTitleColor(buttonDisabledColor, for: .disabled)
+        travelButton.setTitleColor(buttonDisabledColor, for: .disabled)
+        
+        // set UI label content to defaults
         presentTimeLabel.text = formatDate(presentTime)
         destinationTimeLabel.text = formatDate(presentTime)
         speedLabel.text = "\(speed) MPH"
