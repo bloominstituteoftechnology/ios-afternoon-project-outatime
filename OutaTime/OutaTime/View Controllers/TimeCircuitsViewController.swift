@@ -12,6 +12,15 @@ class TimeCircuitsViewController: UIViewController {
     
     // MARK: Properties
     
+    var dateFormatter = DateFormatter()
+    // computed version: (less CPU-efficient, though it probably doesn't matter)
+//    var dateformatter: DateFormatter {
+//        let formatter = DateFormatter()
+//        formatter.dateFormat = "HH:mm:ss.SS"
+//        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+//        return formatter
+//    }
+    
     // MARK: Labels
     @IBOutlet weak var destinationTimeLabel: UILabel!
     @IBOutlet weak var presentTimeLabel: UILabel!
@@ -21,8 +30,16 @@ class TimeCircuitsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // set up date formatter
+        dateFormatter.dateFormat = "MMM  dd  yyyy"
+        dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
+        
+        // set present label to now
+        presentTimeLabel.text = dateFormatter.string(from: Date())
     }
+    
+    // MARK: Private Methods
+    
     
     // MARK: UI Actions
     
