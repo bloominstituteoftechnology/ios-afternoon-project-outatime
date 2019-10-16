@@ -15,6 +15,7 @@
 		995436D62357AA3C0077CC87 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995436D52357AA3C0077CC87 /* TimeCircuitsViewController.swift */; };
 		995436D82357AA450077CC87 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995436D72357AA450077CC87 /* DatePickerViewController.swift */; };
 		995436DD2357AAEB0077CC87 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 995436DC2357AAEA0077CC87 /* digital-7.ttf */; };
+		995436E42357BDD30077CC87 /* LCDM2N_.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 995436E32357B8AA0077CC87 /* LCDM2N_.TTF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -165,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				995436E42357BDD30077CC87 /* LCDM2N_.TTF in Resources */,
 				995436CE2357A9D80077CC87 /* LaunchScreen.storyboard in Resources */,
 				995436CB2357A9D80077CC87 /* Assets.xcassets in Resources */,
 				995436C92357A9D60077CC87 /* Main.storyboard in Resources */,

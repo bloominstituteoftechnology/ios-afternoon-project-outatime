@@ -38,7 +38,7 @@ class TimeCircuitsViewController: UIViewController {
         dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
         
         // set UI labels to defaults
-        presentTimeLabel.text = dateFormatter.string(from: Date())
+        presentTimeLabel.text = dateFormatter.string(from: Date()).uppercased()
         speedLabel.text = "\(speed) MPH"
         lastDepartedTimeLabel.text = nilTimeString
         
@@ -71,6 +71,6 @@ class TimeCircuitsViewController: UIViewController {
 
 extension TimeCircuitsViewController: DatePickerDelegate {
     func destinationDateWasChosen(_ destinationDate: Date) {
-        destinationTimeLabel.text = dateFormatter.string(from: destinationDate)
+        destinationTimeLabel.text = dateFormatter.string(from: destinationDate).uppercased()
     }
 }
