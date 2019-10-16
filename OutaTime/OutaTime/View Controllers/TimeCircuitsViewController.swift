@@ -14,7 +14,11 @@ class TimeCircuitsViewController: UIViewController {
     
     var speed = 0
     
-    var destinationTime: Date = Date()
+    var destinationTime: Date = Date() {
+        didSet {
+            updateViews()
+        }
+    }
     var presentTime: Date = Date()
     var lastTimeDeparted: Date?
     
@@ -49,10 +53,10 @@ class TimeCircuitsViewController: UIViewController {
         dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
         
         // set UI labels to defaults
-        presentTimeLabel.text = dateFormatter.string(from: presentTime).uppercased()
+        presentTimeLabel.text = formatDate(presentTime)
+        destinationTimeLabel.text = formatDate(presentTime)
         speedLabel.text = "\(speed) MPH"
         lastDepartedTimeLabel.text = nilTimeString
-        
     }
     
     // MARK: Private Methods
@@ -103,6 +107,20 @@ class TimeCircuitsViewController: UIViewController {
         startTimer()
     }
     
+    private func formatDate(_ dateToFormat: Date) -> String {
+        return dateFormatter.string(from: dateToFormat).uppercased()
+    }
+    
+    private func updateViews() {
+        presentTimeLabel.text = formatDate(presentTime)
+        destinationTimeLabel.text = formatDate(destinationTime)
+        if let lastTime = lastTimeDeparted {
+            lastDepartedTimeLabel.text = formatDate(lastTime)
+        } else {
+            lastDepartedTimeLabel.text = nilTimeString
+        }
+        speedLabel.text = speedString
+    }
 
     // MARK: - Navigation
 
@@ -113,12 +131,13 @@ class TimeCircuitsViewController: UIViewController {
                 else { return }
             
             datePickerVC.delegate = self
+            
         }
     }
 }
 
 extension TimeCircuitsViewController: DatePickerDelegate {
     func destinationDateWasChosen(_ destinationDate: Date) {
-        destinationTimeLabel.text = dateFormatter.string(from: destinationDate).uppercased()
+        destinationTime = destinationDate
     }
 }
