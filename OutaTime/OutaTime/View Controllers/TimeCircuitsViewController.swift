@@ -91,28 +91,32 @@ class TimeCircuitsViewController: UIViewController {
             speed += 1
             speedLabel.text = speedString
         } else {
-            resetTimer()
-            guard let presentTimeString = presentTimeLabel.text,
-                let destinationTimeString = destinationTimeLabel.text
-                else { return }
-            lastDepartedTimeLabel.text = presentTimeString
-            presentTimeLabel.text = destinationTimeString
-            speed = 0
-            speedLabel.text = speedString
-            
-            let alert = UIAlertController(
-                title: "Time travel successful",
-                message: "Your new date is \(destinationTimeString).",
-                preferredStyle: .alert
-            )
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            present(alert, animated: true, completion: nil)
+            didHit88MPH(with: timer)
         }
     }
     
     private func resetTimer() {
         timer?.invalidate()
         timer = nil
+    }
+    
+    private func didHit88MPH(with timer: Timer) {
+        resetTimer()
+        guard let presentTimeString = presentTimeLabel.text,
+            let destinationTimeString = destinationTimeLabel.text
+            else { return }
+        lastDepartedTimeLabel.text = presentTimeString
+        presentTimeLabel.text = destinationTimeString
+        speed = 0
+        speedLabel.text = speedString
+        
+        let alert = UIAlertController(
+            title: "Time travel successful",
+            message: "Your new date is \(destinationTimeString).",
+            preferredStyle: .alert
+        )
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
     
     
