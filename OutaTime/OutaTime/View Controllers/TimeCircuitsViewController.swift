@@ -13,6 +13,11 @@ class TimeCircuitsViewController: UIViewController {
     // MARK: Properties
     
     var speed = 0
+    
+    var destinationTime: Date = Date()
+    var presentTime: Date = Date()
+    var lastTimeDeparted: Date?
+    
     var timer: Timer?
     
     var dateFormatter = DateFormatter()
@@ -33,6 +38,8 @@ class TimeCircuitsViewController: UIViewController {
     @IBOutlet weak var presentTimeLabel: UILabel!
     @IBOutlet weak var lastDepartedTimeLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
+    
+    // MARK: Methods
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +49,7 @@ class TimeCircuitsViewController: UIViewController {
         dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
         
         // set UI labels to defaults
-        presentTimeLabel.text = dateFormatter.string(from: Date()).uppercased()
+        presentTimeLabel.text = dateFormatter.string(from: presentTime).uppercased()
         speedLabel.text = "\(speed) MPH"
         lastDepartedTimeLabel.text = nilTimeString
         
@@ -51,7 +58,11 @@ class TimeCircuitsViewController: UIViewController {
     // MARK: Private Methods
     
     private func startTimer() {
-        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateSpeed(_:))
+        timer = Timer.scheduledTimer(
+            withTimeInterval: 0.1,
+            repeats: true,
+            block: updateSpeed(_:)
+        )
     }
     
     private func updateSpeed(_ timer: Timer) {
@@ -68,7 +79,11 @@ class TimeCircuitsViewController: UIViewController {
             speed = 0
             speedLabel.text = speedString
             
-            let alert = UIAlertController(title: "Time travel successful", message: "Your new date is \(destinationTimeString).", preferredStyle: .alert)
+            let alert = UIAlertController(
+                title: "Time travel successful",
+                message: "Your new date is \(destinationTimeString).",
+                preferredStyle: .alert
+            )
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             present(alert, animated: true, completion: nil)
         }
