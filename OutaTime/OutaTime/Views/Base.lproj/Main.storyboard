@@ -107,7 +107,7 @@
                                                 <state key="normal" title="SET DESTINATION TIME"/>
                                                 <connections>
                                                     <action selector="setDestinationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IeJ-WG-2AG"/>
-                                                    <segue destination="9jf-Zd-Rr1" kind="presentation" id="5uG-HZ-Jor"/>
+                                                    <segue destination="9jf-Zd-Rr1" kind="presentation" identifier="DestinationDatePickerSegue" id="5uG-HZ-Jor"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHE-0V-oyZ">
@@ -174,22 +174,36 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="y4N-gU-53c">
-                                <rect key="frame" x="0.0" y="244" width="414" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="y4N-gU-53c">
+                                <rect key="frame" x="0.0" y="313" width="414" height="216"/>
                             </datePicker>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5IQ-AT-jTb">
+                                <rect key="frame" x="0.0" y="764" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="cancel" id="QtO-Qh-tZ1"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="4RM-Gw-14n"/>
+                                    <barButtonItem systemItem="done" id="nuO-PD-Yiy"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="y4N-gU-53c" firstAttribute="centerY" secondItem="0tL-tN-UXm" secondAttribute="centerY" id="BPX-Wd-nsv"/>
+                            <constraint firstItem="y4N-gU-53c" firstAttribute="leading" secondItem="2de-Rj-k2Q" secondAttribute="leading" id="V1u-E6-ENl"/>
                             <constraint firstItem="swF-FO-ddI" firstAttribute="leading" secondItem="2de-Rj-k2Q" secondAttribute="leading" constant="20" id="hvC-eQ-Xfx"/>
+                            <constraint firstItem="y4N-gU-53c" firstAttribute="trailing" secondItem="2de-Rj-k2Q" secondAttribute="trailing" id="qlr-5W-LZb"/>
                             <constraint firstItem="swF-FO-ddI" firstAttribute="top" secondItem="2de-Rj-k2Q" secondAttribute="top" constant="20" id="vnN-6r-DSB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2de-Rj-k2Q"/>
                     </view>
+                    <connections>
+                        <outlet property="destinationPicker" destination="y4N-gU-53c" id="uM6-wf-rqe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bar-Aw-g4r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="899" y="96"/>
+            <point key="canvasLocation" x="900" y="90"/>
         </scene>
     </scenes>
 </document>

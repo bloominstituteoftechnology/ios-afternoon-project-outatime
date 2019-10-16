@@ -9,7 +9,9 @@
 import UIKit
 
 class DatePickerViewController: UIViewController {
-
+    
+    @IBOutlet weak var destinationPicker: UIDatePicker!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
