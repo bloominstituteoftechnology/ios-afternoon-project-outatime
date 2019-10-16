@@ -14,6 +14,7 @@
 		4BDDD9992357B3F000BB5D7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BDDD9982357B3F000BB5D7D /* Assets.xcassets */; };
 		4BDDD99C2357B3F000BB5D7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BDDD99A2357B3F000BB5D7D /* LaunchScreen.storyboard */; };
 		4BDDD9A42357B42D00BB5D7D /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDDD9A32357B42D00BB5D7D /* DatePickerViewController.swift */; };
+		4BDDD9A62357B7FB00BB5D7D /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BDDD9A52357B7FB00BB5D7D /* digital-7.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4BDDD99B2357B3F000BB5D7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4BDDD99D2357B3F000BB5D7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BDDD9A32357B42D00BB5D7D /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		4BDDD9A52357B7FB00BB5D7D /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../../digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				4BDDD9982357B3F000BB5D7D /* Assets.xcassets */,
 				4BDDD99A2357B3F000BB5D7D /* LaunchScreen.storyboard */,
 				4BDDD99D2357B3F000BB5D7D /* Info.plist */,
+				4BDDD9A52357B7FB00BB5D7D /* digital-7.ttf */,
 			);
 			path = OutaTime;
 			sourceTree = "<group>";
@@ -131,6 +134,7 @@
 				4BDDD99C2357B3F000BB5D7D /* LaunchScreen.storyboard in Resources */,
 				4BDDD9992357B3F000BB5D7D /* Assets.xcassets in Resources */,
 				4BDDD9972357B3EF00BB5D7D /* Main.storyboard in Resources */,
+				4BDDD9A62357B7FB00BB5D7D /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
