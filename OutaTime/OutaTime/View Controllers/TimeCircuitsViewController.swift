@@ -12,6 +12,8 @@ class TimeCircuitsViewController: UIViewController {
     
     // MARK: Properties
     
+    var speed = 0
+    
     var dateFormatter = DateFormatter()
     // computed version: (less CPU-efficient, though it probably doesn't matter)
 //    var dateformatter: DateFormatter {
@@ -20,6 +22,7 @@ class TimeCircuitsViewController: UIViewController {
 //        formatter.timeZone = TimeZone(secondsFromGMT: 0)
 //        return formatter
 //    }
+    var nilTimeString = "--- -- ----"
     
     // MARK: Labels
     @IBOutlet weak var destinationTimeLabel: UILabel!
@@ -34,8 +37,11 @@ class TimeCircuitsViewController: UIViewController {
         dateFormatter.dateFormat = "MMM dd yyyy"
         dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
         
-        // set present label to now
+        // set UI labels to defaults
         presentTimeLabel.text = dateFormatter.string(from: Date())
+        speedLabel.text = "\(speed) MPH"
+        lastDepartedTimeLabel.text = nilTimeString
+        
     }
     
     // MARK: Private Methods
