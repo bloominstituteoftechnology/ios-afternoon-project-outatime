@@ -15,19 +15,32 @@ class TimeCircuitsViewController: UIViewController {
     @IBOutlet weak var previousTimeLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
     
-    
     struct PropertyKeys {
         static let segue = "ModalDestinationDatePickerSegue"
     }
+    
+    var dateFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "LLL dd yyyy"
+        formatter.timeZone = TimeZone(secondsFromGMT: -25200)
+        return formatter
+    }
+    
+    var speed = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        presentTimeLabel.text = string(from: Date())
+//        speedLabel.text = "\(speed) MPH"
     }
     
     func updateView() {
         
+    }
+    
+    private func string(from date: Date) -> String {
+        return dateFormatter.string(from: date).uppercased()
     }
     
     @IBAction func travelTapped(_ sender: Any) {
@@ -36,16 +49,17 @@ class TimeCircuitsViewController: UIViewController {
     }
     
     func updateSpeed() {
-        var speed = 0
         
         Timer.scheduledTimer(withTimeInterval: 0.03, repeats: true) { timer in
-            self.speedLabel.text = "\(speed) MPH"
-            speed += 1
-            if speed == 89 {
+            self.speedLabel.text = "\(self.speed) MPH"
+            self.speed += 1
+            if self.speed == 89 {
                 timer.invalidate()
+                self.updateView()
                 self.showAlert()
             }
         }
+        self.speed = 0
 //        let timer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true) { timer in
 //                print(speed)
 //                speedLabel.text = "\(speed)"
