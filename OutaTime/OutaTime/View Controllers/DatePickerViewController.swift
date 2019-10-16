@@ -8,7 +8,13 @@
 
 import UIKit
 
+protocol DatePickerDelegate: AnyObject {
+    func destinationDateWasChosen(_ date: Date)
+}
+
 class DatePickerViewController: UIViewController {
+    
+    var delegate: DatePickerDelegate?
     
     @IBOutlet weak var destinationPicker: UIDatePicker!
     
