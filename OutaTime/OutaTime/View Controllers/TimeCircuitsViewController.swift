@@ -131,7 +131,7 @@ class TimeCircuitsViewController: UIViewController {
                 else { return }
             
             datePickerVC.delegate = self
-            
+            datePickerVC.destinationTime = self.destinationTime
         }
     }
 }

@@ -15,13 +15,16 @@ protocol DatePickerDelegate: AnyObject {
 class DatePickerViewController: UIViewController {
     
     var delegate: DatePickerDelegate?
+    var destinationTime: Date?
     
     @IBOutlet weak var destinationPicker: UIDatePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if let dest = destinationTime {
+            destinationPicker.date = dest
+        }
     }
     
     @IBAction func cancelTapped(_ sender: UIBarButtonItem) {
