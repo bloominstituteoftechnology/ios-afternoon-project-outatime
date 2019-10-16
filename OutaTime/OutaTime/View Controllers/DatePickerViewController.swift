@@ -24,7 +24,15 @@ class DatePickerViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func cancelTapped(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func doneTapped(_ sender: UIBarButtonItem) {
+        delegate?.destinationDateWasChosen(destinationPicker.date)
+        dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
