@@ -31,7 +31,7 @@ class TimeCircuitsViewController: UIViewController {
         super.viewDidLoad()
 
         // set up date formatter
-        dateFormatter.dateFormat = "MMM  dd  yyyy"
+        dateFormatter.dateFormat = "MMM dd yyyy"
         dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
         
         // set present label to now

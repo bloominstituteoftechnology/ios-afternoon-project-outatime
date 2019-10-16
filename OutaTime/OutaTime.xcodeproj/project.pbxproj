@@ -15,6 +15,7 @@
 		995436D62357AA3C0077CC87 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995436D52357AA3C0077CC87 /* TimeCircuitsViewController.swift */; };
 		995436D82357AA450077CC87 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995436D72357AA450077CC87 /* DatePickerViewController.swift */; };
 		995436DD2357AAEB0077CC87 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 995436DC2357AAEA0077CC87 /* digital-7.ttf */; };
+		995436E22357B7CD0077CC87 /* LCDM2N_.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 995436E12357B7CD0077CC87 /* LCDM2N_.TTF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		995436D52357AA3C0077CC87 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
 		995436D72357AA450077CC87 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		995436DC2357AAEA0077CC87 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
+		995436E12357B7CD0077CC87 /* LCDM2N_.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = LCDM2N_.TTF; path = ../../../../../../../../Library/Fonts/LCDM2N_.TTF; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		995436DE2357AAF40077CC87 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				995436E12357B7CD0077CC87 /* LCDM2N_.TTF */,
 				995436DC2357AAEA0077CC87 /* digital-7.ttf */,
 				995436CA2357A9D80077CC87 /* Assets.xcassets */,
 			);
@@ -165,6 +168,7 @@
 			files = (
 				995436CE2357A9D80077CC87 /* LaunchScreen.storyboard in Resources */,
 				995436CB2357A9D80077CC87 /* Assets.xcassets in Resources */,
+				995436E22357B7CD0077CC87 /* LCDM2N_.TTF in Resources */,
 				995436C92357A9D60077CC87 /* Main.storyboard in Resources */,
 				995436DD2357AAEB0077CC87 /* digital-7.ttf in Resources */,
 			);
