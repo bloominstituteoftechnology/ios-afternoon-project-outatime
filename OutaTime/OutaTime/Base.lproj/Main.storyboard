@@ -151,8 +151,8 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="2Bd-dK-EpW" firstAttribute="centerX" secondItem="pbs-SK-3cv" secondAttribute="centerX" id="0fy-Uc-KQ4"/>
-                            <constraint firstItem="2Bd-dK-EpW" firstAttribute="centerY" secondItem="pbs-SK-3cv" secondAttribute="centerY" id="YoO-2W-jQX"/>
+                            <constraint firstItem="2Bd-dK-EpW" firstAttribute="centerY" secondItem="pbs-SK-3cv" secondAttribute="centerY" id="Wvy-eQ-iVC"/>
+                            <constraint firstItem="2Bd-dK-EpW" firstAttribute="centerX" secondItem="pbs-SK-3cv" secondAttribute="centerX" id="qP4-at-JRW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CIj-aZ-Ufw"/>
                     </view>
