@@ -12,11 +12,14 @@ class TimeCircuitsViewController: UIViewController {
 
     
     @IBOutlet weak var destinationTimeLabel: UILabel!
-    
     @IBOutlet weak var presentTimeLabel: UILabel!
     @IBOutlet weak var timeDepartedLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
     
+    
+    @IBAction func travelBackTapped(_ sender: Any) {
+        startTimer()
+    }
     
     var dateFormatter: DateFormatter {
         let formatter = DateFormatter()
@@ -26,40 +29,64 @@ class TimeCircuitsViewController: UIViewController {
     }
     
     var speed = 0
-    let date = Date()
-    
-    //Have to declare this beforehand
-    let timer: Timer?
-    
+    private var timer: Timer?
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        let date = Date()
         presentTimeLabel.text = dateFormatter.string(from: date)
         speedLabel.text = "\(speed) MPH"
         timeDepartedLabel.text = "--- -- ----"
+        
+        updateView()
     }
     
-    @IBAction func travelBackTapped(_ sender: UIButton) {
-        startTimer()
+
+    
+    
+    
+    // MARK: - Methods
+    func updateView() {
+        speedLabel.text = "\(speed) MPH"
         
     }
-    // MARK: - Methods
-
+    
+    
     // In the startTimer method, initialize the timer object for a 0.1 sec time interval. Set it to fire a method that updates the speed label:
     private func startTimer() {
-        let timer: TimeInterval
+        resetTimer()
+        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateSpeed(timer:))
         
     }
     
     // In the resetTimer method, stop the timer (there is a method you can call to do this, see our project from today) and then set it to nil.
     private func resetTimer() {
+        timer?.invalidate()
+        timer = nil
         
     }
     
-    private func updateSpeed() {
-       
-        
-        
+    func showAlert() {
+        guard let destinationTime = destinationTimeLabel.text else { return }
+        let alert = UIAlertController(title: "Time Travel Successful", message: "You're new date is \(destinationTime)", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
+    
+    func updateSpeed(timer: Timer) {
+           if speed < 88 {
+               speed += 5
+               speedLabel.text = "\(speed)"
+           } else {
+               resetTimer()
+               timeDepartedLabel.text = presentTimeLabel.text
+               presentTimeLabel.text = destinationTimeLabel.text
+               speed = 0
+               showAlert()
+           }
+           updateView()
+       }
+
     
     // MARK: - Navigation
 
@@ -81,6 +108,5 @@ extension TimeCircuitsViewController: DatePickerDelegate {
         // Set the destinationTimeLabel with the date received from the picker view controller using the date formatter object in the destinationDateWasChosen method.
         destinationTimeLabel.text = dateFormatter.string(from: date)
     }
-    
     
 }

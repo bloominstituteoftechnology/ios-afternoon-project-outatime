@@ -32,7 +32,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination Time Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKP-bh-h28">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jan 1, 2000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKP-bh-h28">
                                                 <rect key="frame" x="0.0" y="29.5" width="225" height="23"/>
                                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="25"/>
                                                 <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -111,7 +111,7 @@
                                                     <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="travelBackTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eI3-2q-g57"/>
+                                                    <action selector="travelBackTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CIq-Yj-lId"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -127,7 +127,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="destinationTimeLabel" destination="hGk-UQ-gra" id="Tsd-Zx-7ir"/>
+                        <outlet property="destinationTimeLabel" destination="nKP-bh-h28" id="Z00-gl-fRl"/>
                         <outlet property="presentTimeLabel" destination="hGk-UQ-gra" id="GUr-mG-W8M"/>
                         <outlet property="speedLabel" destination="JDR-rX-ugu" id="a4h-rE-1aU"/>
                         <outlet property="timeDepartedLabel" destination="6Vi-L8-5KF" id="JdO-6i-Xvn"/>
@@ -145,29 +145,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="2Bd-dK-EpW">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="2Bd-dK-EpW">
                                 <rect key="frame" x="47" y="313" width="320" height="216"/>
                             </datePicker>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EPp-GK-GiR">
+                                <rect key="frame" x="0.0" y="703" width="414" height="56"/>
+                                <items>
+                                    <navigationItem id="eqL-DS-LVQ">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="wU9-2N-Q0W">
+                                            <connections>
+                                                <action selector="cancelTapped:" destination="lVL-t8-OJj" id="kaE-MD-VsE"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="074-rc-3g2">
+                                            <connections>
+                                                <action selector="doneTapped:" destination="lVL-t8-OJj" id="xEc-3a-5Pj"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="EPp-GK-GiR" firstAttribute="trailing" secondItem="CIj-aZ-Ufw" secondAttribute="trailing" id="2Yr-Ba-Gth"/>
                             <constraint firstItem="2Bd-dK-EpW" firstAttribute="centerY" secondItem="pbs-SK-3cv" secondAttribute="centerY" id="Wvy-eQ-iVC"/>
+                            <constraint firstItem="EPp-GK-GiR" firstAttribute="leading" secondItem="CIj-aZ-Ufw" secondAttribute="leading" id="gJ8-Hf-qeP"/>
+                            <constraint firstItem="EPp-GK-GiR" firstAttribute="bottom" secondItem="CIj-aZ-Ufw" secondAttribute="bottom" id="ou7-Dq-Nti"/>
                             <constraint firstItem="2Bd-dK-EpW" firstAttribute="centerX" secondItem="pbs-SK-3cv" secondAttribute="centerX" id="qP4-at-JRW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CIj-aZ-Ufw"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem systemItem="cancel" id="wU9-2N-Q0W">
-                            <connections>
-                                <action selector="cancelTapped:" destination="lVL-t8-OJj" id="iIX-8h-VH7"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="eI4-7y-OHI"/>
-                        <barButtonItem systemItem="done" id="074-rc-3g2">
-                            <connections>
-                                <action selector="doneTapped:" destination="lVL-t8-OJj" id="igJ-N9-mou"/>
-                            </connections>
-                        </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="OCa-lU-KIx"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
