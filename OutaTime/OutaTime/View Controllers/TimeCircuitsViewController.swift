@@ -35,6 +35,7 @@ class TimeCircuitsViewController: UIViewController {
     }
     
     var twinklePlayer: AVAudioPlayer?
+    var travelPlayer: AVAudioPlayer?
     
     // MARK: Labels
     @IBOutlet weak var destinationTimeLabel: UILabel!
@@ -78,9 +79,11 @@ class TimeCircuitsViewController: UIViewController {
         
         // set up sound
         guard let twinkleURL = Bundle.main.url(forResource: "bttf", withExtension: "m4a") else { return }
+        guard let travelURL = Bundle.main.url(forResource: "travel", withExtension: "m4a") else { return }
         
         do {
             twinklePlayer = try AVAudioPlayer(contentsOf: twinkleURL, fileTypeHint: AVFileType.m4a.rawValue)
+            travelPlayer = try AVAudioPlayer(contentsOf: travelURL, fileTypeHint: AVFileType.m4a.rawValue)
         } catch let error {
             print(error.localizedDescription)
         }
@@ -122,7 +125,7 @@ class TimeCircuitsViewController: UIViewController {
         
         updateViews()
         
-        playBttFTwinkle()
+        playTwinkleCue()
         let alert = UIAlertController(
             title: "Time travel successful",
             message: "Your new date is \(formatDate(presentTime)).",
@@ -135,7 +138,19 @@ class TimeCircuitsViewController: UIViewController {
         setDestinationButton.isEnabled = true
     }
     
-    func playBttFTwinkle() {
+    func playTravelCue() {
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            guard let player = travelPlayer else { return }
+            player.play()
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
+    func playTwinkleCue() {
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
             try AVAudioSession.sharedInstance().setActive(true)
@@ -152,6 +167,7 @@ class TimeCircuitsViewController: UIViewController {
     @IBAction func setDestinationTapped(_ sender: Any) {}
     
     @IBAction func travelBackTapped(_ sender: Any) {
+        playTravelCue()
         startTimer()
     }
     
