@@ -52,7 +52,7 @@ class TimeCircuitsViewController: UIViewController {
         
         // set button styles
         let buttonLineWidth: CGFloat = 1
-        let buttonCornerRadius: CGFloat = 8
+        let buttonCornerRadius: CGFloat = 10
         let buttonLineColor = UIColor.black.cgColor
         let buttonDisabledColor = UIColor.gray
         
@@ -60,6 +60,8 @@ class TimeCircuitsViewController: UIViewController {
         travelButton.layer.borderWidth = buttonLineWidth
         setDestinationButton.layer.borderColor = buttonLineColor
         travelButton.layer.borderColor = buttonLineColor
+        setDestinationButton.layer.cornerCurve = .continuous
+        travelButton.layer.cornerCurve = .continuous
         setDestinationButton.layer.cornerRadius = buttonCornerRadius
         travelButton.layer.cornerRadius = buttonCornerRadius
         setDestinationButton.setTitleColor(buttonDisabledColor, for: .disabled)

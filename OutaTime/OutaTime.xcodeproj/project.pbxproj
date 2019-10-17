@@ -62,11 +62,11 @@
 		995436C02357A9D60077CC87 /* OutaTime */ = {
 			isa = PBXGroup;
 			children = (
+				995436CF2357A9D80077CC87 /* Info.plist */,
 				995436DB2357AA610077CC87 /* Delegates */,
 				995436DA2357AA570077CC87 /* Views */,
 				995436D92357AA480077CC87 /* View Controllers */,
 				995436DE2357AAF40077CC87 /* Assets */,
-				995436CF2357A9D80077CC87 /* Info.plist */,
 			);
 			path = OutaTime;
 			sourceTree = "<group>";
