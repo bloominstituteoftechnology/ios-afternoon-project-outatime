@@ -14,6 +14,7 @@
 		C0A5ECF4235766C400F17D36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0A5ECF3235766C400F17D36 /* Assets.xcassets */; };
 		C0A5ECF7235766C400F17D36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A5ECF5235766C400F17D36 /* LaunchScreen.storyboard */; };
 		C0A5ECFF2357670C00F17D36 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A5ECFE2357670C00F17D36 /* DatePickerViewController.swift */; };
+		C0A5ED012357F33900F17D36 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0A5ED002357F33900F17D36 /* digital-7.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C0A5ECF6235766C400F17D36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0A5ECF8235766C400F17D36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0A5ECFE2357670C00F17D36 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		C0A5ED002357F33900F17D36 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../../digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				C0A5ECF3235766C400F17D36 /* Assets.xcassets */,
 				C0A5ECF5235766C400F17D36 /* LaunchScreen.storyboard */,
 				C0A5ECF8235766C400F17D36 /* Info.plist */,
+				C0A5ED002357F33900F17D36 /* digital-7.ttf */,
 			);
 			path = OutaTime;
 			sourceTree = "<group>";
@@ -131,6 +134,7 @@
 				C0A5ECF7235766C400F17D36 /* LaunchScreen.storyboard in Resources */,
 				C0A5ECF4235766C400F17D36 /* Assets.xcassets in Resources */,
 				C0A5ECF2235766C000F17D36 /* Main.storyboard in Resources */,
+				C0A5ED012357F33900F17D36 /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -31,7 +31,7 @@ class DatePickerViewController: UIViewController {
     }
     
     @IBAction func done(_ sender: Any) {
-        guard let date = date else { return }
+        let date = datePicker.date
         delegate?.destinationWasChosen(date)
         dismiss(animated: true, completion: nil)
     }
