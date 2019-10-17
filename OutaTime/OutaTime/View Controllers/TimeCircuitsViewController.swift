@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class TimeCircuitsViewController: UIViewController {
     
@@ -32,6 +33,8 @@ class TimeCircuitsViewController: UIViewController {
     var speedString: String {
         return "\(speed) MPH"
     }
+    
+    var twinklePlayer: AVAudioPlayer?
     
     // MARK: Labels
     @IBOutlet weak var destinationTimeLabel: UILabel!
@@ -72,6 +75,15 @@ class TimeCircuitsViewController: UIViewController {
         destinationTimeLabel.text = formatDate(presentTime)
         speedLabel.text = "\(speed) MPH"
         lastDepartedTimeLabel.text = nilTimeString
+        
+        // set up sound
+        guard let twinkleURL = Bundle.main.url(forResource: "bttf", withExtension: "m4a") else { return }
+        
+        do {
+            twinklePlayer = try AVAudioPlayer(contentsOf: twinkleURL, fileTypeHint: AVFileType.m4a.rawValue)
+        } catch let error {
+            print(error.localizedDescription)
+        }
     }
     
     // MARK: Private Methods
@@ -110,6 +122,7 @@ class TimeCircuitsViewController: UIViewController {
         
         updateViews()
         
+        playBttFTwinkle()
         let alert = UIAlertController(
             title: "Time travel successful",
             message: "Your new date is \(formatDate(presentTime)).",
@@ -122,6 +135,17 @@ class TimeCircuitsViewController: UIViewController {
         setDestinationButton.isEnabled = true
     }
     
+    func playBttFTwinkle() {
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            guard let player = twinklePlayer else { return }
+            player.play()
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
     
     // MARK: UI Actions
 
