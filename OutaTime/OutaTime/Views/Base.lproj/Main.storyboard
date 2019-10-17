@@ -16,7 +16,7 @@
         <!--Time Circuits View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="TimeCircuitsViewController" customModule="OutaTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController interfaceStyle="dark" id="BYZ-38-t0r" customClass="TimeCircuitsViewController" customModule="OutaTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,7 +109,7 @@
                                                 <inset key="contentEdgeInsets" minX="8" minY="6" maxX="8" maxY="6"/>
                                                 <size key="titleShadowOffset" width="2" height="2"/>
                                                 <state key="normal" title="SET DESTINATION TIME">
-                                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="setDestinationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IeJ-WG-2AG"/>
@@ -177,7 +177,7 @@
         <!--Date Picker View Controller-->
         <scene sceneID="HxD-ft-Eq1">
             <objects>
-                <viewController id="9jf-Zd-Rr1" customClass="DatePickerViewController" customModule="OutaTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController interfaceStyle="dark" id="9jf-Zd-Rr1" customClass="DatePickerViewController" customModule="OutaTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0tL-tN-UXm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -215,7 +215,7 @@
                             <constraint firstItem="y4N-gU-53c" firstAttribute="leading" secondItem="2de-Rj-k2Q" secondAttribute="leading" id="V1u-E6-ENl"/>
                             <constraint firstItem="y4N-gU-53c" firstAttribute="top" relation="greaterThanOrEqual" secondItem="swF-FO-ddI" secondAttribute="bottom" constant="8" id="WBd-G5-eqy"/>
                             <constraint firstItem="swF-FO-ddI" firstAttribute="leading" secondItem="2de-Rj-k2Q" secondAttribute="leading" constant="20" id="hvC-eQ-Xfx"/>
-                            <constraint firstItem="2de-Rj-k2Q" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="swF-FO-ddI" secondAttribute="trailing" constant="8" id="ndC-YH-ULC"/>
+                            <constraint firstItem="2de-Rj-k2Q" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="swF-FO-ddI" secondAttribute="trailing" constant="20" id="ndC-YH-ULC"/>
                             <constraint firstItem="y4N-gU-53c" firstAttribute="trailing" secondItem="2de-Rj-k2Q" secondAttribute="trailing" id="qlr-5W-LZb"/>
                             <constraint firstItem="swF-FO-ddI" firstAttribute="top" secondItem="2de-Rj-k2Q" secondAttribute="top" constant="20" id="vnN-6r-DSB"/>
                         </constraints>
