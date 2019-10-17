@@ -31,7 +31,11 @@ class TimeCircuitsViewController: UIViewController {
 //    }
     var nilTimeString = "--- -- ----"
     var speedString: String {
-        return "\(speed) MPH"
+        if speed < 10 {
+            return "0\(speed) MPH"
+        } else {
+            return "\(speed) MPH"
+        }
     }
     
     var twinklePlayer: AVAudioPlayer?
@@ -74,7 +78,7 @@ class TimeCircuitsViewController: UIViewController {
         // set UI label content to defaults
         presentTimeLabel.text = formatDate(presentTime)
         destinationTimeLabel.text = formatDate(presentTime)
-        speedLabel.text = "\(speed) MPH"
+        speedLabel.text = speedString
         lastDepartedTimeLabel.text = nilTimeString
         
         // set up sound
