@@ -14,11 +14,7 @@ class TimeCircuitsViewController: UIViewController {
     
     var speed = 0
     
-    var destinationTime: Date = Date() {
-        didSet {
-            updateViews()
-        }
-    }
+    var destinationTime: Date = Date() { didSet { updateViews() }}
     var presentTime: Date = Date()
     var lastTimeDeparted: Date?
     
@@ -105,17 +101,16 @@ class TimeCircuitsViewController: UIViewController {
     
     private func didHit88MPH(with timer: Timer) {
         resetTimer()
-        guard let presentTimeString = presentTimeLabel.text,
-            let destinationTimeString = destinationTimeLabel.text
-            else { return }
-        lastDepartedTimeLabel.text = presentTimeString
-        presentTimeLabel.text = destinationTimeString
+        
+        lastTimeDeparted = presentTime
+        presentTime = destinationTime
         speed = 0
-        speedLabel.text = speedString
+        
+        updateViews()
         
         let alert = UIAlertController(
             title: "Time travel successful",
-            message: "Your new date is \(destinationTimeString).",
+            message: "Your new date is \(formatDate(presentTime)).",
             preferredStyle: .alert
         )
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
