@@ -98,11 +98,17 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="354" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                 <state key="normal" title="SET DESTINATION TIME"/>
+                                                <connections>
+                                                    <segue destination="piT-we-G6l" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="ADT-Ay-ubN"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGc-0I-hZx">
                                                 <rect key="frame" x="0.0" y="44" width="354" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                 <state key="normal" title="TRAVEL BACK"/>
+                                                <connections>
+                                                    <action selector="travelBackTapped:" destination="0HE-1I-yRn" eventType="touchUpInside" id="8hC-qO-o5k"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -117,21 +123,60 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7kg-NW-XV7"/>
                     </view>
+                    <connections>
+                        <outlet property="destinationTimeLabel" destination="cEn-nW-ww9" id="Rgd-aQ-wGM"/>
+                        <outlet property="lastTimeDepartedLabel" destination="Y2g-mP-vWZ" id="7tD-wu-38W"/>
+                        <outlet property="presentTimeLabel" destination="8hB-on-42X" id="bw7-Dp-DPA"/>
+                        <outlet property="setDestinationTimeButton" destination="zaa-4o-8Bq" id="3qs-Mx-6fe"/>
+                        <outlet property="speedTimeLabel" destination="ABo-47-dIu" id="wtC-a8-5ye"/>
+                        <outlet property="travelBackButton" destination="jGc-0I-hZx" id="uVD-mt-HE6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jug-Ou-CzF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="121.73913043478262" y="-109.15178571428571"/>
+            <point key="canvasLocation" x="141" y="-109"/>
         </scene>
         <!--Date Picker View Controller-->
         <scene sceneID="2OZ-Ye-opU">
             <objects>
                 <viewController id="piT-we-G6l" customClass="DatePickerViewController" customModule="OutaTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c3y-HZ-vap">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="GDx-ns-WMg">
+                                <rect key="frame" x="47" y="313" width="320" height="216"/>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMt-LE-ZWu">
+                                <rect key="frame" x="19" y="778" width="48" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelButtonTapped:" destination="piT-we-G6l" eventType="touchUpInside" id="j5B-mP-ZV7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNj-iN-Ahv">
+                                <rect key="frame" x="353" y="778" width="37" height="30"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="doneButtonTapped:" destination="piT-we-G6l" eventType="touchUpInside" id="Lu4-Ej-jT0"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UB1-Oe-n4b" firstAttribute="bottom" secondItem="gNj-iN-Ahv" secondAttribute="bottom" id="8co-Hc-mgA"/>
+                            <constraint firstItem="UB1-Oe-n4b" firstAttribute="bottom" secondItem="pMt-LE-ZWu" secondAttribute="bottom" id="Mk1-wZ-aGh"/>
+                            <constraint firstItem="gNj-iN-Ahv" firstAttribute="leading" secondItem="pMt-LE-ZWu" secondAttribute="trailing" constant="286" id="S9y-nb-YmL"/>
+                            <constraint firstItem="UB1-Oe-n4b" firstAttribute="trailing" secondItem="gNj-iN-Ahv" secondAttribute="trailing" constant="24" id="WvX-FF-0al"/>
+                            <constraint firstItem="GDx-ns-WMg" firstAttribute="centerY" secondItem="c3y-HZ-vap" secondAttribute="centerY" id="mSs-Zz-mUo"/>
+                            <constraint firstItem="GDx-ns-WMg" firstAttribute="centerX" secondItem="c3y-HZ-vap" secondAttribute="centerX" id="mw1-nv-a2G"/>
+                            <constraint firstItem="pMt-LE-ZWu" firstAttribute="leading" secondItem="UB1-Oe-n4b" secondAttribute="leading" constant="19" id="vT2-pq-x9M"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="UB1-Oe-n4b"/>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="GDx-ns-WMg" id="pvS-Rc-0YG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LHQ-lq-7rO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
