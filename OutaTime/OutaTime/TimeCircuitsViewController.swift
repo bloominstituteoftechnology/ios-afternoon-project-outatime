@@ -21,9 +21,14 @@ class TimeCircuitsViewController: UIViewController {
     private var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "M3 d1..2 y1..n"
-        formatter.timeZone = TimeZone.current
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
         return formatter
     }()
+    
+    var currentSpeed = 0
+    
+    private var timer: Timer?
+    private var destinationDate: Date?
 
     override func viewDidLoad() {
         super.viewDidLoad()
