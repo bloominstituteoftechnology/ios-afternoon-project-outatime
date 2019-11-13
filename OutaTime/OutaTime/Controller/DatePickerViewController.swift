@@ -10,4 +10,17 @@ import UIKit
 
 class DatePickerViewController: UIViewController {
     
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    @IBAction func cancelTapped(_ sender: UIBarButtonItem) {
+        
+    }
+    
+    @IBAction func doneTapped(_ sender: UIBarButtonItem) {
+        
+    }
 }
