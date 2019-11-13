@@ -68,9 +68,8 @@ class TimeCircuitsViewController: UIViewController {
             speedTimeLabel.text = "\(currentSpeed) MPH"
             travelAlert()
         }
-        
-        
     }
+    
     @IBAction func travelBackTapped(_ sender: Any) {
         if (destinationTimeLabel.text == "--- -- ----") {
             setDestinationAlert()
@@ -97,9 +96,6 @@ class TimeCircuitsViewController: UIViewController {
             }
         }
     }
-    
-    
-    
 }
 
 extension TimeCircuitsViewController: DatePickerDelegate {
