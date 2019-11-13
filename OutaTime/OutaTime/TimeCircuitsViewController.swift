@@ -67,7 +67,6 @@ class TimeCircuitsViewController: UIViewController {
         
         
         
-        
     }
     @IBAction func travelBackTapped(_ sender: Any) {
         
