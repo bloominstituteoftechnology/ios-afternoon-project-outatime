@@ -18,6 +18,11 @@ class TimeCircuitsViewController: UIViewController {
     @IBOutlet weak var travelBackButton: UIButton!
     
     
+    private var dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "M3 d1..2 y1..n"
+        return formatter
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()

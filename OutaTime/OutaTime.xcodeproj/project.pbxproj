@@ -14,6 +14,7 @@
 		DE067CEB237C99B800801DD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE067CE9237C99B800801DD2 /* LaunchScreen.storyboard */; };
 		DE067CF7237C9AD500801DD2 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE067CF6237C9AD500801DD2 /* TimeCircuitsViewController.swift */; };
 		DE067CF9237C9AEC00801DD2 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE067CF8237C9AEC00801DD2 /* DatePickerViewController.swift */; };
+		DE92A31C237CB1E2001FD765 /* digital-7 copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE92A31B237CB0E3001FD765 /* digital-7 copy.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +27,7 @@
 		DE067CEC237C99B800801DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE067CF6237C9AD500801DD2 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
 		DE067CF8237C9AEC00801DD2 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
-		DE067CFA237C9BDA00801DD2 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "OutaTime/Resources/digital-7.ttf"; sourceTree = SOURCE_ROOT; };
+		DE92A31B237CB0E3001FD765 /* digital-7 copy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7 copy.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 				DE067CE4237C99B700801DD2 /* Main.storyboard */,
 				DE067CF6237C9AD500801DD2 /* TimeCircuitsViewController.swift */,
 				DE067CF8237C9AEC00801DD2 /* DatePickerViewController.swift */,
+				DE92A31B237CB0E3001FD765 /* digital-7 copy.ttf */,
 				DE067CF2237C99D100801DD2 /* Resources */,
 				DE067CEC237C99B800801DD2 /* Info.plist */,
 			);
@@ -71,7 +73,6 @@
 		DE067CF2237C99D100801DD2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DE067CFA237C9BDA00801DD2 /* digital-7.ttf */,
 				DE067CDE237C99B700801DD2 /* AppDelegate.swift */,
 				DE067CE0237C99B700801DD2 /* SceneDelegate.swift */,
 				DE067CE7237C99B800801DD2 /* Assets.xcassets */,
@@ -141,6 +142,7 @@
 				DE067CEB237C99B800801DD2 /* LaunchScreen.storyboard in Resources */,
 				DE067CE8237C99B800801DD2 /* Assets.xcassets in Resources */,
 				DE067CE6237C99B700801DD2 /* Main.storyboard in Resources */,
+				DE92A31C237CB1E2001FD765 /* digital-7 copy.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
