@@ -43,15 +43,17 @@ class TimeCircuitsViewController: UIViewController {
     }
     
     func startTimer() {
-
+        cancelTimer()
+        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: speedUpdate(timer:))
     }
     
     func resetTimer() {
-        
+        cancelTimer()
     }
     
     func cancelTimer() {
-        
+        timer?.invalidate()
+        timer = nil
     }
     
     private func speedUpdate(timer: Timer) {
@@ -59,17 +61,23 @@ class TimeCircuitsViewController: UIViewController {
             currentSpeed += 1
             speedTimeLabel.text = "\(currentSpeed) MPH"
         } else {
+            cancelTimer()
             lastTimeDepartedLabel.text = presentTimeLabel.text
             presentTimeLabel.text = destinationTimeLabel.text
             currentSpeed = 0
             speedTimeLabel.text = "\(currentSpeed) MPH"
+            travelAlert()
         }
         
         
     }
     @IBAction func travelBackTapped(_ sender: Any) {
-        
+        if (destinationTimeLabel.text == "--- -- ----") {
+            setDestinationAlert()
+        } else {
+            travelAlert()
         }
+    }
     
     private func setDestinationAlert() {
         let destinationAlert = UIAlertController(title: "Set Destination Time", message: "Your destination is \(destinationTimeLabel.text!)", preferredStyle: .alert)
@@ -96,6 +104,7 @@ class TimeCircuitsViewController: UIViewController {
 
 extension TimeCircuitsViewController: DatePickerDelegate {
     func destinationDateWasChosen(date: Date) {
-        
+        guard let destinationDate = destinationDate else { return }
+        destinationTimeLabel.text = dateFormatter.string(from: destinationDate)
     }
 }
