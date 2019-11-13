@@ -33,10 +33,46 @@ class TimeCircuitsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    @IBAction func travelBackTapped(_ sender: Any) {
+    
+    func updateViews() {
+        let date = Date()
+        presentTimeLabel.text = dateFormatter.string(from: date)
+        destinationTimeLabel.text = "--- -- ----"
+        speedTimeLabel.text = "\(currentSpeed) MPH"
+        lastTimeDepartedLabel.text = "--- -- ----"
     }
+    
+    func startTimer() {
 
-}
+    }
+    
+    func resetTimer() {
+        
+    }
+    
+    func cancelTimer() {
+        
+    }
+    
+    private func speedUpdate(timer: Timer) {
+        if (currentSpeed < 88) {
+            currentSpeed += 1
+            speedTimeLabel.text = "\(currentSpeed) MPH"
+        } else {
+            lastTimeDepartedLabel.text = presentTimeLabel.text
+            presentTimeLabel.text = destinationTimeLabel.text
+            currentSpeed = 0
+            speedTimeLabel.text = "\(currentSpeed) MPH"
+        }
+        
+        
+        
+        
+    }
+    @IBAction func travelBackTapped(_ sender: Any) {
+        
+        }
+    }
 
 extension TimeCircuitsViewController: DatePickerDelegate {
     func destinationDateWasChosen(date: Date) {
