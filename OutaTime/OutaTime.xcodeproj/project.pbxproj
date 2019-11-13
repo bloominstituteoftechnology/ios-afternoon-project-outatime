@@ -15,6 +15,8 @@
 		63D81CB0237CAC7500F209EE /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63D81CAF237CAC7500F209EE /* digital-7.ttf */; };
 		63D81CB2237CAC8B00F209EE /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D81CB1237CAC8B00F209EE /* TimeCircuitsViewController.swift */; };
 		63D81CB4237CACB000F209EE /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D81CB3237CACB000F209EE /* DatePickerViewController.swift */; };
+		63D81CBD237CB4D100F209EE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D81CBC237CB4D100F209EE /* Constants.swift */; };
+		63D81CC0237CB53D00F209EE /* DatePickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D81CBF237CB53D00F209EE /* DatePickerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		63D81CAF237CAC7500F209EE /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
 		63D81CB1237CAC8B00F209EE /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
 		63D81CB3237CACB000F209EE /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		63D81CBC237CB4D100F209EE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		63D81CBF237CB53D00F209EE /* DatePickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 				63D81CBB237CAD6700F209EE /* Model */,
 				63D81CBA237CAD6000F209EE /* View */,
 				63D81CB9237CAD5600F209EE /* Controller */,
+				63D81CBE237CB52800F209EE /* Protocols */,
 				63D81CB5237CACE400F209EE /* Supporting Files */,
 			);
 			path = OutaTime;
@@ -117,8 +122,17 @@
 		63D81CBB237CAD6700F209EE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				63D81CBC237CB4D100F209EE /* Constants.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		63D81CBE237CB52800F209EE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				63D81CBF237CB53D00F209EE /* DatePickerDelegate.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +207,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63D81CC0237CB53D00F209EE /* DatePickerDelegate.swift in Sources */,
+				63D81CBD237CB4D100F209EE /* Constants.swift in Sources */,
 				63D81CB4237CACB000F209EE /* DatePickerViewController.swift in Sources */,
 				63D81C9C237CAC4F00F209EE /* AppDelegate.swift in Sources */,
 				63D81CB2237CAC8B00F209EE /* TimeCircuitsViewController.swift in Sources */,
