@@ -66,12 +66,33 @@ class TimeCircuitsViewController: UIViewController {
         }
         
         
-        
     }
     @IBAction func travelBackTapped(_ sender: Any) {
         
         }
+    
+    private func setDestinationAlert() {
+        let destinationAlert = UIAlertController(title: "Set Destination Time", message: "Your destination is \(destinationTimeLabel.text!)", preferredStyle: .alert)
+        destinationAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
     }
+    
+    private func travelAlert() {
+        let alert = UIAlertController(title: "Successful Time Travel!", message: "Present Time: \(presentTimeLabel.text!)", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "ModalDestinationDatePickerSegue") {
+            if let datePickerVC = segue.destination as? DatePickerViewController {
+                datePickerVC.delegate = self
+                datePickerVC.destinationDate = self.destinationDate
+            }
+        }
+    }
+    
+    
+    
+}
 
 extension TimeCircuitsViewController: DatePickerDelegate {
     func destinationDateWasChosen(date: Date) {
