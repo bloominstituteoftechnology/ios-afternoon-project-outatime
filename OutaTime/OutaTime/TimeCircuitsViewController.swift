@@ -45,7 +45,7 @@ class TimeCircuitsViewController: UIViewController {
     }
     
     func startTimer() {
-        Timer(timeInterval: 0.1, repeats: false, block: )
+        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateSpeed(timer:))
     }
     
     func resetTimer() {
@@ -53,7 +53,7 @@ class TimeCircuitsViewController: UIViewController {
         timer = nil
     }
     
-    func updateSpeed() {
+    func updateSpeed(timer: Timer) {
         if speed < 88 {
             speed += 1
             speedLabel.text = "\(speed) MPH"
@@ -62,11 +62,18 @@ class TimeCircuitsViewController: UIViewController {
             lastTimeDepartedLabel.text = presentTimeLabel.text
             presentTimeLabel.text = destinationTimeLabel.text
             speed = 0
-            
-            let alert = UIAlertController(title: "Time Travel Successful", message: "Your new date is \(Date())", preferredStyle: <#T##UIAlertController.Style#>)
-            let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-            alert.addAction(alertAction)
+            speedLabel.text = "0 MPH"
+            showAlert()
         }
+    }
+    
+    
+    private func showAlert() {
+        let alert = UIAlertController(title: "Time Travel Successful", message: "Your new date is \(Date())", preferredStyle: .actionSheet)
+        let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(alertAction)
+        
+        present(alert, animated: true)
     }
     
     override func viewDidLoad() {
@@ -80,7 +87,10 @@ class TimeCircuitsViewController: UIViewController {
     
     
     @IBAction func travelBackButton(_ sender: Any) {
+        
+        if let _ = destinationDate {
         startTimer()
+        }
     }
     
     // MARK: - Navigation
@@ -92,8 +102,6 @@ class TimeCircuitsViewController: UIViewController {
             datePickerVC.delegate = self
         }
     }
-
-
 }
 
 extension TimeCircuitsViewController: DatePickerDelegate {
