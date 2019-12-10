@@ -28,6 +28,7 @@
 		42A0917223A055900038FC87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42A0917823A056490038FC87 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
 		42A0917A23A0565B0038FC87 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		42A0917D23A05DE40038FC87 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +70,7 @@
 				42A0917223A055900038FC87 /* Info.plist */,
 				42A0917823A056490038FC87 /* TimeCircuitsViewController.swift */,
 				42A0917A23A0565B0038FC87 /* DatePickerViewController.swift */,
+				42A0917D23A05DE40038FC87 /* digital-7.ttf */,
 			);
 			path = OutaTune;
 			sourceTree = "<group>";

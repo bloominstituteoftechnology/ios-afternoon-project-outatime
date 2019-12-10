@@ -10,6 +10,10 @@ import UIKit
 
 class DatePickerViewController: UIViewController {
 
+    @IBOutlet weak var destinationTimePicker: UIDatePicker!
+    
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,5 +30,12 @@ class DatePickerViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+// MARK: - Actions
+    
+    @IBAction func cancelButtonPressed(_ sender: Any) {
+    }
+    
+    @IBAction func doneButtonPressed(_ sender: Any) {
+    }
+    
 }

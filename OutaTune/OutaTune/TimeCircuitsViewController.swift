@@ -9,7 +9,16 @@
 import UIKit
 
 class TimeCircuitsViewController: UIViewController {
-
+    
+    // MARK: - Outlets
+    
+    @IBOutlet weak var destinationTimeLabel: UILabel!
+    @IBOutlet weak var presentTimeLabel: UILabel!
+    @IBOutlet weak var lastTimeDepartedTimeLabel: UILabel!
+    @IBOutlet weak var speedLabel: UILabel!
+    @IBOutlet weak var destinationButton: UIButton!
+    @IBOutlet weak var travelBackButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,5 +35,9 @@ class TimeCircuitsViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    // MARK: - Actions
+    
+    @IBAction func travelBackButtonPressed(_ sender: UIButton) {
+    }
+    
 }
