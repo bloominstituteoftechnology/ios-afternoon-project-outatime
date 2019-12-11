@@ -8,7 +8,19 @@
 
 import UIKit
 
+protocol CountdownDelegate: AnyObject {
+    func countdownDidUpdate(timeRemaining: TimeInterval)
+    func countdownDidFinish()
+}
+
+enum CountdownState {
+    case started // countdown is active and counting down
+    case finished // countdown has reached 0 and is not active
+    case reset // countdown is at initial time value and not active
+}
+
 class TimeCircuitViewController: UIViewController {
+ weak var delegate: CountdownDelegate?
 
     @IBOutlet weak var destinationTimeLabel: UILabel!
     @IBOutlet weak var presentTimeLabel: UILabel!
@@ -16,6 +28,29 @@ class TimeCircuitViewController: UIViewController {
     @IBOutlet weak var speedLabel: UILabel!
     
     var currentSpeed: Int = 0
+    private var stopDate: Date?
+    private var timer: Timer?
+    private var state: CountdownState
+     var duration: TimeInterval
+    var timeRemaining: TimeInterval {
+           if let stopDate = stopDate {
+               let timeRemaining = stopDate.timeIntervalSinceNow
+               return timeRemaining
+           } else {
+               return 0
+           }
+       }
+    
+    init() {
+        timer = nil
+        stopDate = nil
+        duration = 0
+        state = .reset
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,15 +60,45 @@ class TimeCircuitViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    
+    func reset() {
+        stopDate = nil
+        cancelTimer()
+        state = .reset
+    }
+    
+    func cancelTimer() {
+        timer?.invalidate()
+        timer = nil
+    }
+    
+    private func updateTimer(timer: Timer) {
+        
+        if let stopDate = stopDate {
+            let currentTime = Date()
+            if currentTime <= stopDate {
+              
+                delegate?.countdownDidUpdate(timeRemaining: timeRemaining)
+            } else {
+               
+                state = .finished
+                cancelTimer()
+                self.stopDate = nil
+                delegate?.countdownDidFinish()
+            }
+        }
+    }
+    
     var dateFormatter: DateFormatter =  {
            let formatter = DateFormatter()
            formatter.dateFormat = "MMM d,yyyy"
-          // formatter.timeZone = TimeZone(secondsFromGMT: 0)
+         
            return formatter
        }()
-    // update speedLabel method at end  -  create update speed method!
+    
     func startTimer() {
-        let timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: false, block: <#T##(Timer) -> Void#>)
+        let timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: false, block: updateTimer(timer:))
     }
     
     // MARK: - Navigation
