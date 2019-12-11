@@ -8,17 +8,25 @@
 
 import UIKit
 
+protocol DatePickerDelegate {
+    func DestinationWasChosen(_ date: Date)
+}
+
 class DatePickerViewController: UIViewController {
 
     @IBOutlet weak var destinationTimePicker: UIDatePicker!
     
+    var delegate: DatePickerDelegate?
+    var date: Date?
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        destinationTimePicker.setValue(UIColor.white, forKeyPath: "textColor")
 
         // Do any additional setup after loading the view.
     }
+    
     
 
     /*
@@ -30,12 +38,18 @@ class DatePickerViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
 // MARK: - Actions
     
     @IBAction func cancelButtonPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func doneButtonPressed(_ sender: Any) {
+        let date = destinationTimePicker.date
+        delegate?.DestinationWasChosen(date)
+        dismiss(animated: true, completion: nil)
     }
     
 }
