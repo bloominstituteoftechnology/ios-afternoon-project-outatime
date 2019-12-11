@@ -21,8 +21,8 @@ class TimeCircuitsViewController: UIViewController {
     @IBOutlet weak var travelBackButton: UIButton!
     
     struct PropertyKeys {
-         static let segue = "ModalDestinationDatePickerSegue"
-     }
+        static let segue = "ModalDestinationDatePickerSegue"
+    }
     
     //MARK: - Properties
     let customFont = UIFont(name: "Digits", size: UIFont.systemFontSize)
@@ -48,65 +48,64 @@ class TimeCircuitsViewController: UIViewController {
     }
     
     func updateView() {
-         guard let newLastDate = presentTimeLabel.text, let destinationDate = destinationDate else { return }
-
-         presentTimeLabel.text = string(from: destinationDate)
-         lastTimeDepartedTimeLabel.text = newLastDate
-         speed = 0
-         destinationTimeLabel.text = string(from: destinationDate)
-//        lastTimeDepartedTimeLabel.text = presentTimeLabel.text
-     }
+        guard let newLastDate = presentTimeLabel.text, let destinationDate = destinationDate else { return }
+        
+        presentTimeLabel.text = string(from: destinationDate)
+        lastTimeDepartedTimeLabel.text = newLastDate
+        speed = 0
+        destinationTimeLabel.text = string(from: destinationDate)
+        //        lastTimeDepartedTimeLabel.text = presentTimeLabel.text
+    }
     
     private func string(from date: Date) -> String {
-         return dateFormatter.string(from: date).uppercased()
-     }
+        return dateFormatter.string(from: date).uppercased()
+    }
     
     //MARK: - Functions
     func updateSpeed() {
-
-         Timer.scheduledTimer(withTimeInterval: 0.03, repeats: true) { timer in
-             self.speedLabel.text = "\(self.speed) MPH"
-             self.speed += 1
-             if self.speed == 89 {
-                 timer.invalidate()
-                 self.updateView()
-                 self.showAlert()
-             }
-         }
-     }
+        
+        Timer.scheduledTimer(withTimeInterval: 0.03, repeats: true) { timer in
+            self.speedLabel.text = "\(self.speed) MPH"
+            self.speed += 1
+            if self.speed == 89 {
+                timer.invalidate()
+                self.updateView()
+                self.showAlert()
+            }
+        }
+    }
     
     private func showAlert() {
         
         let resourcePath = Bundle.main.resourcePath
         let url = Bundle.main.url(forResource: "greatscott2", withExtension: "wav")
         self.audioPlayer = try? AVAudioPlayer.init(contentsOf: url!, fileTypeHint: AVFileType.wav.rawValue)
-//        self.audioPlayer?.numberOfLoops = 1
         audioPlayer?.play()
         
         let alert = UIAlertController(title: "Time Travel Successful", message: "You're new date is \(string(from: destinationDate!))", preferredStyle: .alert)
-         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
             self.audioPlayer?.stop()}))
-            self.present(alert, animated: true, completion: nil)
-             audioPlayer?.play()
-     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         if segue.identifier == PropertyKeys.segue {
-             guard let datePickerVC = segue.destination as? DatePickerViewController else { return }
-             datePickerVC.delegate = self
-         }
-     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        self.present(alert, animated: true, completion: nil)
+        audioPlayer?.play()
     }
-    */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == PropertyKeys.segue {
+            guard let datePickerVC = segue.destination as? DatePickerViewController else { return }
+            datePickerVC.delegate = self
+        }
+    }
+    
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
     // MARK: - Actions
     
     @IBAction func travelBackButtonPressed(_ sender: UIButton) {
@@ -117,7 +116,7 @@ class TimeCircuitsViewController: UIViewController {
 
 extension TimeCircuitsViewController: DatePickerDelegate {
     func DestinationWasChosen(_ date: Date) {
-            destinationDate = date
-            destinationTimeLabel.text = string(from: date)
+        destinationDate = date
+        destinationTimeLabel.text = string(from: date)
     }
 }
