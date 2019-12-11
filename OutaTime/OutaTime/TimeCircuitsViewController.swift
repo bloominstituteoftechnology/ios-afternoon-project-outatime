@@ -82,7 +82,7 @@ class TimeCircuitsViewController: UIViewController {
         self.audioPlayer = try? AVAudioPlayer.init(contentsOf: url!, fileTypeHint: AVFileType.wav.rawValue)
         audioPlayer?.play()
         
-        let alert = UIAlertController(title: "Time Travel Successful", message: "You're new date is \(string(from: destinationDate!))", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Time Travel Successful", message: "Your new date is \(string(from: destinationDate!))", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
             self.audioPlayer?.stop()}))
         self.present(alert, animated: true, completion: nil)
