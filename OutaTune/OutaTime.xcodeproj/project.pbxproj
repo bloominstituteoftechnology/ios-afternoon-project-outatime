@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		42A0916123A0558E0038FC87 /* OutaTune.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutaTune.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42A0916123A0558E0038FC87 /* OutaTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutaTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42A0916423A0558E0038FC87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42A0916623A0558E0038FC87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		42A0916823A0558E0038FC87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		42A0915823A0558E0038FC87 = {
 			isa = PBXGroup;
 			children = (
-				42A0916323A0558E0038FC87 /* OutaTune */,
+				42A0916323A0558E0038FC87 /* OutaTime */,
 				42A0916223A0558E0038FC87 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +54,12 @@
 		42A0916223A0558E0038FC87 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				42A0916123A0558E0038FC87 /* OutaTune.app */,
+				42A0916123A0558E0038FC87 /* OutaTime.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		42A0916323A0558E0038FC87 /* OutaTune */ = {
+		42A0916323A0558E0038FC87 /* OutaTime */ = {
 			isa = PBXGroup;
 			children = (
 				42A0916423A0558E0038FC87 /* AppDelegate.swift */,
@@ -73,15 +73,15 @@
 				42A0917A23A0565B0038FC87 /* DatePickerViewController.swift */,
 				42A0917D23A05DE40038FC87 /* digital-7.ttf */,
 			);
-			path = OutaTune;
+			path = OutaTime;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		42A0916023A0558E0038FC87 /* OutaTune */ = {
+		42A0916023A0558E0038FC87 /* OutaTime */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 42A0917523A055900038FC87 /* Build configuration list for PBXNativeTarget "OutaTune" */;
+			buildConfigurationList = 42A0917523A055900038FC87 /* Build configuration list for PBXNativeTarget "OutaTime" */;
 			buildPhases = (
 				42A0915D23A0558E0038FC87 /* Sources */,
 				42A0915E23A0558E0038FC87 /* Frameworks */,
@@ -91,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = OutaTune;
+			name = OutaTime;
 			productName = OutaTune;
-			productReference = 42A0916123A0558E0038FC87 /* OutaTune.app */;
+			productReference = 42A0916123A0558E0038FC87 /* OutaTime.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 42A0915C23A0558E0038FC87 /* Build configuration list for PBXProject "OutaTune" */;
+			buildConfigurationList = 42A0915C23A0558E0038FC87 /* Build configuration list for PBXProject "OutaTime" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -124,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				42A0916023A0558E0038FC87 /* OutaTune */,
+				42A0916023A0558E0038FC87 /* OutaTime */,
 			);
 		};
 /* End PBXProject section */
@@ -331,7 +331,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		42A0915C23A0558E0038FC87 /* Build configuration list for PBXProject "OutaTune" */ = {
+		42A0915C23A0558E0038FC87 /* Build configuration list for PBXProject "OutaTime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42A0917323A055900038FC87 /* Debug */,
@@ -340,7 +340,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		42A0917523A055900038FC87 /* Build configuration list for PBXNativeTarget "OutaTune" */ = {
+		42A0917523A055900038FC87 /* Build configuration list for PBXNativeTarget "OutaTime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42A0917623A055900038FC87 /* Debug */,
