@@ -15,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="125" translatesAutoresizingMaskIntoConstraints="NO" id="H51-2b-SpR">
-                                <rect key="frame" x="107" y="58" width="200" height="780"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="H51-2b-SpR">
+                                <rect key="frame" x="107" y="158" width="200" height="580"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ieg-3V-jOl">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="53"/>
@@ -36,7 +36,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="86F-e7-0wB">
-                                        <rect key="frame" x="0.0" y="178" width="200" height="53"/>
+                                        <rect key="frame" x="0.0" y="128" width="200" height="53"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRESENT TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEh-wg-g9X">
                                                 <rect key="frame" x="0.0" y="0.0" width="200" height="22.5"/>
@@ -54,7 +54,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="S6c-EY-DMH">
-                                        <rect key="frame" x="0.0" y="356" width="200" height="53"/>
+                                        <rect key="frame" x="0.0" y="256" width="200" height="53"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAST TIME DEPARTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qQX-Hy-iQj">
                                                 <rect key="frame" x="0.0" y="0.0" width="200" height="22.5"/>
@@ -73,7 +73,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0E4-nF-2yJ">
-                                        <rect key="frame" x="0.0" y="534" width="200" height="53"/>
+                                        <rect key="frame" x="0.0" y="384" width="200" height="53"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPEED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KqV-Xa-qOf">
                                                 <rect key="frame" x="0.0" y="0.0" width="200" height="22.5"/>
@@ -82,7 +82,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AvA-Cz-iTr">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AvA-Cz-iTr">
                                                 <rect key="frame" x="0.0" y="30.5" width="200" height="22.5"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
@@ -92,13 +92,14 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Tgy-uS-kGL">
-                                        <rect key="frame" x="0.0" y="712" width="200" height="68"/>
+                                        <rect key="frame" x="0.0" y="512" width="200" height="68"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3D-SB-EIf">
                                                 <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
                                                 <state key="normal" title="SET DESTINATION TIME"/>
                                                 <connections>
                                                     <action selector="setDestinationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZtH-lZ-amU"/>
+                                                    <segue destination="S2k-Aw-ExA" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="kLk-xi-UNV"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJ7-cd-5q0">
@@ -141,11 +142,37 @@
             <objects>
                 <viewController id="S2k-Aw-ExA" customClass="DatePickerViewController" customModule="OutaTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dhn-QL-FL7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="4NJ-eX-oBj">
+                                <rect key="frame" x="47" y="313" width="320" height="216"/>
+                            </datePicker>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4NJ-eX-oBj" firstAttribute="centerY" secondItem="dhn-QL-FL7" secondAttribute="centerY" id="Qhc-Ut-q8p"/>
+                            <constraint firstItem="4NJ-eX-oBj" firstAttribute="centerX" secondItem="dhn-QL-FL7" secondAttribute="centerX" id="utl-av-nob"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gL0-1J-Gwe"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem systemItem="cancel" id="PUv-xv-lrg">
+                            <connections>
+                                <action selector="cancelTapped:" destination="S2k-Aw-ExA" id="nPP-2K-sOt"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="O4E-Cy-vG4"/>
+                        <barButtonItem systemItem="done" id="Qyj-Fn-cUY">
+                            <connections>
+                                <action selector="doneTapped:" destination="S2k-Aw-ExA" id="toU-GD-tpC"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="datePicker" destination="4NJ-eX-oBj" id="chC-9Y-Bn9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kv9-xb-vI6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

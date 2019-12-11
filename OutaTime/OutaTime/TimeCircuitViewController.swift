@@ -15,14 +15,23 @@ class TimeCircuitViewController: UIViewController {
     @IBOutlet weak var lastTimeDepartedLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
     
+    var currentSpeed: Int = 0
     
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        speedLabel.text = "\(currentSpeed) MPH"
+        lastTimeDepartedLabel.text = "--- -- ---"
         // Do any additional setup after loading the view.
     }
     
-
+    var dateFormatter: DateFormatter =  {
+           let formatter = DateFormatter()
+           formatter.dateFormat = "MMM d,yyyy"
+          // formatter.timeZone = TimeZone(secondsFromGMT: 0)
+           return formatter
+       }()
+    
     /*
     // MARK: - Navigation
 
