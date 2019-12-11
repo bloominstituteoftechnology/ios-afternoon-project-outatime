@@ -6,14 +6,22 @@
 //  Copyright © 2019 david williams. All rights reserved.
 //
 
+
+protocol DatePickerDelegate {
+    func destinationDateWasChosen(date: Date)
+    
+}
 import UIKit
 
 class DatePickerViewController: UIViewController {
 
     @IBOutlet weak var datePicker: UIDatePicker!
+    
+var delegate: DatePickerDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.backgroundColor = .gray
         // Do any additional setup after loading the view.
     }
     
@@ -29,7 +37,12 @@ class DatePickerViewController: UIViewController {
     */
 
     @IBAction func cancelTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     @IBAction func doneTapped(_ sender: Any) {
+        if let date = datePicker {
+          //  self.delegate?.destinationDateWasChosen(date: date)
+        }
+        dismiss(animated: true, completion: nil)
     }
 }
