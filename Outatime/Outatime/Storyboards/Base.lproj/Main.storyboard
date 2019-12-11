@@ -100,11 +100,17 @@
                                         <rect key="frame" x="0.0" y="0.0" width="216" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="SET DESTINATION TIME"/>
+                                        <connections>
+                                            <segue destination="fGo-DZ-DCu" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="td6-9i-qj2"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHr-ue-pRZ">
                                         <rect key="frame" x="44" y="44" width="128" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="TRAVEL BACK"/>
+                                        <connections>
+                                            <action selector="travelBackTapped:" destination="Lm5-gu-GlT" eventType="touchUpInside" id="UzM-CU-Uca"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -118,6 +124,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4xc-S5-66p"/>
                     </view>
+                    <connections>
+                        <outlet property="destinationTime" destination="baj-J2-7nO" id="Ia0-iC-86Z"/>
+                        <outlet property="lastTimeDeparted" destination="vQz-pd-FzO" id="5c8-Zf-WGg"/>
+                        <outlet property="presentTime" destination="f0H-8V-c2w" id="doy-Fj-gBs"/>
+                        <outlet property="speed" destination="gY6-B7-2Eq" id="jBA-zW-dzk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PmS-l4-ECx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -128,17 +140,41 @@
             <objects>
                 <viewController id="fGo-DZ-DCu" customClass="DatePickerViewController" customModule="Outatime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yms-Vm-f9M">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tFL-vT-sn4">
-                                <rect key="frame" x="0.0" y="340" width="414" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tFL-vT-sn4">
+                                <rect key="frame" x="0.0" y="313" width="414" height="216"/>
                             </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7je-ie-nUh">
+                                <rect key="frame" x="357" y="778" width="37" height="30"/>
+                                <state key="normal" title="Done"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rw3-eU-cXB">
+                                <rect key="frame" x="20" y="778" width="48" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelTapped:" destination="fGo-DZ-DCu" eventType="touchUpInside" id="aSz-a8-JfF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tFL-vT-sn4" firstAttribute="centerY" secondItem="Yms-Vm-f9M" secondAttribute="centerY" id="3nG-fV-0HP"/>
+                            <constraint firstItem="rw3-eU-cXB" firstAttribute="centerY" secondItem="7je-ie-nUh" secondAttribute="centerY" id="Dbm-eV-raN"/>
+                            <constraint firstItem="tFL-vT-sn4" firstAttribute="leading" secondItem="9Fq-wL-ClT" secondAttribute="leading" id="Nc2-pf-KqJ"/>
+                            <constraint firstItem="rw3-eU-cXB" firstAttribute="leading" secondItem="9Fq-wL-ClT" secondAttribute="leading" constant="20" id="Ql4-gc-n9N"/>
+                            <constraint firstItem="9Fq-wL-ClT" firstAttribute="bottom" secondItem="7je-ie-nUh" secondAttribute="bottom" id="peG-Zy-uvj"/>
+                            <constraint firstItem="9Fq-wL-ClT" firstAttribute="trailing" secondItem="7je-ie-nUh" secondAttribute="trailing" constant="20" id="sq6-VL-lzb"/>
+                            <constraint firstItem="9Fq-wL-ClT" firstAttribute="trailing" secondItem="tFL-vT-sn4" secondAttribute="trailing" id="tXZ-Ex-5xg"/>
+                            <constraint firstItem="tFL-vT-sn4" firstAttribute="centerX" secondItem="Yms-Vm-f9M" secondAttribute="centerX" id="xeq-Yu-xIs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9Fq-wL-ClT"/>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="tFL-vT-sn4" id="92G-uT-rvk"/>
+                        <outlet property="doneTapped" destination="Dbm-eV-raN" id="Vhm-vd-Mza"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N5b-RE-1cJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
