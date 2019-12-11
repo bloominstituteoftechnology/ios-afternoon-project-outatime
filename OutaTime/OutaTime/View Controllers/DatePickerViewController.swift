@@ -8,22 +8,31 @@
 
 import UIKit
 
+protocol DatePickerDelegate {
+    func destinationDateWasChosen(date: Date)
+}
+
 class DatePickerViewController: UIViewController {
 
     // MARK: - IBOutlets
 
     @IBOutlet weak var datePicker: UIDatePicker!
     
+    // MARK: - Properties
+
+    var delegate: DatePickerDelegate?
+    
     // MARK: - IBActions
     
     @IBAction func doneButtonTapped(_ sender: UIButton) {
-        
+        delegate?.destinationDateWasChosen(date: datePicker.date)
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func cancelButtonTapped(_ sender: UIButton) {
-        
+        dismiss(animated: true, completion: nil)
     }
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +40,6 @@ class DatePickerViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
     /*
     // MARK: - Navigation
 
@@ -41,5 +49,4 @@ class DatePickerViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

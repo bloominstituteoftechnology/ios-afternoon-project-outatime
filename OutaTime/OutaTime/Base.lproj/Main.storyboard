@@ -111,7 +111,6 @@
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                 <state key="normal" title="SET DESTINATION TIME"/>
                                                 <connections>
-                                                    <action selector="setDestinationTimeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BAa-ep-bCU"/>
                                                     <segue destination="bAG-7u-ikm" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="qrP-PE-Ekk"/>
                                                 </connections>
                                             </button>
@@ -156,28 +155,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsV-cY-4sj">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsV-cY-4sj">
                                 <rect key="frame" x="16" y="694" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
                                     <action selector="cancelButtonTapped:" destination="bAG-7u-ikm" eventType="touchUpInside" id="EMn-eI-NlZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmn-kT-M9c">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmn-kT-M9c">
                                 <rect key="frame" x="322" y="694" width="37" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
                                     <action selector="doneButtonTapped:" destination="bAG-7u-ikm" eventType="touchUpInside" id="VXd-SD-l9Y"/>
                                 </connections>
                             </button>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="Yru-Uy-gjp">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="Yru-Uy-gjp">
                                 <rect key="frame" x="0.0" y="271" width="375" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </datePicker>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Yru-Uy-gjp" firstAttribute="leading" secondItem="b2e-RB-grA" secondAttribute="leading" id="6fH-dJ-L80"/>
+                            <constraint firstItem="tsV-cY-4sj" firstAttribute="leading" secondItem="b2e-RB-grA" secondAttribute="leading" constant="16" id="Aao-F0-Nhj"/>
+                            <constraint firstItem="dmn-kT-M9c" firstAttribute="bottom" secondItem="b2e-RB-grA" secondAttribute="bottom" id="B7t-2H-WLn"/>
+                            <constraint firstItem="b2e-RB-grA" firstAttribute="trailing" secondItem="dmn-kT-M9c" secondAttribute="trailing" constant="16" id="GNs-WE-kZi"/>
+                            <constraint firstItem="dmn-kT-M9c" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tsV-cY-4sj" secondAttribute="trailing" constant="8" symbolic="YES" id="JNm-YZ-25U"/>
+                            <constraint firstItem="tsV-cY-4sj" firstAttribute="bottom" secondItem="b2e-RB-grA" secondAttribute="bottom" id="YHA-jv-mgB"/>
+                            <constraint firstItem="Yru-Uy-gjp" firstAttribute="centerY" secondItem="ky5-Kt-tan" secondAttribute="centerY" id="gC6-29-jfc"/>
+                            <constraint firstItem="Yru-Uy-gjp" firstAttribute="trailing" secondItem="b2e-RB-grA" secondAttribute="trailing" id="z4d-DU-8Bk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="b2e-RB-grA"/>
                     </view>
                     <connections>
