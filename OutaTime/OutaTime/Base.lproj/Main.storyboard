@@ -12,22 +12,49 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Data Picker View Controller-->
+        <!--Date Picker View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="DataPickerViewController" customModule="OutaTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DatePickerViewController" customModule="OutaTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="lse-i8-g36">
                                 <rect key="frame" x="0.0" y="261" width="414" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EpZ-u7-Jcg">
+                                <rect key="frame" x="16" y="716" width="48" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xVR-yG-qOQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdP-68-Z1Z">
+                                <rect key="frame" x="361" y="716" width="37" height="30"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="doneButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cYo-Ae-Iyk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DdP-68-Z1Z" firstAttribute="baseline" secondItem="EpZ-u7-Jcg" secondAttribute="baseline" id="ENq-on-9WY"/>
+                            <constraint firstItem="EpZ-u7-Jcg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="OGf-TF-EhT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DdP-68-Z1Z" secondAttribute="trailing" constant="16" id="Tfm-pT-nYE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EpZ-u7-Jcg" secondAttribute="bottom" constant="13" id="mOI-8f-69v"/>
+                            <constraint firstItem="DdP-68-Z1Z" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="EpZ-u7-Jcg" secondAttribute="trailing" constant="8" symbolic="YES" id="od5-O8-ohV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="pTt-AM-NRj"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="datePicker" destination="lse-i8-g36" id="08e-UD-ktf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,18 +69,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OOg-t0-mIR">
-                                <rect key="frame" x="0.0" y="751" width="414" height="71"/>
+                                <rect key="frame" x="0.0" y="754" width="414" height="108"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgd-AW-DP4">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="iH4-ge-lmU"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Set Destination Time"/>
                                         <connections>
                                             <action selector="setButtonTapped:" destination="OAE-tf-5Zy" eventType="touchUpInside" id="1E7-Gd-sc7"/>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="CeZ-bX-r7h"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35R-rU-2db">
-                                        <rect key="frame" x="0.0" y="41" width="414" height="30"/>
+                                        <rect key="frame" x="0.0" y="58" width="414" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="rOb-hQ-Gf5"/>
+                                        </constraints>
                                         <state key="normal" title="Travel Back"/>
                                         <connections>
                                             <action selector="travelBackTapped:" destination="OAE-tf-5Zy" eventType="touchUpInside" id="8Js-CW-hBi"/>
@@ -61,15 +95,14 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tO-cm-5Br">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tO-cm-5Br">
                                 <rect key="frame" x="153" y="136" width="0.0" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="17"/>
                                 <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="132" translatesAutoresizingMaskIntoConstraints="NO" id="8jy-AH-lNP">
-                                <rect key="frame" x="81" y="53" width="253.5" height="689.5"/>
+                                <rect key="frame" x="80.5" y="56" width="253.5" height="689.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="riV-im-hUh">
                                         <rect key="frame" x="0.0" y="0.0" width="253" height="71"/>
@@ -144,11 +177,15 @@
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="2tO-cm-5Br" firstAttribute="top" secondItem="SbJ-yx-wZM" secondAttribute="topMargin" constant="92" id="8j7-hF-rSL"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2tO-cm-5Br" secondAttribute="trailing" constant="20" symbolic="YES" id="Bvb-Mv-hHI"/>
                             <constraint firstItem="OOg-t0-mIR" firstAttribute="top" secondItem="8jy-AH-lNP" secondAttribute="bottom" constant="8.5" id="Ofn-gE-vZ8"/>
                             <constraint firstItem="OOg-t0-mIR" firstAttribute="leading" secondItem="e52-az-iwZ" secondAttribute="leading" id="W7w-l0-e9r"/>
                             <constraint firstItem="e52-az-iwZ" firstAttribute="trailing" secondItem="OOg-t0-mIR" secondAttribute="trailing" id="WKc-wL-ZjR"/>
+                            <constraint firstItem="2tO-cm-5Br" firstAttribute="leading" secondItem="SbJ-yx-wZM" secondAttribute="leading" constant="153" id="Wtg-ae-UWq"/>
                             <constraint firstItem="OOg-t0-mIR" firstAttribute="centerX" secondItem="8jy-AH-lNP" secondAttribute="centerX" id="fIu-ce-a6b"/>
-                            <constraint firstItem="e52-az-iwZ" firstAttribute="bottom" secondItem="OOg-t0-mIR" secondAttribute="bottom" constant="40" id="ru5-sA-2r7"/>
+                            <constraint firstItem="OOg-t0-mIR" firstAttribute="top" secondItem="8jy-AH-lNP" secondAttribute="bottom" constant="8.5" id="kXa-T1-2r1"/>
+                            <constraint firstItem="e52-az-iwZ" firstAttribute="bottom" secondItem="OOg-t0-mIR" secondAttribute="bottom" id="ru5-sA-2r7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="e52-az-iwZ"/>
                     </view>

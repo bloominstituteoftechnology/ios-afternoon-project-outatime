@@ -9,8 +9,7 @@
 import UIKit
 
 class TimeCircuitsViewController: UIViewController {
-    
-    
+   
     // MARK: - IBOutlets
     @IBOutlet weak var destinationTime: UILabel!
     @IBOutlet weak var presentTime: UILabel!
@@ -18,7 +17,6 @@ class TimeCircuitsViewController: UIViewController {
     @IBOutlet weak var speed: UILabel!
     
     // MARK: - IBActions
-    
     @IBAction func setButtonTapped(_ sender: UIButton) {
         speed.text = "0 MPH"
     }
@@ -32,11 +30,12 @@ class TimeCircuitsViewController: UIViewController {
             timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: updateSpeed(timer:))
         } else { currentSpeed = 0 }
     }
+    
     func resetTimer() {
         timer?.invalidate()
         timer = nil
     }
-     
+    
     func updateSpeed(timer: Timer) {
         if currentSpeed < 88 {
             currentSpeed += 1
@@ -47,6 +46,12 @@ class TimeCircuitsViewController: UIViewController {
             presentTime.text = destinationTime.text
             resetTimer()
         }
+    
+    guard let presentTime = destinationTime.text else { return }
+        let alert = UIAlertController(title: "Time Travel Successful", message: "Your new date is \(presentTime)", preferredStyle: .alert)
+    
+        alert.addAction(UIAlertAction(title: "To Infinity and Beyond", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
     
     func dateFormat() -> String {
@@ -72,16 +77,18 @@ class TimeCircuitsViewController: UIViewController {
         lastTimeDeparted.text = "--- -- ----"
         // Do any additional setup after loading the view.
     }
-    
 
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "ModalDestinationDatePickerSegue" {
+            guard let datePickerVC = segue.destination as? DatePickerViewController else { return }
+            datePickerVC.delegate = self
+        }
     }
-    */
-
+    
+}
+    extension TimeCircuitsViewController: DatePickerDelegate {
+        func destinationDateWasChosen(_ date: Date) {
+            destinationTime.text = dateFormatter.string(from: date)
+    }
 }
