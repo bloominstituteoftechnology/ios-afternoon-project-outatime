@@ -65,9 +65,9 @@
 				026EC34023A088B0006239C8 /* DatePickerViewController.swift */,
 				026EC33023A08839006239C8 /* Main.storyboard */,
 				026EC33323A0883D006239C8 /* Assets.xcassets */,
-				026EC34223A08BCC006239C8 /* digital-7.ttf */,
 				026EC33523A0883D006239C8 /* LaunchScreen.storyboard */,
 				026EC33823A0883D006239C8 /* Info.plist */,
+				026EC34223A08BCC006239C8 /* digital-7.ttf */,
 			);
 			path = OutaTime;
 			sourceTree = "<group>";
