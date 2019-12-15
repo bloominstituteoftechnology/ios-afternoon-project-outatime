@@ -39,10 +39,13 @@ var delegate: DatePickerDelegate?
     @IBAction func cancelTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
     @IBAction func doneTapped(_ sender: Any) {
-        if let date = datePicker {
-          //  self.delegate?.destinationDateWasChosen(date: date)
+        if let date = datePicker?.date {
+            self.delegate?.destinationDateWasChosen(date: date)
         }
         dismiss(animated: true, completion: nil)
     }
 }
+
+
