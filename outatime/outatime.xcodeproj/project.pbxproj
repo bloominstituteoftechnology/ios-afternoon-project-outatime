@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B662869423A9C27700EA820D /* date-picker-modal.png in Resources */ = {isa = PBXBuildFile; fileRef = B662869323A9C27700EA820D /* date-picker-modal.png */; };
+		B662869623A9C27E00EA820D /* time-circuits.png in Resources */ = {isa = PBXBuildFile; fileRef = B662869523A9C27E00EA820D /* time-circuits.png */; };
 		B68CC52623A17A0C0077E550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68CC52523A17A0C0077E550 /* AppDelegate.swift */; };
 		B68CC52823A17A0C0077E550 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68CC52723A17A0C0077E550 /* SceneDelegate.swift */; };
 		B68CC52D23A17A0C0077E550 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B68CC52B23A17A0C0077E550 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B662869323A9C27700EA820D /* date-picker-modal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "date-picker-modal.png"; sourceTree = "<group>"; };
+		B662869523A9C27E00EA820D /* time-circuits.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "time-circuits.png"; sourceTree = "<group>"; };
 		B68CC52223A17A0C0077E550 /* outatime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = outatime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B68CC52523A17A0C0077E550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B68CC52723A17A0C0077E550 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 				B68CC53023A17A0D0077E550 /* LaunchScreen.storyboard */,
 				B68CC53323A17A0D0077E550 /* Info.plist */,
 				B68CC53D23A1D9890077E550 /* digital-7.ttf */,
+				B662869523A9C27E00EA820D /* time-circuits.png */,
+				B662869323A9C27700EA820D /* date-picker-modal.png */,
 			);
 			path = outatime;
 			sourceTree = "<group>";
@@ -133,6 +139,8 @@
 				B68CC53223A17A0D0077E550 /* LaunchScreen.storyboard in Resources */,
 				B68CC52F23A17A0D0077E550 /* Assets.xcassets in Resources */,
 				B68CC52D23A17A0C0077E550 /* Main.storyboard in Resources */,
+				B662869623A9C27E00EA820D /* time-circuits.png in Resources */,
+				B662869423A9C27700EA820D /* date-picker-modal.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

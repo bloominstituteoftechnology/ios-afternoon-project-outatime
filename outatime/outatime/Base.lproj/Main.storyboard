@@ -114,6 +114,11 @@
                                                 <state key="normal" title="SET DESTINATION TIME"/>
                                                 <connections>
                                                     <action selector="setDestination:" destination="kO4-6P-D7f" eventType="touchUpInside" id="rPs-km-hLJ"/>
+                                                    <segue destination="mJH-cr-5GZ" kind="show" id="062-hg-swR">
+                                                        <string key="identifier" base64-UTF8="YES">
+U2hvd0Rlc3RpbmF0aW9uEBBUaW1lU2VndWU
+</string>
+                                                    </segue>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0NY-OU-iP8">
@@ -151,11 +156,35 @@
             <objects>
                 <viewController id="mJH-cr-5GZ" customClass="DatePickerViewController" customModule="outatime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZPB-qW-EbZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="yyQ-Gy-z2H">
+                                <rect key="frame" x="47" y="313" width="320" height="216"/>
+                            </datePicker>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yyQ-Gy-z2H" firstAttribute="centerY" secondItem="ZPB-qW-EbZ" secondAttribute="centerY" id="4fJ-KX-Yc7"/>
+                            <constraint firstItem="yyQ-Gy-z2H" firstAttribute="centerX" secondItem="ZPB-qW-EbZ" secondAttribute="centerX" id="vCn-ne-Ul1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Lie-6e-eXU"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Back" id="nti-X3-zIl">
+                            <connections>
+                                <action selector="backButtonTapped:" destination="mJH-cr-5GZ" id="oNM-IQ-J7G"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="a6b-j5-pRg"/>
+                        <barButtonItem title="Done" id="pFP-aH-QMy">
+                            <connections>
+                                <action selector="doneButtonTapped:" destination="mJH-cr-5GZ" id="WfV-im-a8B"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="xCm-x1-r9L"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lAq-vJ-1BZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
