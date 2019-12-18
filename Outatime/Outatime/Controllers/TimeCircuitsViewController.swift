@@ -31,7 +31,6 @@ class TimeCircuitsViewController: UIViewController {
         presentTimeLabel.text = dateFormatter.string(from: today)
         speedLabel.text = "\(speed) MPH"
         lastTimeDepartedLabel.text = "--- -- ----"
-
     }
     
     @IBAction func travelBackTapped(_ sender: Any) {
@@ -48,4 +47,12 @@ class TimeCircuitsViewController: UIViewController {
     }
     */
 
+}
+
+extension TimeCircuitsViewController: DatePickerDelegate {
+    func destinationDateWasChosen(date: Date) {
+        <#code#>
+    }
+    
+    
 }
