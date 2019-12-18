@@ -15,11 +15,23 @@ class TimeCircuitsViewController: UIViewController {
     @IBOutlet weak var lastTimeDepartedLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
     
+    let today = Date()
+    var speed = 0
+    var dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM d, yyyy"
+        
+        return formatter
+    }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        presentTimeLabel.text = dateFormatter.string(from: today)
+        speedLabel.text = "\(speed) MPH"
+        lastTimeDepartedLabel.text = "--- -- ----"
 
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func travelBackTapped(_ sender: Any) {
