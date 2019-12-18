@@ -8,9 +8,15 @@
 
 import UIKit
 
+protocol DatePickerDelegate {
+    func destinationDateWasChosen(date: Date)
+}
+
 class DatePickerViewController: UIViewController {
     
     @IBOutlet weak var datePicker: UIDatePicker!
+    
+    var delegate: DatePickerDelegate?
     
     @IBAction func cancelTapped(_ sender: UIBarButtonItem) {
         print("cancel")
