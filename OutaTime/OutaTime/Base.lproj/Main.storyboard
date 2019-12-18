@@ -77,7 +77,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="RaI-kz-eQl">
-                                <rect key="frame" x="67.5" y="111" width="279.5" height="674.5"/>
+                                <rect key="frame" x="67.5" y="108" width="279.5" height="680.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESTINATION TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sqf-fd-nTL">
                                         <rect key="frame" x="0.0" y="0.0" width="279.5" height="30"/>
@@ -128,16 +128,18 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgU-VG-hRX">
-                                        <rect key="frame" x="0.0" y="584.5" width="279.5" height="30"/>
+                                        <rect key="frame" x="0.0" y="584.5" width="279.5" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="SET DESTINATION TIME">
                                             <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="presentation" id="wy3-OQ-wyN"/>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="wy3-OQ-wyN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ban-Q3-vLy">
-                                        <rect key="frame" x="0.0" y="644.5" width="279.5" height="30"/>
+                                        <rect key="frame" x="0.0" y="647.5" width="279.5" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="TRAVEL BACK">
                                             <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>

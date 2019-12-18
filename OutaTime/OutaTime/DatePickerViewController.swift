@@ -19,12 +19,10 @@ class DatePickerViewController: UIViewController {
     var delegate: DatePickerDelegate?
     
     @IBAction func cancelTapped(_ sender: UIBarButtonItem) {
-        print("cancel")
         dismiss(animated: true, completion: nil) // dismisses this view controller
     }
     
     @IBAction func doneTapped(_ sender: UIBarButtonItem) {
-        print("done")
         delegate?.destinationDateWasChosen(date: datePicker.date)
         dismiss(animated: true, completion: nil)
     }
@@ -33,19 +31,8 @@ class DatePickerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+        datePicker.datePickerMode = .date // super important
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
 
 }
