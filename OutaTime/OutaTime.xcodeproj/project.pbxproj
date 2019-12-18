@@ -13,6 +13,7 @@
 		1B34CBE923AABFE500F65496 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B34CBE723AABFE500F65496 /* LaunchScreen.storyboard */; };
 		1B34CBF123AAC01B00F65496 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B34CBF023AAC01B00F65496 /* TimeCircuitsViewController.swift */; };
 		1B34CBF323AAC03E00F65496 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B34CBF223AAC03E00F65496 /* DatePickerViewController.swift */; };
+		1B34CBF523AACEBF00F65496 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B34CBF423AACEBF00F65496 /* digital-7.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1B34CBEA23AABFE500F65496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B34CBF023AAC01B00F65496 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
 		1B34CBF223AAC03E00F65496 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		1B34CBF423AACEBF00F65496 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../../digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				1B34CBF023AAC01B00F65496 /* TimeCircuitsViewController.swift */,
 				1B34CBF223AAC03E00F65496 /* DatePickerViewController.swift */,
 				1B34CBE223AABFE200F65496 /* Main.storyboard */,
+				1B34CBF423AACEBF00F65496 /* digital-7.ttf */,
 				1B34CBDE23AABFE200F65496 /* AppDelegate.swift */,
 				1B34CBE523AABFE500F65496 /* Assets.xcassets */,
 				1B34CBE723AABFE500F65496 /* LaunchScreen.storyboard */,
@@ -128,6 +131,7 @@
 				1B34CBE923AABFE500F65496 /* LaunchScreen.storyboard in Resources */,
 				1B34CBE623AABFE500F65496 /* Assets.xcassets in Resources */,
 				1B34CBE423AABFE200F65496 /* Main.storyboard in Resources */,
+				1B34CBF523AACEBF00F65496 /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
