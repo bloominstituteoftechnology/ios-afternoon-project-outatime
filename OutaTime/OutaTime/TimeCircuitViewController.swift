@@ -27,7 +27,7 @@ class TimeCircuitViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         speedLabel.text = "\(currentSpeed) MPH"
-        destinationTimeLabel.text = "--- -- ---"
+       // destinationTimeLabel.text = "--- -- ---"
         lastTimeDepartedLabel.text = "--- -- ---"
         presentTimeLabel.text = dateFormatter.string(from: Date())
         updateViews()
@@ -78,7 +78,6 @@ class TimeCircuitViewController: UIViewController {
         return dateFormatter.string(from: date)
     }
     
-    
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -98,7 +97,6 @@ class TimeCircuitViewController: UIViewController {
     
     private func showAlert() {
         let alert = UIAlertController(title: "Time Travel Successful!", message: "Your new date is \(presentTimeLabel.text ?? "Nowhere have you gone.")", preferredStyle: .alert)
-        
         alert.addAction(UIAlertAction(title: "Travel some more.", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
@@ -106,6 +104,6 @@ class TimeCircuitViewController: UIViewController {
 
 extension TimeCircuitViewController: DatePickerDelegate {
     func destinationDateWasChosen(date: Date) {
-        destinationTimeLabel.text = dateFormatter.string(from: Date())
+        destinationTimeLabel.text = dateFormatter.string(from: date)
     }
 }
