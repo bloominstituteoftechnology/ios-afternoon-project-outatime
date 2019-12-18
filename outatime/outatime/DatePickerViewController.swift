@@ -23,13 +23,8 @@ class DatePickerViewController: UIViewController {
         super.viewDidLoad()
 
     }
-    
-    @IBAction func backButtonTapped(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func doneButtonTapped(_ sender: Any) {
-        delegate?.destinationDateWasChosen(date: datePicker.date)
+  
+    @IBAction func doneButtonTapped(_ sender: Any) {        delegate?.destinationDateWasChosen(date: datePicker.date)
         dismiss(animated: true, completion: nil)
     }
 }
