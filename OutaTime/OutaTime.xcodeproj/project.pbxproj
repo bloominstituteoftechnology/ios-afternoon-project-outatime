@@ -27,7 +27,7 @@
 		E15CA971237CAFD10055E101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E15CA977237CB01A0055E101 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
 		E15CA979237CB02A0055E101 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
-		E15CA97B237CB0B30055E101 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../../digital-7.ttf"; sourceTree = "<group>"; };
+		E15CA97B237CB0B30055E101 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,8 +44,6 @@
 		E15CA957237CAFCE0055E101 = {
 			isa = PBXGroup;
 			children = (
-				E15CA977237CB01A0055E101 /* TimeCircuitsViewController.swift */,
-				E15CA979237CB02A0055E101 /* DatePickerViewController.swift */,
 				E15CA962237CAFCE0055E101 /* OutaTime */,
 				E15CA961237CAFCE0055E101 /* Products */,
 			);
@@ -62,15 +60,25 @@
 		E15CA962237CAFCE0055E101 /* OutaTime */ = {
 			isa = PBXGroup;
 			children = (
-				E15CA963237CAFCE0055E101 /* AppDelegate.swift */,
-				E15CA965237CAFCE0055E101 /* SceneDelegate.swift */,
+				E15CA977237CB01A0055E101 /* TimeCircuitsViewController.swift */,
+				E15CA979237CB02A0055E101 /* DatePickerViewController.swift */,
 				E15CA969237CAFCE0055E101 /* Main.storyboard */,
 				E15CA97B237CB0B30055E101 /* digital-7.ttf */,
-				E15CA96C237CAFD10055E101 /* Assets.xcassets */,
-				E15CA96E237CAFD10055E101 /* LaunchScreen.storyboard */,
+				E19838A523AAC6B3003906C0 /* Resources */,
 				E15CA971237CAFD10055E101 /* Info.plist */,
 			);
 			path = OutaTime;
+			sourceTree = "<group>";
+		};
+		E19838A523AAC6B3003906C0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E15CA963237CAFCE0055E101 /* AppDelegate.swift */,
+				E15CA965237CAFCE0055E101 /* SceneDelegate.swift */,
+				E15CA96C237CAFD10055E101 /* Assets.xcassets */,
+				E15CA96E237CAFD10055E101 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
