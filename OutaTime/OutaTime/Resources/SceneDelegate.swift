@@ -2,8 +2,8 @@
 //  SceneDelegate.swift
 //  OutaTime
 //
-//  Created by Lambda_School_Loaner_220 on 11/13/19.
-//  Copyright © 2019 James. All rights reserved.
+//  Created by Lambda_School_loaner_226 on 12/18/19.
+//  Copyright © 2019 JamesMcDougall. All rights reserved.
 //
 
 import UIKit
