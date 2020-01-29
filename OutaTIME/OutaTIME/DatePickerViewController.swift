@@ -39,6 +39,7 @@ class DatePickerViewController: UIViewController {
     @objc func handleDone() {
         delegate?.didChoseDestinationDate(for: datePicker.date)
         navigationController?.popViewController(animated: true)
+        
     }
     
     @objc func handleCancel() {
