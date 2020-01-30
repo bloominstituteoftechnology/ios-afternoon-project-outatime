@@ -40,3 +40,14 @@ class TimeCircuitsViewController {
     let lastDepartedTickerLabel = "___ __ ____"
     
 }
+
+
+extension TimeCircuitsViewController: DatePickerDelegate {
+   
+    func destinationDateWasChosen(_: Date) {
+        <#code#>
+    }
+    
+    
+    
+}

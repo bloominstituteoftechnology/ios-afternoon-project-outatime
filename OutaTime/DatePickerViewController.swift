@@ -15,16 +15,16 @@ protocol DatePickerDelegate {
 class DatePickerViewController {
     
     @IBOutlet weak var datePicker: UIDatePicker!
+    
     @IBAction func cancelTapped(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
     }
     @IBAction func doneTapped(_ sender: UIBarButtonItem) {
         
-       
+        delegate?.doneTapped(cell: self)
     }
     
     var delegate = DatePickerDelegate?
-    
-    
     
     
 }
