@@ -6,7 +6,8 @@
 //  Copyright © 2020 Nichole Davidson. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
 protocol DatePickerDelegate {
     
     func destinationDateWasChosen(_: Date)

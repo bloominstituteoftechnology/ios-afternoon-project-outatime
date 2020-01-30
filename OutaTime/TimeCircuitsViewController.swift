@@ -8,6 +8,13 @@
 
 import UIKit
 
+enum CountdownState {
+    case started // countdown is active and counting down
+    case finished // countdown has reached 0 and is not active
+    case reset // countdown is at initial time value and not active
+}
+
+
 class TimeCircuitsViewController {
     
     @IBOutlet weak var destinationTickerLabel: UILabel!
@@ -15,7 +22,27 @@ class TimeCircuitsViewController {
     @IBOutlet weak var lastDepartedTickerLabel: UILabel!
     @IBOutlet weak var speedTickerLabel: UILabel!
     
-      var timer: Timer?
+     private var timer: Timer?
+    
+    private var stopDate: Date?
+    var duration: TimeInterval
+    private(set) var state: CountdownState
+    
+    init() {
+        timer = nil
+        stopDate = nil
+        duration = 0
+        state = .reset
+    }
+    
+    var present = presentTickerLabel.text
+    
+//    func start() {
+//        cancelTimer()
+//        timer = Timer.scheduledTimer(withTimeInterval: 0.03, repeats: true, block: updateTimer(timer:))
+//        stopDate = Date(timeIntervalSinceNow: duration)
+//        state = .started
+//    }
     
      var dateFormatter: DateFormatter = {
           let formatter = DateFormatter()
@@ -24,19 +51,59 @@ class TimeCircuitsViewController {
           return formatter
     }()
     
+    func resetTimer() {
+        stopDate = nil
+        cancelTimer()
+        state = .reset
+    }
+    
+    func cancelTimer() {
+           timer?.invalidate()
+           timer = nil
+       }
+    
+    func updateSpeed() {
+     
+        var speed = currentSpeed
+        
+        if currentSpeed < 88 {
+            speed += 1
+            speedTickerLabel.text = String(currentSpeed)
+        } else {
+            cancelTimer()
+            lastDepartedTickerLabel = presentTickerLabel
+            presentTickerLabel = destinationTickerLabel
+            speedTickerLabel = nil
+            showAlert()
+        }
+        
+        
+    }
     func startTimer() {
-            timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: )
+        cancelTimer()
+        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateSpeed.fire())
+//        stopDate = Date(timeIntervalSinceNow: duration)
+//        state = .started
     }
     
     @IBAction func travelBackTapped(_ sender: UIButton) {
-        startTime()
+        startTimer()
     }
 }
     func viewDidLoad() {
-        var presentTickerLabel
+        
     }
+
+     private func showAlert() {
     
+        let alert = UIAlertController(title: "Time Travel Successful", message: "Your new date is \(presentTickerLabel)", preferredStyle: .alert)
     
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+    
+        alert.addAction(okAction)
+    
+        present(alert, animated: true, completion: nil)
+  }
     var currentSpeed = 0
     var speedTickerLabel = "\(currentSpeed) MPH"
     let lastDepartedTickerLabel = "___ __ ____"
@@ -51,7 +118,6 @@ class TimeCircuitsViewController {
     func destinationDateWasChosen() {
         let destinationTickerLabel = dateFormatter.dateFormat
     }
-}
 
 
 extension TimeCircuitsViewController: DatePickerDelegate {
@@ -59,7 +125,4 @@ extension TimeCircuitsViewController: DatePickerDelegate {
     func destinationDateWasChosen(_: Date) {
         
     }
-    
-    
-    
 }
