@@ -1,24 +1,186 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UwJ-Zt-Dg0">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="digital-7.ttf">
+            <string>Digital-7</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Time Circuts View Controller-->
+        <scene sceneID="Gwu-GQ-Dze">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="UwJ-Zt-Dg0" customClass="TimeCircutsViewController" customModule="Outatime" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3RJ-tM-ggs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="Tfu-nZ-j0a">
+                                <rect key="frame" x="20" y="64" width="374" height="499"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="KxH-aY-5La">
+                                        <rect key="frame" x="88" y="0.0" width="198" height="68.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESTINATION TIME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVk-n8-cot">
+                                                <rect key="frame" x="15.5" y="0.0" width="167" height="24.5"/>
+                                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAN 01 2000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4A-Ye-QCO">
+                                                <rect key="frame" x="0.0" y="28.5" width="198" height="40"/>
+                                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="44"/>
+                                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ugz-0a-TWx">
+                                        <rect key="frame" x="82" y="143.5" width="210.5" height="68.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRESENT TIME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKD-VH-NIv">
+                                                <rect key="frame" x="41" y="0.0" width="128.5" height="24.5"/>
+                                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JUNE 12, 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gF1-a1-VzU">
+                                                <rect key="frame" x="0.0" y="28.5" width="210.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="44"/>
+                                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Plu-UG-2Lv">
+                                        <rect key="frame" x="91" y="287" width="192.5" height="68.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAST TIME DEPARTED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMt-Nk-hAT">
+                                                <rect key="frame" x="0.0" y="0.0" width="192.5" height="24.5"/>
+                                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--- -- ----" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qi5-L0-pcc">
+                                                <rect key="frame" x="0.0" y="28.5" width="192.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="44"/>
+                                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Vln-qJ-SGJ">
+                                        <rect key="frame" x="139.5" y="430.5" width="95.5" height="68.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPEED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJx-wI-5RK">
+                                                <rect key="frame" x="18.5" y="0.0" width="58" height="24.5"/>
+                                                <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 MPH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQK-Zh-lV0">
+                                                <rect key="frame" x="0.0" y="28.5" width="95.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="44"/>
+                                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="d38-5J-6dH">
+                                <rect key="frame" x="20" y="774" width="374" height="68"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POH-Bk-pgW">
+                                        <rect key="frame" x="88.5" y="0.0" width="197" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="SET DESTINATION TIME"/>
+                                        <connections>
+                                            <segue destination="uFN-NY-sjY" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="TSi-9R-rTS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKy-jA-5IU">
+                                        <rect key="frame" x="129" y="34" width="116" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="TRAVEL BACK"/>
+                                        <connections>
+                                            <action selector="travelBackTapped:" destination="UwJ-Zt-Dg0" eventType="touchUpInside" id="nRv-aW-vQC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="secondarySystemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="d38-5J-6dH" firstAttribute="leading" secondItem="CGU-6O-n9q" secondAttribute="leading" constant="20" id="1Ff-D3-HM0"/>
+                            <constraint firstItem="CGU-6O-n9q" firstAttribute="trailing" secondItem="Tfu-nZ-j0a" secondAttribute="trailing" constant="20" id="3zi-AM-K3Y"/>
+                            <constraint firstItem="Tfu-nZ-j0a" firstAttribute="leading" secondItem="CGU-6O-n9q" secondAttribute="leading" constant="20" id="7vx-kx-MhK"/>
+                            <constraint firstItem="CGU-6O-n9q" firstAttribute="trailing" secondItem="d38-5J-6dH" secondAttribute="trailing" constant="20" id="a5Y-eD-rro"/>
+                            <constraint firstItem="Tfu-nZ-j0a" firstAttribute="top" secondItem="CGU-6O-n9q" secondAttribute="top" constant="20" id="yez-f7-aR5"/>
+                            <constraint firstItem="CGU-6O-n9q" firstAttribute="bottom" secondItem="d38-5J-6dH" secondAttribute="bottom" constant="20" id="zyM-Tf-3ts"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CGU-6O-n9q"/>
                     </view>
+                    <connections>
+                        <outlet property="destinationTimeLabel" destination="m4A-Ye-QCO" id="RGg-iF-2NI"/>
+                        <outlet property="lastTimeDepartedLabel" destination="qi5-L0-pcc" id="OVN-KD-ts7"/>
+                        <outlet property="presentTimeLabel" destination="gF1-a1-VzU" id="FxI-bD-Wcr"/>
+                        <outlet property="speedLabel" destination="hQK-Zh-lV0" id="O8e-MU-DKh"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6x7-ip-tyf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-736.23188405797111" y="369.64285714285711"/>
+        </scene>
+        <!--Date Picker View Controller-->
+        <scene sceneID="ZWn-yc-Mou">
+            <objects>
+                <viewController id="uFN-NY-sjY" customClass="DatePickerViewController" customModule="Outatime" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fj6-T4-Hez">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="3hy-z5-rer">
+                                <rect key="frame" x="47" y="313" width="320" height="216"/>
+                            </datePicker>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SIG-QB-cmr">
+                                <rect key="frame" x="0.0" y="764" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="cancel" id="MZN-c9-LQP">
+                                        <connections>
+                                            <action selector="cancelTapped:" destination="uFN-NY-sjY" id="B8t-6C-4Ey"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="y4G-cO-M0C"/>
+                                    <barButtonItem systemItem="done" id="uwI-ws-HNG">
+                                        <connections>
+                                            <action selector="doneTapped:" destination="uFN-NY-sjY" id="tb4-nx-F0p"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3hy-z5-rer" firstAttribute="centerX" secondItem="fj6-T4-Hez" secondAttribute="centerX" id="Iqu-xI-xeI"/>
+                            <constraint firstItem="3hy-z5-rer" firstAttribute="centerY" secondItem="fj6-T4-Hez" secondAttribute="centerY" id="fJE-65-XCF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uRN-zd-RSU"/>
+                    </view>
+                    <connections>
+                        <outlet property="datePickerView" destination="3hy-z5-rer" id="APY-2Q-TGq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H32-4Y-PLN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149" y="370"/>
         </scene>
     </scenes>
 </document>
