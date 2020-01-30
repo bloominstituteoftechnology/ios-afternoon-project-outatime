@@ -21,7 +21,8 @@ class DatePickerViewController {
     }
     @IBAction func doneTapped(_ sender: UIBarButtonItem) {
         
-        delegate?.doneTapped(cell: self)
+        delegate?.doneTapped(_: DateFormatter)
+        dismiss(animated: true, completion: nil)
     }
     
     var delegate = DatePickerDelegate?
