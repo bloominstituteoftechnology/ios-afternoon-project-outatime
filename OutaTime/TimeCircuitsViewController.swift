@@ -7,3 +7,36 @@
 //
 
 import Foundation
+
+class TimeCircuitsViewController {
+    
+    @IBOutlet weak var destinationTickerLabel: UILabel!
+    @IBOutlet weak var presentTickerLabel: UILabel!
+    @IBOutlet weak var lastDepartedTickerLabel: UILabel!
+    @IBOutlet weak var speedTickerLabel: UILabel!
+    
+    
+    
+    @IBAction func travelBackTapped(_ sender: UIButton) {
+    }
+    
+    
+    private var dateFormatter: DateFormatter {
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM d, yyyy"
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        return formatter
+    }
+    
+    
+    func viewDidLoad() {
+    var presentTickerLabel = dateFormatter.dateFormat
+    }
+    
+    
+    var currentSpeed = 0
+    var speedTickerLabel = "\(currentSpeed) MPH"
+    let lastDepartedTickerLabel = "___ __ ____"
+    
+}

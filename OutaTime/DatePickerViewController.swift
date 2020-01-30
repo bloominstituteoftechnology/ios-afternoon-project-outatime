@@ -7,4 +7,24 @@
 //
 
 import Foundation
+protocol DatePickerDelegate {
+    
+    func destinationDateWasChosen(_: Date)
+}
 
+class DatePickerViewController {
+    
+    @IBOutlet weak var datePicker: UIDatePicker!
+    @IBAction func cancelTapped(_ sender: UIBarButtonItem) {
+    }
+    @IBAction func doneTapped(_ sender: UIBarButtonItem) {
+        
+       
+    }
+    
+    var delegate = DatePickerDelegate?
+    
+    
+    
+    
+}
