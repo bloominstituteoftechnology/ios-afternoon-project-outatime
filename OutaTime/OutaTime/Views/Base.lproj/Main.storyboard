@@ -24,8 +24,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="eAb-2h-g4t">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="48.5"/>
+                                    <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="eAb-2h-g4t">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                                     </datePicker>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Present Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9P-sl-CuM">
                                         <rect key="frame" x="0.0" y="48.5" width="414" height="20.5"/>
@@ -33,7 +33,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="EGq-4x-gn5">
+                                    <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="EGq-4x-gn5">
                                         <rect key="frame" x="0.0" y="69" width="414" height="216"/>
                                     </datePicker>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Last Time Departed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwI-WO-3g6">
@@ -42,8 +42,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Wrc-hk-XQI">
-                                        <rect key="frame" x="0.0" y="305.5" width="414" height="216"/>
+                                    <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="Wrc-hk-XQI">
+                                        <rect key="frame" x="0.0" y="306" width="414" height="216"/>
                                     </datePicker>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWo-oc-f1D">
                                         <rect key="frame" x="0.0" y="521.5" width="414" height="20.5"/>
@@ -74,6 +74,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QFk-FL-OLn"/>
                     </view>
+                    <connections>
+                        <outlet property="destinationTimeDatePicker" destination="eAb-2h-g4t" id="yHI-dk-7ap"/>
+                        <outlet property="lastTimeDepartedDatePicker" destination="Wrc-hk-XQI" id="4M8-ZO-v4j"/>
+                        <outlet property="presentTimeDatePicker" destination="EGq-4x-gn5" id="eow-9p-lQ7"/>
+                        <outlet property="setDestinationTime" destination="ln2-Bf-4DO" id="6Ed-tj-0Ze"/>
+                        <outlet property="speedDatePicker" destination="XcA-l3-bue" id="JIw-MF-svS"/>
+                        <outlet property="travelBack" destination="10y-G4-cot" id="OKC-XN-um3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dde-Tn-AN0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
