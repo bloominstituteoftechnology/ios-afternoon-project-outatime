@@ -25,10 +25,7 @@ class TimeCircuitsViewController: UIViewController {
         return formatter
     }()
     
-    
-    
-    
-    
+    var currentSpeed = 0
     
     // MARK: - IBActions
     @IBAction func travelBackButtonTapped(_ sender: UIButton) {
@@ -38,8 +35,15 @@ class TimeCircuitsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Set the label that shows the present time on screen to the current date using the date formatter
+        speedLabel.text = "\(currentSpeed) MPH"
+        lastTimeDepartedLabel.text = "--- -- ----"
+        
     }
-    
+}
 
-
+extension TimeCircuitsViewController: DatePickerDelegate {
+    func destinationWasChosen(_: Date) {
+        <#code#>
+    }
 }
