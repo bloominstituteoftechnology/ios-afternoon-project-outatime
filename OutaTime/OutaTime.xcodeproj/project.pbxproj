@@ -15,6 +15,7 @@
 		1F0BB83623FBA4830064FE1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F0BB83423FBA4830064FE1E /* LaunchScreen.storyboard */; };
 		1F0BB84123FBA95B0064FE1E /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0BB84023FBA95B0064FE1E /* TimeCircuitsViewController.swift */; };
 		1F0BB84323FBA98B0064FE1E /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0BB84223FBA98B0064FE1E /* DatePickerViewController.swift */; };
+		1F0BB84523FBAB4F0064FE1E /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F0BB84423FBAB4F0064FE1E /* digital-7.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1F0BB83723FBA4830064FE1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F0BB84023FBA95B0064FE1E /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
 		1F0BB84223FBA98B0064FE1E /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		1F0BB84423FBAB4F0064FE1E /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../../digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				1F0BB83F23FBA8A40064FE1E /* Views */,
 				1F0BB83723FBA4830064FE1E /* Info.plist */,
+				1F0BB84423FBAB4F0064FE1E /* digital-7.ttf */,
 				1F0BB83E23FBA8950064FE1E /* View Controllers */,
 				1F0BB83D23FBA87E0064FE1E /* Resources */,
 			);
@@ -158,6 +161,7 @@
 				1F0BB83623FBA4830064FE1E /* LaunchScreen.storyboard in Resources */,
 				1F0BB83323FBA4830064FE1E /* Assets.xcassets in Resources */,
 				1F0BB83123FBA4820064FE1E /* Main.storyboard in Resources */,
+				1F0BB84523FBAB4F0064FE1E /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
