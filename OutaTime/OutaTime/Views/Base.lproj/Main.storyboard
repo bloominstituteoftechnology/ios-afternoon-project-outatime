@@ -25,7 +25,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="eAb-2h-g4t">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="48.5"/>
                                     </datePicker>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Present Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9P-sl-CuM">
                                         <rect key="frame" x="0.0" y="48.5" width="414" height="20.5"/>
@@ -43,7 +43,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="Wrc-hk-XQI">
-                                        <rect key="frame" x="0.0" y="306" width="414" height="216"/>
+                                        <rect key="frame" x="0.0" y="305.5" width="414" height="216"/>
                                     </datePicker>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWo-oc-f1D">
                                         <rect key="frame" x="0.0" y="521.5" width="414" height="20.5"/>
