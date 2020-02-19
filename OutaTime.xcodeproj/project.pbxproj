@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		63830EC523FCE43C00AEC31D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63830EC423FCE43C00AEC31D /* AppDelegate.swift */; };
 		63830EC723FCE43C00AEC31D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63830EC623FCE43C00AEC31D /* SceneDelegate.swift */; };
-		63830EC923FCE43C00AEC31D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63830EC823FCE43C00AEC31D /* ViewController.swift */; };
 		63830ECC23FCE43C00AEC31D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63830ECA23FCE43C00AEC31D /* Main.storyboard */; };
 		63830ECE23FCE43F00AEC31D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63830ECD23FCE43F00AEC31D /* Assets.xcassets */; };
 		63830ED123FCE43F00AEC31D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63830ECF23FCE43F00AEC31D /* LaunchScreen.storyboard */; };
+		63830EDB23FCE67B00AEC31D /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63830EDA23FCE67B00AEC31D /* TimeCircuitsViewController.swift */; };
+		63830EDD23FCE68900AEC31D /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63830EDC23FCE68900AEC31D /* DatePickerViewController.swift */; };
+		63830EDF23FCE9D000AEC31D /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63830EDE23FCE9D000AEC31D /* digital-7.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		63830EC123FCE43C00AEC31D /* OutaTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutaTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63830EC423FCE43C00AEC31D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63830EC623FCE43C00AEC31D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		63830EC823FCE43C00AEC31D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63830ECB23FCE43C00AEC31D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63830ECD23FCE43F00AEC31D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63830ED023FCE43F00AEC31D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63830ED223FCE43F00AEC31D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63830EDA23FCE67B00AEC31D /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
+		63830EDC23FCE68900AEC31D /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		63830EDE23FCE9D000AEC31D /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 				63830ECA23FCE43C00AEC31D /* Main.storyboard */,
 				63830ECD23FCE43F00AEC31D /* Assets.xcassets */,
 				63830ED223FCE43F00AEC31D /* Info.plist */,
+				63830EDE23FCE9D000AEC31D /* digital-7.ttf */,
 				63830ED823FCE59B00AEC31D /* Resources */,
 			);
 			path = OutaTime;
@@ -78,7 +83,8 @@
 		63830ED923FCE5AF00AEC31D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				63830EC823FCE43C00AEC31D /* ViewController.swift */,
+				63830EDA23FCE67B00AEC31D /* TimeCircuitsViewController.swift */,
+				63830EDC23FCE68900AEC31D /* DatePickerViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -144,6 +150,7 @@
 				63830ED123FCE43F00AEC31D /* LaunchScreen.storyboard in Resources */,
 				63830ECE23FCE43F00AEC31D /* Assets.xcassets in Resources */,
 				63830ECC23FCE43C00AEC31D /* Main.storyboard in Resources */,
+				63830EDF23FCE9D000AEC31D /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,8 +161,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63830EC923FCE43C00AEC31D /* ViewController.swift in Sources */,
+				63830EDD23FCE68900AEC31D /* DatePickerViewController.swift in Sources */,
 				63830EC523FCE43C00AEC31D /* AppDelegate.swift in Sources */,
+				63830EDB23FCE67B00AEC31D /* TimeCircuitsViewController.swift in Sources */,
 				63830EC723FCE43C00AEC31D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
