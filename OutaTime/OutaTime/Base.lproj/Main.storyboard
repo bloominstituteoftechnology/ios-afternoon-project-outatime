@@ -317,7 +317,7 @@
                                         <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="46"/>
                                         <state key="normal" title="SET DESTINATION TIME"/>
                                         <connections>
-                                            <segue destination="jN7-tx-UlV" kind="presentation" id="SIp-9u-fKA"/>
+                                            <segue destination="jN7-tx-UlV" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="SIp-9u-fKA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFi-8D-JO9">
@@ -325,6 +325,9 @@
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="46"/>
                                         <state key="normal" title="TRAVEL BACK"/>
+                                        <connections>
+                                            <action selector="travelBackButton:" destination="Xdp-uC-3XS" eventType="touchUpInside" id="f2M-Te-pc5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -344,6 +347,21 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jlA-GR-SbP"/>
                     </view>
+                    <connections>
+                        <outlet property="PresDayLabel" destination="uC0-oo-Hyi" id="8vn-R6-roK"/>
+                        <outlet property="desDayLabel" destination="yPJ-Fu-6Wg" id="ixd-B2-2nc"/>
+                        <outlet property="desMonthLabel" destination="iSR-nA-UBP" id="OVF-3r-ov3"/>
+                        <outlet property="desTimeLabel" destination="IMD-6s-7Qh" id="KZX-Z5-Pyd"/>
+                        <outlet property="desYearLabel" destination="Rvv-3k-wuC" id="412-Qy-Xh2"/>
+                        <outlet property="lasDayLabel" destination="FWU-T5-vZL" id="TPB-ju-hdw"/>
+                        <outlet property="lasMonthLabel" destination="KqI-Iw-8Hh" id="smz-Gh-Ut5"/>
+                        <outlet property="lasTimeLabel" destination="3hM-LZ-RQy" id="ytr-LU-jUP"/>
+                        <outlet property="lasYearLabel" destination="8lw-i7-Z1N" id="8f0-27-W4m"/>
+                        <outlet property="mphLabel" destination="u6G-bR-WeV" id="avA-rF-Hp1"/>
+                        <outlet property="presMonthLabel" destination="mGJ-OZ-xWy" id="KDq-et-UYR"/>
+                        <outlet property="presTimeLabel" destination="fGi-f1-yTI" id="gnS-ER-ddD"/>
+                        <outlet property="presYearLabel" destination="d5c-Ay-ibl" id="49u-Pm-vtq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="alj-IX-4Ms" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -410,12 +428,18 @@
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="46"/>
                                         <state key="normal" title="CANCEL"/>
+                                        <connections>
+                                            <action selector="cancelButton:" destination="jN7-tx-UlV" eventType="touchUpInside" id="dYR-vU-gr6"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCR-b4-E4t">
                                         <rect key="frame" x="198" y="0.0" width="86" height="54"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="46"/>
                                         <state key="normal" title="DONE"/>
+                                        <connections>
+                                            <action selector="doneButton:" destination="jN7-tx-UlV" eventType="touchUpInside" id="03X-Yu-t5m"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -431,6 +455,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Lh8-6X-4e9"/>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="Qjg-AJ-O1b" id="oto-R5-QD2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5rR-WC-cfA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
