@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AudioToolbox
 
 class TimeCircuitsViewController: UIViewController {
     @IBOutlet weak var destinationTimeLabel: UILabel!
@@ -45,7 +46,7 @@ class TimeCircuitsViewController: UIViewController {
         lastTimeDepartedLabel.text = presentTimeLabel.text
         presentTimeLabel.text = destinationTimeLabel.text
         showAlert()
-        speedLabel.text = "0"
+        speedLabel.text = "0 MPH"
     }
     
     func startTimer() {
@@ -82,14 +83,17 @@ class TimeCircuitsViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let date = segue.destination as? DatePickerViewController {
             date.delegate = self
+            playSound(fileName: "EMotorDoor", fileExtension: ".wav")
         }
     }
  
 
     @IBAction func travelBackButtonTapped(_ sender: Any) {
+        playSound(fileName: "gettingToSpeed", fileExtension: ".wav")
         startTimer()
         travelBackButton.isEnabled = false
         setDestinationButton.isEnabled = false
+        
     }
     
     private func showAlert() {
@@ -97,6 +101,15 @@ class TimeCircuitsViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Travel some more!", style: .default, handler: nil))
         self.present(alert, animated: true)
     }
+    
+    func playSound(fileName: String, fileExtension: String) {
+        if let soundURL = Bundle.main.url(forResource: fileName, withExtension: fileExtension) {
+            var mySound: SystemSoundID = 0
+            AudioServicesCreateSystemSoundID(soundURL as CFURL, &mySound)
+            AudioServicesPlaySystemSound(mySound);
+        }
+    }
+    
 }
 
 extension TimeCircuitsViewController: DatePickerDelegate {

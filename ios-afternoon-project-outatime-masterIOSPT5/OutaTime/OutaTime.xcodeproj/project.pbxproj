@@ -14,6 +14,8 @@
 		380C4ACA23FC743300C6BC90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380C4AC823FC743300C6BC90 /* LaunchScreen.storyboard */; };
 		380C4AD223FC74A900C6BC90 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380C4AD123FC74A900C6BC90 /* TimeCircuitsViewController.swift */; };
 		380C4AD423FC74BD00C6BC90 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380C4AD323FC74BD00C6BC90 /* DatePickerViewController.swift */; };
+		38B2DB5123FCBD9600F1DACF /* gettingToSpeed.wav in Resources */ = {isa = PBXBuildFile; fileRef = 38B2DB5023FCBD9600F1DACF /* gettingToSpeed.wav */; };
+		38B2DB5523FCBFE500F1DACF /* EMotorDoor.wav in Resources */ = {isa = PBXBuildFile; fileRef = 38B2DB5423FCBFE500F1DACF /* EMotorDoor.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		380C4AD123FC74A900C6BC90 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
 		380C4AD323FC74BD00C6BC90 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		380C4AD523FCABEA00C6BC90 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
+		38B2DB5023FCBD9600F1DACF /* gettingToSpeed.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gettingToSpeed.wav; sourceTree = "<group>"; };
+		38B2DB5423FCBFE500F1DACF /* EMotorDoor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = EMotorDoor.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 		380C4ABC23FC743100C6BC90 /* OutaTime */ = {
 			isa = PBXGroup;
 			children = (
+				38B2DB4E23FCBB1D00F1DACF /* Sound Files */,
 				380C4AD523FCABEA00C6BC90 /* digital-7.ttf */,
 				380C4ABD23FC743100C6BC90 /* AppDelegate.swift */,
 				380C4ABF23FC743100C6BC90 /* SceneDelegate.swift */,
@@ -70,6 +75,15 @@
 				380C4AD323FC74BD00C6BC90 /* DatePickerViewController.swift */,
 			);
 			path = OutaTime;
+			sourceTree = "<group>";
+		};
+		38B2DB4E23FCBB1D00F1DACF /* Sound Files */ = {
+			isa = PBXGroup;
+			children = (
+				38B2DB5423FCBFE500F1DACF /* EMotorDoor.wav */,
+				38B2DB5023FCBD9600F1DACF /* gettingToSpeed.wav */,
+			);
+			path = "Sound Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,8 +144,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38B2DB5123FCBD9600F1DACF /* gettingToSpeed.wav in Resources */,
 				380C4ACA23FC743300C6BC90 /* LaunchScreen.storyboard in Resources */,
 				380C4AC723FC743300C6BC90 /* Assets.xcassets in Resources */,
+				38B2DB5523FCBFE500F1DACF /* EMotorDoor.wav in Resources */,
 				380C4AC523FC743100C6BC90 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
