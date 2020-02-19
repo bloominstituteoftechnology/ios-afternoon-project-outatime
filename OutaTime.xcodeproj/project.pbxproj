@@ -56,15 +56,31 @@
 		63830EC323FCE43C00AEC31D /* OutaTime */ = {
 			isa = PBXGroup;
 			children = (
-				63830EC423FCE43C00AEC31D /* AppDelegate.swift */,
-				63830EC623FCE43C00AEC31D /* SceneDelegate.swift */,
-				63830EC823FCE43C00AEC31D /* ViewController.swift */,
+				63830ED923FCE5AF00AEC31D /* View Controllers */,
 				63830ECA23FCE43C00AEC31D /* Main.storyboard */,
 				63830ECD23FCE43F00AEC31D /* Assets.xcassets */,
-				63830ECF23FCE43F00AEC31D /* LaunchScreen.storyboard */,
 				63830ED223FCE43F00AEC31D /* Info.plist */,
+				63830ED823FCE59B00AEC31D /* Resources */,
 			);
 			path = OutaTime;
+			sourceTree = "<group>";
+		};
+		63830ED823FCE59B00AEC31D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63830EC423FCE43C00AEC31D /* AppDelegate.swift */,
+				63830EC623FCE43C00AEC31D /* SceneDelegate.swift */,
+				63830ECF23FCE43F00AEC31D /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		63830ED923FCE5AF00AEC31D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				63830EC823FCE43C00AEC31D /* ViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
