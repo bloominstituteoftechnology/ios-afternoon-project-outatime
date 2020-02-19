@@ -69,7 +69,7 @@ class TimeCircuitsViewController: UIViewController {
             resetTimer()
             lastTimeDepartedLabel.text = presentTimeLabel.text
             presentTimeLabel.text = destinationTimeLabel.text
-            speedLabel.text = "0 MPH"
+            speed = 0
             showAlert()
         }
         
