@@ -27,7 +27,6 @@ class TimeCircuitsViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor(white: 1, alpha: 0.18)
         speedLabel.text = "\(currentSpeed) MPH"
-        speedLabel.font = UIFont.monospacedDigitSystemFont(ofSize: speedLabel.font.pointSize, weight: .medium)
         destinationTimeLabel.text = "--- -- ---"
         lastTimeDepartedLabel.text = "--- -- ---"
         presentTimeLabel.text = dateFormatter.string(from: Date())
@@ -54,7 +53,7 @@ class TimeCircuitsViewController: UIViewController {
     }
     
     func speedUpdate(timer: Timer) {
-        if currentSpeed >= 88 {
+        if currentSpeed == 88 {
             reset()
         } else {
             currentSpeed += 1
@@ -83,21 +82,20 @@ class TimeCircuitsViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let date = segue.destination as? DatePickerViewController {
             date.delegate = self
-            playSound(fileName: "EMotorDoor", fileExtension: ".wav")
+            playSound(fileName: "electricshock", fileExtension: ".mp3")
         }
     }
  
 
     @IBAction func travelBackButtonTapped(_ sender: Any) {
-        playSound(fileName: "gettingToSpeed", fileExtension: ".wav")
+        playSound(fileName: "takingoff", fileExtension: ".wav")
         startTimer()
         travelBackButton.isEnabled = false
         setDestinationButton.isEnabled = false
-        
     }
     
     private func showAlert() {
-        let alert = UIAlertController(title: "Time Travel Successful!", message: "Your new date is \(presentTimeLabel.text ?? "Nowhere have you gone")", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Oh Yeah! At A New Time!", message: "Your new date is \(presentTimeLabel.text ?? "Nowhere have you gone")", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Travel some more!", style: .default, handler: nil))
         self.present(alert, animated: true)
     }
