@@ -9,13 +9,13 @@
 import UIKit
 //MARK: - Protocol
 protocol DatePickerDelegate {
-    func destinationDateWasChosen(_date: Date)
+    func destinationDateWasChosen(_ date: Date)
 }
 
 class DatePickerViewController: UIViewController {
     
     //MARK: - IBOutlets
-    @IBOutlet var datePicker: UIPickerView!
+    @IBOutlet var datePicker: UIDatePicker!
     
     
     //MARK: - Delegate
@@ -30,9 +30,13 @@ class DatePickerViewController: UIViewController {
     
     //MARK: - IBAction
     @IBAction func cancelButtonTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func doneButtonTapped(_ sender: Any) {
+        let date = datePicker.date
+        delegate?.destinationDateWasChosen(date)
+        dismiss(animated: true, completion: nil)
     }
     
     /*

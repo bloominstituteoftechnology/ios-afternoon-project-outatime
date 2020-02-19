@@ -155,9 +155,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rkf-Kf-nma">
-                                <rect key="frame" x="47" y="313" width="320" height="216"/>
-                            </pickerView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IB1-vM-QUV">
                                 <rect key="frame" x="0.0" y="705" width="414" height="44"/>
                                 <constraints>
@@ -177,13 +174,16 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="V4I-6R-ZsV">
+                                <rect key="frame" x="47" y="313" width="320" height="216"/>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="IB1-vM-QUV" firstAttribute="centerX" secondItem="rkf-Kf-nma" secondAttribute="centerX" id="FA3-ld-e5y"/>
-                            <constraint firstItem="rkf-Kf-nma" firstAttribute="centerY" secondItem="f77-EX-RJ3" secondAttribute="centerY" id="HVX-JD-FMf"/>
-                            <constraint firstItem="rkf-Kf-nma" firstAttribute="centerX" secondItem="f77-EX-RJ3" secondAttribute="centerX" id="aZg-Ku-3eA"/>
+                            <constraint firstItem="V4I-6R-ZsV" firstAttribute="centerY" secondItem="f77-EX-RJ3" secondAttribute="centerY" id="9uY-FA-U9m"/>
+                            <constraint firstItem="V4I-6R-ZsV" firstAttribute="centerX" secondItem="f77-EX-RJ3" secondAttribute="centerX" id="Lgs-Lg-CtI"/>
                             <constraint firstItem="wIx-02-eAB" firstAttribute="bottom" secondItem="IB1-vM-QUV" secondAttribute="bottom" constant="10" id="fff-2B-giT"/>
+                            <constraint firstItem="IB1-vM-QUV" firstAttribute="centerX" secondItem="V4I-6R-ZsV" secondAttribute="centerX" id="uNu-7U-obq"/>
                             <constraint firstItem="IB1-vM-QUV" firstAttribute="leading" secondItem="wIx-02-eAB" secondAttribute="leading" id="x7q-yz-fUu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wIx-02-eAB"/>
@@ -192,7 +192,7 @@
                     <navigationItem key="navigationItem" id="5J6-1m-XeC"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="datePicker" destination="rkf-Kf-nma" id="47U-GJ-h6Q"/>
+                        <outlet property="datePicker" destination="V4I-6R-ZsV" id="b3V-6l-hy4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EGH-Ze-ZH7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
