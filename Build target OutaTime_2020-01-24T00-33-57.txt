@@ -1,0 +1,76 @@
+
+Showing Recent Messages
+
+Build target OutaTime of project OutaTime with configuration Debug
+
+WriteAuxiliaryFile /Users/davidwilliams/Library/Developer/Xcode/DerivedData/OutaTime-ffpqlqmgwpwwkpeegrqercjkaspc/Build/Intermediates.noindex/OutaTime.build/Debug-iphonesimulator/OutaTime.build/DerivedSources/Entitlements.plist (in target 'OutaTime' from project 'OutaTime')
+    cd /Users/davidwilliams/Development/Lambda_IOSPT4/ios-afternoon-project-outatime/OutaTime
+    write-file /Users/davidwilliams/Library/Developer/Xcode/DerivedData/OutaTime-ffpqlqmgwpwwkpeegrqercjkaspc/Build/Intermediates.noindex/OutaTime.build/Debug-iphonesimulator/OutaTime.build/DerivedSources/Entitlements.plist
+
+ProcessProductPackaging "" /Users/davidwilliams/Library/Developer/Xcode/DerivedData/OutaTime-ffpqlqmgwpwwkpeegrqercjkaspc/Build/Intermediates.noindex/OutaTime.build/Debug-iphonesimulator/OutaTime.build/OutaTime.app.xcent (in target 'OutaTime' from project 'OutaTime')
+    cd /Users/davidwilliams/Development/Lambda_IOSPT4/ios-afternoon-project-outatime/OutaTime
+    
+
+Entitlements:
+
+{
+    "com.apple.security.get-task-allow" = 1;
+}
+
+
+    builtin-productPackagingUtility -entitlements -format xml -o /Users/davidwilliams/Library/Developer/Xcode/DerivedData/OutaTime-ffpqlqmgwpwwkpeegrqercjkaspc/Build/Intermediates.noindex/OutaTime.build/Debug-iphonesimulator/OutaTime.build/OutaTime.app.xcent
+
+WriteAuxiliaryFile /Users/davidwilliams/Library/Developer/Xcode/DerivedData/OutaTime-ffpqlqmgwpwwkpeegrqercjkaspc/Build/Intermediates.noindex/OutaTime.build/Debug-iphonesimulator/OutaTime.build/DerivedSources/Entitlements-Simulated.plist (in target 'OutaTime' from project 'OutaTime')
+    cd /Users/davidwilliams/Development/Lambda_IOSPT4/ios-afternoon-project-outatime/OutaTime
+    write-file /Users/davidwilliams/Library/Developer/Xcode/DerivedData/OutaTime-ffpqlqmgwpwwkpeegrqercjkaspc/Build/Intermediates.noindex/OutaTime.build/Debug-iphonesimulator/OutaTime.build/DerivedSources/Entitlements-Simulated.plist
+
+ProcessProductPackaging "" /Users/davidwilliams/Library/Developer/Xcode/DerivedData/OutaTime-ffpqlqmgwpwwkpeegrqercjkaspc/Build/Intermediates.noindex/OutaTime.build/Debug-iphonesimulator/OutaTime.build/OutaTime.app-Simulated.xcent (in target 'OutaTime' from project 'OutaTime')
+    cd /Users/davidwilliams/Development/Lambda_IOSPT4/ios-afternoon-project-outatime/OutaTime
+    
+
+Entitlements:
+
+{
+    "application-identifier" = "88FS6F8B93.com.davidWilliams.OutaTime";
+    "keychain-access-groups" =     (
+        "88FS6F8B93.com.davidWilliams.OutaTime"
+    );
+}
+
+
+    builtin-productPackagingUtility -entitlements -format xml -o /Users/davidwilliams/Library/Developer/Xcode/DerivedData/OutaTime-ffpqlqmgwpwwkpeegrqercjkaspc/Build/Intermediates.noindex/OutaTime.build/Debug-iphonesimulator/OutaTime.build/OutaTime.app-Simulated.xcent
+
+WriteAuxiliaryFile /Users/davidwilliams/Library/Developer/Xcode/DerivedData/OutaTime-ffpqlqmgwpwwkpeegrqercjkaspc/Build/Intermediates.noindex/OutaTime.build/Debug-iphonesimulator/OutaTime.build/Objects-normal/x86_64/OutaTime.LinkFileList (in target 'OutaTime' from project 'OutaTime')
+    cd /Users/davidwilliams/Development/Lambda_IOSPT4/ios-afternoon-project-outatime/OutaTime
+    write-file /Users/davidwilliams/Library/Developer/Xcode/DerivedData/OutaTime-ffpqlqmgwpwwkpeegrqercjkaspc/Build/Intermediates.noindex/OutaTime.build/Debug-iphonesimulator/OutaTime.build/Objects-normal/x86_64/OutaTime.LinkFileList
+
+Ld /Users/davidwilliams/Library/Developer/Xcode/DerivedData/OutaTime-ffpqlqmgwpwwkpeegrqercjkaspc/Build/Products/Debug-iphonesimulator/OutaTime.app/OutaTime normal x86_64 (in target 'OutaTime' from project 'OutaTime')
+    cd /Users/davidwilliams/Development/Lambda_IOSPT4/ios-afternoon-project-outatime/OutaTime
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -target x86_64-apple-ios13.2-simulator -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk -L/Users/davidwilliams/Library/Developer/Xcode/DerivedData/OutaTime-ffpqlqmgwpwwkpeegrqercjkaspc/Build/Products/Debug-iphonesimulator -F/Users/davidwilliams/Library/Developer/Xcode/DerivedData/OutaTime-ffpqlqmgwpwwkpeegrqercjkaspc/Build/Products/Debug-iphonesimulator -filelist /Users/davidwilliams/Library/Developer/Xcode/DerivedData/OutaTime-ffpqlqmgwpwwkpeegrqercjkaspc/Build/Intermediates.noindex/OutaTime.build/Debug-iphonesimulator/OutaTime.build/Objects-normal/x86_64/OutaTime.LinkFileList -Xlinker -rpath -Xlinker @executable_path/Frameworks -dead_strip -Xlinker -object_path_lto -Xlinker /Users/davidwilliams/Library/Developer/Xcode/DerivedData/OutaTime-ffpqlqmgwpwwkpeegrqercjkaspc/Build/Intermediates.noindex/OutaTime.build/Debug-iphonesimulator/OutaTime.build/Objects-normal/x86_64/OutaTime_lto.o -Xlinker -export_dynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/davidwilliams/Library/Developer/Xcode/DerivedData/OutaTime-ffpqlqmgwpwwkpeegrqercjkaspc/Build/Intermediates.noindex/OutaTime.build/Debug-iphonesimulator/OutaTime.build/Objects-normal/x86_64/OutaTime.swiftmodule -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __entitlements -Xlinker /Users/davidwilliams/Library/Developer/Xcode/DerivedData/OutaTime-ffpqlqmgwpwwkpeegrqercjkaspc/Build/Intermediates.noindex/OutaTime.build/Debug-iphonesimulator/OutaTime.build/OutaTime.app-Simulated.xcent -Xlinker -dependency_info -Xlinker /Users/davidwilliams/Library/Developer/Xcode/DerivedData/OutaTime-ffpqlqmgwpwwkpeegrqercjkaspc/Build/Intermediates.noindex/OutaTime.build/Debug-iphonesimulator/OutaTime.build/Objects-normal/x86_64/OutaTime_dependency_info.dat -o /Users/davidwilliams/Library/Developer/Xcode/DerivedData/OutaTime-ffpqlqmgwpwwkpeegrqercjkaspc/Build/Products/Debug-iphonesimulator/OutaTime.app/OutaTime
+
+CompileStoryboard /Users/davidwilliams/Development/Lambda_IOSPT4/ios-afternoon-project-outatime/OutaTime/OutaTime/Base.lproj/LaunchScreen.storyboard (in target 'OutaTime' from project 'OutaTime')
+    cd /Users/davidwilliams/Development/Lambda_IOSPT4/ios-afternoon-project-outatime/OutaTime
+    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..
+    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --module OutaTime --output-partial-info-plist /Users/davidwilliams/Library/Developer/Xcode/DerivedData/OutaTime-ffpqlqmgwpwwkpeegrqercjkaspc/Build/Intermediates.noindex/OutaTime.build/Debug-iphonesimulator/OutaTime.build/Base.lproj/LaunchScreen-SBPartialInfo.plist --auto-activate-custom-fonts --target-device iphone --target-device ipad --minimum-deployment-target 13.2 --output-format human-readable-text --compilation-directory /Users/davidwilliams/Library/Developer/Xcode/DerivedData/OutaTime-ffpqlqmgwpwwkpeegrqercjkaspc/Build/Intermediates.noindex/OutaTime.build/Debug-iphonesimulator/OutaTime.build/Base.lproj /Users/davidwilliams/Development/Lambda_IOSPT4/ios-afternoon-project-outatime/OutaTime/OutaTime/Base.lproj/LaunchScreen.storyboard
+
+CompileStoryboard /Users/davidwilliams/Development/Lambda_IOSPT4/ios-afternoon-project-outatime/OutaTime/OutaTime/Base.lproj/Main.storyboard (in target 'OutaTime' from project 'OutaTime')
+    cd /Users/davidwilliams/Development/Lambda_IOSPT4/ios-afternoon-project-outatime/OutaTime
+    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..
+    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --module OutaTime --output-partial-info-plist /Users/davidwilliams/Library/Developer/Xcode/DerivedData/OutaTime-ffpqlqmgwpwwkpeegrqercjkaspc/Build/Intermediates.noindex/OutaTime.build/Debug-iphonesimulator/OutaTime.build/Base.lproj/Main-SBPartialInfo.plist --auto-activate-custom-fonts --target-device iphone --target-device ipad --minimum-deployment-target 13.2 --output-format human-readable-text --compilation-directory /Users/davidwilliams/Library/Developer/Xcode/DerivedData/OutaTime-ffpqlqmgwpwwkpeegrqercjkaspc/Build/Intermediates.noindex/OutaTime.build/Debug-iphonesimulator/OutaTime.build/Base.lproj /Users/davidwilliams/Development/Lambda_IOSPT4/ios-afternoon-project-outatime/OutaTime/OutaTime/Base.lproj/Main.storyboard
+
+2020-01-24 00:34:01.113 IBAgent-iOS[19296:3636016] CoreText note: Client requested name ".SFUI-Regular", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[UIFont systemFontOfSize:].
+2020-01-24 00:34:01.113 IBAgent-iOS[19296:3636016] CoreText note: Set a breakpoint on CTFontLogSystemFontNameRequest to debug.
+2020-01-24 00:34:01.113 IBAgent-iOS[19296:3636016] CoreText note: Client requested name ".SFUI-Semibold", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[UIFont systemFontOfSize:].
+2020-01-24 00:34:01.113 IBAgent-iOS[19296:3636016] CoreText note: Client requested name ".SFUI-RegularItalic", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[UIFont systemFontOfSize:].
+
+LinkStoryboards (in target 'OutaTime' from project 'OutaTime')
+    cd /Users/davidwilliams/Development/Lambda_IOSPT4/ios-afternoon-project-outatime/OutaTime
+    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..
+    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --module OutaTime --target-device iphone --target-device ipad --minimum-deployment-target 13.2 --output-format human-readable-text --link /Users/davidwilliams/Library/Developer/Xcode/DerivedData/OutaTime-ffpqlqmgwpwwkpeegrqercjkaspc/Build/Products/Debug-iphonesimulator/OutaTime.app /Users/davidwilliams/Library/Developer/Xcode/DerivedData/OutaTime-ffpqlqmgwpwwkpeegrqercjkaspc/Build/Intermediates.noindex/OutaTime.build/Debug-iphonesimulator/OutaTime.build/Base.lproj/LaunchScreen.storyboardc /Users/davidwilliams/Library/Developer/Xcode/DerivedData/OutaTime-ffpqlqmgwpwwkpeegrqercjkaspc/Build/Intermediates.noindex/OutaTime.build/Debug-iphonesimulator/OutaTime.build/Base.lproj/Main.storyboardc
+
+CpResource /Users/davidwilliams/Desktop/Lambda/Lambda_IOSPT4/ios-afternoon-project-outatime/digital-7.ttf /Users/davidwilliams/Library/Developer/Xcode/DerivedData/OutaTime-ffpqlqmgwpwwkpeegrqercjkaspc/Build/Products/Debug-iphonesimulator/OutaTime.app/digital-7.ttf (in target 'OutaTime' from project 'OutaTime')
+    cd /Users/davidwilliams/Development/Lambda_IOSPT4/ios-afternoon-project-outatime/OutaTime
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/davidwilliams/Desktop/Lambda/Lambda_IOSPT4/ios-afternoon-project-outatime/digital-7.ttf /Users/davidwilliams/Library/Developer/Xcode/DerivedData/OutaTime-ffpqlqmgwpwwkpeegrqercjkaspc/Build/Products/Debug-iphonesimulator/OutaTime.app
+
+error: /Users/davidwilliams/Desktop/Lambda/Lambda_IOSPT4/ios-afternoon-project-outatime/digital-7.ttf: No such file or directory (in target 'OutaTime' from project 'OutaTime')
+
