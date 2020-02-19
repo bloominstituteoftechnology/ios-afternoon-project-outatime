@@ -17,13 +17,12 @@ class DatePickerViewController: UIViewController {
     var delegate: DatePickerDelegate?
     
     // MARK: - IBActions
-    @IBAction func cancelButtonTapped(_ sender: UIBarButtonItem) {
+    @IBAction func cancelButtonTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func doneButtonTapped(_ sender: UIBarButtonItem) {
-        let date = datePicker.date
-        delegate?.destinationWasChosen(date: date)
+    @IBAction func doneButtonTapped(_ sender: Any) {
+        delegate?.destinationWasChosen(date: datePicker.date)
         dismiss(animated: true)
     }
     
@@ -37,6 +36,6 @@ class DatePickerViewController: UIViewController {
     }
 }
 
-protocol DatePickerDelegate {
+protocol DatePickerDelegate: AnyObject {
     func destinationWasChosen(date: Date)
 }

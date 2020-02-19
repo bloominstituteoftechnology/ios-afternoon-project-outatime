@@ -30,12 +30,12 @@ class TimeCircuitsViewController: UIViewController {
     var timer: Timer?
     
     func startTimer() {
-        
+        timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: updateSpeed(timer:))
     }
     
     // MARK: - IBActions
     @IBAction func travelBackButtonTapped(_ sender: UIButton) {
-        timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: updateSpeed(timer:))
+        startTimer()
     }
     
     func resetTimer() {
@@ -62,7 +62,7 @@ class TimeCircuitsViewController: UIViewController {
         alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
     }
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -74,11 +74,10 @@ class TimeCircuitsViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ModalDestinationDatePickerSegue" {
             if let datePickerVC = segue.destination as? DatePickerViewController {
-                datePickerVC.delegate = TimeCircuitsViewController.self as? DatePickerDelegate
+                datePickerVC.delegate = self
             }
         }
     }
-    
 }
 
 extension TimeCircuitsViewController: DatePickerDelegate {
