@@ -23,11 +23,11 @@ class DatePickerViewController: UIViewController {
     
     @IBAction func doneButtonTapped(_ sender: UIBarButtonItem) {
         let date = datePicker.date
-        delegate?.destinationWasChosen(date)
+        delegate?.destinationWasChosen(date: date)
         dismiss(animated: true)
     }
     
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,5 +38,5 @@ class DatePickerViewController: UIViewController {
 }
 
 protocol DatePickerDelegate {
-    func destinationWasChosen(_: Date)
+    func destinationWasChosen(date: Date)
 }

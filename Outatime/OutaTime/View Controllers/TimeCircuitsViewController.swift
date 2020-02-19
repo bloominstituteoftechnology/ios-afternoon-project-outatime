@@ -20,30 +20,70 @@ class TimeCircuitsViewController: UIViewController {
     
     var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = "MMM dd, yyyy"
+        formatter.dateFormat = "MMM d, yyyy"
         formatter.timeZone = TimeZone(secondsFromGMT: 0)
         return formatter
     }()
     
-    var currentSpeed = 0
+    private var currentSpeed = 0
+    
+    var timer: Timer?
+    
+    func startTimer() {
+        
+    }
     
     // MARK: - IBActions
     @IBAction func travelBackButtonTapped(_ sender: UIButton) {
-        
+        timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: updateSpeed(timer:))
+    }
+    
+    func resetTimer() {
+        timer?.invalidate()
+        timer = nil
+    }
+    
+    func updateSpeed(timer: Timer) {
+        if currentSpeed < 88 {
+            currentSpeed += 1
+            speedLabel.text = "\(currentSpeed) MPH"
+        } else {
+            resetTimer()
+            lastTimeDepartedLabel.text = presentTimeLabel.text
+            presentTimeLabel.text = destinationTimeLabel.text
+            currentSpeed = 0
+            showAlert()
+        }
+    }
+    
+    func showAlert() {
+        let alert = UIAlertController(title: "Time Travel Successful", message: "Your new date is \(presentTimeLabel.text!)", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Okay", style: .default, handler: nil)
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Set the label that shows the present time on screen to the current date using the date formatter
         speedLabel.text = "\(currentSpeed) MPH"
         lastTimeDepartedLabel.text = "--- -- ----"
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ModalDestinationDatePickerSegue" {
+            if let datePickerVC = segue.destination as? DatePickerViewController {
+                datePickerVC.delegate = TimeCircuitsViewController.self as? DatePickerDelegate
+            }
+        }
+    }
+    
 }
 
 extension TimeCircuitsViewController: DatePickerDelegate {
-    func destinationWasChosen(_: Date) {
-        <#code#>
+    func destinationWasChosen(date: Date) {
+        destinationTimeLabel.text = dateFormatter.string(from: date)
     }
 }
+
