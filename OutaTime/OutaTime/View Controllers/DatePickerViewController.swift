@@ -39,7 +39,7 @@ class DatePickerViewController: UIViewController {
         
         datePicker.datePickerMode = .date
     
-//        datePicker.setValue(UIColor.white, forKey:"textColor")
+        datePicker.setValue(UIColor.blue, forKey:"textColor")
     }
     
 
