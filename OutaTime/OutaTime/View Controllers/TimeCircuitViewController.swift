@@ -21,26 +21,48 @@ class TimeCircuitViewController: UIViewController {
     // MARK IBActions
     
     @IBAction func travelBackButton(_ sender: Any) {
-        
+        startTimer()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
     }
     
     // Properties
+  var currentSpeed = 0
+  var timer: Timer?
     
-    private var timer: Timer?
+    var dateFormatter : DateFormatter {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMM dd yyyy"
+        dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
+        return dateFormatter
+    }
+    
     
     func startTimer() {
-        let timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: timer  )
+        timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: updateSpeed(timer:))
     }
     
     func resetTimer() {
+        timer?.invalidate()
+        timer = nil
         
     }
     
-    func updateSpeed() {
+    func updateSpeed(timer: Timer) {
+        if currentSpeed < 88 {
+            currentSpeed += 1
+            speedLabel.text = String(currentSpeed)
+        } else {
+            resetTimer()
+            lastTimeDepartedLabel.text = presentTimeLabel.text
+            presentTimeLabel.text = destinationTimeLabel.text
+            currentSpeed = 0
+            
+            showAlert()
+        }
         
     }
     

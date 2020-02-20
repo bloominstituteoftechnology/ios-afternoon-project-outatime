@@ -19,7 +19,7 @@ class DatePickerViewController: UIViewController {
 
     // MARK IBOutlets
     
-    @IBOutlet weak var datePickerView: UIPickerView!
+    @IBOutlet weak var datePicker: UIDatePicker!
     
     // MARK IBActions
     
@@ -27,7 +27,8 @@ class DatePickerViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     @IBAction func doneButtonTapped(_ sender: Any) {
-    
+        let date = datePicker.date
+        delegate?.destinationDateWasChosen(date: datePicker.date)
         dismiss(animated: true, completion: nil)
     }
     
@@ -36,9 +37,7 @@ class DatePickerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        
-
-        // Do any additional setup after loading the view.
+        datePicker.setValue(UIColor.white, forKey:"textColor")
     }
     
 
