@@ -30,7 +30,38 @@ class TimeCircuitsViewController: UIViewController {
     //MPH
     @IBOutlet var mphLabel: UILabel!
     
+    private var mphSpeed = 0
     
+    var timer: Timer?
+    
+    func startTimer() {
+        timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: updateMPH(timer:))
+    }
+    
+    func resetTimer(){
+        timer?.invalidate()
+        timer = nil
+    }
+    
+    func updateMPH(timer: Timer){
+        if mphSpeed < 88 {
+            mphSpeed += 1
+            mphLabel.text = "\(mphSpeed)"
+        } else {
+            resetTimer()
+            lasTimeLabel.text = presTimeLabel.text
+            presTimeLabel.text = desTimeLabel.text
+            mphSpeed = 0
+            showAlert()
+        }
+    }
+    
+    func showAlert() {
+        let alert = UIAlertController(title: "Time Travel Successful", message: "Your new date is \(desMonthLabel.text!) \(desDayLabel.text!), \(desYearLabel.text!) \(desTimeLabel.text!)", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Okay", style: .default, handler: nil)
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         updateViews()
@@ -39,22 +70,53 @@ class TimeCircuitsViewController: UIViewController {
     
     //MARK: - IBActions
     @IBAction func travelBackButton(_ sender: Any) {
-        
+        startTimer()
+        lasTimeLabel.text = desTimeLabel.text
+        lasDayLabel.text = desDayLabel.text
+        lasYearLabel.text = desDayLabel.text
     }
-    var dateformatter: DateFormatter = {
+    var dateformatterM: DateFormatter = {
+        let formatter = DateFormatter()
+        //universal by looking at formats
+        formatter.dateFormat = "MMM"
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        return formatter
+    }()
+    var dateformatterD: DateFormatter = {
+        let formatter = DateFormatter()
+        //universal by looking at formats
+        formatter.dateFormat = "dd"
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        return formatter
+    }()
+    var dateformatterY: DateFormatter = {
+        let formatter = DateFormatter()
+        //universal by looking at formats
+        formatter.dateFormat = "YYY"
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        return formatter
+    }()
+    var dateformatterT: DateFormatter = {
         let formatter = DateFormatter()
         //universal by looking at formats
         formatter.dateFormat = "HH:mm"
-        formatter.timeZone = TimeZone.current
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
         return formatter
     }()
-    
     func updateViews() {
         let date = Date()
         presMonthLabel.text = date.monthAsString()
         presDayLabel.text = date.dayAsString()
         presYearLabel.text = date.yearAsString()
-        presTimeLabel.text = dateformatter.string(from: date)
+//        presTimeLabel.text = dateformatter.string(from: date)
+        presTimeLabel.text = date.timeAsString()
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ModalDestinationDatePickerSegue"{
+            if let AddVC = segue.destination as? DatePickerViewController{
+                AddVC.delegate = self
+            }
+        }
     }
 }
 //getting the current date/time
@@ -82,8 +144,12 @@ extension Date {
 }
 
 extension TimeCircuitsViewController: DatePickerDelegate{
-    func destinationDateWasChosen(_: Date) {
-        <#code#>
+    
+    func destinationDateWasChosen(_ date: Date) {
+        desTimeLabel.text = dateformatterT.string(from: date)
+        desMonthLabel.text = dateformatterM.string(from: date)
+        desDayLabel.text = dateformatterD.string(from: date)
+        desYearLabel.text = dateformatterY.string(from: date)
     }
     
     
