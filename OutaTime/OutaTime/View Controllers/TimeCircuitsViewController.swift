@@ -57,10 +57,13 @@ class TimeCircuitsViewController: UIViewController {
     }
     
     func showAlert() {
-        let alert = UIAlertController(title: "Time Travel Successful", message: "Your new date is \(desMonthLabel.text!) \(desDayLabel.text!), \(desYearLabel.text!) \(desTimeLabel.text!)", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Okay", style: .default, handler: nil)
-        alert.addAction(okAction)
+        let alert = UIAlertController(title: "Time Travel Successful", message: "The date now is \(desMonthLabel.text!) \(desDayLabel.text!), \(desYearLabel.text!) \(desTimeLabel.text!)", preferredStyle: .alert)
+        let okayAction = UIAlertAction(title: "Okay", style: .default, handler: nil)
+        alert.addAction(okayAction)
         self.present(alert, animated: true, completion: nil)
+        let subview = (alert.view.subviews.first?.subviews.first?.subviews.first!)! as UIView
+        subview.backgroundColor = UIColor.red
+    
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,22 +83,19 @@ class TimeCircuitsViewController: UIViewController {
     var dateformatterM: DateFormatter = {
         let formatter = DateFormatter()
         //universal by looking at formats
-        formatter.dateFormat = "MMM"
-        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        formatter.setLocalizedDateFormatFromTemplate("MMM")
         return formatter
     }()
     var dateformatterD: DateFormatter = {
         let formatter = DateFormatter()
         //universal by looking at formats
-        formatter.dateFormat = "dd"
-        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        formatter.setLocalizedDateFormatFromTemplate("dd")
         return formatter
     }()
     var dateformatterY: DateFormatter = {
         let formatter = DateFormatter()
         //universal by looking at formats
-        formatter.dateFormat = "YYY"
-        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        formatter.setLocalizedDateFormatFromTemplate("YYY")
         return formatter
     }()
     var dateformatterT: DateFormatter = {
@@ -109,7 +109,6 @@ class TimeCircuitsViewController: UIViewController {
         presMonthLabel.text = date.monthAsString()
         presDayLabel.text = date.dayAsString()
         presYearLabel.text = date.yearAsString()
-//        presTimeLabel.text = dateformatter.string(from: date)
         presTimeLabel.text = date.timeAsString()
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
