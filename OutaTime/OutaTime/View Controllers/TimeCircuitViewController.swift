@@ -29,6 +29,7 @@ class TimeCircuitViewController: UIViewController {
         presentTimeLabel.text = currentDate()
         speedLabel.text = "\(currentSpeed) MPH"
         lastTimeDepartedLabel.text = "--- -- ----"
+        destinationTimeLabel.text = currentDate()
        
     }
     
