@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kcY-Eu-ZFc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="digital-7.ttf">
+            <string>Digital-7</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Time Circuits View Controller-->
+        <scene sceneID="xo2-2M-FLy">
+            <objects>
+                <viewController id="kcY-Eu-ZFc" customClass="TimeCircuitsViewController" customModule="OutaTime" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Omg-ZE-4AL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="oC1-nd-9qz">
+                                <rect key="frame" x="130" y="324" width="154" height="208"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yHM-Kx-V1l">
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBy-Wg-gJP">
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="15.5"/>
+                                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6j-G3-FGK">
+                                                <rect key="frame" x="0.0" y="15.5" width="154" height="15.5"/>
+                                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zw3-MC-0wV">
+                                        <rect key="frame" x="0.0" y="59" width="154" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Present Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asy-uY-3a9">
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="15.5"/>
+                                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0a-EZ-GKE">
+                                                <rect key="frame" x="0.0" y="15.5" width="154" height="15.5"/>
+                                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="u6G-qT-x6F">
+                                        <rect key="frame" x="0.0" y="118" width="154" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Time Departed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="poT-WF-7GH">
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="15.5"/>
+                                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3KK-b7-Lb8">
+                                                <rect key="frame" x="0.0" y="15.5" width="154" height="15.5"/>
+                                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Pnk-WP-3fX">
+                                        <rect key="frame" x="0.0" y="177" width="154" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPG-oY-w16">
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="15.5"/>
+                                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tO-Vg-jP4">
+                                                <rect key="frame" x="0.0" y="15.5" width="154" height="15.5"/>
+                                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="f8M-yk-ZFe">
+                                <rect key="frame" x="135.5" y="812" width="137" height="56"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcD-Ed-tN1">
+                                        <rect key="frame" x="0.0" y="0.0" width="137" height="28"/>
+                                        <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="17"/>
+                                        <state key="normal" title="Set Destination Time"/>
+                                        <connections>
+                                            <segue destination="hR5-MV-Kom" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="hpO-bM-u38"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzU-oy-RuT">
+                                        <rect key="frame" x="0.0" y="28" width="137" height="28"/>
+                                        <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="17"/>
+                                        <state key="normal" title="Travel Back"/>
+                                        <connections>
+                                            <action selector="travelBackPressed:" destination="kcY-Eu-ZFc" eventType="touchUpInside" id="xCX-CK-GCf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oC1-nd-9qz" firstAttribute="leading" secondItem="QFK-HS-lyD" secondAttribute="leading" constant="130" id="Bhv-oT-jbN"/>
+                            <constraint firstItem="QFK-HS-lyD" firstAttribute="trailing" secondItem="f8M-yk-ZFe" secondAttribute="trailing" constant="141.5" id="PwS-M1-4Ol"/>
+                            <constraint firstItem="oC1-nd-9qz" firstAttribute="top" secondItem="QFK-HS-lyD" secondAttribute="top" constant="280" id="bYg-Dx-GZt"/>
+                            <constraint firstItem="QFK-HS-lyD" firstAttribute="trailing" secondItem="oC1-nd-9qz" secondAttribute="trailing" constant="130" id="n0G-Dl-1ty"/>
+                            <constraint firstItem="f8M-yk-ZFe" firstAttribute="top" secondItem="oC1-nd-9qz" secondAttribute="bottom" constant="280" id="nBG-J9-IdM"/>
+                            <constraint firstItem="f8M-yk-ZFe" firstAttribute="leading" secondItem="QFK-HS-lyD" secondAttribute="leading" constant="135.33333333333462" id="qQN-ro-vsd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QFK-HS-lyD"/>
+                    </view>
+                    <connections>
+                        <outlet property="destTimeLabel" destination="E6j-G3-FGK" id="JwN-7M-Sqv"/>
+                        <outlet property="lastTimeDepartLabel" destination="3KK-b7-Lb8" id="2XT-xT-Pwv"/>
+                        <outlet property="presTimeLabel" destination="G0a-EZ-GKE" id="MFk-4k-7Tz"/>
+                        <outlet property="speedLabel" destination="6tO-Vg-jP4" id="NHR-9w-6Qg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6oW-61-bL0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118.84057971014494" y="156.69642857142856"/>
+        </scene>
+        <!--Date Picker View Controller-->
+        <scene sceneID="i90-e0-532">
+            <objects>
+                <viewController id="hR5-MV-Kom" customClass="DatePickerViewController" customModule="OutaTime" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RvH-2n-E3c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Hmr-hK-arZ">
+                                <rect key="frame" x="0.0" y="328" width="414" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yLE-Pn-sCQ">
+                                <rect key="frame" x="0.0" y="764" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Cancel" id="dxw-B3-ZUV">
+                                        <connections>
+                                            <action selector="cancelButton:" destination="hR5-MV-Kom" id="6vB-1v-Jx7"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="J0h-nH-RH9"/>
+                                    <barButtonItem title="Done" id="H1P-fY-W9b">
+                                        <connections>
+                                            <action selector="doneButton:" destination="hR5-MV-Kom" id="9v8-7T-olE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="IIE-0x-6dz"/>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="Hmr-hK-arZ" id="E4y-oG-tNZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R6E-o1-IBt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="752" y="157"/>
+        </scene>
+    </scenes>
+</document>
