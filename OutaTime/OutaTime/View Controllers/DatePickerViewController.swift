@@ -23,7 +23,7 @@ class DatePickerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        datePicker.datePickerMode = .date
+        datePicker.datePickerMode = .dateAndTime
     }
     
     

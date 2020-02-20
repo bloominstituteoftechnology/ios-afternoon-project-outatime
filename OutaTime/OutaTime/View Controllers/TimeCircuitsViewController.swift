@@ -36,6 +36,11 @@ class TimeCircuitsViewController: UIViewController {
     
     func startTimer() {
         timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: updateMPH(timer:))
+        
+        lasTimeLabel.text = desTimeLabel.text
+        lasDayLabel.text = desDayLabel.text
+        lasYearLabel.text = desYearLabel.text
+        lasMonthLabel.text = desMonthLabel.text
     }
     
     func resetTimer(){
@@ -71,9 +76,6 @@ class TimeCircuitsViewController: UIViewController {
     //MARK: - IBActions
     @IBAction func travelBackButton(_ sender: Any) {
         startTimer()
-        lasTimeLabel.text = desTimeLabel.text
-        lasDayLabel.text = desDayLabel.text
-        lasYearLabel.text = desDayLabel.text
     }
     var dateformatterM: DateFormatter = {
         let formatter = DateFormatter()
