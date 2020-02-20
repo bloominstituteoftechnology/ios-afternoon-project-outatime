@@ -26,6 +26,9 @@ class TimeCircuitViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        presentTimeLabel.text = currentDate()
+        speedLabel.text = "\(currentSpeed) MPH"
+        lastTimeDepartedLabel.text = "--- -- ----"
        
     }
     
@@ -66,6 +69,12 @@ class TimeCircuitViewController: UIViewController {
         
     }
     
+    func currentDate() -> String {
+        let currentDate = Date()
+        return (dateFormatter.string(from: currentDate))
+    }
+
+    
     func showAlert() {
         let alert = UIAlertController(title: "Time Travel Success", message: "You're new date is ", preferredStyle: .alert)
     let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
@@ -86,9 +95,14 @@ class TimeCircuitViewController: UIViewController {
 
 extension TimeCircuitViewController: DatePickerDelegate {
     func destinationDateWasChosen(date: Date) {
+        destinationTimeLabel.text =  dateFormatter.string(from: date)
+             if currentSpeed == 88 {
+                presentTimeLabel.text = dateFormatter.string(from: date)
+             }
+         }
         
     }
     
     
-}
+
 
