@@ -26,8 +26,8 @@ class DatePickerViewController: UIViewController {
     @IBAction func cancelButtonTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
     @IBAction func doneButtonTapped(_ sender: Any) {
-        let date = datePicker.date
         delegate?.destinationDateWasChosen(date: datePicker.date)
         dismiss(animated: true, completion: nil)
     }
@@ -36,8 +36,10 @@ class DatePickerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        datePicker.datePickerMode = .date
     
-        datePicker.setValue(UIColor.white, forKey:"textColor")
+//        datePicker.setValue(UIColor.white, forKey:"textColor")
     }
     
 

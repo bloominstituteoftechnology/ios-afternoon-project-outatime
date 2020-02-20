@@ -76,9 +76,10 @@ class TimeCircuitViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ModalDestinationDatePickerSegue" {
-            let addDateVC = segue.destination as! DatePickerViewController
+            if let addDateVC = segue.destination as? DatePickerViewController {
             
             addDateVC.delegate = self
+            }
         }
     }
 }
