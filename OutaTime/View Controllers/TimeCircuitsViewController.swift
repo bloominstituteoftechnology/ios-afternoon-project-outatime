@@ -38,10 +38,9 @@ class TimeCircuitsViewController: UIViewController {
 
     }
 
-    /*
-    // MARK: - Navigation
+extension TimeCircuitsViewController: DatePickerDelegate {
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    func destinationDateWasChosen(_ date: Date) {
+        destinationTimeLabel.text = dateFormatter.string(from: date)
     }
-    */
 }
