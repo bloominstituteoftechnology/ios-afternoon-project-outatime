@@ -36,7 +36,13 @@ class TimeCircuitsViewController: UIViewController {
 
     @IBAction func travelBackButtonPressed(_ sender: UIButton) {
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ModalDestinationDatePickerSegue" {
+            guard let datePickerVC = segue.destination as? DatePickerViewController else { return }
+            datePickerVC.delegate = self
+        }
     }
+}
 
 extension TimeCircuitsViewController: DatePickerDelegate {
 
