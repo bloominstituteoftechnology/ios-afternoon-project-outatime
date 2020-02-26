@@ -101,6 +101,9 @@
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="0.75208690069999995" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="Wm0-rS-GAr" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="HJg-Zq-SD5"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Onq-H0-egq">
                                                 <rect key="frame" x="52" y="47" width="125" height="39"/>
@@ -109,6 +112,9 @@
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="0.75208690069999995" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="travelBackButtonTapped:" destination="ox8-ur-6HH" eventType="touchUpInside" id="bPi-Wu-CV5"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -118,6 +124,16 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="jvb-5Z-Gvi"/>
                     </view>
+                    <connections>
+                        <outlet property="destinationTickerLabel" destination="s90-d7-yaq" id="vxB-z6-gzh"/>
+                        <outlet property="destinationTime" destination="s90-d7-yaq" id="2vR-HD-gIa"/>
+                        <outlet property="lastDepartedTickerLabel" destination="m0U-W3-xYu" id="RFl-05-dFC"/>
+                        <outlet property="lastTimeDeparted" destination="m0U-W3-xYu" id="muo-LT-cpq"/>
+                        <outlet property="presentTickerLabel" destination="rTw-X3-RfR" id="8E9-aK-cmT"/>
+                        <outlet property="presentTime" destination="rTw-X3-RfR" id="brq-eI-Pf2"/>
+                        <outlet property="speedLabel" destination="ayG-Fy-GvE" id="F1x-1N-OJc"/>
+                        <outlet property="speedTickerLabel" destination="ayG-Fy-GvE" id="rnH-Il-tsv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e5L-RG-hEc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -128,11 +144,38 @@
             <objects>
                 <viewController id="Wm0-rS-GAr" customClass="DatePickerViewController" customModule="OutaTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y5a-9o-tH6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ine-R5-HGC">
+                                <rect key="frame" x="0.0" y="340" width="414" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yuu-uW-ms6">
+                                <rect key="frame" x="0.0" y="764" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="cancel" id="OHT-g4-pVD">
+                                        <connections>
+                                            <action selector="cancelTapped:" destination="Wm0-rS-GAr" id="SL4-eR-T5a"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="9AD-gU-d4K"/>
+                                    <barButtonItem systemItem="done" id="H9U-f8-vlX">
+                                        <connections>
+                                            <action selector="doneTapped:" destination="Wm0-rS-GAr" id="aAy-N1-tiT"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="PVr-LV-yaD"/>
                     </view>
+                    <connections>
+                        <outlet property="cancelTapped" destination="yuu-uW-ms6" id="YRy-Rx-hZ5"/>
+                        <outlet property="datePicker" destination="Ine-R5-HGC" id="qL8-WU-4cl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1T5-z4-ZjY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
