@@ -25,7 +25,7 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="SET DESTINATION TIME"/>
                                 <connections>
-                                    <segue destination="YCt-OJ-6mF" kind="presentation" id="Bvf-8b-tns"/>
+                                    <segue destination="YCt-OJ-6mF" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="Bvf-8b-tns"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0YA-mW-fze">
@@ -126,6 +126,7 @@
                         <outlet property="destinationText" destination="U6w-iX-pfg" id="4Bj-ph-TIO"/>
                         <outlet property="presentText" destination="LcT-yN-jr5" id="ObA-wS-cLq"/>
                         <outlet property="speedText" destination="KPf-Qj-DYZ" id="pcP-1S-93S"/>
+                        <outlet property="travelBackButton" destination="0YA-mW-fze" id="7wJ-05-Fbh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C80-On-Wzb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -141,7 +142,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RLR-oH-dlx">
-                                <rect key="frame" x="47" y="296" width="320" height="216"/>
+                                <rect key="frame" x="0.0" y="296" width="414" height="216"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WH-jZ-pZN">
                                 <rect key="frame" x="357" y="778" width="43" height="34"/>
@@ -166,8 +167,10 @@
                             <constraint firstItem="RLR-oH-dlx" firstAttribute="centerY" secondItem="7gn-Gg-uQO" secondAttribute="centerY" id="JFn-iv-V0i"/>
                             <constraint firstItem="7gn-Gg-uQO" firstAttribute="trailing" secondItem="8WH-jZ-pZN" secondAttribute="trailing" constant="14" id="NvG-z0-ZdG"/>
                             <constraint firstItem="S4g-f7-R5C" firstAttribute="bottom" secondItem="7gn-Gg-uQO" secondAttribute="bottom" constant="4" id="REL-ma-PJZ"/>
+                            <constraint firstItem="RLR-oH-dlx" firstAttribute="leading" secondItem="7gn-Gg-uQO" secondAttribute="leading" id="Vgb-hU-v8M"/>
                             <constraint firstItem="RLR-oH-dlx" firstAttribute="centerX" secondItem="7gn-Gg-uQO" secondAttribute="centerX" id="W9t-7d-pOx"/>
                             <constraint firstItem="S4g-f7-R5C" firstAttribute="leading" secondItem="7gn-Gg-uQO" secondAttribute="leading" constant="17" id="cJ1-VI-cdN"/>
+                            <constraint firstItem="7gn-Gg-uQO" firstAttribute="trailing" secondItem="RLR-oH-dlx" secondAttribute="trailing" id="zEn-sC-VO2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7gn-Gg-uQO"/>
                     </view>
