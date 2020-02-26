@@ -15,6 +15,11 @@ class TimeCircuitsViewController: UIViewController {
     @IBOutlet weak var lastTimeDepartedLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
     
+    
+    @IBOutlet weak var setDestinationButton: UIButton!
+    @IBOutlet weak var travelBackButton: UIButton!
+    
+    
     var speed = 0
     
     override func viewDidLoad() {
@@ -25,6 +30,9 @@ class TimeCircuitsViewController: UIViewController {
         speedLabel.text = "\(speed) MPH"
         lastTimeDepartedLabel.text = "--- -- ----"
         destinationTimeLabel.text = "--- -- ----"
+        setDestinationButton.layer.cornerRadius = 8
+        travelBackButton.layer.cornerRadius = 8
+        
     }
     
     let dateFormatter: DateFormatter = {
