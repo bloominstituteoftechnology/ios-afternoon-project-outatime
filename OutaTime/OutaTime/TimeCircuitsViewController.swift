@@ -23,15 +23,11 @@ class TimeCircuitsViewController: UIViewController {
         formatter.timeZone = TimeZone(secondsFromGMT: 0)
         return formatter
     }()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
         
-}
-    
-    
-    
+
+
     @IBAction func travelBackTapped(_ sender: Any) {
+        startTimer()
         }
     
     func startTimer() {
@@ -62,6 +58,17 @@ class TimeCircuitsViewController: UIViewController {
     func restTimer() {
         timer?.invalidate()
         timer = nil
+    }
+    
+    override func viewDidLoad() {
+        initializeViews()
+    }
+    
+    func initializeViews() {
+        speedLabel.font = UIFont.monospacedSystemFont(ofSize: 44, weight: .regular)
+        presentTimeLabel.text = dateFormatter.string(from: Date())
+        speedLabel.text = "\(currentSpeed) MPH"
+        lastTimeDepartedLabel.text = "--- -- ----"
     }
 
    

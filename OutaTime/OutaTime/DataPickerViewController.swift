@@ -17,12 +17,6 @@ class DatePickerViewController: UIViewController {
     
     var delegate: DatePickerDelegate?
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-      
-    }
-    
     @IBAction func cancelTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
