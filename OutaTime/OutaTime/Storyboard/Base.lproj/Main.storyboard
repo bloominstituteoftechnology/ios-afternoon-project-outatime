@@ -37,6 +37,9 @@
                                 <rect key="frame" x="155" y="803" width="98" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="TRAVEL BACK"/>
+                                <connections>
+                                    <action selector="travelBackTapped:" destination="FEU-hw-DQz" eventType="touchUpInside" id="XI4-8F-6bz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rib-7o-bxL">
                                 <rect key="frame" x="111" y="765" width="189" height="32"/>
@@ -48,14 +51,21 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="wtV-hg-lvh">
-                                <rect key="frame" x="96" y="90" width="197.5" height="20.5"/>
+                                <rect key="frame" x="96" y="90" width="231" height="73"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESTINATION TIME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23d-al-gCd">
-                                        <rect key="frame" x="0.0" y="0.0" width="197.5" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESTINATION TIME" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23d-al-gCd">
+                                        <rect key="frame" x="0.0" y="0.0" width="231" height="20.5"/>
                                         <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="JAN 01 2000" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dOn-Gz-qsb">
+                                        <rect key="frame" x="0.0" y="21.5" width="231" height="51.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rLD-Vu-kji">
@@ -76,14 +86,6 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="JAN 01 2000" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dOn-Gz-qsb">
-                                <rect key="frame" x="89" y="111" width="237" height="52.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="T69-uF-FGm">
                                 <rect key="frame" x="119" y="566" width="150" height="81"/>
                                 <subviews>
@@ -106,6 +108,16 @@
                         <color key="backgroundColor" systemColor="tertiarySystemFillColor" red="0.46274509800000002" green="0.46274509800000002" blue="0.50196078430000002" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="8i6-h3-qih"/>
                     </view>
+                    <connections>
+                        <outlet property="destinationLabel" destination="23d-al-gCd" id="5ky-wL-79f"/>
+                        <outlet property="destinationTextField" destination="dOn-Gz-qsb" id="8KG-CB-IAv"/>
+                        <outlet property="lastTimeLabel" destination="6BR-cz-fDp" id="kpc-l7-RUZ"/>
+                        <outlet property="lastTimeTextField" destination="Kuv-4a-14V" id="Zna-TA-wHC"/>
+                        <outlet property="presentTimeLabel" destination="N4D-2J-mQ3" id="2b7-eG-yEQ"/>
+                        <outlet property="presentTimeTextField" destination="yk4-VE-7CJ" id="GNi-e3-mVQ"/>
+                        <outlet property="speedLabel" destination="Nsw-zA-8h9" id="Kbz-zu-3cq"/>
+                        <outlet property="speedTextField" destination="Wtc-wi-9nk" id="AgU-yM-aL2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G31-XM-aSt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -118,9 +130,38 @@
                     <view key="view" contentMode="scaleToFill" id="Kh5-vb-s8z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="RS5-Ej-GC4">
+                                <rect key="frame" x="47" y="313" width="320" height="216"/>
+                            </datePicker>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4kR-6H-mUZ">
+                                <rect key="frame" x="0.0" y="780" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" systemItem="cancel" id="Dqc-90-UaA">
+                                        <connections>
+                                            <action selector="cancelButton:" destination="uQT-4h-oMh" id="eou-xU-WTg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="277" style="plain" systemItem="fixedSpace" id="CDf-0G-gcV"/>
+                                    <barButtonItem systemItem="done" id="NoI-QB-NhR">
+                                        <connections>
+                                            <action selector="doneButton:" destination="uQT-4h-oMh" id="Hy3-Kg-d6K"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="RS5-Ej-GC4" firstAttribute="centerY" secondItem="Kh5-vb-s8z" secondAttribute="centerY" id="3xP-DO-Xbc"/>
+                            <constraint firstItem="RS5-Ej-GC4" firstAttribute="centerX" secondItem="Kh5-vb-s8z" secondAttribute="centerX" id="bLo-9j-EiB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="e9j-DJ-px7"/>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="RS5-Ej-GC4" id="UbG-p1-J4M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kyI-PR-Gzs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

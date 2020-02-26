@@ -6,15 +6,33 @@
 //  Copyright © 2020 Harmony Radley. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class TimeCircuitsViewController {
+class TimeCircuitsViewController: UIViewController {
+    
+    // MARK: - Outlets
+    
+
+    @IBOutlet weak var destinationLabel: UILabel!
+    @IBOutlet weak var destinationTextField: UITextField!
+    
+
+    @IBOutlet weak var presentTimeLabel: UILabel!
+    @IBOutlet weak var presentTimeTextField: UITextField!
     
     
     
+    @IBOutlet weak var lastTimeLabel: UILabel!
+    @IBOutlet weak var lastTimeTextField: UITextField!
+    
+    
+    @IBOutlet weak var speedLabel: UILabel!
+    @IBOutlet weak var speedTextField: UITextField!
     
     
     
+    @IBAction func travelBackTapped(_ sender: Any) {
+    }
     
     
     
