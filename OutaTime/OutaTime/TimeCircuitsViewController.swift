@@ -117,6 +117,15 @@ class TimeCircuitsViewController: UIViewController {
 extension TimeCircuitsViewController: DatePickerDelegate {
     func destinationDateWasChosen(date: Date) {
         destinationTime = date
+        
+        // Changed Travel button based on direction of travel.
+        var buttonText = "Travel Forward"
+        
+        if destinationTime < presentTime {
+            buttonText = "Travel Back"
+        }
+
+        travelBackButtonLabel.setTitle(buttonText.uppercased(), for: .normal)
     }
     
     func startTimer() {
@@ -129,7 +138,7 @@ extension TimeCircuitsViewController: DatePickerDelegate {
     }
 
     func updateSpeed() {
-        if speed >= 10 { // FIXME: Change to 88
+        if speed >= 88 {
             cancelTimer()
             
             lastTimeDeparted = presentTime
