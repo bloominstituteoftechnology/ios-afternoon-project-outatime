@@ -623,6 +623,7 @@
                         <outlet property="presentTimeMonthLabel" destination="5uD-XN-2w4" id="Ofb-qH-Kjd"/>
                         <outlet property="presentTimeYearLabel" destination="ZkC-do-h15" id="CpZ-4m-ajS"/>
                         <outlet property="speedLabel" destination="bhp-Ca-NEi" id="2wj-zg-KD4"/>
+                        <outlet property="travelBackButton" destination="g52-DV-vQ1" id="ptQ-JN-fnS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

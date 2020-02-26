@@ -9,6 +9,7 @@
 import UIKit
 
 class TimeCircuitsViewController: UIViewController {
+    
     //MARK: - IBOutlets
     
     typealias TimeLabels = (month: UILabel?, day: UILabel?, year: UILabel?, hour: UILabel?, minute: UILabel?)
@@ -58,11 +59,13 @@ class TimeCircuitsViewController: UIViewController {
     // Speed
     @IBOutlet weak var speedLabel: UILabel!
     
+    // Buttons
+    @IBOutlet weak var travelBackButton: UIButton!
     
     //MARK: - IBActions
     
     @IBAction func travelBack(_ sender: UIButton) {
-        startTimer()
+        startSpeedIncrementor()
     }
     
     
@@ -72,23 +75,35 @@ class TimeCircuitsViewController: UIViewController {
     
     private var currentSpeed: MilesPerHour = 0
 
-    private var presentTime = Date() {
+    private var presentTime: Date? {
         didSet {
-            update(presentLabels, withDate: presentTime)
+            if let presentTime = presentTime {
+                update(presentLabels, withDate: presentTime)
+            }
         }
     }
-    private var destinationTime = Date() {
+    private var destinationTime: Date? {
         didSet {
-            update(destinationLabels, withDate: destinationTime)
+            if let destinationTime = destinationTime {
+                travelBackButton.isEnabled = true
+                travelBackButton.layer.opacity = 1.0
+                update(destinationLabels, withDate: destinationTime)
+            } else {
+                travelBackButton.isEnabled = false
+                travelBackButton.layer.opacity = 0.5
+                setToEmpty(destinationLabels)
+            }
         }
     }
-    private var lastDepartedTime = Date() {
+    private var lastDepartedTime: Date? {
         didSet {
-            update(lastDepartedLabels, withDate: lastDepartedTime)
+            if let lastDepartedTime = lastDepartedTime {
+                update(lastDepartedLabels, withDate: lastDepartedTime)
+            } else {
+                setToEmpty(lastDepartedLabels)
+            }
         }
     }
-    
-    private var speedIncrementor: Timer?
     
     
     //MARK: - Private Methods
@@ -109,11 +124,34 @@ class TimeCircuitsViewController: UIViewController {
         timeLabels.minute?.text = "--"
     }
     
-    private func startTimer() {
+    private func setupViews() {
+        presentTime = Date()
+        destinationTime = nil
+        lastDepartedTime = nil
+        speedLabel.text = "\(currentSpeed) MPH"
+    }
+    
+    private func showAlert() {
+        guard let presentTime = presentTime else { return }
+        
+        let alertController = UIAlertController(
+            title: "Time Travel Successful!",
+            message: "Your new date is \(presentTime.longDateShortTime)", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alertController.addAction(okAction)
+        
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    // Speed Incrementor
+    
+    private var speedIncrementor: Timer?
+    
+    private func startSpeedIncrementor() {
         speedIncrementor = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateSpeed(_:))
     }
     
-    private func resetTimer() {
+    private func resetSpeedIncrementor() {
         speedIncrementor?.invalidate()
         speedIncrementor = nil
     }
@@ -125,16 +163,13 @@ class TimeCircuitsViewController: UIViewController {
         } else {
             lastDepartedTime = presentTime
             presentTime = destinationTime
+            destinationTime = nil
             currentSpeed = 0
-            resetTimer()
+            resetSpeedIncrementor()
+            showAlert()
         }
     }
     
-    private func setupViews() {
-        presentTime = Date()
-        setToEmpty(lastDepartedLabels)
-        speedLabel.text = "\(currentSpeed) MPH"
-    }
     
     //MARK: - View Lifecycle
     
@@ -154,7 +189,7 @@ class TimeCircuitsViewController: UIViewController {
 }
 
 
-//MARK: - DestinationDatePickerDelegate
+//MARK: - Destination Date Picker Delegate
 
 extension TimeCircuitsViewController: DestinationDatePickerDelegate {
     func destinationWasChosen(_ date: Date) {
@@ -166,6 +201,13 @@ extension TimeCircuitsViewController: DestinationDatePickerDelegate {
 //MARK: - Date Extension
 
 fileprivate extension Date {
+    var longDateShortTime: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .long
+        dateFormatter.timeStyle = .short
+        return dateFormatter.string(from: self)
+    }
+    
     var month: String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MMM"
