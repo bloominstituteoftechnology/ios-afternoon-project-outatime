@@ -64,7 +64,7 @@ class TimeCircuitsViewController: UIViewController {
     }
     
     func updateSpeed() {
-        let alert = UIAlertController()
+        let alert = UIAlertController(title: "Time Travel Successful", message: "Your new date is \(destTimeLabel.text ?? "E R R O R !")", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         
         if speed == 88 {
