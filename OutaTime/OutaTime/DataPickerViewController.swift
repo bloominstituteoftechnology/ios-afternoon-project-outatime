@@ -13,8 +13,9 @@ protocol DatePickerDelegate {
 }
 
 class DataPickerViewController: UIViewController {
-    
     @IBOutlet weak var datePickerView: UIDatePicker!
+    
+    var delegate: DatePickerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
