@@ -31,8 +31,6 @@ class TimeCircuitsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view
-            print(dateFormatter.string(from: date))
         presentTimeLabel.text = dateFormatter.string(from: date)
         speedLabel.text = String(speed) + " MPH"
         lastDepartLabel.text = "--- -- ----"
