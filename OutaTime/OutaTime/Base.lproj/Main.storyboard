@@ -90,6 +90,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="destLabel" destination="xNg-jj-L5b" id="j4i-GB-6sH"/>
+                        <outlet property="lastTimeDeptLabel" destination="bfx-VW-xfH" id="ysW-Qo-X6r"/>
+                        <outlet property="presentTimeLabel" destination="EJs-qS-c2s" id="SRN-mW-cD1"/>
+                        <outlet property="setDestTimeButtonLabel" destination="2ke-IA-KWm" id="5XE-7F-vkV"/>
+                        <outlet property="speedLabel" destination="iVX-Kj-a9G" id="JjD-AG-ShU"/>
+                        <outlet property="travelBackButtonLabel" destination="VLR-oD-HMt" id="Fcy-up-2od"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

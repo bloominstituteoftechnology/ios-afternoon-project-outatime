@@ -10,10 +10,27 @@ import UIKit
 
 class TimeCircuitsViewController: UIViewController {
 
+    // Lables
+    @IBOutlet weak var destLabel: UILabel!
+    @IBOutlet weak var presentTimeLabel: UILabel!
+    @IBOutlet weak var lastTimeDeptLabel: UILabel!
+    @IBOutlet weak var speedLabel: UILabel!
+    @IBOutlet weak var setDestTimeButtonLabel: UIButton!
+    @IBOutlet weak var travelBackButtonLabel: UIButton!
+    
+    //
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        destLabel.text         = destLabel.text?.uppercased()
+        presentTimeLabel.text  = presentTimeLabel.text?.uppercased()
+        lastTimeDeptLabel.text = lastTimeDeptLabel.text?.uppercased()
+        speedLabel.text        = speedLabel.text?.uppercased()
+
+        setDestTimeButtonLabel.setTitle(setDestTimeButtonLabel.currentTitle?.uppercased(), for: .normal)
+        travelBackButtonLabel.setTitle(travelBackButtonLabel.currentTitle?.uppercased(), for: .normal)
     }
     
 
