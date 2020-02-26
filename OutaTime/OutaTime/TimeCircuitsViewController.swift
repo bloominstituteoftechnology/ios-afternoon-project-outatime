@@ -38,12 +38,38 @@ class TimeCircuitsViewController: UIViewController {
         startTimer()
     }
     
+    private var timer: Timer?
+    
     func startTimer() {
-        let timer = Timer(timeInterval: 0.1, repeats: true, block: updateSpeedLabel())
+        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateSpeedLabel(timer:))
     }
     
-    func updateSpeedLabel() {
-        
+    func resetTimer() {
+        timer?.invalidate()
+        timer = nil
+    }
+    
+    func updateSpeedLabel(timer: Timer) {
+        if speed == 88 {
+            speedLabel.text = "\(speed) MPH"
+            resetTimer()
+            lastTimeDepartedLabel.text = presentTimeLabel.text
+            presentTimeLabel.text = destinationTimeLabel.text
+            speed = 0
+            
+            guard let presentTime = presentTimeLabel.text else { return }
+            
+            let alert = UIAlertController(title: "Time Travel Successful", message: "You're new date is \(presentTime)", preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "Dismiss", style: .default, handler: nil)
+            
+            alert.addAction(alertAction)
+            present(alert, animated: true, completion: nil)
+            
+            
+        } else {
+            speedLabel.text = "\(speed) MPH"
+            speed += 1
+        }
     }
     
     // MARK: - Navigation
