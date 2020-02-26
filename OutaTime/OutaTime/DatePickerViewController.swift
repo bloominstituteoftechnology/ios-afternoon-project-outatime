@@ -16,7 +16,15 @@ class DatePickerViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func datePicker(_ sender: Any) {
+    }
+    
+    @IBAction func done(_ sender: Any) {
+    }
+    
+    @IBAction func cancel(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 

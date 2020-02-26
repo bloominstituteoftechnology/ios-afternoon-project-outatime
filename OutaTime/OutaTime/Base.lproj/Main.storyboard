@@ -127,10 +127,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ke-IA-KWm">
                                         <rect key="frame" x="116" y="0.0" width="143" height="30"/>
                                         <state key="normal" title="Set Destination Time"/>
+                                        <connections>
+                                            <segue destination="XJY-KY-llW" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="jgg-Hg-Hhc"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLR-oD-HMt">
                                         <rect key="frame" x="148" y="58" width="79" height="30"/>
                                         <state key="normal" title="Travel Back"/>
+                                        <connections>
+                                            <action selector="travelBackButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q7p-NX-Nco"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -149,10 +155,14 @@
                     </view>
                     <connections>
                         <outlet property="destLabel" destination="xNg-jj-L5b" id="j4i-GB-6sH"/>
+                        <outlet property="destTime" destination="vV3-m8-Mob" id="LaZ-G6-4yd"/>
+                        <outlet property="lastDepartureTime" destination="s8J-cb-DAU" id="c3q-Yw-EXD"/>
                         <outlet property="lastTimeDeptLabel" destination="bfx-VW-xfH" id="ysW-Qo-X6r"/>
+                        <outlet property="presentTime" destination="m5p-hf-3rS" id="BiE-El-hgn"/>
                         <outlet property="presentTimeLabel" destination="EJs-qS-c2s" id="SRN-mW-cD1"/>
                         <outlet property="setDestTimeButtonLabel" destination="2ke-IA-KWm" id="5XE-7F-vkV"/>
                         <outlet property="speedLabel" destination="iVX-Kj-a9G" id="JjD-AG-ShU"/>
+                        <outlet property="sppedValueLabel" destination="UAG-iX-ccs" id="6gh-r9-AdP"/>
                         <outlet property="travelBackButtonLabel" destination="VLR-oD-HMt" id="Fcy-up-2od"/>
                     </connections>
                 </viewController>
@@ -165,12 +175,33 @@
             <objects>
                 <viewController id="XJY-KY-llW" customClass="DatePickerViewController" customModule="OutaTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="27L-7C-HrK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0X4-zQ-3EZ">
-                                <rect key="frame" x="28" y="298" width="281" height="216"/>
+                                <rect key="frame" x="27.666666666666657" y="271" width="320" height="216"/>
+                                <connections>
+                                    <action selector="datePicker:" destination="XJY-KY-llW" eventType="valueChanged" id="r5g-6L-DXb"/>
+                                </connections>
                             </datePicker>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xCo-9Y-90b">
+                                <rect key="frame" x="0.0" y="680" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="Lrw-qg-FJ3">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="v1p-Yw-Xcq">
+                                            <connections>
+                                                <action selector="cancel:" destination="XJY-KY-llW" id="bmf-mq-NGq"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="9wb-h8-BjV">
+                                            <connections>
+                                                <action selector="done:" destination="XJY-KY-llW" id="Bz0-uT-bwH"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -179,10 +210,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jLc-SM-q71"/>
                     </view>
+                    <navigationItem key="navigationItem" id="z32-d2-q3D"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TCs-IH-e1o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="596" y="123"/>
+            <point key="canvasLocation" x="671" y="123"/>
         </scene>
     </scenes>
 </document>

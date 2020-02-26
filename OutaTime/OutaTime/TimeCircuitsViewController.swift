@@ -11,7 +11,7 @@ import UIKit
 class TimeCircuitsViewController: UIViewController {
 
     // Lables
-    // FIXME: Centering of elements 
+    // FIXME: Centering of elements
     @IBOutlet weak var destLabel: UILabel!
     @IBOutlet weak var presentTimeLabel: UILabel!
     @IBOutlet weak var lastTimeDeptLabel: UILabel!
@@ -19,8 +19,15 @@ class TimeCircuitsViewController: UIViewController {
     @IBOutlet weak var setDestTimeButtonLabel: UIButton!
     @IBOutlet weak var travelBackButtonLabel: UIButton!
     
-    //
+    // Time Segments
+    @IBOutlet weak var destTime: UILabel!
+    @IBOutlet weak var presentTime: UILabel!
+    @IBOutlet weak var lastDepartureTime: UILabel!
+    @IBOutlet weak var sppedValueLabel: UILabel!
     
+    // Button Actions
+    @IBAction func travelBackButton(_ sender: Any) {
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
