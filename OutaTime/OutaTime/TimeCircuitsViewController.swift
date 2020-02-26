@@ -71,7 +71,7 @@ class TimeCircuitsViewController: UIViewController {
 
 extension TimeCircuitsViewController: DatePickerDelegate {
     func destinationDateWasChosen(date: Date) {
-        <#code#>
+        lastTimeLabel.text = "\(dateFormatter.string(from: PastTime ))"
     }
     
     
