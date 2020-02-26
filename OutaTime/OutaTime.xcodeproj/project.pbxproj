@@ -13,6 +13,8 @@
 		251D0280240703E9007E4D3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 251D027E240703E9007E4D3C /* Main.storyboard */; };
 		251D0282240703E9007E4D3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 251D0281240703E9007E4D3C /* Assets.xcassets */; };
 		251D0285240703E9007E4D3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 251D0283240703E9007E4D3C /* LaunchScreen.storyboard */; };
+		251D028D240704B9007E4D3C /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D028C240704B9007E4D3C /* TimeCircuitsViewController.swift */; };
+		251D028F240704CD007E4D3C /* DataPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D028E240704CD007E4D3C /* DataPickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		251D0281240703E9007E4D3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		251D0284240703E9007E4D3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		251D0286240703E9007E4D3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		251D028C240704B9007E4D3C /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
+		251D028E240704CD007E4D3C /* DataPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPickerViewController.swift; sourceTree = "<group>"; };
+		251D02902407069C007E4D3C /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +65,12 @@
 				251D027A240703E9007E4D3C /* SceneDelegate.swift */,
 				251D027C240703E9007E4D3C /* ViewController.swift */,
 				251D027E240703E9007E4D3C /* Main.storyboard */,
+				251D028C240704B9007E4D3C /* TimeCircuitsViewController.swift */,
+				251D028E240704CD007E4D3C /* DataPickerViewController.swift */,
 				251D0281240703E9007E4D3C /* Assets.xcassets */,
 				251D0283240703E9007E4D3C /* LaunchScreen.storyboard */,
 				251D0286240703E9007E4D3C /* Info.plist */,
+				251D02902407069C007E4D3C /* digital-7.ttf */,
 			);
 			path = OutaTime;
 			sourceTree = "<group>";
@@ -138,8 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				251D028F240704CD007E4D3C /* DataPickerViewController.swift in Sources */,
 				251D027D240703E9007E4D3C /* ViewController.swift in Sources */,
 				251D0279240703E9007E4D3C /* AppDelegate.swift in Sources */,
+				251D028D240704B9007E4D3C /* TimeCircuitsViewController.swift in Sources */,
 				251D027B240703E9007E4D3C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
