@@ -32,17 +32,41 @@
             <objects>
                 <viewController id="Lfs-Qp-rJR" customClass="DatePickerViewController" customModule="OutaTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iKD-Ha-I6Q">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="FId-J2-7R7">
-                                <rect key="frame" x="0.0" y="340" width="414" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="FId-J2-7R7">
+                                <rect key="frame" x="47" y="313" width="320" height="216"/>
                             </datePicker>
+                            <navigationBar opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQ1-uM-x7N">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="MKS-9p-1H5">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="A7B-E7-gQ7">
+                                            <connections>
+                                                <action selector="cancel:" destination="Lfs-Qp-rJR" id="SUz-eS-k4a"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Done" id="YTe-Su-yZn">
+                                            <connections>
+                                                <action selector="done:" destination="Lfs-Qp-rJR" id="akG-1j-v63"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FId-J2-7R7" firstAttribute="centerY" secondItem="iKD-Ha-I6Q" secondAttribute="centerY" id="4Ec-O7-8P0"/>
+                            <constraint firstItem="FId-J2-7R7" firstAttribute="centerX" secondItem="iKD-Ha-I6Q" secondAttribute="centerX" id="DYC-7V-2gD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="88d-Y2-2JL"/>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="FId-J2-7R7" id="vXN-vb-PVb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CnE-zW-5up" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -138,6 +162,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="SET DESTINATION TIME"/>
+                                <connections>
+                                    <segue destination="Lfs-Qp-rJR" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="iBh-Y0-gWz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
