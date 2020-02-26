@@ -16,7 +16,7 @@ class TimeCircuitsViewController: UIViewController {
     @IBOutlet weak var lastDepartedTickerLabel: UILabel!
     @IBOutlet weak var speedTickerLabel: UILabel!
     
-    
+    var datePickerViewController: DatePickerViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,21 +40,30 @@ class TimeCircuitsViewController: UIViewController {
     @IBAction func travelBackButtonTapped(_ sender: Any) {
     }
     
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+      if segue.identifier == "ModalDestinationDatePickerSegue" {
+                    guard let addDestinationVC = segue.destination as? DatePickerViewController else { return }
+                        addDestinationVC.delegate = self
+                }
     }
-    */
+    
 
 }
 
 extension TimeCircuitsViewController: DatePickerDelegate {
+    
+    
     func destinationDateWasChosen(_: Date) {
-        <#code#>
+//        func string(from duration: TimeInterval) -> String {
+//            let date = Date()
+//
+//            return dateFormatter.string(from: date)
+//        }
+        
+        destinationTickerLabel.text = datePickerViewController?.datePicker.date
     }
     
     
