@@ -25,9 +25,12 @@ class DatePickerViewController: UIViewController {
     }
     
     @IBAction func cancel(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func done(_ sender: Any) {
+        delegate?.destinationDateWasChosen(for: datePicker.date)
+        dismiss(animated: true, completion: nil)
     }
     /*
     // MARK: - Navigation
