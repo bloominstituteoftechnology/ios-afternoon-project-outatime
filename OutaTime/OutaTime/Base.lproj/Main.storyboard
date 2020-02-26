@@ -179,7 +179,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0X4-zQ-3EZ">
-                                <rect key="frame" x="27.666666666666657" y="271" width="320" height="216"/>
+                                <rect key="frame" x="27" y="271" width="320" height="216"/>
                                 <connections>
                                     <action selector="datePicker:" destination="XJY-KY-llW" eventType="valueChanged" id="r5g-6L-DXb"/>
                                 </connections>
@@ -213,6 +213,9 @@
                         <viewLayoutGuide key="safeArea" id="jLc-SM-q71"/>
                     </view>
                     <navigationItem key="navigationItem" id="z32-d2-q3D"/>
+                    <connections>
+                        <outlet property="grabDate" destination="0X4-zQ-3EZ" id="Fld-0n-XDl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TCs-IH-e1o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

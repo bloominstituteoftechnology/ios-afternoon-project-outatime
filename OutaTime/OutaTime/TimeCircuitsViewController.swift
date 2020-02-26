@@ -87,6 +87,7 @@ class TimeCircuitsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Pet Peeve: Typing something in all upper-case. I'd rather have system do. 
         destTitleLabel.text         = destTitleLabel.text?.uppercased()
         presentTimeTitleLabel.text  = presentTimeTitleLabel.text?.uppercased()
         lastTimeDepartedTitleLabel.text = lastTimeDepartedTitleLabel.text?.uppercased()

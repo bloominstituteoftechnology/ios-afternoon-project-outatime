@@ -22,10 +22,16 @@ class DatePickerViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBOutlet weak var grabDate: UIDatePicker!
+    
     @IBAction func datePicker(_ sender: Any) {
     }
     
     @IBAction func done(_ sender: Any) {
+        let chosenDate = grabDate.date
+        delegate?.destinationDateWasChosen(date: chosenDate)
+
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func cancel(_ sender: Any) {
