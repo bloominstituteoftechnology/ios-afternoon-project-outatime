@@ -213,6 +213,7 @@ class TimeCircuitsViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let datePickerVC = segue.destination as? DatePickerViewController {
+            datePickerVC.startingDate = presentTime
             datePickerVC.delegate = self
         }
     }
