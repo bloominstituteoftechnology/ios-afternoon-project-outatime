@@ -21,15 +21,17 @@ class DatePickerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     
-    
-
     @IBAction func cancelButtonTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func doneButtonTapped(_ sender: Any) {
+        let date = datePicker.date
+        delegate?.destinationDateWasChosen(date: date)
+        dismiss(animated: true, completion: nil)
     }
     
 }

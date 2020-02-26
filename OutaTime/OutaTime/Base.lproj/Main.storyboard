@@ -31,7 +31,6 @@
                                         </constraints>
                                         <state key="normal" title="SET DESTINATION TIME"/>
                                         <connections>
-                                            <action selector="setDestinationTimeButtonTapped:" destination="Y4s-WW-hYR" eventType="touchUpInside" id="IqC-sX-jTX"/>
                                             <segue destination="Hn6-Gs-kxt" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="s8o-OR-0bp"/>
                                         </connections>
                                     </button>
@@ -152,14 +151,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="asn-zs-h4e">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="asn-zs-h4e">
                                 <rect key="frame" x="0.0" y="313" width="414" height="216"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="216" id="6Cx-RJ-3QV"/>
                                 </constraints>
                             </datePicker>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HYo-Uf-PPT">
-                                <rect key="frame" x="0.0" y="705" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="764" width="414" height="44"/>
                                 <items>
                                     <barButtonItem title="Cancel" id="GKa-ed-Hnz">
                                         <connections>
@@ -193,7 +192,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZAA-Uy-zKE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="798" y="-206"/>
+            <point key="canvasLocation" x="936" y="-206"/>
         </scene>
     </scenes>
 </document>
