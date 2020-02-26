@@ -29,17 +29,24 @@ class TimeCircuitsViewController: UIViewController {
         return formatter
     }()
     
-    
+    var currentSpeed = 0
+        
+
     
     
     override func viewDidLoad() {
-        let dateFormatterPrint = DateFormatter()
-        dateFormatterPrint.dateFormat = "MMM dd,yyyy"
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMM dd,yyyy"
 
-        let exactlyCurrentTime: Date = Date()
-        print(dateFormatterPrint.string(from: exactlyCurrentTime))
-        presentLabel.text = "\(dateFormatterPrint.string(from: exactlyCurrentTime))"
+        let CurrentTime: Date = Date()
+        print(dateFormatter.string(from: CurrentTime))
+        presentLabel.text = "\(dateFormatter.string(from: CurrentTime))"
         
+        speedLabel.text = "\(currentSpeed) MPH"
+        lastTimeLabel.text = "--- -- ----"
+        
+        
+            
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
@@ -60,4 +67,12 @@ class TimeCircuitsViewController: UIViewController {
     }
     */
 
+}
+
+extension TimeCircuitsViewController: DatePickerDelegate {
+    func destinationDateWasChosen(date: Date) {
+        <#code#>
+    }
+    
+    
 }

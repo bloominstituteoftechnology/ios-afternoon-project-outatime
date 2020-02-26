@@ -63,6 +63,7 @@
                                         <state key="normal" title="SET DESTINATION TIME"/>
                                         <connections>
                                             <action selector="destinationButton:" destination="WoX-vj-NQ0" eventType="touchUpInside" id="LXr-he-5Ws"/>
+                                            <segue destination="6xj-if-NlY" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="tgv-4U-Otz"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XcT-v3-IdR">
@@ -146,15 +147,39 @@
             <objects>
                 <viewController id="6xj-if-NlY" customClass="DatePickerViewController" customModule="OutaTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PQv-eR-pea">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="aG8-8q-SDe">
+                                <rect key="frame" x="20" y="214" width="373" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="AKu-7p-MRF"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem systemItem="cancel" id="qIh-fz-bDt">
+                            <connections>
+                                <action selector="cancelButton:" destination="6xj-if-NlY" id="CW1-UA-vhg"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="aYs-Ii-878"/>
+                        <barButtonItem systemItem="save" id="Cgm-oX-X0m">
+                            <connections>
+                                <action selector="saveButton:" destination="6xj-if-NlY" id="Q38-UB-guf"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="giU-QO-Xgd"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="datePicker" destination="aG8-8q-SDe" id="Xrf-ak-eEq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GZC-28-bJy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="841" y="139"/>
+            <point key="canvasLocation" x="840.57971014492762" y="138.61607142857142"/>
         </scene>
     </scenes>
 </document>

@@ -7,16 +7,28 @@
 //
 
 import UIKit
-
+protocol DatePickerDelegate {
+    func destinationDateWasChosen(date: Date)
+}
 class DatePickerViewController: UIViewController {
 
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    var delegate: DatePickerDelegate?
+    
+    @IBAction func cancelButton(_ sender: Any) {
+    }
+    
+    @IBAction func saveButton(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 
