@@ -30,18 +30,34 @@ class TimeCircuitsViewController: UIViewController {
     @IBAction func travelBackTapped(_ sender: Any) {
     }
     
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        textFields()
+    }
     
     var dateFormatter: DateFormatter {
         let formatter = DateFormatter()
-        formatter.dateFormat = "MMM d, yyyy"
+        formatter.dateFormat = "MM dd, yyyy"
         formatter.timeZone = TimeZone(secondsFromGMT: 0)
         return formatter
     }
     
+    var currentSpeed = 0
     
+    func textFields() {
+        presentTimeTextField.text = dateFormatter.string(from: Date())
+        speedTextField.text = "\(currentSpeed) MPH"
+        lastTimeTextField.text = "--- -- ---"
+    }
     
-    
+}
+
+
+
+extension TimeCircuitsViewController: DatePickerDelegate {
+    func destinationDateWasChosen(date: Date) {
+        
+    }
     
     
 }
