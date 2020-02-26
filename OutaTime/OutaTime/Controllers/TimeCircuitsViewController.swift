@@ -53,3 +53,13 @@ class TimeCircuitsViewController: UIViewController {
     */
 
 }
+
+// MARK: - Extensions
+
+extension TimeCircuitsViewController: DatePickerDelegate {
+    func destinationDateWasChosen(for date: Date) {
+        <#code#>
+    }
+    
+    
+}
