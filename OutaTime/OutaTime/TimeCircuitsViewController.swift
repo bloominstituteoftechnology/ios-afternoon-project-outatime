@@ -15,22 +15,30 @@ class TimeCircuitsViewController: UIViewController {
     @IBOutlet weak var lastTimeDepartedLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
     
-    
+    var speed = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let presentDate = Date()
+        presentTimeLabel.text = dateFormatter.string(from: presentDate)
+        speedLabel.text = "\(speed) MPH"
+        lastTimeDepartedLabel.text = "--- -- ----"
     }
     
-
+    let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM d, yyyy"
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        return formatter
+    }()
     
     @IBAction func travelBackButtonTapped(_ sender: Any) {
+        
     }
     
     
     
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -38,6 +46,5 @@ class TimeCircuitsViewController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
 
 }

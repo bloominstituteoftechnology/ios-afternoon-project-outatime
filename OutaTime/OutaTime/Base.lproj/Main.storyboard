@@ -20,11 +20,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RKl-NG-Hay">
-                                <rect key="frame" x="20" y="762" width="374" height="80"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RKl-NG-Hay">
+                                <rect key="frame" x="20" y="722" width="374" height="120"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kku-WX-asf">
-                                        <rect key="frame" x="103.5" y="0.0" width="167" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="p55-Nm-99z"/>
+                                        </constraints>
                                         <state key="normal" title="SET DESTINATION TIME"/>
                                         <connections>
                                             <action selector="setDestinationTimeButtonTapped:" destination="Y4s-WW-hYR" eventType="touchUpInside" id="IqC-sX-jTX"/>
@@ -32,7 +36,11 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJD-Ft-Pue">
-                                        <rect key="frame" x="138" y="50" width="98" height="30"/>
+                                        <rect key="frame" x="0.0" y="70" width="374" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="otZ-D2-26e"/>
+                                        </constraints>
                                         <state key="normal" title="TRAVEL BACK"/>
                                         <connections>
                                             <action selector="travelBackButtonTapped:" destination="Y4s-WW-hYR" eventType="touchUpInside" id="mdC-1Q-PmD"/>
@@ -180,7 +188,7 @@
                         <viewLayoutGuide key="safeArea" id="826-Tf-n6L"/>
                     </view>
                     <connections>
-                        <outlet property="datePicker" destination="asn-zs-h4e" id="dA0-7K-UWm"/>
+                        <outlet property="datePicker" destination="asn-zs-h4e" id="Otl-gl-Fdy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZAA-Uy-zKE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
