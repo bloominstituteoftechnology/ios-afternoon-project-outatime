@@ -15,6 +15,7 @@
 		251D0285240703E9007E4D3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 251D0283240703E9007E4D3C /* LaunchScreen.storyboard */; };
 		251D028D240704B9007E4D3C /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D028C240704B9007E4D3C /* TimeCircuitsViewController.swift */; };
 		251D028F240704CD007E4D3C /* DataPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D028E240704CD007E4D3C /* DataPickerViewController.swift */; };
+		251D029124070A17007E4D3C /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 251D02902407069C007E4D3C /* digital-7.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,8 +70,8 @@
 				251D028E240704CD007E4D3C /* DataPickerViewController.swift */,
 				251D0281240703E9007E4D3C /* Assets.xcassets */,
 				251D0283240703E9007E4D3C /* LaunchScreen.storyboard */,
-				251D0286240703E9007E4D3C /* Info.plist */,
 				251D02902407069C007E4D3C /* digital-7.ttf */,
+				251D0286240703E9007E4D3C /* Info.plist */,
 			);
 			path = OutaTime;
 			sourceTree = "<group>";
@@ -136,6 +137,7 @@
 				251D0285240703E9007E4D3C /* LaunchScreen.storyboard in Resources */,
 				251D0282240703E9007E4D3C /* Assets.xcassets in Resources */,
 				251D0280240703E9007E4D3C /* Main.storyboard in Resources */,
+				251D029124070A17007E4D3C /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
