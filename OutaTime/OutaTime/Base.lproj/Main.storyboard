@@ -560,12 +560,12 @@
                                     <constraint firstItem="82H-8p-DnZ" firstAttribute="width" secondItem="cp0-NI-I2w" secondAttribute="width" id="jCR-ox-Z6v"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z5D-xg-CAl" userLabel="LEDs">
-                                <rect key="frame" x="332" y="358.5" width="6" height="25"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z5D-xg-CAl" userLabel="Yellow LEDs">
+                                <rect key="frame" x="328" y="361" width="6" height="20"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v19-To-bJp" userLabel="LED">
                                         <rect key="frame" x="0.0" y="0.0" width="6" height="6"/>
-                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="6" id="8KW-nh-NEA"/>
                                             <constraint firstAttribute="width" constant="6" id="mKE-OX-Jyn"/>
@@ -577,8 +577,8 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZQF-jY-8Lf" userLabel="LED">
-                                        <rect key="frame" x="0.0" y="19" width="6" height="6"/>
-                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="14" width="6" height="6"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="6" id="7dc-Kk-UNq"/>
                                             <constraint firstAttribute="width" constant="6" id="yVI-S0-RoB"/>
@@ -591,17 +591,91 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="6pW-wD-lU3"/>
+                                    <constraint firstAttribute="height" constant="20" id="6pW-wD-lU3"/>
                                     <constraint firstAttribute="width" constant="6" id="new-fE-n01"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aHE-Xm-opr" userLabel="Red LEDs">
+                                <rect key="frame" x="328" y="89.5" width="6" height="20"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mBy-Nu-c3u" userLabel="LED">
+                                        <rect key="frame" x="0.0" y="0.0" width="6" height="6"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="6" id="ZHT-EV-J15"/>
+                                            <constraint firstAttribute="width" constant="6" id="vdH-8I-dNp"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ttT-HD-ac2" userLabel="LED">
+                                        <rect key="frame" x="0.0" y="14" width="6" height="6"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="6" id="Che-dG-EJ0"/>
+                                            <constraint firstAttribute="width" constant="6" id="lh8-87-Vv2"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="56h-6k-Gc8"/>
+                                    <constraint firstAttribute="width" constant="6" id="S9z-Rk-ePd"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RLN-AR-tHA" userLabel="Green  LEDs">
+                                <rect key="frame" x="328" y="220" width="6" height="20"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vXA-F4-5tV" userLabel="LED">
+                                        <rect key="frame" x="0.0" y="0.0" width="6" height="6"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="6" id="I4J-pb-fM1"/>
+                                            <constraint firstAttribute="width" constant="6" id="xM8-dI-uLn"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lIr-mr-Lhy" userLabel="LED">
+                                        <rect key="frame" x="0.0" y="14" width="6" height="6"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="6" id="6PK-aF-EBY"/>
+                                            <constraint firstAttribute="height" constant="6" id="oz0-le-B1U"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Zln-vP-NKo"/>
+                                    <constraint firstAttribute="width" constant="6" id="svV-Bp-TkD"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="aHE-Xm-opr" firstAttribute="centerY" secondItem="d3K-D0-2rt" secondAttribute="centerY" id="A0T-lT-8ja"/>
                             <constraint firstItem="Z5D-xg-CAl" firstAttribute="centerY" secondItem="mr8-mi-bEf" secondAttribute="centerY" id="BqT-1d-FSE"/>
+                            <constraint firstItem="RLN-AR-tHA" firstAttribute="leading" secondItem="rfk-XV-GJI" secondAttribute="trailing" constant="6" id="Hhb-KQ-45Z"/>
                             <constraint firstItem="cp0-NI-I2w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="OqD-gB-1XK"/>
-                            <constraint firstItem="Z5D-xg-CAl" firstAttribute="leading" secondItem="mr8-mi-bEf" secondAttribute="trailing" constant="10" id="nmf-Vr-KcB"/>
+                            <constraint firstItem="aHE-Xm-opr" firstAttribute="leading" secondItem="d3K-D0-2rt" secondAttribute="trailing" constant="6" id="SWd-GG-Nco"/>
+                            <constraint firstItem="Z5D-xg-CAl" firstAttribute="leading" secondItem="mr8-mi-bEf" secondAttribute="trailing" constant="6" id="nmf-Vr-KcB"/>
                             <constraint firstItem="cp0-NI-I2w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="p5t-oE-4fO"/>
+                            <constraint firstItem="RLN-AR-tHA" firstAttribute="centerY" secondItem="rfk-XV-GJI" secondAttribute="centerY" id="se3-U7-bRo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cp0-NI-I2w" secondAttribute="trailing" constant="20" id="tDM-sa-Nke"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -612,6 +686,7 @@
                         <outlet property="destinationMinuteLabel" destination="4ug-QQ-kkS" id="ghk-9x-YBP"/>
                         <outlet property="destinationMonthLabel" destination="Ult-GB-bCW" id="vsv-W0-w0m"/>
                         <outlet property="destinationYearLabel" destination="9bY-HV-9EI" id="5qp-Q7-3se"/>
+                        <outlet property="greenLedStack" destination="RLN-AR-tHA" id="85p-Lf-MCn"/>
                         <outlet property="lastDepartedDayLabel" destination="s7H-C5-gms" id="XeM-sz-SLi"/>
                         <outlet property="lastDepartedHourLabel" destination="mr8-mi-bEf" id="jhO-wY-zqG"/>
                         <outlet property="lastDepartedMinuteLabel" destination="eyz-65-a76" id="OP5-ph-QRv"/>
@@ -622,8 +697,10 @@
                         <outlet property="presentTimeMinuteLabel" destination="Ivz-c6-ngK" id="MwQ-6B-ei5"/>
                         <outlet property="presentTimeMonthLabel" destination="5uD-XN-2w4" id="Ofb-qH-Kjd"/>
                         <outlet property="presentTimeYearLabel" destination="ZkC-do-h15" id="CpZ-4m-ajS"/>
+                        <outlet property="redLedStack" destination="aHE-Xm-opr" id="ecC-i6-htJ"/>
                         <outlet property="speedLabel" destination="bhp-Ca-NEi" id="2wj-zg-KD4"/>
                         <outlet property="travelBackButton" destination="g52-DV-vQ1" id="ptQ-JN-fnS"/>
+                        <outlet property="yellowLedStack" destination="Z5D-xg-CAl" id="vFw-wO-uiG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

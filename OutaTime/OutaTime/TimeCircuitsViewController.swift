@@ -56,6 +56,14 @@ class TimeCircuitsViewController: UIViewController {
         lastDepartedHourLabel,
         lastDepartedMinuteLabel)
     
+    // LEDs
+    @IBOutlet weak var redLedStack: UIStackView!
+    @IBOutlet weak var greenLedStack: UIStackView!
+    @IBOutlet weak var yellowLedStack: UIStackView!
+    
+    lazy var ledStacks: [UIStackView] = [redLedStack, greenLedStack, yellowLedStack]
+    
+    
     // Speed
     @IBOutlet weak var speedLabel: UILabel!
     
@@ -108,6 +116,8 @@ class TimeCircuitsViewController: UIViewController {
     
     //MARK: - Private Methods
     
+    // Helper functions
+    
     private func update(_ timeLabels: TimeLabels, withDate date: Date) {
         timeLabels.month?.text = date.month
         timeLabels.day?.text = date.day
@@ -129,7 +139,10 @@ class TimeCircuitsViewController: UIViewController {
         destinationTime = nil
         lastDepartedTime = nil
         speedLabel.text = "\(currentSpeed) MPH"
+        startLedBlinker()
     }
+    
+    // Alert
     
     private func showAlert() {
         guard let presentTime = presentTime else { return }
@@ -170,6 +183,23 @@ class TimeCircuitsViewController: UIViewController {
         }
     }
     
+    // LED Blinker
+    
+    private var ledBlinker: Timer?
+    
+    private func startLedBlinker() {
+        ledBlinker = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true, block: blinkLights(_:))
+    }
+    
+    private func blinkLights(_ timer: Timer) {
+        ledStacks.forEach {
+            if $0.layer.opacity == 1.0 {
+                $0.layer.opacity = 0.3
+            } else {
+                $0.layer.opacity = 1.0
+            }
+        }
+    }
     
     //MARK: - View Lifecycle
     
