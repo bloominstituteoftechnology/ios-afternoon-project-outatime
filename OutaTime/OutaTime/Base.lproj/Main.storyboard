@@ -154,15 +154,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="destLabel" destination="xNg-jj-L5b" id="j4i-GB-6sH"/>
-                        <outlet property="destTime" destination="vV3-m8-Mob" id="LaZ-G6-4yd"/>
-                        <outlet property="lastDepartureTime" destination="s8J-cb-DAU" id="c3q-Yw-EXD"/>
-                        <outlet property="lastTimeDeptLabel" destination="bfx-VW-xfH" id="ysW-Qo-X6r"/>
-                        <outlet property="presentTime" destination="m5p-hf-3rS" id="BiE-El-hgn"/>
-                        <outlet property="presentTimeLabel" destination="EJs-qS-c2s" id="SRN-mW-cD1"/>
+                        <outlet property="destTimeLabel" destination="vV3-m8-Mob" id="LaZ-G6-4yd"/>
+                        <outlet property="destTitleLabel" destination="xNg-jj-L5b" id="j4i-GB-6sH"/>
+                        <outlet property="lastDepartureTimeLabel" destination="s8J-cb-DAU" id="c3q-Yw-EXD"/>
+                        <outlet property="lastTimeDepartedTitleLabel" destination="bfx-VW-xfH" id="ysW-Qo-X6r"/>
+                        <outlet property="presentTimeLabel" destination="m5p-hf-3rS" id="BiE-El-hgn"/>
+                        <outlet property="presentTimeTitleLabel" destination="EJs-qS-c2s" id="SRN-mW-cD1"/>
                         <outlet property="setDestTimeButtonLabel" destination="2ke-IA-KWm" id="5XE-7F-vkV"/>
-                        <outlet property="speedLabel" destination="iVX-Kj-a9G" id="JjD-AG-ShU"/>
-                        <outlet property="sppedValueLabel" destination="UAG-iX-ccs" id="6gh-r9-AdP"/>
+                        <outlet property="speedLabel" destination="UAG-iX-ccs" id="6gh-r9-AdP"/>
+                        <outlet property="speedTitleLabel" destination="iVX-Kj-a9G" id="JjD-AG-ShU"/>
                         <outlet property="travelBackButtonLabel" destination="VLR-oD-HMt" id="Fcy-up-2od"/>
                     </connections>
                 </viewController>
@@ -184,9 +184,8 @@
                                     <action selector="datePicker:" destination="XJY-KY-llW" eventType="valueChanged" id="r5g-6L-DXb"/>
                                 </connections>
                             </datePicker>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xCo-9Y-90b">
-                                <rect key="frame" x="0.0" y="680" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xCo-9Y-90b">
+                                <rect key="frame" x="0.0" y="668" width="375" height="56"/>
                                 <items>
                                     <navigationItem id="Lrw-qg-FJ3">
                                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="v1p-Yw-Xcq">
@@ -205,8 +204,11 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="xCo-9Y-90b" firstAttribute="bottom" secondItem="jLc-SM-q71" secondAttribute="bottom" id="7jP-5u-lQo"/>
+                            <constraint firstItem="xCo-9Y-90b" firstAttribute="leading" secondItem="jLc-SM-q71" secondAttribute="leading" id="GsL-Yz-evy"/>
                             <constraint firstItem="0X4-zQ-3EZ" firstAttribute="centerY" secondItem="27L-7C-HrK" secondAttribute="centerY" id="IPU-Gh-YKU"/>
                             <constraint firstItem="0X4-zQ-3EZ" firstAttribute="centerX" secondItem="27L-7C-HrK" secondAttribute="centerX" id="OJp-8H-k1N"/>
+                            <constraint firstItem="xCo-9Y-90b" firstAttribute="trailing" secondItem="jLc-SM-q71" secondAttribute="trailing" id="yOR-1j-ayy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jLc-SM-q71"/>
                     </view>

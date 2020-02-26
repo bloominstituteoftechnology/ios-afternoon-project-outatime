@@ -12,33 +12,89 @@ class TimeCircuitsViewController: UIViewController {
 
     // Lables
     // FIXME: Centering of elements
-    @IBOutlet weak var destLabel: UILabel!
-    @IBOutlet weak var presentTimeLabel: UILabel!
-    @IBOutlet weak var lastTimeDeptLabel: UILabel!
-    @IBOutlet weak var speedLabel: UILabel!
+    @IBOutlet weak var destTitleLabel: UILabel!
+    @IBOutlet weak var presentTimeTitleLabel: UILabel!
+    @IBOutlet weak var lastTimeDepartedTitleLabel: UILabel!
+    @IBOutlet weak var speedTitleLabel: UILabel!
     @IBOutlet weak var setDestTimeButtonLabel: UIButton!
     @IBOutlet weak var travelBackButtonLabel: UIButton!
     
     // Time Segments
-    @IBOutlet weak var destTime: UILabel!
-    @IBOutlet weak var presentTime: UILabel!
-    @IBOutlet weak var lastDepartureTime: UILabel!
-    @IBOutlet weak var sppedValueLabel: UILabel!
+    @IBOutlet weak var destTimeLabel: UILabel!
+    @IBOutlet weak var presentTimeLabel: UILabel!
+    @IBOutlet weak var lastDepartureTimeLabel: UILabel!
+    @IBOutlet weak var speedLabel: UILabel!
     
     // Button Actions
     @IBAction func travelBackButton(_ sender: Any) {
     }
     
+    let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM dd, yyyy"
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        return formatter
+    }()
+
+    var destTime = Calendar.current.date(from: DateComponents(calendar: Calendar.current,
+                                                              year: 2000,
+                                                              month: 1,
+                                                              day: 1))!  {
+        didSet {
+            updateViews()
+        }
+    }
+    
+    var presentTime = Date()  {
+        didSet {
+            updateViews()
+        }
+    }
+    
+    var lastTimeDeparted: Date?  {
+        didSet {
+            updateViews()
+        }
+    }
+    
+    var speed = 0 {
+        didSet {
+            updateViews()
+        }
+    }
+    
+    func updateViews() {
+        // Destination Time
+        destTimeLabel.text = dateFormatter.string(from: destTime)
+        
+        // Present Time
+        presentTimeLabel.text = dateFormatter.string(from: presentTime)
+        
+        // Last Departure Time
+        var departedString = "--- -- ----"
+        if let date = lastTimeDeparted {
+            departedString = dateFormatter.string(from: date)
+        }
+        lastDepartureTimeLabel.text = departedString
+
+        // Speed
+        speedLabel.text = "\(speed) MPH"
+    }
+    
+    // MARK: - View Lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        destLabel.text         = destLabel.text?.uppercased()
-        presentTimeLabel.text  = presentTimeLabel.text?.uppercased()
-        lastTimeDeptLabel.text = lastTimeDeptLabel.text?.uppercased()
-        speedLabel.text        = speedLabel.text?.uppercased()
+        destTitleLabel.text         = destTitleLabel.text?.uppercased()
+        presentTimeTitleLabel.text  = presentTimeTitleLabel.text?.uppercased()
+        lastTimeDepartedTitleLabel.text = lastTimeDepartedTitleLabel.text?.uppercased()
+        speedTitleLabel.text        = speedTitleLabel.text?.uppercased()
 
         setDestTimeButtonLabel.setTitle(setDestTimeButtonLabel.currentTitle?.uppercased(), for: .normal)
         travelBackButtonLabel.setTitle(travelBackButtonLabel.currentTitle?.uppercased(), for: .normal)
+
+        updateViews()
     }
     
 
