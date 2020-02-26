@@ -14,7 +14,6 @@
 		0458515924060DFF006401F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0458515724060DFF006401F8 /* LaunchScreen.storyboard */; };
 		0458516124060E64006401F8 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458516024060E64006401F8 /* TimeCircuitsViewController.swift */; };
 		0458516324060E72006401F8 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458516224060E72006401F8 /* DatePickerViewController.swift */; };
-		0498F97A2407160200226253 /* Date+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498F9792407160200226253 /* Date+Convenience.swift */; };
 		0498F97C24071AF000226253 /* DigitaldreamFatSkew.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0498F97B2407197800226253 /* DigitaldreamFatSkew.ttf */; };
 /* End PBXBuildFile section */
 
@@ -28,8 +27,7 @@
 		0458515A24060DFF006401F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0458516024060E64006401F8 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
 		0458516224060E72006401F8 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
-		045851642406B185006401F8 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../../digital-7.ttf"; sourceTree = "<group>"; };
-		0498F9792407160200226253 /* Date+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Convenience.swift"; sourceTree = "<group>"; };
+		045851642406B185006401F8 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
 		0498F97B2407197800226253 /* DigitaldreamFatSkew.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DigitaldreamFatSkew.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,6 +42,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		044AAC80240737510080AFC4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0458516024060E64006401F8 /* TimeCircuitsViewController.swift */,
+				0458516224060E72006401F8 /* DatePickerViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		044AAC81240737670080AFC4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0458514C24060DFC006401F8 /* AppDelegate.swift */,
+				0458514E24060DFC006401F8 /* SceneDelegate.swift */,
+				0458515524060DFF006401F8 /* Assets.xcassets */,
+				0458515A24060DFF006401F8 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		044AAC82240737820080AFC4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				045851642406B185006401F8 /* digital-7.ttf */,
+				0498F97B2407197800226253 /* DigitaldreamFatSkew.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		044AAC832407378C0080AFC4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0458515224060DFC006401F8 /* Main.storyboard */,
+				0458515724060DFF006401F8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		0458514024060DFC006401F8 = {
 			isa = PBXGroup;
 			children = (
@@ -63,17 +99,10 @@
 		0458514B24060DFC006401F8 /* OutaTime */ = {
 			isa = PBXGroup;
 			children = (
-				045851642406B185006401F8 /* digital-7.ttf */,
-				0498F97B2407197800226253 /* DigitaldreamFatSkew.ttf */,
-				0458514C24060DFC006401F8 /* AppDelegate.swift */,
-				0458514E24060DFC006401F8 /* SceneDelegate.swift */,
-				0458516024060E64006401F8 /* TimeCircuitsViewController.swift */,
-				0498F9792407160200226253 /* Date+Convenience.swift */,
-				0458516224060E72006401F8 /* DatePickerViewController.swift */,
-				0458515224060DFC006401F8 /* Main.storyboard */,
-				0458515524060DFF006401F8 /* Assets.xcassets */,
-				0458515724060DFF006401F8 /* LaunchScreen.storyboard */,
-				0458515A24060DFF006401F8 /* Info.plist */,
+				044AAC82240737820080AFC4 /* Fonts */,
+				044AAC81240737670080AFC4 /* Resources */,
+				044AAC80240737510080AFC4 /* ViewControllers */,
+				044AAC832407378C0080AFC4 /* Storyboards */,
 			);
 			path = OutaTime;
 			sourceTree = "<group>";
@@ -152,7 +181,6 @@
 			files = (
 				0458516324060E72006401F8 /* DatePickerViewController.swift in Sources */,
 				0458514D24060DFC006401F8 /* AppDelegate.swift in Sources */,
-				0498F97A2407160200226253 /* Date+Convenience.swift in Sources */,
 				0458516124060E64006401F8 /* TimeCircuitsViewController.swift in Sources */,
 				0458514F24060DFC006401F8 /* SceneDelegate.swift in Sources */,
 			);
@@ -300,7 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 94ZMA2MYR4;
-				INFOPLIST_FILE = OutaTime/Info.plist;
+				INFOPLIST_FILE = OutaTime/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,7 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 94ZMA2MYR4;
-				INFOPLIST_FILE = OutaTime/Info.plist;
+				INFOPLIST_FILE = OutaTime/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
