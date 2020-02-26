@@ -27,6 +27,7 @@ class TimeCircuitsViewController: UIViewController {
     
     // Button Actions
     @IBAction func travelBackButton(_ sender: Any) {
+        startTimer()
     }
     
     let dateFormatter: DateFormatter = {
@@ -37,7 +38,9 @@ class TimeCircuitsViewController: UIViewController {
     }()
 
     // Local Variables
-    var destTime = Calendar.current.date(from: DateComponents(calendar: Calendar.current,
+    var timer: Timer?
+    
+    var destinationTime = Calendar.current.date(from: DateComponents(calendar: Calendar.current,
                                                               year: 2000,
                                                               month: 1,
                                                               day: 1))!  {
@@ -66,7 +69,7 @@ class TimeCircuitsViewController: UIViewController {
     
     func updateViews() {
         // Destination Time
-        destTimeLabel.text = dateFormatter.string(from: destTime)
+        destTimeLabel.text = dateFormatter.string(from: destinationTime)
         
         // Present Time
         presentTimeLabel.text = dateFormatter.string(from: presentTime)
@@ -87,7 +90,7 @@ class TimeCircuitsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Pet Peeve: Typing something in all upper-case. I'd rather have system do. 
+        // Pet Peeve: Typing something in all upper-case. I'd rather have system do.
         destTitleLabel.text         = destTitleLabel.text?.uppercased()
         presentTimeTitleLabel.text  = presentTimeTitleLabel.text?.uppercased()
         lastTimeDepartedTitleLabel.text = lastTimeDepartedTitleLabel.text?.uppercased()
@@ -114,6 +117,50 @@ class TimeCircuitsViewController: UIViewController {
 
 extension TimeCircuitsViewController: DatePickerDelegate {
     func destinationDateWasChosen(date: Date) {
-        destTime = date
+        destinationTime = date
+    }
+    
+    func startTimer() {
+        timer = Timer.scheduledTimer(withTimeInterval: 0.10, repeats: true, block: updateTimer(timer:))
+    }
+
+    // called each time the timer object fires
+    private func updateTimer(timer: Timer) {
+        updateSpeed()
+    }
+
+    func updateSpeed() {
+        if speed >= 10 { // FIXME: Change to 88
+            cancelTimer()
+            
+            lastTimeDeparted = presentTime
+            presentTime = destinationTime
+            speed = 0
+            
+            showAlert()
+            
+            return
+        }
+
+        speed += 1
+    }
+    
+    func cancelTimer() {
+        // We must invalidate a timer, or it will continue to run even if we
+        // start a new timer
+        timer?.invalidate()
+        timer = nil
+    }
+
+    private func showAlert() {
+        let alert = UIAlertController(title: "Time Travel Successful",
+                                      message: "You're new date is \(dateFormatter.string(from: presentTime))",
+                                      preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        
+        alert.addAction(okAction)
+        
+        present(alert, animated: true, completion: nil)
     }
 }
