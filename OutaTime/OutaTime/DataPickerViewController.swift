@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol DatePickerDelegate {
+    func destinationDateWasChosen(date: Date)
+}
+
 class DataPickerViewController: UIViewController {
     
     @IBOutlet weak var datePickerView: UIDatePicker!
