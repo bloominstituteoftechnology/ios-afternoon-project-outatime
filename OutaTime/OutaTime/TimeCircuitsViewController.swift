@@ -11,7 +11,6 @@ import UIKit
 class TimeCircuitsViewController: UIViewController {
 
     // Lables
-    // FIXME: Centering of elements
     @IBOutlet weak var destTitleLabel: UILabel!
     @IBOutlet weak var presentTimeTitleLabel: UILabel!
     @IBOutlet weak var lastTimeDepartedTitleLabel: UILabel!
