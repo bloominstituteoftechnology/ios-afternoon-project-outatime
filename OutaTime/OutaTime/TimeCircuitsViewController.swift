@@ -15,6 +15,7 @@ class TimeCircuitsViewController: UIViewController {
     @IBOutlet weak var speedLabel: UILabel!
     
     var currentSpeed = 0
+    private var timer: Timer?
     
     private var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -26,16 +27,42 @@ class TimeCircuitsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-
-       
-    }
+}
     
     
     
     @IBAction func travelBackTapped(_ sender: Any) {
         }
     
+    func startTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 0.1,
+                                     target: self,
+                                     selector: #selector(updateSpeed),
+                                     userInfo: nil,
+                                     repeats: true)
+    }
+    
+    @objc func updateSpeed() {
+        if currentSpeed == 88 {
+            restTimer()
+            lastTimeDepartedLabel.text = presentTimeLabel.text
+            presentTimeLabel.text = destinationTimeLabel.text
+            currentSpeed = 0
+            if let presentTime = presentTimeLabel.text {
+                let ac = UIAlertController(title: "Time Tavel Successful!", message: "You're new date is \(presentTime)", preferredStyle: .alert)
+                ac.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                present(ac, animated: true)
+            }
+        } else {
+            currentSpeed += 1
+            speedLabel.text = "\(currentSpeed) MPH"
+        }
+    }
+    
+    func restTimer() {
+        timer?.invalidate()
+        timer = nil
+    }
 
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
