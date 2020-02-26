@@ -1,5 +1,5 @@
 //
-//  DataPickerViewController.swift
+//  DatePickerViewController.swift
 //  OutaTime
 //
 //  Created by Samuel Esserman on 2/26/20.
@@ -12,7 +12,7 @@ protocol DatePickerDelegate {
     func destinationDateWasChosen(date: Date)
 }
 
-class DataPickerViewController: UIViewController {
+class DatePickerViewController: UIViewController {
     @IBOutlet weak var datePickerView: UIDatePicker!
     
     var delegate: DatePickerDelegate?

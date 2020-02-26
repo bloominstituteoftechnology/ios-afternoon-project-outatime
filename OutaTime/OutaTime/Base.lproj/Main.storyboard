@@ -132,10 +132,10 @@
             </objects>
             <point key="canvasLocation" x="-484.05797101449281" y="62.946428571428569"/>
         </scene>
-        <!--Data Picker View Controller-->
+        <!--Date Picker View Controller-->
         <scene sceneID="cBh-CK-Smi">
             <objects>
-                <viewController id="USs-UE-XfC" customClass="DataPickerViewController" customModule="OutaTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="USs-UE-XfC" customClass="DatePickerViewController" customModule="OutaTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ar8-81-IeS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

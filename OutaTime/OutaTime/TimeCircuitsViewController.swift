@@ -39,13 +39,17 @@ class TimeCircuitsViewController: UIViewController {
 
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       }
-
+        if segue.identifier == "ModalDestinationDatePickerSegue" {
+            if let destVC = segue.destination as? DatePickerViewController {
+                destVC.delegate = self
+            }
+        }
+    }
 }
 
 //MARK: - Extension
 
-extension TimeCircuitsViewController: DatePickerDelegate {
+extension TimeCircuitsViewController: DatePickerDelegate  {
     func destinationDateWasChosen(date: Date) {
         destinationTimeLabel.text = dateFormatter.string(from: date)
     }
