@@ -36,6 +36,7 @@ class TimeCircuitsViewController: UIViewController {
         return formatter
     }()
 
+    // Local Variables
     var destTime = Calendar.current.date(from: DateComponents(calendar: Calendar.current,
                                                               year: 2000,
                                                               month: 1,
@@ -96,16 +97,22 @@ class TimeCircuitsViewController: UIViewController {
 
         updateViews()
     }
-    
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "ModalDestinationDatePickerSegue" {
+            guard let dpVC = segue.destination as? DatePickerViewController else {return}
+            dpVC.delegate = self
+        }
     }
-    */
+}
 
+extension TimeCircuitsViewController: DatePickerDelegate {
+    func destinationDateWasChosen(date: Date) {
+        destTime = date
+    }
 }
