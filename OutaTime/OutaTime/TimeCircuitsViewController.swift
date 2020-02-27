@@ -28,8 +28,15 @@ class TimeCircuitsViewController: UIViewController {
     
     
     @IBAction func travelBackTapped(_ sender: Any) {
+        func startTimer() {
+            timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: updateTimer(timer:))
+        }
     }
     
+    func updateTimer(timer: Timer) {
+        updateSpeed()
+    }
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         textFields()
@@ -42,13 +49,31 @@ class TimeCircuitsViewController: UIViewController {
         return formatter
     }
     
-    var currentSpeed = 0
+    var speed = 0
+    
+    var timer: Timer?
     
     func textFields() {
         presentTimeTextField.text = dateFormatter.string(from: Date())
-        speedTextField.text = "\(currentSpeed) MPH"
+        speedTextField.text = "\(speed) MPH"
         lastTimeTextField.text = "--- -- ---"
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
+    
+    func resetTimer() {
+        timer?.invalidate()
+        timer = nil
+    }
+    
+    func updateSpeed() {
+        if speed >= 88 {
+            
+        }
+    }
+   
     
 }
 
