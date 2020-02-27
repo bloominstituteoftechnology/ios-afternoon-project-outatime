@@ -111,10 +111,6 @@ class TimeCircuit: UIView {
     }
     
     private func updateSeparatorLeds() {
-        guard time != nil else {
-            separatorLeds.forEach { $0.layer.opacity = offOpacity}
-            return
-        }
         separatorLeds.forEach { $0.layer.opacity = ledsOn ? onOpacity : offOpacity }
     }
 
