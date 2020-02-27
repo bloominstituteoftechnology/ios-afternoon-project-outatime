@@ -18,6 +18,7 @@ class DatePickerViewController: UIViewController {
     
     @IBOutlet weak var datePicker: UIDatePicker!
     
+    
     //MARK: - IBActions
     
     
@@ -30,10 +31,14 @@ class DatePickerViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    
     //MARK: - Properties
     
     weak var delegate: DestinationDatePickerDelegate?
     var startingDate: Date?
+    
+    
+    //MARK: - View Lifecycle
     
     override func viewDidLoad() {
         if let startingDate = startingDate {
