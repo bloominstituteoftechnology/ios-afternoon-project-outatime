@@ -64,10 +64,11 @@ class TimeCircuitsViewController: UIViewController {
     }
     
     private func updateSpeed(timer: Timer) {
-        if currentSpeed <= 88 {
+        if currentSpeed <= 87 {
             currentSpeed += 1
+            speedLabel.text = "\(currentSpeed) MPH"
             // FIXME: - update the speed label with the current speed
-        } else {
+        } else if currentSpeed >= 88 {
             resetTimer()
 //            Update the value of the lastTimeDepartedLabel with the value from the presentTimeLabel.
             lastTimeDepartedLabel.text = presentTimeLabel.text
