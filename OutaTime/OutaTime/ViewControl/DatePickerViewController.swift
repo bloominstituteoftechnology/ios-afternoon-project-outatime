@@ -10,6 +10,9 @@ import UIKit
 
 class DatePickerViewController: UIViewController {
 
+    // MARK: - PROPERTIES
+    var delegate: DatePickerDelegate?
+    
     // MARK: - OUTLETS
     @IBOutlet weak var datePicker: UIDatePicker!
     
@@ -22,8 +25,11 @@ class DatePickerViewController: UIViewController {
     
 // MARK: - ACTIONS
     @IBAction func cancelButtonTapped(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
     }
     @IBAction func doneButtonTapped(_ sender: UIButton) {
+        delegate?.destinationDateWasChosen(date: datePicker.date)
+        dismiss(animated: true, completion: nil)
     }
     
     
@@ -37,4 +43,10 @@ class DatePickerViewController: UIViewController {
     }
     */
 
+
+    
+}
+
+protocol DatePickerDelegate {
+    func destinationDateWasChosen(date: Date)
 }
