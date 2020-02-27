@@ -79,8 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				0458515224060DFC006401F8 /* Main.storyboard */,
-				044AAC8B2407796A0080AFC4 /* TimeCircuit.swift */,
-				044AAC89240776EB0080AFC4 /* TimeCircuit.xib */,
 				0458515724060DFF006401F8 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -107,10 +105,20 @@
 			children = (
 				044AAC82240737820080AFC4 /* Fonts */,
 				044AAC81240737670080AFC4 /* Resources */,
+				04EF66112407942300770CB9 /* Views */,
 				044AAC80240737510080AFC4 /* ViewControllers */,
 				044AAC832407378C0080AFC4 /* Storyboards */,
 			);
 			path = OutaTime;
+			sourceTree = "<group>";
+		};
+		04EF66112407942300770CB9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				044AAC8B2407796A0080AFC4 /* TimeCircuit.swift */,
+				044AAC89240776EB0080AFC4 /* TimeCircuit.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
