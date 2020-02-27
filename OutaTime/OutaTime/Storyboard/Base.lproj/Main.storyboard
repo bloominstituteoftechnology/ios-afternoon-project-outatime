@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ybo-6T-bIW">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -10,7 +10,7 @@
         <!--Time Circuits View Controller-->
         <scene sceneID="A2Q-7h-0wX">
             <objects>
-                <viewController id="FEU-hw-DQz" customClass="TimeCircuitsViewController" sceneMemberID="viewController">
+                <viewController id="FEU-hw-DQz" customClass="TimeCircuitsViewController" customModule="OutaTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="63p-Zd-ZUm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,25 +108,26 @@
                         <color key="backgroundColor" systemColor="tertiarySystemFillColor" red="0.46274509800000002" green="0.46274509800000002" blue="0.50196078430000002" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="8i6-h3-qih"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Yds-0A-hoZ"/>
                     <connections>
-                        <outlet property="destinationLabel" destination="23d-al-gCd" id="5ky-wL-79f"/>
+                        <outlet property="departedLabel" destination="6BR-cz-fDp" id="snc-nQ-hQ7"/>
+                        <outlet property="destinationLabel" destination="23d-al-gCd" id="9ck-tJ-1a3"/>
                         <outlet property="destinationTextField" destination="dOn-Gz-qsb" id="8KG-CB-IAv"/>
-                        <outlet property="lastTimeLabel" destination="6BR-cz-fDp" id="kpc-l7-RUZ"/>
                         <outlet property="lastTimeTextField" destination="Kuv-4a-14V" id="Zna-TA-wHC"/>
-                        <outlet property="presentTimeLabel" destination="N4D-2J-mQ3" id="2b7-eG-yEQ"/>
+                        <outlet property="presentLabel" destination="N4D-2J-mQ3" id="kOB-H2-oLn"/>
                         <outlet property="presentTimeTextField" destination="yk4-VE-7CJ" id="GNi-e3-mVQ"/>
-                        <outlet property="speedLabel" destination="Nsw-zA-8h9" id="Kbz-zu-3cq"/>
+                        <outlet property="speedLabel" destination="Nsw-zA-8h9" id="FSP-8v-obF"/>
                         <outlet property="speedTextField" destination="Wtc-wi-9nk" id="AgU-yM-aL2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G31-XM-aSt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-155.07246376811597" y="126.5625"/>
+            <point key="canvasLocation" x="755.07246376811599" y="126.5625"/>
         </scene>
         <!--Date Picker View Controller-->
         <scene sceneID="itZ-vx-AGP">
             <objects>
-                <viewController id="uQT-4h-oMh" customClass="DatePickerViewController" sceneMemberID="viewController">
+                <viewController id="uQT-4h-oMh" customClass="DatePickerViewController" customModule="OutaTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kh5-vb-s8z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -165,7 +166,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kyI-PR-Gzs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="578" y="127"/>
+            <point key="canvasLocation" x="1486.9565217391305" y="126.5625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="p8y-ou-H4M">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ybo-6T-bIW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5M5-oj-AiZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FEU-hw-DQz" kind="relationship" relationship="rootViewController" id="aXg-A3-TKR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qvH-GO-QaJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="127"/>
         </scene>
     </scenes>
 </document>
