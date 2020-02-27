@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044AAC8A240776EB0080AFC4 /* TimeCircuit.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044AAC89240776EB0080AFC4 /* TimeCircuit.xib */; };
+		044AAC8C2407796A0080AFC4 /* TimeCircuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044AAC8B2407796A0080AFC4 /* TimeCircuit.swift */; };
 		0458514D24060DFC006401F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458514C24060DFC006401F8 /* AppDelegate.swift */; };
 		0458514F24060DFC006401F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458514E24060DFC006401F8 /* SceneDelegate.swift */; };
 		0458515424060DFC006401F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0458515224060DFC006401F8 /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		044AAC89240776EB0080AFC4 /* TimeCircuit.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeCircuit.xib; sourceTree = "<group>"; };
+		044AAC8B2407796A0080AFC4 /* TimeCircuit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuit.swift; sourceTree = "<group>"; };
 		0458514924060DFC006401F8 /* OutaTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutaTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0458514C24060DFC006401F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0458514E24060DFC006401F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				0458515224060DFC006401F8 /* Main.storyboard */,
+				044AAC8B2407796A0080AFC4 /* TimeCircuit.swift */,
+				044AAC89240776EB0080AFC4 /* TimeCircuit.xib */,
 				0458515724060DFF006401F8 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -167,6 +173,7 @@
 			files = (
 				0458515924060DFF006401F8 /* LaunchScreen.storyboard in Resources */,
 				0498F97C24071AF000226253 /* DigitaldreamFatSkew.ttf in Resources */,
+				044AAC8A240776EB0080AFC4 /* TimeCircuit.xib in Resources */,
 				0458515624060DFF006401F8 /* Assets.xcassets in Resources */,
 				0458515424060DFC006401F8 /* Main.storyboard in Resources */,
 			);
@@ -181,6 +188,7 @@
 			files = (
 				0458516324060E72006401F8 /* DatePickerViewController.swift in Sources */,
 				0458514D24060DFC006401F8 /* AppDelegate.swift in Sources */,
+				044AAC8C2407796A0080AFC4 /* TimeCircuit.swift in Sources */,
 				0458516124060E64006401F8 /* TimeCircuitsViewController.swift in Sources */,
 				0458514F24060DFC006401F8 /* SceneDelegate.swift in Sources */,
 			);
