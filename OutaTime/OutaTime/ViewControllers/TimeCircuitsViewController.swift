@@ -80,7 +80,7 @@ class TimeCircuitsViewController: UIViewController {
     func showAlert() {
         guard let presentTime = presentTimeLabel.text else {return}
         let alert = UIAlertController(title: "Time Travel Successful",
-                                      message: "You're new date is \(presentTime))",
+                                      message: "You're new date is \(presentTime)",
                                       preferredStyle: .alert)
     
         let okAction = UIAlertAction(title: "Great Scott!", style: .cancel, handler: nil)
