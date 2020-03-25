@@ -24,14 +24,16 @@ class TimeCircuitsViewController: UIViewController {
     @IBOutlet weak var presentTimeLabel: UILabel!
     @IBOutlet weak var lastTimeDepartedLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
+    @IBOutlet weak var setDestinationButton: UIButton!
+    @IBOutlet weak var travelBackButton: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        fadeIn(label: presentTimeLabel)
         presentTimeLabel.text = dateFormatter.string(from: Date())
         speedLabel.text = String("\(currentSpeed) MPH")
+        UIView.animate(withDuration: 3) { self.setDestinationButton.alpha = 1 }
     }
     
     // MARK: - ACTIONS
@@ -39,42 +41,47 @@ class TimeCircuitsViewController: UIViewController {
         startTimer()
     }
     
-    
     // MARK: - NAVIGATION
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
         if segue.identifier == "ModalDestinationDatePickerSegue" {
+            // Get the new view controller using segue.destination.
+            guard let datePickerViewController = segue.destination as? DatePickerViewController else { return }
             // Pass the selected object to the new view controller.
-            guard let datePickerVC = segue.destination as? DatePickerViewController else { return }
-            datePickerVC.delegate = self
+            datePickerViewController.delegate = self
         }
     }
     
-    // MARK: - FUNCTIONS
+    // MARK: - Methods
     
     private func startTimer() {
         timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateSpeed(timer: ) )
+        fadeOut(button: travelBackButton)
     }
     
     private func resetTimer() {
         timer?.invalidate()
         timer = nil
+        fadeIn(button: setDestinationButton)
+        fadeOut(label: destinationTimeLabel)
+        fadeIn(label: lastTimeDepartedLabel)
     }
     
     private func updateSpeed(timer: Timer) {
         if currentSpeed <= 87 {
+            fadeIn(label: speedLabel)
             currentSpeed += 1
+            fadeOut(label: presentTimeLabel)
             speedLabel.text = "\(currentSpeed) MPH"
-            // FIXME: - update the speed label with the current speed
         } else if currentSpeed >= 88 {
             resetTimer()
 //            Update the value of the lastTimeDepartedLabel with the value from the presentTimeLabel.
+            fadeIn(label: lastTimeDepartedLabel)
             lastTimeDepartedLabel.text = presentTimeLabel.text
 //            Update the value of the presentTimeLabel with the value from the destinationTimeLabel.
+            fadeIn(label: presentTimeLabel)
             presentTimeLabel.text = destinationTimeLabel.text
 //            Reset the value of the current speed variable to 0.
+            fadeOut(label: speedLabel)
             currentSpeed = 0
 //            Show an alert view with a title "Time Travel Successful" and a message that says "You're new date is [insert present time here].".
             guard let date = presentTimeLabel.text else { return }
@@ -90,12 +97,30 @@ class TimeCircuitsViewController: UIViewController {
     
 }
 
-//  Create an extension of the class at the bottom of the file and make the class conform to the protocol from the date picker view controller (That means listing it after the VC's class name and at least stubbing out the required delegate functions).
+// MARK: - DatePickerDelegate
 extension TimeCircuitsViewController: DatePickerDelegate {
     func destinationDateWasChosen(date: Date) {
+        fadeIn(label: destinationTimeLabel)
+        fadeIn(button: travelBackButton)
+        fadeOut(button: setDestinationButton)
+        fadeOut(label: lastTimeDepartedLabel)
         destinationTimeLabel.text = dateFormatter.string(from: date)
     }
     
-    
-    
+}
+
+// MARK: - Animations
+extension TimeCircuitsViewController {
+    func fadeIn(label: UILabel) {
+        UIView.animate(withDuration: 2) { label.alpha = 1 }
+    }
+    func fadeOut(label: UILabel) {
+        UIView.animate(withDuration: 2) { label.alpha = 0 }
+    }
+    func fadeIn(button: UIButton) {
+        UIView.animate(withDuration: 2) { button.alpha = 1 }
+    }
+    func fadeOut(button: UIButton) {
+        UIView.animate(withDuration: 2) { button.alpha = 0 }
+    }
 }

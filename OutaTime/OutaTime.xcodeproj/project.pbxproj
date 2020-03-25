@@ -64,7 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				1D5848CC240728B1008B6DE6 /* View */,
-				1D5848CD240728BC008B6DE6 /* ViewControl */,
+				1D5848CD240728BC008B6DE6 /* Controller */,
 				1D5848CB240728A3008B6DE6 /* Resource */,
 			);
 			path = OutaTime;
@@ -91,13 +91,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		1D5848CD240728BC008B6DE6 /* ViewControl */ = {
+		1D5848CD240728BC008B6DE6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				1D5848C724072828008B6DE6 /* TimeCircuitsViewController.swift */,
 				1D5848C924072838008B6DE6 /* DatePickerViewController.swift */,
 			);
-			path = ViewControl;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
