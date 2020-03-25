@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="62" translatesAutoresizingMaskIntoConstraints="NO" id="T4e-iw-YwG">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="62" translatesAutoresizingMaskIntoConstraints="NO" id="T4e-iw-YwG">
                                 <rect key="frame" x="72" y="44" width="270.5" height="821.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESTINATION TIME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezC-HQ-CSP">
@@ -85,6 +85,12 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Bdc-Iv-rvD" firstAttribute="trailing" secondItem="T4e-iw-YwG" secondAttribute="trailing" constant="71.5" id="2Oy-9a-Hv2"/>
+                            <constraint firstItem="T4e-iw-YwG" firstAttribute="top" secondItem="Bdc-Iv-rvD" secondAttribute="top" id="7p6-cv-eTo"/>
+                            <constraint firstItem="T4e-iw-YwG" firstAttribute="bottom" secondItem="Bdc-Iv-rvD" secondAttribute="bottom" constant="3.5" id="C7N-dZ-CRA"/>
+                            <constraint firstItem="T4e-iw-YwG" firstAttribute="leading" secondItem="Bdc-Iv-rvD" secondAttribute="leading" constant="72" id="nJu-9o-OB3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Bdc-Iv-rvD"/>
                     </view>
                     <connections>

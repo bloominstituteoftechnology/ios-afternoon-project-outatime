@@ -27,6 +27,7 @@ class TimeCircuitsViewController: UIViewController {
     @IBAction func travelBackButton(_ sender: Any) {
     }
     
+    // Date Formatter
     private var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "MMM d, yyyy"
@@ -34,7 +35,13 @@ class TimeCircuitsViewController: UIViewController {
         return formatter
     }()
     
-    // dateformatter M3, d, yyyy
+  // TO DO: CURRENT SPEED
+    
+    func currentSpeedFunc() {
+        var currentSpeed = 0
+    speedDetailLabel.text = "\(currentSpeed) MPH"
+       }
+    
     
     
     
@@ -44,7 +51,22 @@ class TimeCircuitsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        lastDepartedDetailLabel.text = "---- -- ----"
+        
+        
+        
+        // Setting present time detail label to current date
+        presentTimeDetailLabel.text = DateFormatter.localizedString(from: Date(), dateStyle: .long, timeStyle: .none)
+        
+        // current speed
+//
+        
+       
+        
+        
+        
+        
         // Do any additional setup after loading the view.
     }
     

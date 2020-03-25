@@ -8,7 +8,15 @@
 
 import UIKit
 
-class DatePickerViewController: UIViewController {
+protocol DatePickerDelegate {
+    func destinationDateWasChosen(date: Date) {
+    
+    }
+    
+    
+}
+
+class DatePickerViewController: UIViewController{
     
     @IBAction func setDestinationTime(_ sender: Any) {
     }
@@ -21,6 +29,13 @@ class DatePickerViewController: UIViewController {
     
     @IBAction func cancelDateButton(_ sender: Any) {
     }
+    
+    
+    var delegate = DatePickerDelegate()
+    
+    
+    
+    
     
 
     override func viewDidLoad() {
