@@ -18,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8ECDECEE242C095100B39B6F /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
 		8EF6798B242BE6090015730F /* OutaTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutaTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF6798E242BE6090015730F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EF67990242BE6090015730F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +70,7 @@
 				8EF67997242BE60D0015730F /* Assets.xcassets */,
 				8EF67999242BE60D0015730F /* LaunchScreen.storyboard */,
 				8EF6799C242BE60D0015730F /* Info.plist */,
+				8ECDECEE242C095100B39B6F /* digital-7.ttf */,
 			);
 			path = OutaTime;
 			sourceTree = "<group>";

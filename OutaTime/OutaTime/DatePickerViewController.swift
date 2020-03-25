@@ -8,15 +8,20 @@
 
 import UIKit
 
+
+// Delegate
 protocol DatePickerDelegate {
-    func destinationDateWasChosen(date: Date) {
-    
-    }
-    
-    
+    func destinationDateWasChosen(date: Date)
 }
 
-class DatePickerViewController: UIViewController{
+
+
+
+class DatePickerViewController: UIViewController {
+    
+    // declaring delegate
+    var delegate: DatePickerDelegate?
+    
     
     @IBAction func setDestinationTime(_ sender: Any) {
     }
@@ -31,9 +36,9 @@ class DatePickerViewController: UIViewController{
     }
     
     
-    var delegate = DatePickerDelegate()
-    
-    
+   
+
+  
     
     
     
