@@ -39,7 +39,6 @@
                                 <state key="normal" title="TRAVEL BACK"/>
                                 <connections>
                                     <action selector="travelBackButtonTapped:" destination="FEU-hw-DQz" eventType="touchUpInside" id="nMs-Ye-kVC"/>
-                                    <action selector="travelBackTapped:" destination="FEU-hw-DQz" eventType="touchUpInside" id="XI4-8F-6bz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rib-7o-bxL">
@@ -181,7 +180,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qvH-GO-QaJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="48" y="127"/>
+            <point key="canvasLocation" x="-12" y="127"/>
         </scene>
     </scenes>
 </document>

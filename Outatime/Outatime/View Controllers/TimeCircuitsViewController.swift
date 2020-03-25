@@ -59,6 +59,7 @@ class TimeCircuitsViewController: UIViewController {
             lastTimeTextField.text = presentTimeTextField.text
             presentTimeTextField.text = destinationTextField.text
             speed = 0
+            speedTextField.text = "\(speed) MPH"
             alert()
         }
     }
@@ -82,7 +83,7 @@ class TimeCircuitsViewController: UIViewController {
         
         if segue.identifier == "ModalDestinationDatePickerSegue" {
             guard let datePickerVC = segue.destination as? DatePickerViewController else {
-                return
+                fatalError("Error with date picker.")
             }
             datePickerVC.delegate = self
         }
