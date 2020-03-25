@@ -23,9 +23,24 @@ class TimeCircuitsViewController: UIViewController {
     @IBOutlet weak var speedLabel: UILabel!
     @IBOutlet weak var speedDetailLabel: UILabel!
     
-   
+   // Travel back (reset) button
     @IBAction func travelBackButton(_ sender: Any) {
     }
+    
+    private var dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM d, yyyy"
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        return formatter
+    }()
+    
+    // dateformatter M3, d, yyyy
+    
+    
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

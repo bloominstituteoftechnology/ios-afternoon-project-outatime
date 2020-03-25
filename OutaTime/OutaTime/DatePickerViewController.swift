@@ -10,13 +10,17 @@ import UIKit
 
 class DatePickerViewController: UIViewController {
     
-    
-    @IBAction func setDestinationTimeButton(_ sender: Any) {
+    @IBAction func setDestinationTime(_ sender: Any) {
     }
     
     
     
+    @IBAction func saveDateButton(_ sender: Any) {
+    }
     
+    
+    @IBAction func cancelDateButton(_ sender: Any) {
+    }
     
 
     override func viewDidLoad() {
