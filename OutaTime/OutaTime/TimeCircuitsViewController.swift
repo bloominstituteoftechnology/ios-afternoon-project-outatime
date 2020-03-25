@@ -43,6 +43,11 @@ class TimeCircuitsViewController: UIViewController {
         return formatter
     }()
     
+    
+    
+    
+    
+    
     //  TO DO: CURRENT SPEED
     //    var currentSpeed = 0
     //    func currentSpeedFunc(speed: Int) {
