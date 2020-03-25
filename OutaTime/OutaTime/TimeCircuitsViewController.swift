@@ -10,6 +10,8 @@ import UIKit
 
 class TimeCircuitsViewController: UIViewController {
     
+    
+    
     // Destination Outlets
     @IBOutlet weak var destinationTimeLabel: UILabel!
     @IBOutlet weak var destinationTimeDetailLabel: UILabel!
@@ -25,6 +27,12 @@ class TimeCircuitsViewController: UIViewController {
     
    // Travel back (reset) button
     @IBAction func travelBackButton(_ sender: Any) {
+        
+        
+        
+        
+        
+        
     }
     
     // Date Formatter
@@ -35,42 +43,23 @@ class TimeCircuitsViewController: UIViewController {
         return formatter
     }()
     
-//  TO DO: CURRENT SPEED
-    
-    
-    
-//    var currentSpeed = 0
-//    func currentSpeedFunc(speed: Int) {
-//        var speed = currentSpeed
-//    speedDetailLabel.text = "\(currentSpeed) MPH"
-//       }
-    
-    
-    
-    
-    
-    
-    
-    
+    //  TO DO: CURRENT SPEED
+    //    var currentSpeed = 0
+    //    func currentSpeedFunc(speed: Int) {
+    //        var speed = currentSpeed
+    //    speedDetailLabel.text = "\(currentSpeed) MPH"
+    //       }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // set last departed date
         lastDepartedDetailLabel.text = "---- -- ----"
-        
-        
         
         // Setting present time detail label to current date
         presentTimeDetailLabel.text = DateFormatter.localizedString(from: Date(), dateStyle: .long, timeStyle: .none)
         
         // current speed
-//        currentSpeedFunc()
-        
-       
-        
-        
-        
-        
-        // Do any additional setup after loading the view.
+        // currentSpeedFunc()
     }
     
 
@@ -79,6 +68,14 @@ class TimeCircuitsViewController: UIViewController {
 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "ModalDestinationDatePickerSegue" {
+            if let datePickerVC = segue.destination as? DatePickerViewController {
+                datePickerVC.delegate = self
+            }
+        }
+        
+        
         
     }
     
