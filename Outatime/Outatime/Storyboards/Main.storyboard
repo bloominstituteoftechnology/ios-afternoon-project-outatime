@@ -15,17 +15,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="AuX-iE-xFb">
-                                <rect key="frame" x="89" y="414" width="221.5" height="81"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="AuX-iE-xFb">
+                                <rect key="frame" x="8" y="414" width="398" height="81"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAST TIME DEPARTED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6BR-cz-fDp">
-                                        <rect key="frame" x="0.0" y="0.0" width="221.5" height="20.5"/>
+                                        <rect key="frame" x="88.5" y="0.0" width="221.5" height="20.5"/>
                                         <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="--- -- ----" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kuv-4a-14V">
-                                        <rect key="frame" x="7" y="22.5" width="208" height="58.5"/>
+                                        <rect key="frame" x="95" y="22.5" width="208" height="58.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="41"/>
@@ -33,52 +33,32 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNg-vO-wsF">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNg-vO-wsF">
                                 <rect key="frame" x="155" y="803" width="98" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="TRAVEL BACK"/>
                                 <connections>
                                     <action selector="travelBackButtonTapped:" destination="FEU-hw-DQz" eventType="touchUpInside" id="nMs-Ye-kVC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rib-7o-bxL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rib-7o-bxL">
                                 <rect key="frame" x="111" y="765" width="189" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="SET DESTINATION TIME"/>
                                 <connections>
                                     <segue destination="uQT-4h-oMh" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="aN0-sg-b5y"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="wtV-hg-lvh">
-                                <rect key="frame" x="96" y="90" width="231" height="73"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESTINATION TIME" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23d-al-gCd">
-                                        <rect key="frame" x="0.0" y="0.0" width="231" height="20.5"/>
-                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="JAN 01 2000" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dOn-Gz-qsb">
-                                        <rect key="frame" x="0.0" y="21.5" width="231" height="51.5"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rLD-Vu-kji">
-                                <rect key="frame" x="73" y="255" width="268" height="87"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rLD-Vu-kji">
+                                <rect key="frame" x="8" y="255" width="398" height="87"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRESENT TIME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4D-2J-mQ3">
-                                        <rect key="frame" x="58.5" y="0.0" width="151" height="20.5"/>
+                                        <rect key="frame" x="123.5" y="0.0" width="151" height="20.5"/>
                                         <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="JUN 12, 2019" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yk4-VE-7CJ">
-                                        <rect key="frame" x="0.0" y="28.5" width="268" height="58.5"/>
+                                        <rect key="frame" x="65" y="28.5" width="268" height="58.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="41"/>
@@ -86,17 +66,17 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="T69-uF-FGm">
-                                <rect key="frame" x="119" y="566" width="150" height="81"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="T69-uF-FGm">
+                                <rect key="frame" x="8" y="566" width="398" height="81"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPEED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsw-zA-8h9">
-                                        <rect key="frame" x="41" y="0.0" width="68" height="20.5"/>
+                                        <rect key="frame" x="165" y="0.0" width="68" height="20.5"/>
                                         <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0 MPH" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wtc-wi-9nk">
-                                        <rect key="frame" x="0.0" y="22.5" width="150" height="58.5"/>
+                                        <rect key="frame" x="124" y="22.5" width="150" height="58.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="41"/>
@@ -104,8 +84,44 @@
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="wtV-hg-lvh">
+                                <rect key="frame" x="8" y="130" width="386" height="73"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESTINATION TIME" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23d-al-gCd">
+                                        <rect key="frame" x="94.5" y="0.0" width="197.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="JAN 01 2000" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dOn-Gz-qsb">
+                                        <rect key="frame" x="77.5" y="21.5" width="231" height="51.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="tertiarySystemFillColor" red="0.46274509800000002" green="0.46274509800000002" blue="0.50196078430000002" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wtV-hg-lvh" firstAttribute="leading" secondItem="8i6-h3-qih" secondAttribute="leading" constant="8" id="1XZ-fC-zXF"/>
+                            <constraint firstAttribute="bottom" secondItem="Rib-7o-bxL" secondAttribute="bottom" constant="99" id="47g-Df-UFl"/>
+                            <constraint firstItem="8i6-h3-qih" firstAttribute="trailing" secondItem="rLD-Vu-kji" secondAttribute="trailing" constant="8" id="CzD-95-RhT"/>
+                            <constraint firstItem="Rib-7o-bxL" firstAttribute="top" secondItem="T69-uF-FGm" secondAttribute="bottom" constant="118" id="GnM-s0-qKQ"/>
+                            <constraint firstItem="iNg-vO-wsF" firstAttribute="top" secondItem="Rib-7o-bxL" secondAttribute="bottom" constant="6" id="NdE-QW-vUG"/>
+                            <constraint firstItem="iNg-vO-wsF" firstAttribute="leading" secondItem="8i6-h3-qih" secondAttribute="leading" constant="155" id="NeR-GY-ewN"/>
+                            <constraint firstItem="8i6-h3-qih" firstAttribute="trailing" secondItem="wtV-hg-lvh" secondAttribute="trailing" constant="20" id="Rwg-id-xff"/>
+                            <constraint firstItem="wtV-hg-lvh" firstAttribute="top" secondItem="8i6-h3-qih" secondAttribute="top" constant="42" id="Tki-RY-CdA"/>
+                            <constraint firstItem="Rib-7o-bxL" firstAttribute="leading" secondItem="8i6-h3-qih" secondAttribute="leading" constant="111" id="VIw-aN-ugd"/>
+                            <constraint firstItem="T69-uF-FGm" firstAttribute="leading" secondItem="8i6-h3-qih" secondAttribute="leading" constant="8" id="Z7w-ld-odQ"/>
+                            <constraint firstItem="rLD-Vu-kji" firstAttribute="top" secondItem="wtV-hg-lvh" secondAttribute="bottom" constant="52" id="aVL-89-KSJ"/>
+                            <constraint firstItem="8i6-h3-qih" firstAttribute="trailing" secondItem="T69-uF-FGm" secondAttribute="trailing" constant="8" id="h7s-JA-9rg"/>
+                            <constraint firstItem="rLD-Vu-kji" firstAttribute="leading" secondItem="8i6-h3-qih" secondAttribute="leading" constant="8" id="irG-Ch-mHD"/>
+                            <constraint firstItem="8i6-h3-qih" firstAttribute="trailing" secondItem="AuX-iE-xFb" secondAttribute="trailing" constant="8" id="ozB-3W-c9d"/>
+                            <constraint firstItem="AuX-iE-xFb" firstAttribute="top" secondItem="rLD-Vu-kji" secondAttribute="bottom" constant="72" id="sI8-aB-inU"/>
+                            <constraint firstItem="AuX-iE-xFb" firstAttribute="leading" secondItem="8i6-h3-qih" secondAttribute="leading" constant="8" id="uRh-qb-Qbe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8i6-h3-qih"/>
                     </view>
                     <navigationItem key="navigationItem" id="Yds-0A-hoZ"/>
