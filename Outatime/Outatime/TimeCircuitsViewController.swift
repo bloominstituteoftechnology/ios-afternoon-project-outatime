@@ -15,16 +15,13 @@ class TimeCircuitsViewController: UIViewController {
     @IBOutlet weak var departedLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
     
-    
-    
     @IBOutlet weak var destinationTextField: UITextField!
     @IBOutlet weak var presentTimeTextField: UITextField!
     @IBOutlet weak var lastTimeTextField: UITextField!
     @IBOutlet weak var speedTextField: UITextField!
     
     
-    
-    
+    var speed = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,8 +33,18 @@ class TimeCircuitsViewController: UIViewController {
         
     }
     
+    var dateFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM dd, yyyy"
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        return formatter
+    }
     
-    
+    func textFields() {
+        presentTimeTextField.text = dateFormatter.string(from: Date())
+        speedTextField.text = "\(speed) MPH"
+        lastTimeTextField.text = "--- -- ---"
+    }
     
     /*
     // MARK: - Navigation
