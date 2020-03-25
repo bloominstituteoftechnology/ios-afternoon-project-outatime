@@ -38,6 +38,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="TRAVEL BACK"/>
                                 <connections>
+                                    <action selector="travelBackButtonTapped:" destination="FEU-hw-DQz" eventType="touchUpInside" id="nMs-Ye-kVC"/>
                                     <action selector="travelBackTapped:" destination="FEU-hw-DQz" eventType="touchUpInside" id="XI4-8F-6bz"/>
                                 </connections>
                             </button>
@@ -65,9 +66,6 @@
                                         <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="destinationTextField:" destination="FEU-hw-DQz" eventType="editingDidEnd" id="g43-8O-7vZ"/>
-                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -113,13 +111,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="Yds-0A-hoZ"/>
                     <connections>
-                        <outlet property="departedLabel" destination="6BR-cz-fDp" id="snc-nQ-hQ7"/>
-                        <outlet property="destinationLabel" destination="23d-al-gCd" id="9ck-tJ-1a3"/>
                         <outlet property="destinationTextField" destination="dOn-Gz-qsb" id="8KG-CB-IAv"/>
                         <outlet property="lastTimeTextField" destination="Kuv-4a-14V" id="Zna-TA-wHC"/>
-                        <outlet property="presentLabel" destination="N4D-2J-mQ3" id="kOB-H2-oLn"/>
                         <outlet property="presentTimeTextField" destination="yk4-VE-7CJ" id="GNi-e3-mVQ"/>
-                        <outlet property="speedLabel" destination="Nsw-zA-8h9" id="FSP-8v-obF"/>
                         <outlet property="speedTextField" destination="Wtc-wi-9nk" id="AgU-yM-aL2"/>
                     </connections>
                 </viewController>

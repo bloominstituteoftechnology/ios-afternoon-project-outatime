@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		FE02A0CA242BF20000EE5027 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE02A0C9242BF20000EE5027 /* AppDelegate.swift */; };
 		FE02A0CC242BF20000EE5027 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE02A0CB242BF20000EE5027 /* SceneDelegate.swift */; };
-		FE02A0CE242BF20000EE5027 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE02A0CD242BF20000EE5027 /* ViewController.swift */; };
 		FE02A0D3242BF20200EE5027 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE02A0D2242BF20200EE5027 /* Assets.xcassets */; };
 		FE02A0D6242BF20200EE5027 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE02A0D4242BF20200EE5027 /* LaunchScreen.storyboard */; };
 		FE02A0E2242BF36300EE5027 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE02A0E1242BF36300EE5027 /* TimeCircuitsViewController.swift */; };
@@ -21,7 +20,6 @@
 		FE02A0C6242BF20000EE5027 /* Outatime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Outatime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE02A0C9242BF20000EE5027 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE02A0CB242BF20000EE5027 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FE02A0CD242BF20000EE5027 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FE02A0D2242BF20200EE5027 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE02A0D5242BF20200EE5027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE02A0D7242BF20200EE5027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,17 +58,40 @@
 		FE02A0C8242BF20000EE5027 /* Outatime */ = {
 			isa = PBXGroup;
 			children = (
-				FE02A0C9242BF20000EE5027 /* AppDelegate.swift */,
-				FE02A0CB242BF20000EE5027 /* SceneDelegate.swift */,
-				FE02A0CD242BF20000EE5027 /* ViewController.swift */,
-				FE02A0E5242BF4A500EE5027 /* Main.storyboard */,
-				FE02A0E1242BF36300EE5027 /* TimeCircuitsViewController.swift */,
-				FE02A0E3242BF37000EE5027 /* DatePickerViewController.swift */,
-				FE02A0D2242BF20200EE5027 /* Assets.xcassets */,
-				FE02A0D4242BF20200EE5027 /* LaunchScreen.storyboard */,
+				FE02A0E8242C08DF00EE5027 /* Storyboards */,
+				FE02A0E9242C08F000EE5027 /* View Controllers */,
 				FE02A0D7242BF20200EE5027 /* Info.plist */,
+				FE02A0E7242C08C600EE5027 /* Resources */,
 			);
 			path = Outatime;
+			sourceTree = "<group>";
+		};
+		FE02A0E7242C08C600EE5027 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FE02A0D2242BF20200EE5027 /* Assets.xcassets */,
+				FE02A0C9242BF20000EE5027 /* AppDelegate.swift */,
+				FE02A0CB242BF20000EE5027 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FE02A0E8242C08DF00EE5027 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FE02A0E5242BF4A500EE5027 /* Main.storyboard */,
+				FE02A0D4242BF20200EE5027 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FE02A0E9242C08F000EE5027 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FE02A0E1242BF36300EE5027 /* TimeCircuitsViewController.swift */,
+				FE02A0E3242BF37000EE5027 /* DatePickerViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +165,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE02A0CE242BF20000EE5027 /* ViewController.swift in Sources */,
 				FE02A0E4242BF37000EE5027 /* DatePickerViewController.swift in Sources */,
 				FE02A0CA242BF20000EE5027 /* AppDelegate.swift in Sources */,
 				FE02A0E2242BF36300EE5027 /* TimeCircuitsViewController.swift in Sources */,
