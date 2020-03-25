@@ -23,12 +23,12 @@ class DatePickerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //datePicker.dataSource = self
+        
     }
-    
+
     //Actions
     @IBAction func ButtonDone(_ sender: UIButton) {
-        #warning("Still need to assign date!")
+        currentDate = datePicker.date
         delegate?.destinationDateWasChosen(date: currentDate)
         dismiss(animated: true, completion: nil)
     }
@@ -46,3 +46,4 @@ class DatePickerViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
 }
+

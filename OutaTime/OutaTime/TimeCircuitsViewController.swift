@@ -27,7 +27,6 @@ class TimeCircuitsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewLabels()
-        LabelDestinationTime.font = UIFont(name: "digital-7", size: 15)
     }
     
     //Functions
@@ -72,6 +71,5 @@ class TimeCircuitsViewController: UIViewController {
 extension TimeCircuitsViewController: DatePickerDelegate {
     func destinationDateWasChosen(date: Date) {
         LabelDestinationTime.text = dateFormatter.string(for: date)
-        
     }
 }
