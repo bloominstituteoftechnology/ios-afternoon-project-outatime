@@ -27,12 +27,18 @@ class TimeCircuitsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewLabels()
+        LabelDestinationTime.font = UIFont(name: "digital-7", size: 15)
     }
     
+    //Functions
     func viewLabels() {
         LabelCurrentTime.text = dateFormatter.string(from: Date())
         LabelSpeed.text = String(speed) + " MPH"
         LabelLastTimeDeparted.text = "--- -- ----"
+    }
+    
+    func timerTrigger(timer: Timer) {
+        LabelSpeed.text = "1,000,000 MPH"
     }
     
     //Actions
@@ -41,8 +47,10 @@ class TimeCircuitsViewController: UIViewController {
     }
     
     @IBAction func ButtonTravelBack(_ sender: UIButton) {
-    
+        var timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: false, block: timerTrigger(timer:))
     }
+    
+    
     
     // MARK: - Navigation
 
@@ -63,6 +71,7 @@ class TimeCircuitsViewController: UIViewController {
 
 extension TimeCircuitsViewController: DatePickerDelegate {
     func destinationDateWasChosen(date: Date) {
-        //Nothing
+        LabelDestinationTime.text = dateFormatter.string(for: date)
+        
     }
 }

@@ -14,7 +14,7 @@
 		DDE96677242BAD8800A956A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDE96675242BAD8800A956A2 /* LaunchScreen.storyboard */; };
 		DDE96681242BADE200A956A2 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE96680242BADE200A956A2 /* DatePickerViewController.swift */; };
 		DDE96683242BAF1800A956A2 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE96682242BAF1800A956A2 /* TimeCircuitsViewController.swift */; };
-		DDE9668B242BB57C00A956A2 /* Digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDE9668A242BB57C00A956A2 /* Digital-7.ttf */; };
+		DDE9668D242C021400A956A2 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDE9668C242C021400A956A2 /* digital-7.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		DDE96678242BAD8800A956A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDE96680242BADE200A956A2 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		DDE96682242BAF1800A956A2 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
-		DDE9668A242BB57C00A956A2 /* Digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Digital-7.ttf"; sourceTree = "<group>"; };
+		DDE9668C242C021400A956A2 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 		DDE96669242BAD8600A956A2 /* OutaTime */ = {
 			isa = PBXGroup;
 			children = (
-				DDE9668A242BB57C00A956A2 /* Digital-7.ttf */,
+				DDE9668C242C021400A956A2 /* digital-7.ttf */,
 				DDE9666A242BAD8600A956A2 /* AppDelegate.swift */,
 				DDE9666C242BAD8600A956A2 /* SceneDelegate.swift */,
 				DDE96670242BAD8600A956A2 /* Main.storyboard */,
@@ -134,7 +134,7 @@
 				DDE96677242BAD8800A956A2 /* LaunchScreen.storyboard in Resources */,
 				DDE96674242BAD8800A956A2 /* Assets.xcassets in Resources */,
 				DDE96672242BAD8600A956A2 /* Main.storyboard in Resources */,
-				DDE9668B242BB57C00A956A2 /* Digital-7.ttf in Resources */,
+				DDE9668D242C021400A956A2 /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
