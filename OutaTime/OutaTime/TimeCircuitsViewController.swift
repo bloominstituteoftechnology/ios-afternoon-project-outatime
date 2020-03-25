@@ -35,12 +35,15 @@ class TimeCircuitsViewController: UIViewController {
         return formatter
     }()
     
-  // TO DO: CURRENT SPEED
+//  TO DO: CURRENT SPEED
     
-    func currentSpeedFunc() {
-        var currentSpeed = 0
-    speedDetailLabel.text = "\(currentSpeed) MPH"
-       }
+    
+    
+//    var currentSpeed = 0
+//    func currentSpeedFunc(speed: Int) {
+//        var speed = currentSpeed
+//    speedDetailLabel.text = "\(currentSpeed) MPH"
+//       }
     
     
     
@@ -60,7 +63,7 @@ class TimeCircuitsViewController: UIViewController {
         presentTimeDetailLabel.text = DateFormatter.localizedString(from: Date(), dateStyle: .long, timeStyle: .none)
         
         // current speed
-//
+//        currentSpeedFunc()
         
        
         
@@ -76,8 +79,7 @@ class TimeCircuitsViewController: UIViewController {
 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
     }
     
    
@@ -87,9 +89,6 @@ extension TimeCircuitsViewController: DatePickerDelegate {
     func destinationDateWasChosen(date: Date) {
         
     }
-    
-    
-       
-   }
+}
 
 

@@ -19,6 +19,8 @@ protocol DatePickerDelegate {
 
 class DatePickerViewController: UIViewController {
     
+    
+    
     // declaring delegate
     var delegate: DatePickerDelegate?
     
@@ -29,10 +31,14 @@ class DatePickerViewController: UIViewController {
     
     
     @IBAction func saveDateButton(_ sender: Any) {
+        
+        delegate?.destinationDateWasChosen(date: Date())
+        dismiss(animated: true, completion: nil)
     }
     
     
     @IBAction func cancelDateButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     
