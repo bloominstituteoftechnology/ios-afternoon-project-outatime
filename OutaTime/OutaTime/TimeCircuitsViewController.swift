@@ -23,32 +23,44 @@ class TimeCircuitsViewController: UIViewController {
         return formatter
     }
     var speed = 0
+    var timer = TimerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         viewLabels()
+        timer.delegate = self
     }
     
     //Functions
     func viewLabels() {
+        LabelDestinationTime.text = dateFormatter.string(from: Date())
         LabelCurrentTime.text = dateFormatter.string(from: Date())
         LabelSpeed.text = String(speed) + " MPH"
         LabelLastTimeDeparted.text = "--- -- ----"
     }
     
-    func timerTrigger(timer: Timer) {
-        LabelSpeed.text = "1,000,000 MPH"
+    func updateSpeed() {
+        LabelSpeed.text = String(speed) + " MPH"
+        print("Speed Updated")
+    }
+    
+    func updateDestination(date: Date) {
+        LabelDestinationTime.text = dateFormatter.string(from: date)
+    }
+    
+    func updateDeparted() {
+        LabelLastTimeDeparted.text = LabelCurrentTime.text
+        LabelCurrentTime.text = LabelDestinationTime.text
     }
     
     //Actions
     @IBAction func ButtonSetDestinationTime(_ sender: UIButton) {
-    
+
     }
     
     @IBAction func ButtonTravelBack(_ sender: UIButton) {
-        var timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: false, block: timerTrigger(timer:))
+        timer.startTimer()
     }
-    
     
     
     // MARK: - Navigation
@@ -70,6 +82,6 @@ class TimeCircuitsViewController: UIViewController {
 
 extension TimeCircuitsViewController: DatePickerDelegate {
     func destinationDateWasChosen(date: Date) {
-        LabelDestinationTime.text = dateFormatter.string(for: date)
+        updateDestination(date: date)
     }
 }

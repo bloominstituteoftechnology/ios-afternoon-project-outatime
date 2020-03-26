@@ -15,6 +15,7 @@
 		DDE96681242BADE200A956A2 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE96680242BADE200A956A2 /* DatePickerViewController.swift */; };
 		DDE96683242BAF1800A956A2 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE96682242BAF1800A956A2 /* TimeCircuitsViewController.swift */; };
 		DDE9668D242C021400A956A2 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDE9668C242C021400A956A2 /* digital-7.ttf */; };
+		DDE9668F242C31D300A956A2 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE9668E242C31D300A956A2 /* Timer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		DDE96680242BADE200A956A2 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		DDE96682242BAF1800A956A2 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
 		DDE9668C242C021400A956A2 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
+		DDE9668E242C31D300A956A2 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				DDE96678242BAD8800A956A2 /* Info.plist */,
 				DDE96680242BADE200A956A2 /* DatePickerViewController.swift */,
 				DDE96682242BAF1800A956A2 /* TimeCircuitsViewController.swift */,
+				DDE9668E242C31D300A956A2 /* Timer.swift */,
 			);
 			path = OutaTime;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				DDE96681242BADE200A956A2 /* DatePickerViewController.swift in Sources */,
 				DDE96683242BAF1800A956A2 /* TimeCircuitsViewController.swift in Sources */,
 				DDE9666B242BAD8600A956A2 /* AppDelegate.swift in Sources */,
+				DDE9668F242C31D300A956A2 /* Timer.swift in Sources */,
 				DDE9666D242BAD8600A956A2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

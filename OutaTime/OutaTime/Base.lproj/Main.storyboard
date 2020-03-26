@@ -20,7 +20,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="TRAVEL BACK"/>
                                 <connections>
-                                    <action selector="ButtonTravelBack:" destination="YYK-Eo-gmL" eventType="touchUpInside" id="CW4-Vl-qrR"/>
+                                    <action selector="ButtonTravelBack:" destination="YYK-Eo-gmL" eventType="touchUpInside" id="o2D-nL-DvD"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="w0m-Ok-d2D">
@@ -105,9 +105,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="SET DESTINATION TIME"/>
                                 <connections>
-                                    <action selector="ButtonSetDestinationTime:" destination="YYK-Eo-gmL" eventType="touchUpInside" id="5zv-Ue-XYZ"/>
-                                    <action selector="ButtonTravelBack:" destination="YYK-Eo-gmL" eventType="touchUpInside" id="oV5-2q-MOf"/>
-                                    <segue destination="XTr-qa-8sq" kind="presentation" identifier="ModalDestinationDatePickerSegue" id="EXQ-uk-HFg"/>
+                                    <action selector="ButtonSetDestinationTime:" destination="YYK-Eo-gmL" eventType="touchUpInside" id="NhP-lp-ZrL"/>
+                                    <segue destination="XTr-qa-8sq" kind="show" identifier="ModalDestinationDatePickerSegue" id="gM3-MX-MBa"/>
                                 </connections>
                             </button>
                         </subviews>
