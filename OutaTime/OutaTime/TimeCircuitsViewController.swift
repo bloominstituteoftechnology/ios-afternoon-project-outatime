@@ -43,7 +43,7 @@ class TimeCircuitsViewController: UIViewController {
     
 
     private func startTimer(){
-        timer = Timer.scheduledTimer(withTimeInterval: 0.03, repeats: true, block: updateSpeed(timer:))
+        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateSpeed(timer:))
     }
     
     private func resetTimer(){
