@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:OutaTime.xcodeproj">
+      location = "group:/Users/chrisdobek/Documents/iOSDevelopment/ios-afternoon-project-outatime/OutaTime/OutaTime/DatePickerDelegate.swift">
+   </FileRef>
+   <FileRef
+      location = "container:../digital-7.ttf">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
