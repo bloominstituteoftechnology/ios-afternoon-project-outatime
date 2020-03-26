@@ -37,6 +37,5 @@ class TimerController {
         
         delegate?.speed += 1
         delegate?.updateSpeed()
-        print(delegate?.speed ?? "NOTHING")
     }
 }

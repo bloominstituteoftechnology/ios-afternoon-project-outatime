@@ -41,7 +41,6 @@ class TimeCircuitsViewController: UIViewController {
     
     func updateSpeed() {
         LabelSpeed.text = String(speed) + " MPH"
-        print("Speed Updated")
     }
     
     func updateDestination(date: Date) {
@@ -51,6 +50,10 @@ class TimeCircuitsViewController: UIViewController {
     func updateDeparted() {
         LabelLastTimeDeparted.text = LabelCurrentTime.text
         LabelCurrentTime.text = LabelDestinationTime.text
+        let alert = UIAlertController(title: "Time Travel", message: "Traveled to \(LabelDestinationTime.text ?? "No Destination")", preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alert.addAction(alertAction)
+        present(alert, animated: true, completion: nil)
     }
     
     //Actions
