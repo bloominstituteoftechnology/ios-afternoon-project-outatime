@@ -18,6 +18,7 @@ class TimeCircuitsViewController: UIViewController {
     
     override func viewDidLoad() {
     super.viewDidLoad()
+    updateLabels()
     }
     
     
@@ -27,14 +28,14 @@ class TimeCircuitsViewController: UIViewController {
     
     private var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = "MMM dd yyyy"
+        formatter.dateFormat = "EEE, MMM dd, yyyy"
         return formatter
     }()
 
     var speed = 0
     private var timer: Timer?
     
-    func updateViews(){
+    func updateLabels(){
     presentTimeLabel.text = dateFormatter.string(from: Date())
     speedLabel.text = "\(speed) MPH"
     lastTimeDepartedLabel.text = "--- --- ---"
