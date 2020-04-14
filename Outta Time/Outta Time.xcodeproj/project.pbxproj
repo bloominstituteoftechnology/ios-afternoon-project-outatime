@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A439FE8244685390022CB6E /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A439FE7244684930022CB6E /* digital-7.ttf */; };
 		6ABE387B2446274300DE2AFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABE387A2446274300DE2AFA /* AppDelegate.swift */; };
 		6ABE387D2446274300DE2AFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABE387C2446274300DE2AFA /* SceneDelegate.swift */; };
 		6ABE387F2446274300DE2AFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABE387E2446274300DE2AFA /* ViewController.swift */; };
 		6ABE38822446274300DE2AFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ABE38802446274300DE2AFA /* Main.storyboard */; };
 		6ABE38842446274500DE2AFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ABE38832446274500DE2AFA /* Assets.xcassets */; };
 		6ABE38872446274500DE2AFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ABE38852446274500DE2AFA /* LaunchScreen.storyboard */; };
+		6ABE388F2446287400DE2AFA /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABE388E2446287400DE2AFA /* TimeCircuitsViewController.swift */; };
+		6ABE38912446289A00DE2AFA /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABE38902446289A00DE2AFA /* DatePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6ABE38772446274300DE2AFA /* Outta Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Outta Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A439FE7244684930022CB6E /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
+		6ABE38772446274300DE2AFA /* OutaTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutaTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ABE387A2446274300DE2AFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6ABE387C2446274300DE2AFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6ABE387E2446274300DE2AFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		6ABE38832446274500DE2AFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6ABE38862446274500DE2AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6ABE38882446274600DE2AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6ABE388E2446287400DE2AFA /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
+		6ABE38902446289A00DE2AFA /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +54,7 @@
 		6ABE38782446274300DE2AFA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6ABE38772446274300DE2AFA /* Outta Time.app */,
+				6ABE38772446274300DE2AFA /* OutaTime.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,10 +65,13 @@
 				6ABE387A2446274300DE2AFA /* AppDelegate.swift */,
 				6ABE387C2446274300DE2AFA /* SceneDelegate.swift */,
 				6ABE387E2446274300DE2AFA /* ViewController.swift */,
+				6ABE388E2446287400DE2AFA /* TimeCircuitsViewController.swift */,
+				6ABE38902446289A00DE2AFA /* DatePickerViewController.swift */,
 				6ABE38802446274300DE2AFA /* Main.storyboard */,
 				6ABE38832446274500DE2AFA /* Assets.xcassets */,
 				6ABE38852446274500DE2AFA /* LaunchScreen.storyboard */,
 				6ABE38882446274600DE2AFA /* Info.plist */,
+				6A439FE7244684930022CB6E /* digital-7.ttf */,
 			);
 			path = "Outta Time";
 			sourceTree = "<group>";
@@ -84,7 +93,7 @@
 			);
 			name = "Outta Time";
 			productName = "Outta Time";
-			productReference = 6ABE38772446274300DE2AFA /* Outta Time.app */;
+			productReference = 6ABE38772446274300DE2AFA /* OutaTime.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -128,6 +137,7 @@
 				6ABE38872446274500DE2AFA /* LaunchScreen.storyboard in Resources */,
 				6ABE38842446274500DE2AFA /* Assets.xcassets in Resources */,
 				6ABE38822446274300DE2AFA /* Main.storyboard in Resources */,
+				6A439FE8244685390022CB6E /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +149,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ABE387F2446274300DE2AFA /* ViewController.swift in Sources */,
+				6ABE38912446289A00DE2AFA /* DatePickerViewController.swift in Sources */,
 				6ABE387B2446274300DE2AFA /* AppDelegate.swift in Sources */,
+				6ABE388F2446287400DE2AFA /* TimeCircuitsViewController.swift in Sources */,
 				6ABE387D2446274300DE2AFA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +303,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ahava.Outta-Time";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = OutaTime;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -308,7 +320,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ahava.Outta-Time";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = OutaTime;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
