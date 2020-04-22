@@ -24,23 +24,65 @@ class TimeCircuitsViewController: UIViewController {
          return formatter
      }()
     
+    var speed: Double = 0
+    
+    func updateViews() {
+        presentTimeLabel.text = dateFormatter.string(from: Date())
+        mphLabel.text = "\(speed) MPH"
+        lastTimeDepartedLabel.text = "--- -- ----"
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 //MARK: ACTIONS
+    var timer: Timer?
     
     @IBAction func travelBackTapped(_ sender: Any) {
+        startTimer()
     }
     
-    /*
+   func startTimer() {
+    timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateSpeed(timer:))
+    }
+    
+   func resetTimer() {
+        timer?.invalidate()
+        timer = nil
+    }
+    
+   func updateSpeed(timer: Timer) {
+    if speed <= 88 {
+    speed += 1
+    mphLabel.text = "\(speed)"
+    } else {
+        if speed >= 88 {
+            resetTimer()
+            lastTimeDepartedLabel.text = presentTimeLabel.text
+            presentTimeLabel.text = destinationTimeLabel.text
+            speed = 0
+        }
+    }
+}
+        
+    private func showAlert(date: String) {
+            let alert = UIAlertController(title: "Time Travel Successful", message: "Your new date is \(date)", preferredStyle: .alert)
+                present(alert, animated: true, completion: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ModalDestinationDatePickerSegue" {
+            guard let datePickerVC = segue.destination as? DatePickerViewController else
+            { return }
+            datePickerVC.delegate = self
+        }
+    }
+}
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
+extension TimeCircuitsViewController: DatePickerDelegate {
+func destinationDateWasChosen(_ date: Date) {
+    destinationTimeLabel.text = dateFormatter.string(from: date)
+}
 }

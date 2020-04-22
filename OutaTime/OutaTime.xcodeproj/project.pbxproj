@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B467C2162450F6DD000CEA58 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B467C2152450F6DD000CEA58 /* digital-7.ttf */; };
 		B4CF9D7D2450D52A00342718 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CF9D7C2450D52A00342718 /* AppDelegate.swift */; };
 		B4CF9D7F2450D52A00342718 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CF9D7E2450D52A00342718 /* SceneDelegate.swift */; };
 		B4CF9D842450D52A00342718 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CF9D822450D52A00342718 /* Main.storyboard */; };
@@ -14,10 +15,10 @@
 		B4CF9D892450D53000342718 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CF9D872450D53000342718 /* LaunchScreen.storyboard */; };
 		B4CF9D912450D56900342718 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CF9D902450D56900342718 /* TimeCircuitsViewController.swift */; };
 		B4CF9D932450D58300342718 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CF9D922450D58300342718 /* DatePickerViewController.swift */; };
-		B4CF9D952450DA2300342718 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4CF9D942450DA1600342718 /* digital-7.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B467C2152450F6DD000CEA58 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
 		B4CF9D792450D52A00342718 /* OutaTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutaTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4CF9D7C2450D52A00342718 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4CF9D7E2450D52A00342718 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,7 +28,6 @@
 		B4CF9D8A2450D53000342718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4CF9D902450D56900342718 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
 		B4CF9D922450D58300342718 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
-		B4CF9D942450DA1600342718 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../../digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,7 @@
 				B4CF9D8A2450D53000342718 /* Info.plist */,
 				B4CF9D902450D56900342718 /* TimeCircuitsViewController.swift */,
 				B4CF9D922450D58300342718 /* DatePickerViewController.swift */,
-				B4CF9D942450DA1600342718 /* digital-7.ttf */,
+				B467C2152450F6DD000CEA58 /* digital-7.ttf */,
 			);
 			path = OutaTime;
 			sourceTree = "<group>";
@@ -134,7 +134,7 @@
 				B4CF9D892450D53000342718 /* LaunchScreen.storyboard in Resources */,
 				B4CF9D862450D53000342718 /* Assets.xcassets in Resources */,
 				B4CF9D842450D52A00342718 /* Main.storyboard in Resources */,
-				B4CF9D952450DA2300342718 /* digital-7.ttf in Resources */,
+				B467C2162450F6DD000CEA58 /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +293,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JKA99996Q5;
 				INFOPLIST_FILE = OutaTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +312,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JKA99996Q5;
 				INFOPLIST_FILE = OutaTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
