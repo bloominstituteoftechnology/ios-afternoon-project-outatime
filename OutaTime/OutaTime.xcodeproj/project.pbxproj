@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		BE1A14FF2450C584002D4277 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1A14FE2450C584002D4277 /* AppDelegate.swift */; };
 		BE1A15012450C584002D4277 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1A15002450C584002D4277 /* SceneDelegate.swift */; };
-		BE1A15032450C584002D4277 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1A15022450C584002D4277 /* ViewController.swift */; };
 		BE1A15062450C584002D4277 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE1A15042450C584002D4277 /* Main.storyboard */; };
 		BE1A15082450C586002D4277 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE1A15072450C586002D4277 /* Assets.xcassets */; };
 		BE1A150B2450C586002D4277 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE1A15092450C586002D4277 /* LaunchScreen.storyboard */; };
 		BE1A15162450C586002D4277 /* OutaTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1A15152450C586002D4277 /* OutaTimeTests.swift */; };
 		BE1A15212450C586002D4277 /* OutaTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1A15202450C586002D4277 /* OutaTimeUITests.swift */; };
+		BE1A15322450C634002D4277 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1A15312450C634002D4277 /* TimeCircuitsViewController.swift */; };
+		BE1A15342450C63E002D4277 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1A15332450C63E002D4277 /* DatePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,6 @@
 		BE1A14FB2450C584002D4277 /* OutaTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutaTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE1A14FE2450C584002D4277 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE1A15002450C584002D4277 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BE1A15022450C584002D4277 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE1A15052450C584002D4277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE1A15072450C586002D4277 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE1A150A2450C586002D4277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,9 @@
 		BE1A151C2450C586002D4277 /* OutaTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OutaTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE1A15202450C586002D4277 /* OutaTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutaTimeUITests.swift; sourceTree = "<group>"; };
 		BE1A15222450C586002D4277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE1A15312450C634002D4277 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
+		BE1A15332450C63E002D4277 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		BE1A15352450C71B002D4277 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,7 @@
 		BE1A14F22450C584002D4277 = {
 			isa = PBXGroup;
 			children = (
+				BE1A15352450C71B002D4277 /* digital-7.ttf */,
 				BE1A14FD2450C584002D4277 /* OutaTime */,
 				BE1A15142450C586002D4277 /* OutaTimeTests */,
 				BE1A151F2450C586002D4277 /* OutaTimeUITests */,
@@ -99,9 +103,11 @@
 		BE1A14FD2450C584002D4277 /* OutaTime */ = {
 			isa = PBXGroup;
 			children = (
+				BE1A15302450C61E002D4277 /* controller */,
+				BE1A152F2450C61A002D4277 /* view */,
+				BE1A152E2450C614002D4277 /* model */,
 				BE1A14FE2450C584002D4277 /* AppDelegate.swift */,
 				BE1A15002450C584002D4277 /* SceneDelegate.swift */,
-				BE1A15022450C584002D4277 /* ViewController.swift */,
 				BE1A15042450C584002D4277 /* Main.storyboard */,
 				BE1A15072450C586002D4277 /* Assets.xcassets */,
 				BE1A15092450C586002D4277 /* LaunchScreen.storyboard */,
@@ -126,6 +132,29 @@
 				BE1A15222450C586002D4277 /* Info.plist */,
 			);
 			path = OutaTimeUITests;
+			sourceTree = "<group>";
+		};
+		BE1A152E2450C614002D4277 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		BE1A152F2450C61A002D4277 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BE1A15302450C61E002D4277 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				BE1A15312450C634002D4277 /* TimeCircuitsViewController.swift */,
+				BE1A15332450C63E002D4277 /* DatePickerViewController.swift */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE1A15032450C584002D4277 /* ViewController.swift in Sources */,
+				BE1A15342450C63E002D4277 /* DatePickerViewController.swift in Sources */,
 				BE1A14FF2450C584002D4277 /* AppDelegate.swift in Sources */,
+				BE1A15322450C634002D4277 /* TimeCircuitsViewController.swift in Sources */,
 				BE1A15012450C584002D4277 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
