@@ -59,6 +59,7 @@
 		7948C8C22450D962007ED4CD /* OutaTime */ = {
 			isa = PBXGroup;
 			children = (
+				7948C8DC2450E156007ED4CD /* digital-7.ttf */,
 				7948C8DB2450D9EC007ED4CD /* ViewControllers */,
 				7948C8C32450D962007ED4CD /* AppDelegate.swift */,
 				7948C8C52450D962007ED4CD /* SceneDelegate.swift */,
@@ -66,7 +67,6 @@
 				7948C8CC2450D962007ED4CD /* Assets.xcassets */,
 				7948C8CE2450D962007ED4CD /* LaunchScreen.storyboard */,
 				7948C8D12450D962007ED4CD /* Info.plist */,
-				7948C8DC2450E156007ED4CD /* digital-7.ttf */,
 			);
 			path = OutaTime;
 			sourceTree = "<group>";
