@@ -20,7 +20,7 @@ class DatePickerViewController: UIViewController {
     var delegate: DatePickerDelegate?
     
     @IBAction func cancelTapped(_ sender: UIBarButtonItem) {
-        dismiss(animated: true, completion: nil) // dismisses this view controller
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func doneTapped(_ sender: UIBarButtonItem) {
@@ -32,7 +32,7 @@ class DatePickerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        datePicker.datePickerMode = .date // super important
+        datePicker.datePickerMode = .date
     
     }
 

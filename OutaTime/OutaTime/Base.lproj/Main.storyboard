@@ -35,6 +35,9 @@
                                         <rect key="frame" x="58" y="95" width="85" height="30"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="Travel Back"/>
+                                        <connections>
+                                            <action selector="travelBackButtonTapped:" destination="ysI-se-EAf" eventType="touchUpInside" id="mOQ-jv-Uca"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
