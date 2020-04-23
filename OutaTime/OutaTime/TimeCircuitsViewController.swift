@@ -38,7 +38,7 @@ class TimeCircuitsViewController: UIViewController {
 //MARK: ACTIONS
     var timer: Timer?
     
-    @IBAction func travelBackTapped(_ sender: Any) {
+    @IBAction func travelBackTapped(_ sender: UIButton) {
         startTimer()
     }
     
@@ -52,32 +52,36 @@ class TimeCircuitsViewController: UIViewController {
     }
     
    func updateSpeed(timer: Timer) {
-    if speed <= 88 {
+    guard speed <= 88 else {
     speed += 1
     mphLabel.text = "\(speed)"
-    } else {
-        if speed >= 88 {
-            resetTimer()
-            lastTimeDepartedLabel.text = presentTimeLabel.text
-            presentTimeLabel.text = destinationTimeLabel.text
-            speed = 0
-        }
-    }
-}
-        
-    private func showAlert(date: String) {
-            let alert = UIAlertController(title: "Time Travel Successful", message: "Your new date is \(date)", preferredStyle: .alert)
-                present(alert, animated: true, completion: nil)
-    }
+        return }
+        resetTimer()
+        lastTimeDepartedLabel.text = presentTimeLabel.text
+        presentTimeLabel.text = destinationTimeLabel.text
+        speed = 0
+    
+    
+    let alert = UIAlertController(title: "Time Travel Successful", message: "Your new date is \(presentTimeLabel.text)", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Done", style: .cancel, handler: nil))
+    
+        present(alert, animated: true, completion: nil)
+            }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ModalDestinationDatePickerSegue" {
-            guard let datePickerVC = segue.destination as? DatePickerViewController else
-            { return }
-            datePickerVC.delegate = self
-        }
+        guard let datePickerVC = segue.destination as? DatePickerViewController else
+        { return }
+        datePickerVC.delegate = self
     }
 }
+    
+    private func showAlert(date: String) {
+    
+}
+
+    }
+
     // MARK: - Navigation
 
 
