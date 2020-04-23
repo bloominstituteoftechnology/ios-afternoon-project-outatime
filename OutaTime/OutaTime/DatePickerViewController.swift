@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol DatePickerDelegate {
+    func destinationDateWasChosen(_: Date)
+}
+
 class DatePickerViewController: UIViewController {
  
     var delegate: DatePickerDelegate?
@@ -30,6 +34,4 @@ class DatePickerViewController: UIViewController {
     }
     
 }
-protocol DatePickerDelegate {
-    func destinationDateWasChosen(_: Date)
-}
+

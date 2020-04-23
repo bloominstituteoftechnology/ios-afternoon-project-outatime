@@ -52,7 +52,7 @@ class TimeCircuitsViewController: UIViewController {
     }
     
    func updateSpeed(timer: Timer) {
-    guard speed <= 88 else {
+    guard speed >= 88 else {
     speed += 1
     mphLabel.text = "\(speed)"
         return }
@@ -62,7 +62,7 @@ class TimeCircuitsViewController: UIViewController {
         speed = 0
     
     
-    let alert = UIAlertController(title: "Time Travel Successful", message: "Your new date is \(presentTimeLabel.text)", preferredStyle: .alert)
+    let alert = UIAlertController(title: "Time Travel Successful", message: "Your new date is \(presentTimeLabel.text ?? "")", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Done", style: .cancel, handler: nil))
     
         present(alert, animated: true, completion: nil)
