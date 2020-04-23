@@ -87,6 +87,9 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="lkH-em-VVC" firstAttribute="top" relation="greaterThanOrEqual" secondItem="rNv-a2-hef" secondAttribute="bottom" constant="30" id="cMP-ah-Wx7"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -100,11 +103,9 @@
                     </view>
                     <connections>
                         <outlet property="destinationTimeDetailLabel" destination="cvy-0K-bWC" id="doe-qQ-HCf"/>
-                        <outlet property="destinationTimeLabel" destination="ezC-HQ-CSP" id="tvF-8G-3uE"/>
                         <outlet property="lastDepartedDetailLabel" destination="idg-Oi-zdZ" id="8k8-UF-Wwq"/>
-                        <outlet property="lastDepartedLabel" destination="1Wt-Zt-YgW" id="iQ0-b5-RLe"/>
                         <outlet property="presentTimeDetailLabel" destination="moZ-ia-JD0" id="nXi-NW-yzi"/>
-                        <outlet property="presentTimeLabel" destination="XcG-Qj-23n" id="RRw-SM-hOv"/>
+                        <outlet property="speedDetailLabel" destination="XMz-8W-gUA" id="PcI-JO-3Df"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7u2-zg-Bba" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -153,6 +154,9 @@
                         <viewLayoutGuide key="safeArea" id="Szu-Iy-OY1"/>
                     </view>
                     <navigationItem key="navigationItem" id="5gH-R5-AZT"/>
+                    <connections>
+                        <outlet property="datePicker" destination="69D-8T-LTy" id="CKY-5N-9Tg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GB7-z3-bi2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

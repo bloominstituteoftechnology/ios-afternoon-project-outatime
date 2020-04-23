@@ -10,87 +10,120 @@ import UIKit
 
 class TimeCircuitsViewController: UIViewController {
     
-    
-    
     // Destination Outlets
-    @IBOutlet weak var destinationTimeLabel: UILabel!
+    
     @IBOutlet weak var destinationTimeDetailLabel: UILabel!
+    
     // Present Time Outlets
-    @IBOutlet weak var presentTimeLabel: UILabel!
+    
     @IBOutlet weak var presentTimeDetailLabel: UILabel!
+    
     //Last Departed Outlets
-    @IBOutlet weak var lastDepartedLabel: UILabel!
+    
     @IBOutlet weak var lastDepartedDetailLabel: UILabel!
+    
     // Speed Outlets
-    @IBOutlet weak var speedLabel: UILabel!
+    
     @IBOutlet weak var speedDetailLabel: UILabel!
     
-   // Travel back (reset) button
+    // Travel back (reset) button
+    
     @IBAction func travelBackButton(_ sender: Any) {
         
-        
-        
-        
-        
-        
+        if(destinationTimeDetailLabel.text == "--- -- ----") {
+            showSetDestinationAlert()
+        } else {
+            startTimer()
+        }
     }
     
     // Date Formatter
-    private var dateFormatter: DateFormatter = {
+    var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "MMM d, yyyy"
         formatter.timeZone = TimeZone(secondsFromGMT: 0)
         return formatter
     }()
     
+    // Properties
+    private var timer: Timer?
+    private var destinationDate: Date?
+    var currentSpeed = 0
     
-    
-    
-    
-    
-    //  TO DO: CURRENT SPEED
-    //    var currentSpeed = 0
-    //    func currentSpeedFunc(speed: Int) {
-    //        var speed = currentSpeed
-    //    speedDetailLabel.text = "\(currentSpeed) MPH"
-    //       }
-
+    //View Did load
     override func viewDidLoad() {
         super.viewDidLoad()
-        // set last departed date
-        lastDepartedDetailLabel.text = "---- -- ----"
+        updateViews()
         
         // Setting present time detail label to current date
         presentTimeDetailLabel.text = DateFormatter.localizedString(from: Date(), dateStyle: .long, timeStyle: .none)
-        
-        // current speed
-        // currentSpeedFunc()
     }
     
-
+    private func showAlert() {
+        let alert = UIAlertController(title: "Time Travel Successful", message: "Your new date is \(presentTimeDetailLabel.text!).", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
     
+    private func showSetDestinationAlert() {
+        let alert = UIAlertController(title: "Set Destination Time!", message: "Your destination is \(destinationTimeDetailLabel.text!).", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func updateViews() {
+        
+        let date = Date()
+        presentTimeDetailLabel.text = dateFormatter.string(from: date)
+        destinationTimeDetailLabel.text = "--- -- ----"
+        lastDepartedDetailLabel.text = "--- -- ----"
+        speedDetailLabel.text = "\(currentSpeed) MPH"
+    }
+    
+    func startTimer() {
+        cancelTimer()
+        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateSpeed(timer:))
+    }
+    
+    func resetTimer() {
+        cancelTimer()
+    }
+    
+    func cancelTimer() {
+        timer?.invalidate()
+        timer = nil
+    }
+    
+    private func updateSpeed(timer: Timer) {
+        
+        if (currentSpeed < 88) {
+            currentSpeed += 1
+            speedDetailLabel.text = "\(currentSpeed) MPH"
+        } else {
+            cancelTimer()
+            lastDepartedDetailLabel.text = presentTimeDetailLabel.text
+            presentTimeDetailLabel.text = destinationTimeDetailLabel.text
+            currentSpeed = 0
+            speedDetailLabel.text = "\(currentSpeed) MPH"
+            showAlert()
+        }
+    }
     // MARK: - Navigation
-
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "ModalDestinationDatePickerSegue" {
             if let datePickerVC = segue.destination as? DatePickerViewController {
                 datePickerVC.delegate = self
+                datePickerVC.destinationDate = self.destinationDate
             }
         }
-        
-        
-        
     }
-    
-   
-
 }
 extension TimeCircuitsViewController: DatePickerDelegate {
-    func destinationDateWasChosen(date: Date) {
+    func destinationDateWasChosen(_ destinationDate: Date) {
         
+        destinationTimeDetailLabel.text = dateFormatter.string(from: destinationDate)
+        self.destinationDate = destinationDate
     }
 }
-
-

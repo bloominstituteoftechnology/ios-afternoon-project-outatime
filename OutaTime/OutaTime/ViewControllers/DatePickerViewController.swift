@@ -8,65 +8,34 @@
 
 import UIKit
 
-
-// Delegate
 protocol DatePickerDelegate {
-    func destinationDateWasChosen(date: Date)
+    func destinationDateWasChosen(_ destinationDate: Date)
 }
-
-
-
 
 class DatePickerViewController: UIViewController {
     
-    
-    
-    // declaring delegate
+    @IBOutlet weak var datePicker: UIDatePicker!
     var delegate: DatePickerDelegate?
-    
-    
-    @IBAction func setDestinationTime(_ sender: Any) {
-        
-        
-        
-    }
-    
-    
+    var destinationDate: Date?
     
     @IBAction func saveDateButton(_ sender: Any) {
         
-        delegate?.destinationDateWasChosen(date: Date())
+        delegate?.destinationDateWasChosen(Date())
         dismiss(animated: true, completion: nil)
     }
-    
     
     @IBAction func cancelDateButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
-    
-   
-
-  
-    
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        updateViews()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func updateViews() {
+        
+        guard let destinationDate = destinationDate else { return }
+        datePicker.setDate(destinationDate, animated: true)
     }
-    */
-
 }
