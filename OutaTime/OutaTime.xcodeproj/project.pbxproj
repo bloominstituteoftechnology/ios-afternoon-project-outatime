@@ -26,6 +26,7 @@
 		0B06A99E2457D7BD002EA490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B06A9A52457D894002EA490 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
 		0B06A9A72457D8A4002EA490 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		0B06A9A92457DA89002EA490 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../../digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +65,7 @@
 				0B06A9962457D7BA002EA490 /* Main.storyboard */,
 				0B06A9992457D7BD002EA490 /* Assets.xcassets */,
 				0B06A99B2457D7BD002EA490 /* LaunchScreen.storyboard */,
+				0B06A9A92457DA89002EA490 /* digital-7.ttf */,
 				0B06A99E2457D7BD002EA490 /* Info.plist */,
 			);
 			path = OutaTime;

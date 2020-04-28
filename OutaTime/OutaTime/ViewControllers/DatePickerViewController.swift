@@ -9,13 +9,27 @@
 import UIKit
 
 class DatePickerViewController: UIViewController {
-
+    //MARK: - IBOutlets
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
+    //MARK: - Properties
+    
+    //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
+    //MARK: - IBActions
+    @IBAction func cancelButtonTapped(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func saveButtonTapped(_ sender: Any) {
+    }
+    
+    //MARK: - Helper Functions
 
     /*
     // MARK: - Navigation
