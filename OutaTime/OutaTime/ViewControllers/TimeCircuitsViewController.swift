@@ -60,7 +60,7 @@ class TimeCircuitsViewController: UIViewController {
     func updateSpeed(timer: Timer){
         if speed < 88{
             speed += 1
-            speedLabel.text = "\(speed)) MPH"
+            speedLabel.text = "\(speed) MPH"
         } else {
         resetTimer()
         lastDepatureLabel.text = presentTimeLabel.text
