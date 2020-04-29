@@ -18,6 +18,7 @@ class TimeCircuitsViewController: UIViewController {
     
     // MARK: - IBActions
     @IBAction func travelBackButtonPressed(_ sender: Any) {
+        startTimer()
     }
     
     var dateFormatter: DateFormatter = {
@@ -29,28 +30,55 @@ class TimeCircuitsViewController: UIViewController {
     
     var currentSpeed: Int = 0
     
+    var timer: Timer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         presentTimeLabel.text = dateFormatter.string(from: Date())
         mphLabel.text = String(currentSpeed)
-        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func startTimer() {
+        let timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateSpeed(timer:))
     }
-    */
-
+    
+    func resetTimer() {
+        timer?.invalidate()
+        timer = nil
+    }
+    
+    func updateSpeed(timer: Timer) {
+        if currentSpeed < 88 {
+            currentSpeed += 1
+            mphLabel.text = String(currentSpeed)
+        } else {
+            resetTimer()
+            lastTimeDepartedLabel.text = presentTimeLabel.text
+            presentTimeLabel.text = destinationTimeLabel.text
+            currentSpeed = 0
+            alert()
+        }
+    }
+    
+    func alert() {
+        let alert = UIAlertController(title: "Time Travel Successful", message: "Your new date is \(presentTimeLabel.text ?? "Unknown")", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+    
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let timeVC = segue.destination as? DatePickerViewController {
+            timeVC.delegate = self
+        }
+    }
+    
 }
 
 extension TimeCircuitsViewController: DatePickerDelegate {
     func destinationDateWasChosen(date: Date) {
+        destinationTimeLabel.text = dateFormatter.string(from: date)
     }
     
 }
