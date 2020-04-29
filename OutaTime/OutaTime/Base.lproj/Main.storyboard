@@ -139,7 +139,7 @@
                     <connections>
                         <outlet property="destinationTimePicker" destination="5Do-mO-h6x" id="C3g-Lh-KE4"/>
                         <outlet property="lastTimeDepartedPicker" destination="jiy-c0-xO5" id="vcR-Qy-XiW"/>
-                        <outlet property="presetnTimePicker" destination="rwq-Ul-had" id="MrP-bG-ugd"/>
+                        <outlet property="presentTimePicker" destination="rwq-Ul-had" id="ebn-qr-tFE"/>
                         <outlet property="speedPicker" destination="gvX-7U-geE" id="fmD-Vj-sy2"/>
                     </connections>
                 </viewController>

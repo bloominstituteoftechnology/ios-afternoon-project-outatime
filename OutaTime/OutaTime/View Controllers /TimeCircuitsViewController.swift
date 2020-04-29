@@ -16,7 +16,7 @@ class TimeCircuitsViewController: UIViewController {
     @IBOutlet weak var speedLabel: UILabel!
     
     @IBOutlet weak var destinationTimePicker: UIPickerView!
-    @IBOutlet weak var presetnTimePicker: UIPickerView!
+    @IBOutlet weak var presentTimePicker: UIPickerView!
     @IBOutlet weak var lastTimeDepartedPicker: UIPickerView!
     @IBOutlet weak var speedPicker: UIPickerView!
     
@@ -24,11 +24,21 @@ class TimeCircuitsViewController: UIViewController {
     @IBAction func travelBackButtonTapped(_ sender: Any) {
     }
     
+
+    var dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM d,yyy"
+        formatter.timeZone = TimeZone.init(secondsFromGMT: 0)
+        return formatter
+    }()
+    
     
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       
 
         // Do any additional setup after loading the view.
     }
