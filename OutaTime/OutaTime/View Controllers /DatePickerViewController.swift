@@ -21,10 +21,13 @@ class DatePickerViewController: UIViewController {
     
     
     @IBAction func cancelButtonTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     
     @IBAction func doneButtonTapped(_ sender: Any) {
+//        delegate?.destinationDateWasChosen(date: self)
+        dismiss(animated: true, completion: nil)
     }
     
     
