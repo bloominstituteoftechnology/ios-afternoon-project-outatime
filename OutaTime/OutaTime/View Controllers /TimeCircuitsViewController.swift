@@ -9,6 +9,23 @@
 import UIKit
 
 class TimeCircuitsViewController: UIViewController {
+    // Storyboard Tasks
+    @IBOutlet weak var destinationTimeLabel: UILabel!
+    @IBOutlet weak var presentTimeLabel: UILabel!
+    @IBOutlet weak var lastTimeDepartedLabel: UILabel!
+    @IBOutlet weak var speedLabel: UILabel!
+    
+    @IBOutlet weak var destinationTimePicker: UIPickerView!
+    @IBOutlet weak var presetnTimePicker: UIPickerView!
+    @IBOutlet weak var lastTimeDepartedPicker: UIPickerView!
+    @IBOutlet weak var speedPicker: UIPickerView!
+    
+    
+    @IBAction func travelBackButtonTapped(_ sender: Any) {
+    }
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
