@@ -33,6 +33,9 @@ class DatePickerViewController: UIViewController {
     }
     
     @IBAction func saveButtonTapped(_ sender: Any) {
+        let chosenDate = datePicker.date
+            delegate?.destinationDateWasChosen(date: chosenDate)
+            dismiss(animated: true, completion: nil)
     }
     
     //MARK: - Helper Functions
