@@ -14,6 +14,7 @@
 		E40A029A2457D95500E40FF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E40A02982457D95500E40FF5 /* LaunchScreen.storyboard */; };
 		E40A02A42457DAC500E40FF5 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40A02A32457DAC500E40FF5 /* TimeCircuitsViewController.swift */; };
 		E40A02A62457DAD800E40FF5 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40A02A52457DAD800E40FF5 /* DatePickerViewController.swift */; };
+		E471EAB1245912FC00C79E06 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E40A02A72457DC0500E40FF5 /* digital-7.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +27,7 @@
 		E40A029B2457D95500E40FF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E40A02A32457DAC500E40FF5 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
 		E40A02A52457DAD800E40FF5 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
-		E40A02A72457DC0500E40FF5 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "OutaTime/digital-7.ttf"; sourceTree = SOURCE_ROOT; };
+		E40A02A72457DC0500E40FF5 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +150,7 @@
 				E40A029A2457D95500E40FF5 /* LaunchScreen.storyboard in Resources */,
 				E40A02972457D95500E40FF5 /* Assets.xcassets in Resources */,
 				E40A02952457D95400E40FF5 /* Main.storyboard in Resources */,
+				E471EAB1245912FC00C79E06 /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
