@@ -14,6 +14,7 @@
 		514D8E17245890880082E79E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 514D8E15245890880082E79E /* LaunchScreen.storyboard */; };
 		514D8E1F245891010082E79E /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514D8E1E245891010082E79E /* TimeCircuitsViewController.swift */; };
 		514D8E21245891480082E79E /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514D8E20245891480082E79E /* DatePickerViewController.swift */; };
+		514D8E23245910EF0082E79E /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 514D8E222459100D0082E79E /* digital-7.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		514D8E18245890880082E79E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		514D8E1E245891010082E79E /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
 		514D8E20245891480082E79E /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		514D8E222459100D0082E79E /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "Assets.xcassets/digital-7.dataset/digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				514D8E0C245890860082E79E /* SceneDelegate.swift */,
 				514D8E1E245891010082E79E /* TimeCircuitsViewController.swift */,
 				514D8E20245891480082E79E /* DatePickerViewController.swift */,
+				514D8E222459100D0082E79E /* digital-7.ttf */,
 				514D8E10245890860082E79E /* Main.storyboard */,
 				514D8E13245890880082E79E /* Assets.xcassets */,
 				514D8E15245890880082E79E /* LaunchScreen.storyboard */,
@@ -131,6 +134,7 @@
 				514D8E17245890880082E79E /* LaunchScreen.storyboard in Resources */,
 				514D8E14245890880082E79E /* Assets.xcassets in Resources */,
 				514D8E12245890860082E79E /* Main.storyboard in Resources */,
+				514D8E23245910EF0082E79E /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
