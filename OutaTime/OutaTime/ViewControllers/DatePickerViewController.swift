@@ -23,7 +23,7 @@ class DatePickerViewController: UIViewController {
     
     //MARK: - IBActions
     @IBAction func cancelButtonTapped(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func saveButtonTapped(_ sender: Any) {

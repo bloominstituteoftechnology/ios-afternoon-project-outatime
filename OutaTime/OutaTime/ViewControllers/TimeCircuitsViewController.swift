@@ -18,6 +18,9 @@ class TimeCircuitsViewController: UIViewController {
     
     //MARK: - Properties
     
+    var dateFormatter: DateFormatter {
+        
+    }
     
     //MARK: - Lifecycle
     override func viewDidLoad() {
