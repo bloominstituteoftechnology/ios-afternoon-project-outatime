@@ -32,19 +32,12 @@ class TimeCircuitsViewController: UIViewController {
         return formatter
     }()
     
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -52,6 +45,13 @@ class TimeCircuitsViewController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
+    
+}
 
+extension TimeCircuitsViewController: DatePickerDelegate {
+    func destinationDateWasChosen(date: Date) {
+        <#code#>
+    }
+    
+    
 }
