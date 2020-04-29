@@ -17,16 +17,21 @@ class TimeCircuitsViewController: UIViewController {
     @IBOutlet weak var speedLabel: UILabel!
     
     //MARK: - Properties
-    
     var dateFormatter: DateFormatter {
-        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM dd yyyy"
+        formatter.timeZone = TimeZone.init(secondsFromGMT: 0)
+        return formatter
     }
+    
+    var speed = 0
     
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setPresentDate()
+        setLastDeparture()
+        setSpeed()
     }
     
     //MARK: - IBActions
@@ -35,7 +40,20 @@ class TimeCircuitsViewController: UIViewController {
     
     
     //MARK: - Helper Functions
+    func setPresentDate(){
+        let presentTime = Date()
+        let dateString = dateFormatter.string(from: presentTime)
+        presentTimeLabel.text = dateString
+    }
     
+    func setLastDeparture(){
+        lastDepatureLabel.text = "--- -- ----"
+    }
+    
+    func setSpeed(){
+        let speed = 0
+        speedLabel.text = "\(speed) MPH"
+    }
  
     
     
