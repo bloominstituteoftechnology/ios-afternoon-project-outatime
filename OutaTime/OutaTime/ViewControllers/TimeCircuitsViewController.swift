@@ -9,7 +9,7 @@
 import UIKit
 
 class TimeCircuitsViewController: UIViewController {
-
+    
     //MARK: - IBOutlets
     @IBOutlet weak var destinationDateLabel: UILabel!
     @IBOutlet weak var presentTimeLabel: UILabel!
@@ -25,6 +25,8 @@ class TimeCircuitsViewController: UIViewController {
     }
     
     var speed = 0
+    
+    var delegate : DatePickerDelegate?
     
     //MARK: - Lifecycle
     override func viewDidLoad() {
@@ -54,22 +56,22 @@ class TimeCircuitsViewController: UIViewController {
         let speed = 0
         speedLabel.text = "\(speed) MPH"
     }
- 
+    
     
     
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "ModalDestinationDatePickerSegue"{
+            guard let destinationVC = segue.destination as? DatePickerViewController else { return }
+            destinationVC.delegate = self
+        }
     }
     
-
 }
 
 extension TimeCircuitsViewController: DatePickerDelegate{
     func destinationDateWasChosen(date: Date) {
-        <#code#>
+        let dateString = dateFormatter.string(from: date)
+        destinationDateLabel.text = dateString
     }
 }
