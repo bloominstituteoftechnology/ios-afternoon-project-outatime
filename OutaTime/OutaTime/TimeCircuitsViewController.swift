@@ -24,7 +24,7 @@ class TimeCircuitsViewController: UIViewController {
     var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "MMM d, yyyy"
-        formatter.timeZone = TimeZone.init(secondsFromGMT: 0)
+        formatter.timeZone = TimeZone.init(secondsFromGMT: -25200) //-25200 is Pacific
         return formatter
     }()
     
@@ -34,17 +34,21 @@ class TimeCircuitsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateViews()
+    }
+    
+    func updateViews() {
         presentTimeLabel.text = dateFormatter.string(from: Date())
-        mphLabel.text = String(currentSpeed)
+        mphLabel.text = "\(String(currentSpeed)) MPH"
+        lastTimeDepartedLabel.text = "--- -- ----"
     }
     
     func startTimer() {
-        let timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateSpeed(timer:))
+        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateSpeed(timer:))
     }
     
     func resetTimer() {
         timer?.invalidate()
-        timer = nil
     }
     
     func updateSpeed(timer: Timer) {
@@ -56,6 +60,7 @@ class TimeCircuitsViewController: UIViewController {
             lastTimeDepartedLabel.text = presentTimeLabel.text
             presentTimeLabel.text = destinationTimeLabel.text
             currentSpeed = 0
+            mphLabel.text = "\(currentSpeed)"
             alert()
         }
     }
