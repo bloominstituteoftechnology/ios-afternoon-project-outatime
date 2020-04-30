@@ -26,7 +26,7 @@ class DatePickerViewController: UIViewController {
     
     
     @IBAction func doneButtonTapped(_ sender: Any) {
-//        delegate?.destinationDateWasChosen(date: self)
+        delegate?.destinationDateWasChosen(date: .init()) // Not sure if this will work --- Test  call the delegate method to inform the delegate of the new date chosen by the user
         dismiss(animated: true, completion: nil)
     }
     
@@ -41,7 +41,7 @@ class DatePickerViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -49,6 +49,6 @@ class DatePickerViewController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }

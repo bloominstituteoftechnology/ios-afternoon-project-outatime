@@ -9,48 +9,68 @@
 import UIKit
 
 class TimeCircuitsViewController: UIViewController {
+    
+    
     // Storyboard Tasks
     @IBOutlet weak var destinationTimeLabel: UILabel!
     @IBOutlet weak var presentTimeLabel: UILabel!
     @IBOutlet weak var lastTimeDepartedLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
     
-    @IBOutlet weak var destinationTimePicker: UIPickerView!
-    @IBOutlet weak var presentTimePicker: UIPickerView!
-    @IBOutlet weak var lastTimeDepartedPicker: UIPickerView!
-    @IBOutlet weak var speedPicker: UIPickerView!
+  var dateFormatter: DateFormatter = {
+      let formatter = DateFormatter()
+      formatter.dateFormat = "MMM d,yyy"
+      formatter.timeZone = TimeZone.init(secondsFromGMT: 0)
+      return formatter
+  }()
+    
+    func startTimer() {
+        
+    }
+    
+    func reset() {
+        
+    }
+    
+    private func updateSpeed(Timer: Timer) {
+       
+    }
+    
+    
+    var currentSpeed = 0
+    var destinationDate: Date?
+    
+    override func viewDidLoad() {
+            super.viewDidLoad()
+            
+            presentTimeLabel.text = dateFormatter.string(from: Date())
+            speedLabel.text = String("\(currentSpeed)" + "MPH") // test this out if not change it back
+            lastTimeDepartedLabel.text = "--- -- ----"
+
+            // Do any additional setup after loading the view.
+        }
     
     
     @IBAction func travelBackButtonTapped(_ sender: Any) {
+        startTimer()
     }
-    
 
-    var dateFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "MMM d,yyy"
-        formatter.timeZone = TimeZone.init(secondsFromGMT: 0)
-        return formatter
-    }()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
     
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "ModalDestinationDatePickerSegue" {
+            let timeVC = segue.destination as! DatePickerViewController
+            timeVC.delegate = self
+        }
     }
-    
 }
 
 extension TimeCircuitsViewController: DatePickerDelegate {
     func destinationDateWasChosen(date: Date) {
-        <#code#>
+        self.destinationDate = date
+        destinationTimeLabel.text = dateFormatter.string(from: date)
     }
     
     
