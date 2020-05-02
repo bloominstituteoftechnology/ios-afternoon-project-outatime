@@ -15,6 +15,7 @@
 		AD72AE5A2457DCBE00AC43DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD72AE582457DCBE00AC43DB /* LaunchScreen.storyboard */; };
 		AD72AE622457DD4000AC43DB /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD72AE612457DD4000AC43DB /* TimeCircuitsViewController.swift */; };
 		AD72AE642457DD5900AC43DB /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD72AE632457DD5900AC43DB /* DatePickerViewController.swift */; };
+		AD72AE67245935CB00AC43DB /* time-circuits.png in Resources */ = {isa = PBXBuildFile; fileRef = AD72AE66245935CA00AC43DB /* time-circuits.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		AD72AE5B2457DCBE00AC43DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD72AE612457DD4000AC43DB /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
 		AD72AE632457DD5900AC43DB /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		AD72AE652457DE3600AC43DB /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../digital-7.ttf"; sourceTree = "<group>"; };
+		AD72AE66245935CA00AC43DB /* time-circuits.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "time-circuits.png"; path = "../time-circuits.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +49,8 @@
 			children = (
 				AD72AE4C2457DCBD00AC43DB /* OutaTime */,
 				AD72AE4B2457DCBD00AC43DB /* Products */,
+				AD72AE652457DE3600AC43DB /* digital-7.ttf */,
+				AD72AE66245935CA00AC43DB /* time-circuits.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +138,7 @@
 			files = (
 				AD72AE5A2457DCBE00AC43DB /* LaunchScreen.storyboard in Resources */,
 				AD72AE572457DCBE00AC43DB /* Assets.xcassets in Resources */,
+				AD72AE67245935CB00AC43DB /* time-circuits.png in Resources */,
 				AD72AE552457DCBD00AC43DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
