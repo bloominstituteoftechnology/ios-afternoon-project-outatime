@@ -109,6 +109,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="q0q-x8-xkg"/>
                     </view>
+                    <connections>
+                        <outlet property="destinationTimeLabel" destination="RVb-eJ-7Zp" id="xv9-nn-cLb"/>
+                        <outlet property="lastTimeDepartedLabel" destination="U09-Uc-2dU" id="OTN-8F-tFx"/>
+                        <outlet property="presentTimeLabel" destination="kQl-eF-PKW" id="ib2-AH-snv"/>
+                        <outlet property="speedLabel" destination="9hG-8z-7ql" id="Qud-1r-mBV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OZs-F1-VaL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
