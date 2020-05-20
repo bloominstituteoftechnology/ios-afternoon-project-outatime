@@ -139,9 +139,24 @@
                     <view key="view" contentMode="scaleToFill" id="Yd1-qy-Krz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="hqj-Cb-oZt">
+                                <rect key="frame" x="47" y="340" width="320" height="216"/>
+                            </datePicker>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hqj-Cb-oZt" firstAttribute="centerX" secondItem="Yd1-qy-Krz" secondAttribute="centerX" id="6zS-GF-rhw"/>
+                            <constraint firstItem="hqj-Cb-oZt" firstAttribute="centerY" secondItem="Yd1-qy-Krz" secondAttribute="centerY" id="Vya-ht-kW8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7S4-YX-rI3"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Cancel" id="id7-OP-sSl"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="eGN-Tw-yVi"/>
+                        <barButtonItem title="Save" id="xCw-QS-fgT"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ihH-I5-a0O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
