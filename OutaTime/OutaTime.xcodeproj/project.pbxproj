@@ -14,6 +14,7 @@
 		4B395A8B2475AEE20051E1AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B395A892475AEE20051E1AD /* LaunchScreen.storyboard */; };
 		4B395A932475AF2C0051E1AD /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B395A922475AF2C0051E1AD /* TimeCircuitsViewController.swift */; };
 		4B395A952475AF460051E1AD /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B395A942475AF460051E1AD /* DatePickerViewController.swift */; };
+		4B395A972475D2E20051E1AD /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B395A962475CF100051E1AD /* digital-7.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4B395A8C2475AEE20051E1AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B395A922475AF2C0051E1AD /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
 		4B395A942475AF460051E1AD /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		4B395A962475CF100051E1AD /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../../digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				4B395A802475AEE00051E1AD /* SceneDelegate.swift */,
 				4B395A842475AEE00051E1AD /* Main.storyboard */,
 				4B395A872475AEE20051E1AD /* Assets.xcassets */,
+				4B395A962475CF100051E1AD /* digital-7.ttf */,
 				4B395A892475AEE20051E1AD /* LaunchScreen.storyboard */,
 				4B395A8C2475AEE20051E1AD /* Info.plist */,
 			);
@@ -131,6 +134,7 @@
 				4B395A8B2475AEE20051E1AD /* LaunchScreen.storyboard in Resources */,
 				4B395A882475AEE20051E1AD /* Assets.xcassets in Resources */,
 				4B395A862475AEE00051E1AD /* Main.storyboard in Resources */,
+				4B395A972475D2E20051E1AD /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
