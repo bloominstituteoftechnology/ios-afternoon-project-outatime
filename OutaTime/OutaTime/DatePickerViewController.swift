@@ -9,7 +9,7 @@
 import UIKit
 
 protocol DatePickerDelegate {
-    func destinationDateWasChosen(_ : Date)
+    func destinationDateWasChosen(_ destinationDate : Date)
 }
 
 class DatePickerViewController: UIViewController {
@@ -26,6 +26,8 @@ class DatePickerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         // Do any additional setup after loading the view.
     }
