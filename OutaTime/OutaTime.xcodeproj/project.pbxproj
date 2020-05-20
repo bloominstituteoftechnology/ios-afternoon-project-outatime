@@ -13,6 +13,8 @@
 		9A96F04C2475F47E000481D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A96F04A2475F47E000481D5 /* Main.storyboard */; };
 		9A96F04E2475F480000481D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A96F04D2475F480000481D5 /* Assets.xcassets */; };
 		9A96F0512475F480000481D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A96F04F2475F480000481D5 /* LaunchScreen.storyboard */; };
+		9A96F0592475F734000481D5 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A96F0582475F734000481D5 /* TimeCircuitsViewController.swift */; };
+		9A96F05B2475F760000481D5 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A96F05A2475F760000481D5 /* DatePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9A96F04D2475F480000481D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A96F0502475F480000481D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A96F0522475F480000481D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A96F0582475F734000481D5 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
+		9A96F05A2475F760000481D5 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		9A96F0432475F47E000481D5 /* OutaTime */ = {
 			isa = PBXGroup;
 			children = (
+				9A96F05A2475F760000481D5 /* DatePickerViewController.swift */,
+				9A96F0582475F734000481D5 /* TimeCircuitsViewController.swift */,
 				9A96F0442475F47E000481D5 /* AppDelegate.swift */,
 				9A96F0462475F47E000481D5 /* SceneDelegate.swift */,
 				9A96F0482475F47E000481D5 /* ViewController.swift */,
@@ -139,7 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A96F0492475F47E000481D5 /* ViewController.swift in Sources */,
+				9A96F05B2475F760000481D5 /* DatePickerViewController.swift in Sources */,
 				9A96F0452475F47E000481D5 /* AppDelegate.swift in Sources */,
+				9A96F0592475F734000481D5 /* TimeCircuitsViewController.swift in Sources */,
 				9A96F0472475F47E000481D5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
