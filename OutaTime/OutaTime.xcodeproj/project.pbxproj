@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1C183632475E0D700074A6C /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1C183622475E0D700074A6C /* digital-7.ttf */; };
 		B1F7F4002475C53C00B5E882 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F7F3FF2475C53C00B5E882 /* AppDelegate.swift */; };
 		B1F7F4022475C53C00B5E882 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F7F4012475C53C00B5E882 /* SceneDelegate.swift */; };
 		B1F7F4072475C53C00B5E882 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1F7F4052475C53C00B5E882 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B1C183622475E0D700074A6C /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../../digital-7.ttf"; sourceTree = "<group>"; };
 		B1F7F3FC2475C53C00B5E882 /* OutaTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutaTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F7F3FF2475C53C00B5E882 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1F7F4012475C53C00B5E882 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +44,6 @@
 		B1F7F3F32475C53C00B5E882 = {
 			isa = PBXGroup;
 			children = (
-				B1F7F4172475C6FE00B5E882 /* View Controllers */,
 				B1F7F3FE2475C53C00B5E882 /* OutaTime */,
 				B1F7F3FD2475C53C00B5E882 /* Products */,
 			);
@@ -59,12 +60,14 @@
 		B1F7F3FE2475C53C00B5E882 /* OutaTime */ = {
 			isa = PBXGroup;
 			children = (
+				B1F7F4172475C6FE00B5E882 /* View Controllers */,
 				B1F7F3FF2475C53C00B5E882 /* AppDelegate.swift */,
 				B1F7F4012475C53C00B5E882 /* SceneDelegate.swift */,
 				B1F7F4052475C53C00B5E882 /* Main.storyboard */,
 				B1F7F4082475C54200B5E882 /* Assets.xcassets */,
 				B1F7F40A2475C54200B5E882 /* LaunchScreen.storyboard */,
 				B1F7F40D2475C54200B5E882 /* Info.plist */,
+				B1C183622475E0D700074A6C /* digital-7.ttf */,
 			);
 			path = OutaTime;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 				B1F7F40C2475C54200B5E882 /* LaunchScreen.storyboard in Resources */,
 				B1F7F4092475C54200B5E882 /* Assets.xcassets in Resources */,
 				B1F7F4072475C53C00B5E882 /* Main.storyboard in Resources */,
+				B1C183632475E0D700074A6C /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

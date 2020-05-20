@@ -12,13 +12,26 @@ class TimeCircuitsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        jan1Label.font = UIFont(name: "digital-7", size: 40)
+        may20Label.font = UIFont(name: "digital-7", size: 40)
+        dashesLabel.font = UIFont(name: "digital-7", size: 40)
+        mphLabel.font = UIFont(name: "digital-7", size: 40)
+        
         // Do any additional setup after loading the view.
     }
     
-
+    @IBOutlet weak var jan1Label: UILabel!
+    
+    @IBOutlet weak var may20Label: UILabel!
+    
+     @IBOutlet weak var dashesLabel: UILabel!
+    
+    
+    @IBOutlet weak var mphLabel: UILabel!
+    
     /*
-    // MARK: - Navigation
+    
+     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
