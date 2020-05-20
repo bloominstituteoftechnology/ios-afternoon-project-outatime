@@ -23,11 +23,13 @@ class TimeCircuitsViewController: UIViewController {
     @IBOutlet weak var jan1Label: UILabel!
     
     @IBOutlet weak var may20Label: UILabel!
-    
-     @IBOutlet weak var dashesLabel: UILabel!
-    
-    
+    @IBOutlet weak var dashesLabel: UILabel!
     @IBOutlet weak var mphLabel: UILabel!
+    @IBAction func tappedTravelBack(_ sender: Any) {
+    
+    
+    
+    }
     
     /*
     

@@ -16,10 +16,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="sw9-EG-SWb">
-                                <rect key="frame" x="68.5" y="88.5" width="277" height="719.5"/>
+                                <rect key="frame" x="40" y="84" width="334" height="738"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="91" translatesAutoresizingMaskIntoConstraints="NO" id="wD2-6b-lnq">
-                                        <rect key="frame" x="0.0" y="0.0" width="277" height="612.5"/>
+                                        <rect key="frame" x="28.5" y="0.0" width="277" height="612.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Tlq-pU-2gB">
                                                 <rect key="frame" x="23" y="0.0" width="231.5" height="75"/>
@@ -92,15 +92,22 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ie3-cz-Kxf">
-                                        <rect key="frame" x="67" y="659.5" width="143" height="60"/>
+                                        <rect key="frame" x="95.5" y="659.5" width="143" height="78.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QE4-ao-gm4">
-                                                <rect key="frame" x="0.0" y="0.0" width="143" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QE4-ao-gm4">
+                                                <rect key="frame" x="0.0" y="0.0" width="143" height="48.5"/>
                                                 <state key="normal" title="Set Destination Time"/>
+                                                <connections>
+                                                    <action selector="datePicker:" destination="VCt-m8-JAx" eventType="touchUpInside" id="Ahy-tE-Zwy"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6aF-cP-V1l">
-                                                <rect key="frame" x="30" y="30" width="83" height="30"/>
+                                                <rect key="frame" x="30" y="48.5" width="83" height="30"/>
                                                 <state key="normal" title="Travel Back "/>
+                                                <connections>
+                                                    <action selector="tappedTravelBack:" destination="A7H-aE-7lb" eventType="touchUpInside" id="vzY-Zt-MEB"/>
+                                                    <action selector="travelBack:" destination="VCt-m8-JAx" eventType="touchUpInside" id="dZS-Eg-lbF"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -109,8 +116,10 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="sw9-EG-SWb" firstAttribute="centerY" secondItem="yj3-uV-6Tx" secondAttribute="centerY" id="99X-ot-cVL"/>
-                            <constraint firstItem="sw9-EG-SWb" firstAttribute="centerX" secondItem="yj3-uV-6Tx" secondAttribute="centerX" id="F9k-6Q-GC4"/>
+                            <constraint firstItem="Baa-bT-WeO" firstAttribute="trailing" secondItem="sw9-EG-SWb" secondAttribute="trailing" constant="40" id="L3j-Th-VzR"/>
+                            <constraint firstItem="sw9-EG-SWb" firstAttribute="top" secondItem="Baa-bT-WeO" secondAttribute="top" constant="40" id="bZ9-18-Bo0"/>
+                            <constraint firstItem="sw9-EG-SWb" firstAttribute="leading" secondItem="Baa-bT-WeO" secondAttribute="leading" constant="40" id="vVQ-CD-yx4"/>
+                            <constraint firstItem="Baa-bT-WeO" firstAttribute="bottom" secondItem="sw9-EG-SWb" secondAttribute="bottom" constant="40" id="y5V-oN-1Wk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Baa-bT-WeO"/>
                     </view>
@@ -122,6 +131,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3NL-yP-XZc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="VCt-m8-JAx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-307.24637681159425" y="-204.24107142857142"/>
         </scene>
@@ -132,9 +142,24 @@
                     <view key="view" contentMode="scaleToFill" id="sMN-pi-LcY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="vpn-yR-nDs">
+                                <rect key="frame" x="47" y="340" width="320" height="216"/>
+                            </datePicker>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vpn-yR-nDs" firstAttribute="centerX" secondItem="sMN-pi-LcY" secondAttribute="centerX" id="OE5-ha-ZSD"/>
+                            <constraint firstItem="vpn-yR-nDs" firstAttribute="centerY" secondItem="sMN-pi-LcY" secondAttribute="centerY" id="ct4-av-vpG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="uF1-9F-qfv"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem systemItem="cancel" id="qdy-mp-BOx"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="j5H-p8-NCm"/>
+                        <barButtonItem systemItem="done" id="zb2-rS-mxq"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p3S-P9-Pkz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
