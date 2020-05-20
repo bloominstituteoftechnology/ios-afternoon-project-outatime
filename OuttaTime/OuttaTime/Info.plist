@@ -60,5 +60,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string></string>
+		<string>digital-7.ttf</string>
+	</array>
 </dict>
 </plist>
