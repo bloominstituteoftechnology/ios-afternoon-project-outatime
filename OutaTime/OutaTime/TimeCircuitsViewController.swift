@@ -9,7 +9,6 @@
 import UIKit
 
 class TimeCircuitsViewController: UIViewController {
-
     
     //IBOutlets/Actions & Variables
     @IBOutlet weak var destinationTimeLabel: UILabel!
@@ -20,6 +19,7 @@ class TimeCircuitsViewController: UIViewController {
         startTimer()
     }
     
+    // MARK: - Properties
     var speed = 0
     var timer: Timer?
     private var dateFormatter: DateFormatter{
@@ -29,7 +29,7 @@ class TimeCircuitsViewController: UIViewController {
         return formatter
     }
     
-    //ViewDidLoad
+    // MARK: - View LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         presentTimeLabel.text = dateFormatter.string(from: Date())
@@ -37,7 +37,7 @@ class TimeCircuitsViewController: UIViewController {
         lastTimeDepartedLabel.text = "--- -- ----"
     }
     
-    //Functions
+    // MARK: - Methods
     func startTimer() {
         timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateSpeed(timer:))
     }
@@ -68,16 +68,16 @@ class TimeCircuitsViewController: UIViewController {
         present(alert, animated: true)
     }
     
+    // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ModalDestinationDatePickerSegue"{
             guard let datePickerVC = segue.destination as? DatePickerViewController else { return }
             datePickerVC.delegate = self
         }
     }
-    
-    
 }
 
+// MARK: - Extension
 extension TimeCircuitsViewController: DatePickerDelegate {
     func destinationDateWasChosen(date: Date) {
         destinationTimeLabel.text = dateFormatter.string(from: date)

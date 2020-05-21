@@ -15,10 +15,13 @@ protocol DatePickerDelegate {
 
 class DatePickerViewController: UIViewController {
 
+    // MARK: - Properties
     var delegate: DatePickerDelegate?
     
+    // MARK: - IBOutlets
     @IBOutlet weak var datePicker: UIDatePicker!
     
+    // MARK: - IBActions
     @IBAction func cancelPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
@@ -27,10 +30,5 @@ class DatePickerViewController: UIViewController {
         delegate?.destinationDateWasChosen(date: datePicker.date)
         dismiss(animated: true, completion: nil)
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
 }
 
