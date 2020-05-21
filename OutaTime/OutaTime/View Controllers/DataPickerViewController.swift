@@ -22,9 +22,12 @@ class DataPickerViewController: UIViewController {
     @IBOutlet weak var doneButton: UIBarButtonItem!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBAction func tappedDone(_ sender: Any) {
+        delegate?.destinationDateWasChosen(date: datePicker.date)
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func tappedCancel(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     
