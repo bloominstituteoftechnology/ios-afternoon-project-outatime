@@ -41,6 +41,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B1D13B9F247656F3001D452F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B1F7F4052475C53C00B5E882 /* Main.storyboard */,
+				B1F7F40A2475C54200B5E882 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B1D13BA02476571B001D452F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B1F7F3FF2475C53C00B5E882 /* AppDelegate.swift */,
+				B1F7F4012475C53C00B5E882 /* SceneDelegate.swift */,
+				B1F7F4082475C54200B5E882 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		B1F7F3F32475C53C00B5E882 = {
 			isa = PBXGroup;
 			children = (
@@ -61,11 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				B1F7F4172475C6FE00B5E882 /* View Controllers */,
-				B1F7F3FF2475C53C00B5E882 /* AppDelegate.swift */,
-				B1F7F4012475C53C00B5E882 /* SceneDelegate.swift */,
-				B1F7F4052475C53C00B5E882 /* Main.storyboard */,
-				B1F7F4082475C54200B5E882 /* Assets.xcassets */,
-				B1F7F40A2475C54200B5E882 /* LaunchScreen.storyboard */,
+				B1D13BA02476571B001D452F /* Resources */,
+				B1D13B9F247656F3001D452F /* Storyboards */,
 				B1F7F40D2475C54200B5E882 /* Info.plist */,
 				B1C183622475E0D700074A6C /* digital-7.ttf */,
 			);
