@@ -13,11 +13,6 @@ class TimeCircuitsViewController: UIViewController {
     @IBOutlet weak var presentTime: UILabel!
     @IBOutlet weak var lastTimeDeparted: UILabel!
     @IBOutlet weak var speed: UILabel!
-    @IBAction func travelBack(_ sender: UIButton) {
-        func startTimer() {
-            
-        }
-    }
     
     var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -41,6 +36,20 @@ class TimeCircuitsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func travelBack(_ sender: UIButton) {
+        func startTimer() {
+            Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateSpeed), userInfo: nil, repeats: false)
+        }
+    }
+    
+    func resetTimer() {
+        
+    }
+    
+    @objc func updateSpeed() {
+        
+    }
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? DatePickerViewController {
         destination.delegate = self
@@ -54,3 +63,5 @@ extension TimeCircuitsViewController: DatePickerDelegate {
         destinationTime.text = dateFormatter.string(from: destinationDate)
     }
 }
+
+
