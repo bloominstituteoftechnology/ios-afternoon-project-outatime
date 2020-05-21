@@ -10,6 +10,16 @@ import UIKit
 
 class DataPickerViewController: UIViewController {
 
+    @IBOutlet weak var cancelButton: UIBarButtonItem!
+    
+    @IBOutlet weak var doneButton: UIBarButtonItem!
+    @IBOutlet weak var datePicker: UIDatePicker!
+    @IBAction func tappedDone(_ sender: Any) {
+    }
+    
+    @IBAction func tappedCancel(_ sender: Any) {
+    }
+    
     
     
   

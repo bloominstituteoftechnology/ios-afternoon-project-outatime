@@ -10,14 +10,26 @@ import UIKit
 
 class TimeCircuitsViewController: UIViewController {
 
+
+    var currentSpeed = 0
+    var dateFormatter: DateFormatter {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMM d, yyyy"
+        dateFormatter.timeZone = TimeZone(secondsFromGMT: -25200)
+        return dateFormatter
+    }
+    
+
+    
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         jan1Label.font = UIFont(name: "digital-7", size: 40)
         may20Label.font = UIFont(name: "digital-7", size: 40)
         dashesLabel.font = UIFont(name: "digital-7", size: 40)
         mphLabel.font = UIFont(name: "digital-7", size: 40)
-        
-        // Do any additional setup after loading the view.
+        may20Label.text = dateFormatter.string(from: Date())     // Do any additional setup after loading the view.
     }
     
     @IBOutlet weak var jan1Label: UILabel!
@@ -28,6 +40,9 @@ class TimeCircuitsViewController: UIViewController {
     @IBAction func tappedTravelBack(_ sender: Any) {
     
     
+        
+        
+      
     
     }
     
