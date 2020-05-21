@@ -16,7 +16,7 @@ class TimeCircuitsViewController: UIViewController {
     
     var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = "MMM d, yyy"
+        formatter.dateFormat = "MMM d, yyyy"
         formatter.timeZone = TimeZone(secondsFromGMT: 0)
         return formatter
     }()
@@ -32,6 +32,8 @@ class TimeCircuitsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        updateViews()
 
         // Do any additional setup after loading the view.
     }
