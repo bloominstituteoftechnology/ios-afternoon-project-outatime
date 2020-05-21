@@ -15,6 +15,7 @@
 		B4AE995E2475C9E0006A60F3 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE995D2475C9E0006A60F3 /* TimeCircuitsViewController.swift */; };
 		B4AE99602475C9F4006A60F3 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE995F2475C9F4006A60F3 /* DatePickerViewController.swift */; };
 		B4AE99622475CB03006A60F3 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4AE99612475CB03006A60F3 /* digital-7.ttf */; };
+		B4AE996524761F67006A60F3 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE996424761F67006A60F3 /* DatePickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B4AE995D2475C9E0006A60F3 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
 		B4AE995F2475C9F4006A60F3 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		B4AE99612475CB03006A60F3 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../../digital-7.ttf"; sourceTree = "<group>"; };
+		B4AE996424761F67006A60F3 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		B4AE99482475C96E006A60F3 /* OutaTime */ = {
 			isa = PBXGroup;
 			children = (
+				B4AE996624761F6F006A60F3 /* Views */,
 				B4AE99492475C96E006A60F3 /* AppDelegate.swift */,
 				B4AE994B2475C96E006A60F3 /* SceneDelegate.swift */,
 				B4AE994F2475C96E006A60F3 /* Main.storyboard */,
@@ -79,6 +82,14 @@
 				B4AE995F2475C9F4006A60F3 /* DatePickerViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B4AE996624761F6F006A60F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B4AE996424761F67006A60F3 /* DatePickerView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4AE99602475C9F4006A60F3 /* DatePickerViewController.swift in Sources */,
+				B4AE996524761F67006A60F3 /* DatePickerView.swift in Sources */,
 				B4AE994A2475C96E006A60F3 /* AppDelegate.swift in Sources */,
 				B4AE995E2475C9E0006A60F3 /* TimeCircuitsViewController.swift in Sources */,
 				B4AE994C2475C96E006A60F3 /* SceneDelegate.swift in Sources */,

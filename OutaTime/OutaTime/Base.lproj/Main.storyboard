@@ -96,9 +96,6 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwE-Ha-L4N">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="33"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="100" id="fjL-4Y-mmU"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                 <state key="normal" title="TRAVEL BACK"/>
                                                 <connections>
@@ -107,9 +104,6 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PP6-E1-mnJ">
                                                 <rect key="frame" x="0.0" y="49" width="374" height="33"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="100" id="zkZ-wa-BcE"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                 <state key="normal" title="SET DESTINATION TIME"/>
                                                 <connections>
@@ -146,7 +140,18 @@
                     <view key="view" contentMode="scaleToFill" id="NTT-xA-ica">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="YZg-bZ-8h9" customClass="destinationDatePickerView" customModule="OutaTime" customModuleProvider="target">
+                                <rect key="frame" x="20" y="20" width="374" height="719"/>
+                            </datePicker>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zdQ-z5-Pm7" firstAttribute="trailing" secondItem="YZg-bZ-8h9" secondAttribute="trailing" constant="20" id="3bc-VG-b1x"/>
+                            <constraint firstItem="YZg-bZ-8h9" firstAttribute="top" secondItem="zdQ-z5-Pm7" secondAttribute="top" constant="20" id="FjN-mt-dpA"/>
+                            <constraint firstItem="YZg-bZ-8h9" firstAttribute="leading" secondItem="NTT-xA-ica" secondAttribute="leading" constant="20" id="J4K-82-WBT"/>
+                            <constraint firstItem="zdQ-z5-Pm7" firstAttribute="bottom" secondItem="YZg-bZ-8h9" secondAttribute="bottom" constant="20" id="goi-Gu-cbF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="zdQ-z5-Pm7"/>
                     </view>
                     <toolbarItems>
@@ -163,10 +168,13 @@
                         </barButtonItem>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="datePicker" destination="YZg-bZ-8h9" id="hXq-Ou-bwo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hAw-0K-l4X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-257" y="-87"/>
+            <point key="canvasLocation" x="-257.97101449275362" y="-87.053571428571431"/>
         </scene>
     </scenes>
 </document>

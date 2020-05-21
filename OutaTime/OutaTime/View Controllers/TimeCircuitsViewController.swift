@@ -25,6 +25,7 @@ class TimeCircuitsViewController: UIViewController {
             formatter.timeZone = TimeZone(secondsFromGMT: 0)
             return formatter
         }()
+
     
     private func stringThisDate(_ date:  Date) -> String {
         let string = dateFormatter.string(from: date)
@@ -98,9 +99,11 @@ class TimeCircuitsViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
-        
-        
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "ModalDestinationDatePickerSegue" {
+            if let destinationVC = segue.destination as? DatePickerViewController {
+                destinationVC.datePicker.date = Date()
+            }
+        }
     }
 
 
