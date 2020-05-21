@@ -15,7 +15,7 @@ protocol DatePickerDelegate {
 
 class DataPickerViewController: UIViewController {
     
-    var delegate: DatePickerDelegate?
+    var delegate: DatePickerDelegate? // Whose parents belong to this baby?
     
     @IBOutlet weak var cancelButton: UIBarButtonItem!
     

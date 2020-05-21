@@ -10,9 +10,9 @@ import UIKit
 
 class TimeCircuitsViewController: UIViewController {
     
-    
     var timer: Timer?
     var currentSpeed = 0
+    
     var dateFormatter: DateFormatter {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MMM d, yyyy"
@@ -29,7 +29,6 @@ class TimeCircuitsViewController: UIViewController {
         updateViews()
     }
     
-    
     func showAlert() {
         let alert = UIAlertController(title: "Time Travel Successful!!!", message: "Your new date is \(jan1Label.text ?? " ")", preferredStyle: .alert)  
         
@@ -38,14 +37,13 @@ class TimeCircuitsViewController: UIViewController {
         present(alert,animated: true, completion: nil)
     }
     
-    
     func updateViews() {
         may20Label.text = dateFormatter.string(from: Date())
         mphLabel.text = "\(currentSpeed) MPH"
         dashesLabel.text = "--- -- ----"
     }
-    @IBOutlet weak var jan1Label: UILabel!
     
+    @IBOutlet weak var jan1Label: UILabel!
     @IBOutlet weak var may20Label: UILabel!
     @IBOutlet weak var dashesLabel: UILabel!
     @IBOutlet weak var mphLabel: UILabel!
@@ -77,11 +75,11 @@ class TimeCircuitsViewController: UIViewController {
             mphLabel.text = "\(currentSpeed) MPH"
         }
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let timeCircuitsVC = segue.destination as? DataPickerViewController {
             timeCircuitsVC.delegate = self
         }
-        
     }
 }
 
