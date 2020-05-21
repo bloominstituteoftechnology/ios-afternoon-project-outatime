@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A14E0112476275C007B7934 /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A14E0102476275C007B7934 /* DatePicker.swift */; };
 		9A96F0452475F47E000481D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A96F0442475F47E000481D5 /* AppDelegate.swift */; };
 		9A96F0472475F47E000481D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A96F0462475F47E000481D5 /* SceneDelegate.swift */; };
 		9A96F0492475F47E000481D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A96F0482475F47E000481D5 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A14E0102476275C007B7934 /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
 		9A96F0412475F47E000481D5 /* OutaTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutaTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A96F0442475F47E000481D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A96F0462475F47E000481D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		9A96F0432475F47E000481D5 /* OutaTime */ = {
 			isa = PBXGroup;
 			children = (
+				9A14E0102476275C007B7934 /* DatePicker.swift */,
 				9A96F05A2475F760000481D5 /* DatePickerViewController.swift */,
 				9A96F0582475F734000481D5 /* TimeCircuitsViewController.swift */,
 				9A96F0442475F47E000481D5 /* AppDelegate.swift */,
@@ -153,6 +156,7 @@
 				9A96F0452475F47E000481D5 /* AppDelegate.swift in Sources */,
 				9A96F0592475F734000481D5 /* TimeCircuitsViewController.swift in Sources */,
 				9A96F0472475F47E000481D5 /* SceneDelegate.swift in Sources */,
+				9A14E0112476275C007B7934 /* DatePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
