@@ -8,8 +8,15 @@
 
 import UIKit
 
-class DataPickerViewController: UIViewController {
 
+protocol DatePickerDelegate {
+    func destinationDateWasChosen(date: Date)
+}
+
+class DataPickerViewController: UIViewController {
+    
+    var delegate: DatePickerDelegate?
+    
     @IBOutlet weak var cancelButton: UIBarButtonItem!
     
     @IBOutlet weak var doneButton: UIBarButtonItem!
