@@ -29,7 +29,10 @@ class TimeCircuitsViewController: UIViewController {
         may20Label.font = UIFont(name: "digital-7", size: 40)
         dashesLabel.font = UIFont(name: "digital-7", size: 40)
         mphLabel.font = UIFont(name: "digital-7", size: 40)
-        may20Label.text = dateFormatter.string(from: Date())     // Do any additional setup after loading the view.
+        may20Label.text = dateFormatter.string(from: Date())
+        mphLabel.text = "\(currentSpeed) MPH"
+        dashesLabel.text = "--- -- ----"
+        
     }
     
     @IBOutlet weak var jan1Label: UILabel!
