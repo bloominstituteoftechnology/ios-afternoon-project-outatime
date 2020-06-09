@@ -32,8 +32,37 @@ class TimeCircuitsViewController: UIViewController {
         
     }
     
-    @IBAction func travelBackButton(_ sender: Any) {
+    private var timer: Timer? = nil
+    
+    func startTimer() {
+        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: updateSpeed(timer:))
+    }
         
+    func resetTimer() {
+        timer?.invalidate()
+        timer = nil
+    }
+        
+    private func updateSpeed(timer: Timer) {
+        if speed < 88 {
+            speed += 1
+            speedLabel.text = "\(speed) MPH"
+        } else {
+            resetTimer()
+            lastTimeDepartedLabel.text = presentTimeLabel.text
+            presentTimeLabel.text = destinationTimeLabel.text
+            destinationTimeLabel.text = "--- -- ----"
+            speed = 0
+            speedLabel.text = "\(speed) MPH"
+            let alert = UIAlertController(title: "Time Travel Successful", message: "Your new date is \(presentTimeLabel.text ?? "unknown")", preferredStyle: .alert)
+            let okButton = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alert.addAction(okButton)
+            present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func travelBackButton(_ sender: Any) {
+        startTimer()
     }
     
     // MARK: - Navigation
