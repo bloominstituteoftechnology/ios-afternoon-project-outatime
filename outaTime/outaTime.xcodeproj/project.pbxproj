@@ -22,6 +22,7 @@
 		8447E49B24908AE7007DC05D /* Screen Shot 2020-06-09 at 8.27.04 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 8447E49224908AE7007DC05D /* Screen Shot 2020-06-09 at 8.27.04 PM.png */; };
 		8447E49C24908AE7007DC05D /* Screen Shot 2020-06-09 at 8.26.34 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 8447E49324908AE7007DC05D /* Screen Shot 2020-06-09 at 8.26.34 PM.png */; };
 		8447E49E24908F34007DC05D /* Screen Shot 2020-06-09 at 8.46.36 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 8447E49D24908F34007DC05D /* Screen Shot 2020-06-09 at 8.46.36 PM.png */; };
+		8447E4A02490B08E007DC05D /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 8447E49F2490B08E007DC05D /* Assets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		8447E49224908AE7007DC05D /* Screen Shot 2020-06-09 at 8.27.04 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2020-06-09 at 8.27.04 PM.png"; sourceTree = "<group>"; };
 		8447E49324908AE7007DC05D /* Screen Shot 2020-06-09 at 8.26.34 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2020-06-09 at 8.26.34 PM.png"; sourceTree = "<group>"; };
 		8447E49D24908F34007DC05D /* Screen Shot 2020-06-09 at 8.46.36 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2020-06-09 at 8.46.36 PM.png"; sourceTree = "<group>"; };
+		8447E49F2490B08E007DC05D /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Assets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				8447E49024908AE7007DC05D /* Screen Shot 2020-06-09 at 8.27.22 PM.png */,
 				8447E49124908AE7007DC05D /* Screen Shot 2020-06-09 at 8.27.28 PM.png */,
 				8447E48A249089D3007DC05D /* digital-7.ttf */,
+				8447E49F2490B08E007DC05D /* Assets */,
 				8447E47724907A16007DC05D /* Assets.xcassets */,
 			);
 			path = Assets;
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8447E47824907A16007DC05D /* Assets.xcassets in Resources */,
+				8447E4A02490B08E007DC05D /* Assets in Resources */,
 				8447E49924908AE7007DC05D /* Screen Shot 2020-06-09 at 8.27.22 PM.png in Resources */,
 				8447E49524908AE7007DC05D /* Screen Shot 2020-06-09 at 8.26.54 PM.png in Resources */,
 				8447E49824908AE7007DC05D /* Screen Shot 2020-06-09 at 8.27.11 PM.png in Resources */,
