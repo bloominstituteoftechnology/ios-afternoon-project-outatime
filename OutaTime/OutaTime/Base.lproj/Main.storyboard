@@ -37,7 +37,7 @@
                                         <rect key="frame" x="44" y="66" width="128" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="TRAVEL BACK">
-                                            <color key="titleColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="travelBackButton:" destination="XEO-cL-0XL" eventType="touchUpInside" id="wtA-f9-ecQ"/>
@@ -138,6 +138,7 @@
                         <outlet property="lastTimeDepartedLabel" destination="suC-I6-Yj9" id="eyh-1G-5V0"/>
                         <outlet property="presentTimeLabel" destination="18G-Wi-Ol6" id="RLY-28-yjv"/>
                         <outlet property="speedLabel" destination="awO-FX-iTj" id="GmD-Ek-Edh"/>
+                        <outlet property="travelBackButton" destination="p2B-Zr-wtI" id="KdT-2N-UPf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dRe-SA-kxL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
