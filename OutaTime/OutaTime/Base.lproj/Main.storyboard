@@ -100,9 +100,6 @@
                                 <rect key="frame" x="140" y="790" width="134" height="34"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="TRAVEL BACK "/>
-                                <connections>
-                                    <action selector="travelBackTapped:" destination="uax-9p-8CY" eventType="touchUpInside" id="WuV-tF-KVh"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJB-px-PFU">
                                 <rect key="frame" x="90" y="748" width="234" height="34"/>
@@ -131,6 +128,7 @@
                         <outlet property="lastTimeDepartedLabel" destination="Jfu-uy-leR" id="O9A-Kc-c0G"/>
                         <outlet property="presentTimeLabel" destination="4kv-cr-jle" id="AGS-IK-Dau"/>
                         <outlet property="speedLabel" destination="dAk-7Q-jCJ" id="YXZ-eK-IVh"/>
+                        <outlet property="travelBacktTapped" destination="qRB-PL-jhm" id="A1Y-hm-QiI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2BF-lQ-2Lm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
