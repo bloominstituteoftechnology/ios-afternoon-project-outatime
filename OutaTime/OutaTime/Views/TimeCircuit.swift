@@ -30,6 +30,7 @@ class TimeCircuit: UIView {
     @IBOutlet weak var amLed: UIView!
     @IBOutlet weak var pmLed: UIView!
     
+    
     //MARK: - Properties
     
     var time: Date? {

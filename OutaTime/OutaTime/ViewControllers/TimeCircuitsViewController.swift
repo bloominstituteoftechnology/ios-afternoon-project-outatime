@@ -54,17 +54,50 @@ class TimeCircuitsViewController: UIViewController {
     // Alert
     
     private func showAlert() {
+//        guard let presentTime = presentTimeCircuit.time else { return }
+//
+//        let alertController = UIAlertController(
+//            title: "Time Travel Successful!",
+//            message: "Your new date is \(presentTime.longDateShortTime)", preferredStyle: .alert)
+//        let okAction = UIAlertAction(title: "OK", style: .cancel) { action in
+//            self.currentSpeed = 0
+//        }
+// g
+//        alertController.addAction(okAction)
+//
+//        present(alertController, animated: true)
+//
+        registerLocalNotification()
+    }
+    
+    func registerLocalNotification() {
+        let center = UNUserNotificationCenter.current()
+        
+        center.requestAuthorization(options: [.alert, .sound]) { granted, error in
+            if granted {
+                self.scheduleLocalNotification()
+            } else {
+                print("User denied authorization to schedule local notifications")
+            }
+        }
+        self.currentSpeed = 0
+    }
+    
+    func scheduleLocalNotification() {
+        let center = UNUserNotificationCenter.current()
         guard let presentTime = presentTimeCircuit.time else { return }
         
-        let alertController = UIAlertController(
-            title: "Time Travel Successful!",
-            message: "Your new date is \(presentTime.longDateShortTime)", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .cancel) { action in
-            self.currentSpeed = 0
-        }
-        alertController.addAction(okAction)
+        let content = UNMutableNotificationContent()
+        content.title = "Time travel successful!"
+        content.body = "Your new date is \(presentTime.longDateShortTime)"
+        content.categoryIdentifier = "alarm"
+//        content.userInfo = ["customData": "fizzbuzz"]
+        content.sound = .default
         
-        present(alertController, animated: true, completion: nil)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        center.add(request)
     }
     
     // Speed Incrementor
@@ -106,6 +139,7 @@ class TimeCircuitsViewController: UIViewController {
         lastDepartedTimeCircuit.ledsOn.toggle()
     }
 
+    
     //MARK: - View Lifecycle
     
     override func viewDidLoad() {
@@ -145,6 +179,7 @@ fileprivate extension Date {
         return dateFormatter.string(from: self)
     }
 }
+
 
 //MARK: - Button Extension
 
