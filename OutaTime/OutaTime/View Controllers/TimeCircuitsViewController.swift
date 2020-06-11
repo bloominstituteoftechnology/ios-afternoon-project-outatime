@@ -52,7 +52,7 @@ class TimeCircuitsViewController: UIViewController {
     
     func updateSpeed(timer: Timer) {
         if currentSpeed < 88 {
-            currentSpeed += 5
+            currentSpeed += 1
             speedLabel.text = String(currentSpeed)
         } else {
             departedLabel.text = presentLabel.text
