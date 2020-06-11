@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DigitaldreamFatSkew.ttf">
+            <string>DigitaldreamFatSkew</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Time Circuits View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TimeCircuitsViewController" customModule="OutaTime" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="cp0-NI-I2w" userLabel="Times Stack">
+                                <rect key="frame" x="10" y="64" width="394" height="521"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8EV-Ai-rjP" userLabel="DestinationTime Circuit" customClass="TimeCircuit" customModule="OutaTime" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Gba-I8-yXN"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  DESTINATION TIME  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUp-zb-oTH">
+                                        <rect key="frame" x="120" y="75" width="154.5" height="20"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="46M-7T-VpT" userLabel="Separator View">
+                                        <rect key="frame" x="0.0" y="110" width="394" height="6"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="6" id="xkc-1k-xg7"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nSi-hb-3Yc" userLabel="Present Time Circuit" customClass="TimeCircuit" customModule="OutaTime" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="131" width="394" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="lLN-dk-NbQ"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  PRESENT TIME  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cli-Gz-MdU">
+                                        <rect key="frame" x="134.5" y="206" width="125" height="20"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1eW-ZN-DBM" userLabel="Separator View">
+                                        <rect key="frame" x="0.0" y="241" width="394" height="6"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="6" id="GaE-Cf-9w4"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B0j-y1-1Wb" userLabel="Last Departed Time Circuit" customClass="TimeCircuit" customModule="OutaTime" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="262" width="394" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="D9c-59-Los"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  LAST TIME DEPARTED  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Uh-1P-K1h">
+                                        <rect key="frame" x="109" y="337" width="176" height="20"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjX-mu-yNw" userLabel="Separator View">
+                                        <rect key="frame" x="0.0" y="372" width="394" height="6"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="6" id="lh4-4A-CAy"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 MPH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhp-Ca-NEi">
+                                        <rect key="frame" x="134.5" y="393" width="125" height="27"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="DigitaldreamFatSkew" family="Digital dream Fat Skew" pointSize="26"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  SPEED  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHZ-qR-Im0">
+                                        <rect key="frame" x="164" y="435" width="66" height="20"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="82H-8p-DnZ" userLabel="Separator View">
+                                        <rect key="frame" x="0.0" y="470" width="394" height="6"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="6" id="Fpa-eV-Zch"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="elz-En-jbq">
+                                        <rect key="frame" x="70.5" y="491" width="253" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xe-in-lmD">
+                                                <rect key="frame" x="0.0" y="0.0" width="151" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title=" Set Destination Time ">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="Q1P-zJ-0dd" kind="presentation" id="CWv-Rc-lKx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g52-DV-vQ1">
+                                                <rect key="frame" x="166" y="0.0" width="87" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title=" Travel Back ">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="travelBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Tg-7e-wpV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cjX-mu-yNw" firstAttribute="width" secondItem="cp0-NI-I2w" secondAttribute="width" id="5sr-aT-nzX"/>
+                                    <constraint firstItem="8EV-Ai-rjP" firstAttribute="width" secondItem="cp0-NI-I2w" secondAttribute="width" id="RJf-RS-l3B"/>
+                                    <constraint firstItem="B0j-y1-1Wb" firstAttribute="width" secondItem="cp0-NI-I2w" secondAttribute="width" id="USC-va-SuL"/>
+                                    <constraint firstItem="1eW-ZN-DBM" firstAttribute="width" secondItem="cp0-NI-I2w" secondAttribute="width" id="ZNI-fg-9NK"/>
+                                    <constraint firstItem="46M-7T-VpT" firstAttribute="width" secondItem="cp0-NI-I2w" secondAttribute="width" id="eJy-kC-7ao"/>
+                                    <constraint firstItem="82H-8p-DnZ" firstAttribute="width" secondItem="cp0-NI-I2w" secondAttribute="width" id="jCR-ox-Z6v"/>
+                                    <constraint firstItem="nSi-hb-3Yc" firstAttribute="width" secondItem="cp0-NI-I2w" secondAttribute="width" id="uYQ-Id-WKC"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cp0-NI-I2w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="OqD-gB-1XK"/>
+                            <constraint firstItem="cp0-NI-I2w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="p5t-oE-4fO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cp0-NI-I2w" secondAttribute="trailing" constant="10" id="tDM-sa-Nke"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="destinationTimeCircuit" destination="8EV-Ai-rjP" id="ShK-hF-v2I"/>
+                        <outlet property="lastDepartedTimeCircuit" destination="B0j-y1-1Wb" id="LQ2-5f-Eka"/>
+                        <outlet property="presentTimeCircuit" destination="nSi-hb-3Yc" id="VUY-rY-hSw"/>
+                        <outlet property="speedLabel" destination="bhp-Ca-NEi" id="2wj-zg-KD4"/>
+                        <outlet property="travelBackButton" destination="g52-DV-vQ1" id="ptQ-JN-fnS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.43478260869566" y="127.23214285714285"/>
+        </scene>
+        <!--Date Picker View Controller-->
+        <scene sceneID="JKR-03-yC7">
+            <objects>
+                <viewController id="Q1P-zJ-0dd" customClass="DatePickerViewController" customModule="OutaTime" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8LR-Kv-Xge">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQb-Mb-E2L">
+                                <rect key="frame" x="0.0" y="313" width="414" height="216"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <date key="date" timeIntervalSinceReferenceDate="-479103711.28324401">
+                                    <!--1985-10-26 19:38:08 +0000-->
+                                </date>
+                            </datePicker>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c7n-lY-xiR">
+                                <rect key="frame" x="0.0" y="759" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem systemItem="cancel" id="jgq-uU-3gU">
+                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="cancelButtonTapped:" destination="Q1P-zJ-0dd" id="nUB-O4-TKV"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="vKK-bN-Ij0"/>
+                                    <barButtonItem systemItem="done" id="Gvo-u8-Cmq">
+                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="doneButtonTapped:" destination="Q1P-zJ-0dd" id="aDf-gy-rIk"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="c7n-lY-xiR" firstAttribute="leading" secondItem="AYl-QH-XBG" secondAttribute="leading" id="J4F-5E-WPK"/>
+                            <constraint firstItem="eQb-Mb-E2L" firstAttribute="centerY" secondItem="8LR-Kv-Xge" secondAttribute="centerY" id="MaH-k3-UlX"/>
+                            <constraint firstItem="AYl-QH-XBG" firstAttribute="trailing" secondItem="eQb-Mb-E2L" secondAttribute="trailing" id="OKM-G5-Q1v"/>
+                            <constraint firstItem="eQb-Mb-E2L" firstAttribute="leading" secondItem="AYl-QH-XBG" secondAttribute="leading" id="YUV-aq-gzr"/>
+                            <constraint firstItem="c7n-lY-xiR" firstAttribute="bottom" secondItem="AYl-QH-XBG" secondAttribute="bottom" id="cR0-Wa-44Q"/>
+                            <constraint firstItem="c7n-lY-xiR" firstAttribute="trailing" secondItem="AYl-QH-XBG" secondAttribute="trailing" id="nfk-Ms-sDk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AYl-QH-XBG"/>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="eQb-Mb-E2L" id="aAZ-xw-XFV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wDg-Nt-bzo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="909" y="129"/>
+        </scene>
+    </scenes>
+</document>
