@@ -10,19 +10,30 @@ import UIKit
 
 class TimeCircuitsViewController: UIViewController {
     
-    @IBOutlet weak var destinationTime: UITextField!
-    @IBOutlet weak var presentTime: UITextField!
-    @IBOutlet weak var departedTime: UITextField!
-    @IBOutlet weak var speed: UITextField!
+    var speed = 0
+    
+    
+    @IBOutlet weak var destination: UILabel!
+    @IBOutlet weak var present: UILabel!
+    @IBOutlet weak var departed: UILabel!
+    @IBOutlet weak var speedLabel: UILabel!
+    
     
     @IBAction func setButtonTapped(_ sender: Any) {
     }
     @IBAction func travelBackButtonTapped(_ sender: Any) {
     }
     
+    var dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM dd yyyy"
+        return formatter
+    }()
+    
     
         override func viewDidLoad() {
         super.viewDidLoad()
+            present.text = dateFormatter.string(from: Date())
 
         // Do any additional setup after loading the view.
     }
