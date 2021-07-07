@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		92A4504C230398E600F1AD16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A4504B230398E600F1AD16 /* AppDelegate.swift */; };
+		92A45051230398E600F1AD16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A4504F230398E600F1AD16 /* Main.storyboard */; };
+		92A45053230398E700F1AD16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92A45052230398E700F1AD16 /* Assets.xcassets */; };
+		92A45056230398E700F1AD16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A45054230398E700F1AD16 /* LaunchScreen.storyboard */; };
+		92A4505E2303992C00F1AD16 /* TimeCircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A4505D2303992C00F1AD16 /* TimeCircuitsViewController.swift */; };
+		92A4506223039A5F00F1AD16 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A4506123039A5F00F1AD16 /* DatePickerViewController.swift */; };
+		92A450742303A60000F1AD16 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4506423039CF600F1AD16 /* digital-7.ttf */; };
+		92A450752303A60000F1AD16 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4506923039F2100F1AD16 /* Lato-Black.ttf */; };
+		92A450762303A60000F1AD16 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4506623039F2100F1AD16 /* Lato-BlackItalic.ttf */; };
+		92A450772303A60000F1AD16 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4506D23039F2100F1AD16 /* Lato-Bold.ttf */; };
+		92A450782303A60000F1AD16 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4507023039F2100F1AD16 /* Lato-BoldItalic.ttf */; };
+		92A450792303A60000F1AD16 /* Lato-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4507223039F2100F1AD16 /* Lato-Heavy.ttf */; };
+		92A4507A2303A60000F1AD16 /* Lato-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4506B23039F2100F1AD16 /* Lato-HeavyItalic.ttf */; };
+		92A4507B2303A60000F1AD16 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4506523039F2000F1AD16 /* Lato-Italic.ttf */; };
+		92A4507C2303A60000F1AD16 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4506823039F2100F1AD16 /* Lato-Light.ttf */; };
+		92A4507D2303A60000F1AD16 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4506723039F2100F1AD16 /* Lato-LightItalic.ttf */; };
+		92A4507E2303A60000F1AD16 /* Lato-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4506C23039F2100F1AD16 /* Lato-Medium.ttf */; };
+		92A4507F2303A60000F1AD16 /* Lato-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4507123039F2100F1AD16 /* Lato-MediumItalic.ttf */; };
+		92A450802303A60000F1AD16 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4506F23039F2100F1AD16 /* Lato-Regular.ttf */; };
+		92A450812303A60000F1AD16 /* Lato-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4506A23039F2100F1AD16 /* Lato-Semibold.ttf */; };
+		92A450822303A60000F1AD16 /* Lato-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92A4506E23039F2100F1AD16 /* Lato-SemiboldItalic.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		92A45048230398E600F1AD16 /* Outa Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Outa Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92A4504B230398E600F1AD16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		92A45050230398E600F1AD16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		92A45052230398E700F1AD16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92A45055230398E700F1AD16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		92A45057230398E700F1AD16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92A4505D2303992C00F1AD16 /* TimeCircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircuitsViewController.swift; sourceTree = "<group>"; };
+		92A4506123039A5F00F1AD16 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		92A4506423039CF600F1AD16 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "digital-7.ttf"; path = "../../../digital-7.ttf"; sourceTree = "<group>"; };
+		92A4506523039F2000F1AD16 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Italic.ttf"; path = "../../../../../../../../../Downloads/Lato2OFL/Lato-Italic.ttf"; sourceTree = "<group>"; };
+		92A4506623039F2100F1AD16 /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-BlackItalic.ttf"; path = "../../../../../../../../../Downloads/Lato2OFL/Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		92A4506723039F2100F1AD16 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-LightItalic.ttf"; path = "../../../../../../../../../Downloads/Lato2OFL/Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		92A4506823039F2100F1AD16 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Light.ttf"; path = "../../../../../../../../../Downloads/Lato2OFL/Lato-Light.ttf"; sourceTree = "<group>"; };
+		92A4506923039F2100F1AD16 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Black.ttf"; path = "../../../../../../../../../Downloads/Lato2OFL/Lato-Black.ttf"; sourceTree = "<group>"; };
+		92A4506A23039F2100F1AD16 /* Lato-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Semibold.ttf"; path = "../../../../../../../../../Downloads/Lato2OFL/Lato-Semibold.ttf"; sourceTree = "<group>"; };
+		92A4506B23039F2100F1AD16 /* Lato-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-HeavyItalic.ttf"; path = "../../../../../../../../../Downloads/Lato2OFL/Lato-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		92A4506C23039F2100F1AD16 /* Lato-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Medium.ttf"; path = "../../../../../../../../../Downloads/Lato2OFL/Lato-Medium.ttf"; sourceTree = "<group>"; };
+		92A4506D23039F2100F1AD16 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Bold.ttf"; path = "../../../../../../../../../Downloads/Lato2OFL/Lato-Bold.ttf"; sourceTree = "<group>"; };
+		92A4506E23039F2100F1AD16 /* Lato-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-SemiboldItalic.ttf"; path = "../../../../../../../../../Downloads/Lato2OFL/Lato-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		92A4506F23039F2100F1AD16 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Regular.ttf"; path = "../../../../../../../../../Downloads/Lato2OFL/Lato-Regular.ttf"; sourceTree = "<group>"; };
+		92A4507023039F2100F1AD16 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-BoldItalic.ttf"; path = "../../../../../../../../../Downloads/Lato2OFL/Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		92A4507123039F2100F1AD16 /* Lato-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-MediumItalic.ttf"; path = "../../../../../../../../../Downloads/Lato2OFL/Lato-MediumItalic.ttf"; sourceTree = "<group>"; };
+		92A4507223039F2100F1AD16 /* Lato-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Heavy.ttf"; path = "../../../../../../../../../Downloads/Lato2OFL/Lato-Heavy.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92A45045230398E600F1AD16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92A4503F230398E600F1AD16 = {
+			isa = PBXGroup;
+			children = (
+				92A4504A230398E600F1AD16 /* Outa Time */,
+				92A45049230398E600F1AD16 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		92A45049230398E600F1AD16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92A45048230398E600F1AD16 /* Outa Time.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92A4504A230398E600F1AD16 /* Outa Time */ = {
+			isa = PBXGroup;
+			children = (
+				92A450732303A0BB00F1AD16 /* View Controllers */,
+				92A4506323039CE300F1AD16 /* Fonts */,
+				92A4504B230398E600F1AD16 /* AppDelegate.swift */,
+				92A4504F230398E600F1AD16 /* Main.storyboard */,
+				92A45052230398E700F1AD16 /* Assets.xcassets */,
+				92A45054230398E700F1AD16 /* LaunchScreen.storyboard */,
+				92A45057230398E700F1AD16 /* Info.plist */,
+			);
+			path = "Outa Time";
+			sourceTree = "<group>";
+		};
+		92A4506323039CE300F1AD16 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				92A4506423039CF600F1AD16 /* digital-7.ttf */,
+				92A4506923039F2100F1AD16 /* Lato-Black.ttf */,
+				92A4506623039F2100F1AD16 /* Lato-BlackItalic.ttf */,
+				92A4506D23039F2100F1AD16 /* Lato-Bold.ttf */,
+				92A4507023039F2100F1AD16 /* Lato-BoldItalic.ttf */,
+				92A4507223039F2100F1AD16 /* Lato-Heavy.ttf */,
+				92A4506B23039F2100F1AD16 /* Lato-HeavyItalic.ttf */,
+				92A4506523039F2000F1AD16 /* Lato-Italic.ttf */,
+				92A4506823039F2100F1AD16 /* Lato-Light.ttf */,
+				92A4506723039F2100F1AD16 /* Lato-LightItalic.ttf */,
+				92A4506C23039F2100F1AD16 /* Lato-Medium.ttf */,
+				92A4507123039F2100F1AD16 /* Lato-MediumItalic.ttf */,
+				92A4506F23039F2100F1AD16 /* Lato-Regular.ttf */,
+				92A4506A23039F2100F1AD16 /* Lato-Semibold.ttf */,
+				92A4506E23039F2100F1AD16 /* Lato-SemiboldItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		92A450732303A0BB00F1AD16 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				92A4505D2303992C00F1AD16 /* TimeCircuitsViewController.swift */,
+				92A4506123039A5F00F1AD16 /* DatePickerViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92A45047230398E600F1AD16 /* Outa Time */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92A4505A230398E700F1AD16 /* Build configuration list for PBXNativeTarget "Outa Time" */;
+			buildPhases = (
+				92A45044230398E600F1AD16 /* Sources */,
+				92A45045230398E600F1AD16 /* Frameworks */,
+				92A45046230398E600F1AD16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Outa Time";
+			productName = "Outa Time";
+			productReference = 92A45048230398E600F1AD16 /* Outa Time.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92A45040230398E600F1AD16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Dillon P";
+				TargetAttributes = {
+					92A45047230398E600F1AD16 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 92A45043230398E600F1AD16 /* Build configuration list for PBXProject "Outa Time" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 92A4503F230398E600F1AD16;
+			productRefGroup = 92A45049230398E600F1AD16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92A45047230398E600F1AD16 /* Outa Time */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92A45046230398E600F1AD16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92A450742303A60000F1AD16 /* digital-7.ttf in Resources */,
+				92A450752303A60000F1AD16 /* Lato-Black.ttf in Resources */,
+				92A450762303A60000F1AD16 /* Lato-BlackItalic.ttf in Resources */,
+				92A450772303A60000F1AD16 /* Lato-Bold.ttf in Resources */,
+				92A450782303A60000F1AD16 /* Lato-BoldItalic.ttf in Resources */,
+				92A450792303A60000F1AD16 /* Lato-Heavy.ttf in Resources */,
+				92A4507A2303A60000F1AD16 /* Lato-HeavyItalic.ttf in Resources */,
+				92A4507B2303A60000F1AD16 /* Lato-Italic.ttf in Resources */,
+				92A4507C2303A60000F1AD16 /* Lato-Light.ttf in Resources */,
+				92A4507D2303A60000F1AD16 /* Lato-LightItalic.ttf in Resources */,
+				92A4507E2303A60000F1AD16 /* Lato-Medium.ttf in Resources */,
+				92A4507F2303A60000F1AD16 /* Lato-MediumItalic.ttf in Resources */,
+				92A450802303A60000F1AD16 /* Lato-Regular.ttf in Resources */,
+				92A450812303A60000F1AD16 /* Lato-Semibold.ttf in Resources */,
+				92A450822303A60000F1AD16 /* Lato-SemiboldItalic.ttf in Resources */,
+				92A45056230398E700F1AD16 /* LaunchScreen.storyboard in Resources */,
+				92A45053230398E700F1AD16 /* Assets.xcassets in Resources */,
+				92A45051230398E600F1AD16 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92A45044230398E600F1AD16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92A4506223039A5F00F1AD16 /* DatePickerViewController.swift in Sources */,
+				92A4505E2303992C00F1AD16 /* TimeCircuitsViewController.swift in Sources */,
+				92A4504C230398E600F1AD16 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		92A4504F230398E600F1AD16 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92A45050230398E600F1AD16 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		92A45054230398E700F1AD16 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92A45055230398E700F1AD16 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		92A45058230398E700F1AD16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		92A45059230398E700F1AD16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92A4505B230398E700F1AD16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B22A9UYX67;
+				INFOPLIST_FILE = "Outa Time/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dillonp.Outa-Time";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92A4505C230398E700F1AD16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B22A9UYX67;
+				INFOPLIST_FILE = "Outa Time/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dillonp.Outa-Time";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92A45043230398E600F1AD16 /* Build configuration list for PBXProject "Outa Time" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92A45058230398E700F1AD16 /* Debug */,
+				92A45059230398E700F1AD16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92A4505A230398E700F1AD16 /* Build configuration list for PBXNativeTarget "Outa Time" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92A4505B230398E700F1AD16 /* Debug */,
+				92A4505C230398E700F1AD16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92A45040230398E600F1AD16 /* Project object */;
+}
