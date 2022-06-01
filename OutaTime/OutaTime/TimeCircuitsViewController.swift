@@ -8,22 +8,38 @@
 import UIKit
 
 class TimeCircuitsViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+//MARK: - Properties
+    var dateFormatter: DateFormatter {
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeStyle = .none
+        dateFormatter.dateStyle = .short
+        return dateFormatter
+    }
+    var currentSpeed = 0
+    
+//MARK: - IBOutlets
+    @IBOutlet weak var destinationLabel: UILabel!
+    @IBOutlet weak var presentTimeLabel: UILabel!
+    @IBOutlet weak var lastTimeDepartedLabel: UILabel!
+    @IBOutlet weak var speedLabel: UILabel!
+    
+//MARK: - IBActions
+    @IBAction func travelBackButtonTapped(_ sender: UIButton) {
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+//MARK: - Methods
+    // Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        updateViews()
     }
-    */
+    // Updating views
+    func updateViews() {
+        presentTimeLabel.text = dateFormatter.string(from: Date())
+        speedLabel.text = "\(currentSpeed) MPH"
+        lastTimeDepartedLabel.text = "--- -- ----"
+    }
 
 }
