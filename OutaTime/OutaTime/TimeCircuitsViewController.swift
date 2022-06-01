@@ -26,7 +26,7 @@ class TimeCircuitsViewController: UIViewController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(okButton)
         return alert
-    }ç
+    }
     
 //MARK: - IBOutlets
     @IBOutlet weak var destinationLabel: UILabel!
