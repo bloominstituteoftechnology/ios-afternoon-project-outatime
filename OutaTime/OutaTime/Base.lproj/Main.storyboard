@@ -25,16 +25,16 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="trY-qG-cxN">
-                                        <rect key="frame" x="94.5" y="0.0" width="225" height="77.5"/>
+                                        <rect key="frame" x="90.5" y="0.0" width="233" height="77.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESTINATION TIME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJU-77-U98">
-                                                <rect key="frame" x="22.5" y="0.0" width="180.5" height="24"/>
+                                                <rect key="frame" x="26.5" y="0.0" width="180.5" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAN 01 2000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbW-fa-3J8">
-                                                <rect key="frame" x="0.0" y="32" width="225" height="45.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAN 01, 2000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0E7-f1-14g">
+                                                <rect key="frame" x="0.0" y="32" width="233" height="45.5"/>
                                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="50"/>
                                                 <color key="textColor" systemColor="systemRedColor"/>
                                                 <nil key="highlightedColor"/>
@@ -130,7 +130,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="destinationLabel" destination="zbW-fa-3J8" id="nUr-Rv-YjU"/>
+                        <outlet property="destinationLabel" destination="0E7-f1-14g" id="Qzz-DS-bom"/>
                         <outlet property="lastTimeDepartedLabel" destination="kEM-XX-WRA" id="76J-Ku-eIX"/>
                         <outlet property="presentTimeLabel" destination="8IG-TP-86R" id="TZe-Sx-Gyg"/>
                         <outlet property="setDestinationButton" destination="qPC-9h-7sf" id="Kdw-Fe-X6A"/>
