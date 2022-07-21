@@ -49,6 +49,10 @@ class TimeCircuitsViewController: UIViewController {
     @IBAction func travelBackTapped(_ sender: UIButton) {
         
     }
-    
+}
 
+extension TimeCircuitsViewController: DatePickerDelegate {
+    func destinationDateWasChosen(date: Date) {
+        <#code#>
+    }
 }
